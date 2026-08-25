@@ -38,6 +38,8 @@ core/build_math2_math3_data.py
 *.png
 !assets/*.png
 !web/**/*.png
+# 题库题图(题干引用,需随仓库部署)
+!题库资料/**/images/*.png
 
 # 生成产物 (generated artifacts)
 试卷库/
