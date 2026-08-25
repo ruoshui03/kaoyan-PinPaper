@@ -4,6 +4,8 @@
 """
 from __future__ import annotations
 
+import base64
+import binascii
 import html
 import io
 import os
@@ -32,6 +34,36 @@ from core.paper_engine import EngineRequest, PaperEngine
 from core.pdf_service import PDFEdition, PDFService
 from core.ai_tutor import AITutor
 from core.state_manager import StateManager
+
+# 题干里内联的 <img src="data:...base64,..."> 标签(loader 生成)
+_INLINE_IMG_RE = re.compile(
+    r'<img\s+src="data:(?P<mime>[^;]+);base64,(?P<data>[^"]+)"[^>]*>', re.S
+)
+
+
+def render_stem(text: str) -> None:
+    """渲染题干:文字段走 st.markdown,内联 base64 图片走 st.image。
+
+    Streamlit 的 markdown 消毒器会剥掉 <img src> 里的 data: URI(显示成裂图),
+    故把题干按 <img> 切开,图片用原生 st.image 解码渲染,文字段仍走 markdown
+    (unsafe_allow_html 供公式/管道表格)。PDF 路径不经过这里,仍用内联 HTML。
+    """
+    if not text:
+        return
+    pos = 0
+    for m in _INLINE_IMG_RE.finditer(text):
+        pre = text[pos:m.start()]
+        if pre.strip():
+            st.markdown(pre, unsafe_allow_html=True)
+        try:
+            st.image(base64.b64decode(m.group("data")))
+        except (binascii.Error, ValueError):
+            st.caption("（图片加载失败）")
+        pos = m.end()
+    rest = text[pos:]
+    if rest.strip() or pos == 0:
+        st.markdown(rest, unsafe_allow_html=True)
+
 
 # =========================================================================
 # 1. Page Configuration
@@ -868,9 +900,8 @@ with tab_paper_hub:
                         with c_h2:
                             st.button("○ 标为错题", key=f"p1_mark_{q.id}_{q_idx}_{current_subject.value}", use_container_width=True, help="做错了？点击放入待练错题池", on_click=cb_toggle_wrong, args=(q.id,))
 
-                    # Question Stem（unsafe_allow_html:题干可能含内联图片 <img> 与 <table>,
-                    # 数据来自本地可信题库,无外部输入)
-                    st.markdown(q.stem, unsafe_allow_html=True)
+                    # Question Stem（内联图片走 st.image,文字/公式/表格走 markdown)
+                    render_stem(q.stem)
 
                     # Options
                     if q.options:
@@ -1257,8 +1288,8 @@ with tab_marker_hub:
                     with th2:
                         st.button("○ 标为错题", key=f"p2_toggle_{q.id}_{current_subject.value}", use_container_width=True, help="做错了？点击放入待练错题池", on_click=cb_toggle_wrong, args=(q.id,))
 
-                # unsafe_allow_html:题干可能含内联图片 <img> 与 <table>,数据来自本地可信题库
-                st.markdown(q.stem, unsafe_allow_html=True)
+                # 内联图片走 st.image,文字/公式/表格走 markdown
+                render_stem(q.stem)
                 if q.options:
                     mc1, mc2 = st.columns(2)
                     for oi, opt in enumerate(q.options):
