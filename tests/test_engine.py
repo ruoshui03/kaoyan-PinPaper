@@ -254,38 +254,38 @@ def test_3_paper_bundle_covers_100_percent_math3(math3_questions):
 
 def test_wrong_notebook_state_management(tmp_path):
     mgr = StateManager(data_file=tmp_path / "test_user_wrong.json")
-    is_added = mgr.toggle_wrong_question("01-基础-01", error_tag="概念模糊", note="定义域忘了对称")
+    is_added = mgr.toggle_wrong_question("01-基础-选-01", error_tag="概念模糊", note="定义域忘了对称")
     assert is_added is True
-    assert mgr.is_wrong_marked("01-基础-01")
-    assert mgr.get_wrong_count("01-基础-01") == 1
+    assert mgr.is_wrong_marked("01-基础-选-01")
+    assert mgr.get_wrong_count("01-基础-选-01") == 1
 
-    new_cnt = mgr.increment_wrong_count("01-基础-01")
+    new_cnt = mgr.increment_wrong_count("01-基础-选-01")
     assert new_cnt == 2
-    assert mgr.get_wrong_count("01-基础-01") == 2
+    assert mgr.get_wrong_count("01-基础-选-01") == 2
 
-    mgr.set_wrong_count("01-基础-01", 5)
-    assert mgr.get_wrong_count("01-基础-01") == 5
-    assert mgr.is_in_active_pool("01-基础-01") is True
-    assert "01-基础-01" in mgr.get_active_wrong_question_ids()
+    mgr.set_wrong_count("01-基础-选-01", 5)
+    assert mgr.get_wrong_count("01-基础-选-01") == 5
+    assert mgr.is_in_active_pool("01-基础-选-01") is True
+    assert "01-基础-选-01" in mgr.get_active_wrong_question_ids()
 
-    mgr.mark_solved_correctly("01-基础-01")
-    assert mgr.is_in_active_pool("01-基础-01") is False
-    assert mgr.is_temporarily_mastered("01-基础-01") is True
-    assert "01-基础-01" not in mgr.get_active_wrong_question_ids()
+    mgr.mark_solved_correctly("01-基础-选-01")
+    assert mgr.is_in_active_pool("01-基础-选-01") is False
+    assert mgr.is_temporarily_mastered("01-基础-选-01") is True
+    assert "01-基础-选-01" not in mgr.get_active_wrong_question_ids()
 
-    new_c = mgr.increment_wrong_count("01-基础-01")
+    new_c = mgr.increment_wrong_count("01-基础-选-01")
     assert new_c == 6
-    assert mgr.is_in_active_pool("01-基础-01") is True
-    assert "01-基础-01" in mgr.get_active_wrong_question_ids()
+    assert mgr.is_in_active_pool("01-基础-选-01") is True
+    assert "01-基础-选-01" in mgr.get_active_wrong_question_ids()
 
-    mgr.mark_solved_correctly("01-基础-01")
-    assert mgr.is_temporarily_mastered("01-基础-01") is True
+    mgr.mark_solved_correctly("01-基础-选-01")
+    assert mgr.is_temporarily_mastered("01-基础-选-01") is True
 
-    res = mgr.remove_wrong_question("01-基础-01")
+    res = mgr.remove_wrong_question("01-基础-选-01")
     assert res is True
-    assert mgr.is_wrong_marked("01-基础-01") is False
-    assert mgr.is_temporarily_mastered("01-基础-01") is False
-    assert mgr.is_in_active_pool("01-基础-01") is False
+    assert mgr.is_wrong_marked("01-基础-选-01") is False
+    assert mgr.is_temporarily_mastered("01-基础-选-01") is False
+    assert mgr.is_in_active_pool("01-基础-选-01") is False
 
 
 def test_pdf_service_three_editions_html_generation(math1_questions):

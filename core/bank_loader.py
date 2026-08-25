@@ -77,13 +77,34 @@ def get_diff_rank(diff_or_str: DifficultyLevel | str) -> int:
     return 2
 
 
-def parse_qid_tuple(qid: str) -> tuple[int, int, int]:
-    """将题目 ID 解析为可精准排序的三元组 (章节序号, 难度权重, 题号)"""
+def get_type_rank(type_or_str: "QuestionType | str") -> int:
+    """题型排序权重:选择题(1) < 填空题(2) < 解答题(3)"""
+    s = str(getattr(type_or_str, "value", type_or_str))
+    if "选" in s:
+        return 1
+    if "填" in s:
+        return 2
+    if "解" in s or "计算" in s or "证明" in s or "大题" in s:
+        return 3
+    return 1
+
+
+def parse_qid_tuple(qid: str) -> tuple[int, int, int, int]:
+    """将题目 ID 解析为可精准排序的四元组。
+
+    新格式 章-篇-题型-序号(如 03-基础-选-03)→ (章, 篇rank, 题型rank, 序号)。
+    旧格式 章-篇-序号(如 03-基础-19)→ (章, 篇rank, 0, 序号),仍可排序,兼容过渡。
+    """
     parts = qid.split("-")
     ch_num = int(parts[0]) if parts and parts[0].isdigit() else 99
     diff_rank = get_diff_rank(parts[1]) if len(parts) >= 2 else 2
-    q_num = int(parts[2]) if len(parts) >= 3 and parts[2].isdigit() else 99
-    return (ch_num, diff_rank, q_num)
+    if len(parts) >= 4:  # 章-篇-题型-序号
+        type_rank = get_type_rank(parts[2])
+        q_num = int(parts[3]) if parts[3].isdigit() else 99
+    else:                 # 旧三段 章-篇-序号
+        type_rank = 0
+        q_num = int(parts[2]) if len(parts) >= 3 and parts[2].isdigit() else 99
+    return (ch_num, diff_rank, type_rank, q_num)
 
 
 class BankLoader:
@@ -132,6 +153,10 @@ class BankLoader:
     def normalize_id(raw_id: str) -> str:
         s = raw_id.strip().replace("—", "-").replace("–", "-").replace("_", "-")
         parts = [p.strip() for p in s.split("-") if p.strip()]
+        # 新四段:章-篇-题型-序号(如 03-基础-选-03)
+        if len(parts) == 4 and parts[0].isdigit() and parts[3].isdigit():
+            return f"{int(parts[0]):02d}-{parts[1]}-{parts[2]}-{int(parts[3]):02d}"
+        # 旧三段:章-篇-序号(兼容历史导入)
         if len(parts) == 3 and parts[0].isdigit() and parts[2].isdigit():
             return f"{int(parts[0]):02d}-{parts[1]}-{int(parts[2]):02d}"
         return s
@@ -160,8 +185,8 @@ class BankLoader:
             ch_num = parse_chapter_number(chapter_name, qid)
             category = classify_category(chapter_name, ch_num)
 
-            # 解析难度
-            sec_str = meta.get("section") or body.get("section") or "基础题"
+            # 解析难度(md 原文 body 优先:题型/难度标题干净,metadata 的 id 编号有噪声)
+            sec_str = body.get("section") or meta.get("section") or "基础题"
             if "基础" in sec_str:
                 diff = DifficultyLevel.BASIC
             elif "拓展" in sec_str or "拔高" in sec_str:
@@ -169,8 +194,8 @@ class BankLoader:
             else:
                 diff = DifficultyLevel.COMPREHENSIVE
 
-            # 解析题型
-            type_str = meta.get("question_type") or body.get("question_type") or "选择题"
+            # 解析题型(同上,以 md 原文为准)
+            type_str = body.get("question_type") or meta.get("question_type") or "选择题"
             if "填空" in type_str:
                 qtype = QuestionType.FILL_BLANK
             elif "解答" in type_str or "计算" in type_str or "证明" in type_str or "大题" in type_str:
@@ -198,7 +223,25 @@ class BankLoader:
             )
             combined[qid] = q_item
 
-        self.questions_by_id = combined
+        # 重编号:combined 已按 md 文档顺序排列(章内 选→填→解 单调)。
+        # 按 (章, 篇, 题型) 三重计数器赋予新 ID 章-篇-题型-序号(如 03-基础-选-03),
+        # 使题号与原书"每个题型各自从 1 编号"完全对应。题型/难度已取自 md 原文,
+        # 故 metadata 的 id 编号噪声在此被自动修正。
+        SEC_SHORT = {DifficultyLevel.BASIC: "基础", DifficultyLevel.COMPREHENSIVE: "综合", DifficultyLevel.ADVANCED: "拓展"}
+        TYPE_SHORT = {QuestionType.CHOICE: "选", QuestionType.FILL_BLANK: "填", QuestionType.SOLUTION: "解"}
+        renumbered: dict[str, QuestionItem] = {}
+        counters: dict[tuple[int, str, str], int] = {}
+        for q in combined.values():
+            ch_num = parse_chapter_number(q.chapter, q.id)
+            sec_short = SEC_SHORT.get(q.difficulty, "综合")
+            type_short = TYPE_SHORT.get(q.question_type, "选")
+            key = (ch_num, sec_short, type_short)
+            counters[key] = counters.get(key, 0) + 1
+            new_id = f"{ch_num:02d}-{sec_short}-{type_short}-{counters[key]:02d}"
+            q.id = new_id
+            renumbered[new_id] = q
+
+        self.questions_by_id = renumbered
         self._is_loaded = True
 
         # 构建章节顺序
@@ -313,6 +356,11 @@ class BankLoader:
         
         cur_q_lines: list[str] = []
         cur_q_num = 0
+        # 快照:题目所属篇/题型应在它"开始"那一刻锁定。若延迟到下一题才入库,
+        # 中间可能已越过 ### 题型 或 ## 篇 标题,导致每个题型/篇的最后一题被误判
+        # 为下一段(如基础选择的末题落到填空、综合解答末题落到拓展)。
+        cur_q_sec = current_section
+        cur_q_type = current_type
 
         for line in lines:
             trimmed = line.strip()
@@ -337,19 +385,20 @@ class BankLoader:
             q_match = re.match(r"^(?:\*\*\((?P<n1>\d+)\)\*\*|(?P<n2>\d+)[.．、]|（(?P<n3>\d+)）)\s*(?P<rest>.*)$", trimmed)
             if q_match:
                 if cur_q_num > 0 and cur_q_lines:
-                    q_blocks.append((current_section, current_type, cur_q_num, list(cur_q_lines)))
+                    q_blocks.append((cur_q_sec, cur_q_type, cur_q_num, list(cur_q_lines)))
                     cur_q_lines.clear()
 
                 n_str = q_match.group("n1") or q_match.group("n2") or q_match.group("n3")
                 cur_q_num = int(n_str)
                 rest = q_match.group("rest")
                 cur_q_lines.append(rest)
+                cur_q_sec, cur_q_type = current_section, current_type  # 锁定本题的篇/题型
             else:
                 if cur_q_num > 0:
                     cur_q_lines.append(line)
 
         if cur_q_num > 0 and cur_q_lines:
-            q_blocks.append((current_section, current_type, cur_q_num, list(cur_q_lines)))
+            q_blocks.append((cur_q_sec, cur_q_type, cur_q_num, list(cur_q_lines)))
 
         # 按 section 递增赋予与元数据一致的 candidate_id
         sec_counters: dict[str, int] = {}

@@ -1100,37 +1100,51 @@ with tab_marker_hub:
         q.id,
     ))
 
+    # 本章全部题目(不受上方难度/题型/状态筛选影响),用于批量标错的题号匹配
+    chapter_all = [q for q in book_questions if q.chapter == target_ch]
+    _SEC_SHORT = {DifficultyLevel.BASIC: "基础", DifficultyLevel.COMPREHENSIVE: "综合", DifficultyLevel.ADVANCED: "拓展"}
+    _TYPE_SHORT = {QuestionType.CHOICE: "选", QuestionType.FILL_BLANK: "填", QuestionType.SOLUTION: "解"}
+    _TYPE_LABEL = {"选": "选择", "填": "填空", "解": "解答"}
+    _SEC_ICON = {"基础": "🟢 基础篇", "综合": "🔵 综合篇", "拓展": "🟣 拓展篇"}
+    # 本章实际存在的 (篇, 题型) 组合及其题目 —— 决定网格显示哪些输入框
+    combos: dict[tuple[str, str], list] = {}
+    for q in chapter_all:
+        combos.setdefault((_SEC_SHORT.get(q.difficulty, "综合"), _TYPE_SHORT.get(q.question_type, "选")), []).append(q)
+
+    def _resolve_ids(inputs: dict[tuple[str, str], str]) -> list[str]:
+        """把各 (篇,题型) 框里的题号解析成精确题目 ID(章-篇-题型-序号)。"""
+        ids: list[str] = []
+        for (sec, typ), text in inputs.items():
+            present = {int(q.id.split("-")[3]): q.id for q in combos.get((sec, typ), []) if q.id.split("-")[3].isdigit()}
+            for n in re.findall(r"\d+", text or ""):
+                qid = present.get(int(n))
+                if qid:
+                    ids.append(qid)
+        return ids
+
     # Quick Batch Marker Box & Export
     with st.expander("⚡ 批量标错与数据导出", expanded=True):
-        st.markdown("刷完一章后，分别输入基础篇、综合篇、拓展篇做错的题号，用逗号或空格隔开：")
-        col_in1, col_in2, col_in3 = st.columns(3)
-        with col_in1:
-            basic_text = st.text_input("🟢 基础篇做错题号", placeholder="例如: 1, 3, 5", key=f"p2_in_basic_{current_subject.value}")
-        with col_in2:
-            comp_text = st.text_input("🔵 综合篇做错题号", placeholder="例如: 2, 4, 8", key=f"p2_in_comp_{current_subject.value}")
-        with col_in3:
-            adv_text = st.text_input("🟣 拓展篇做错题号", placeholder="例如: 1, 3", key=f"p2_in_adv_{current_subject.value}")
+        st.markdown("刷完一章后，按 **篇 × 题型** 分别输入原书题号（每个题型各自从 1 编号），用逗号或空格隔开：")
+        batch_inputs: dict[tuple[str, str], str] = {}
+        for sec in ("基础", "综合", "拓展"):
+            sec_types = [t for t in ("选", "填", "解") if (sec, t) in combos]
+            if not sec_types:
+                continue
+            st.markdown(f"**{_SEC_ICON[sec]}**")
+            cols = st.columns(len(sec_types))
+            for col, typ in zip(cols, sec_types):
+                with col:
+                    n_q = len(combos[(sec, typ)])
+                    batch_inputs[(sec, typ)] = st.text_input(
+                        f"{_TYPE_LABEL[typ]}题（1-{n_q}）",
+                        placeholder="如: 1, 3, 5",
+                        key=f"p2_in_{sec}_{typ}_{current_subject.value}",
+                    )
 
         b_c1, b_c2, b_c3 = st.columns(3)
         with b_c1:
             if st.button("➕ 批量标记错题", type="primary", use_container_width=True, key=f"p2_batch_add_{current_subject.value}"):
-                to_mark_ids: list[str] = []
-                for n in re.findall(r"\d+", basic_text):
-                    val = int(n)
-                    for q in ch_questions:
-                        if q.difficulty == DifficultyLevel.BASIC and (q.id.endswith(f"-{val:02d}") or f"-{val:02d}" in q.id or f"_{val}" in q.id):
-                            to_mark_ids.append(q.id)
-                for n in re.findall(r"\d+", comp_text):
-                    val = int(n)
-                    for q in ch_questions:
-                        if q.difficulty == DifficultyLevel.COMPREHENSIVE and (q.id.endswith(f"-{val:02d}") or f"-{val:02d}" in q.id or f"_{val}" in q.id):
-                            to_mark_ids.append(q.id)
-                for n in re.findall(r"\d+", adv_text):
-                    val = int(n)
-                    for q in ch_questions:
-                        if q.difficulty == DifficultyLevel.ADVANCED and (q.id.endswith(f"-{val:02d}") or f"-{val:02d}" in q.id or f"_{val}" in q.id):
-                            to_mark_ids.append(q.id)
-
+                to_mark_ids = _resolve_ids(batch_inputs)
                 if to_mark_ids:
                     state_mgr.batch_mark_wrong(to_mark_ids)
                     st.success(f"✓ 成功标记 {len(to_mark_ids)} 道错题！")
@@ -1139,23 +1153,7 @@ with tab_marker_hub:
                     st.warning("未匹配到有效题号，请检查输入的数字。")
         with b_c2:
             if st.button("🧹 批量移除错题", use_container_width=True, key=f"p2_batch_remove_{current_subject.value}"):
-                to_unmark_ids: list[str] = []
-                for n in re.findall(r"\d+", basic_text):
-                    val = int(n)
-                    for q in ch_questions:
-                        if q.difficulty == DifficultyLevel.BASIC and (q.id.endswith(f"-{val:02d}") or f"-{val:02d}" in q.id or f"_{val}" in q.id):
-                            to_unmark_ids.append(q.id)
-                for n in re.findall(r"\d+", comp_text):
-                    val = int(n)
-                    for q in ch_questions:
-                        if q.difficulty == DifficultyLevel.COMPREHENSIVE and (q.id.endswith(f"-{val:02d}") or f"-{val:02d}" in q.id or f"_{val}" in q.id):
-                            to_unmark_ids.append(q.id)
-                for n in re.findall(r"\d+", adv_text):
-                    val = int(n)
-                    for q in ch_questions:
-                        if q.difficulty == DifficultyLevel.ADVANCED and (q.id.endswith(f"-{val:02d}") or f"-{val:02d}" in q.id or f"_{val}" in q.id):
-                            to_unmark_ids.append(q.id)
-
+                to_unmark_ids = _resolve_ids(batch_inputs)
                 if to_unmark_ids:
                     state_mgr.batch_unmark_wrong(to_unmark_ids)
                     st.success(f"✓ 成功移除 {len(to_unmark_ids)} 道题目！")
@@ -1221,26 +1219,29 @@ with tab_marker_hub:
     else:
         display_questions = ch_questions
 
-    # Question Cards List in Chapter (按 基础篇 -> 综合篇 -> 拓展篇 分组展示)
-    basic_qs = [q for q in display_questions if q.difficulty == DifficultyLevel.BASIC]
-    comp_qs = [q for q in display_questions if q.difficulty == DifficultyLevel.COMPREHENSIVE]
-    adv_qs = [q for q in display_questions if q.difficulty == DifficultyLevel.ADVANCED]
-
+    # Question Cards List in Chapter (按 篇 -> 题型 分组展示,题号取 ID 第4段=原书题型内序号)
     st.markdown(f"#### 📖 {target_ch} · 共 {len(ch_questions)} 题")
 
+    _SEC_ORDER = [(DifficultyLevel.BASIC, "🟢 基础篇"), (DifficultyLevel.COMPREHENSIVE, "🔵 综合篇"), (DifficultyLevel.ADVANCED, "🟣 拓展篇")]
+    _TYPE_ORDER = [(QuestionType.CHOICE, "选择题"), (QuestionType.FILL_BLANK, "填空题"), (QuestionType.SOLUTION, "解答题")]
+
+    def _seq_of(qid: str) -> int:
+        parts = qid.split("-")
+        return int(parts[3]) if len(parts) >= 4 and parts[3].isdigit() else 0
+
     sections_to_show = []
-    if basic_qs:
-        sections_to_show.append(("🟢 基础篇", basic_qs))
-    if comp_qs:
-        sections_to_show.append(("🔵 综合篇", comp_qs))
-    if adv_qs:
-        sections_to_show.append(("🟣 拓展篇", adv_qs))
+    for diff, sec_icon in _SEC_ORDER:
+        for qtype, type_label in _TYPE_ORDER:
+            grp = [q for q in display_questions if q.difficulty == diff and q.question_type == qtype]
+            if grp:
+                sections_to_show.append((f"{sec_icon} · {type_label}", grp))
 
     for sec_title, sec_q_list in sections_to_show:
         sec_wrong_n = sum(1 for q in sec_q_list if state_mgr.is_wrong_marked(q.id))
         st.markdown(f"##### {sec_title} · 共 {len(sec_q_list)} 题 · 已标错 {sec_wrong_n} 题")
 
-        for q_idx_in_sec, q in enumerate(sec_q_list, start=1):
+        for q in sec_q_list:
+            q_idx_in_sec = _seq_of(q.id)
             is_active = state_mgr.is_in_active_pool(q.id)
             is_temp_mastered = state_mgr.is_temporarily_mastered(q.id)
             w_cnt = state_mgr.get_wrong_count(q.id)
