@@ -358,6 +358,10 @@ class BankLoader:
             # 此时删光该字段的 $,退化为纯文本 —— 宁可不渲染,也不吞内容。
             stem = self._balance_dollars(stem)
             options = [self._balance_dollars(o) for o in options]
+            # 渲染防线:行内 $...$ 内含真实换行时 remark-math 配不上对,整段退化为纯文本
+            # (如多行矩阵)。数学模式里空白无意义、换行由 \\ 控制,故把行内公式内换行折成空格。
+            stem = self._collapse_inline_math_newlines(stem)
+            options = [self._collapse_inline_math_newlines(o) for o in options]
 
             sec_short = "基础" if "基础" in section else ("拓展" if "拓展" in section else "综合")
             sec_counters[sec_short] = sec_counters.get(sec_short, 0) + 1
@@ -386,6 +390,33 @@ class BankLoader:
         if text.replace("$$", "").count("$") % 2 != 0:
             return text.replace("$", "")
         return text
+
+    @staticmethod
+    def _collapse_inline_math_newlines(text: str) -> str:
+        """把行内 $...$ 公式内的真实换行折成空格。
+
+        Streamlit/remark-math 的行内公式不允许跨行,一旦 $...$ 内出现换行(如多行
+        矩阵),定界符配不上对,整段退化为纯文本。数学模式里空白无意义、换行由 \\
+        控制,故折成空格语义不变。$$...$$ 显示块能正常处理换行,原样保留。
+        """
+        if not text or "$" not in text:
+            return text
+        out: list[str] = []
+        i, n = 0, len(text)
+        while i < n:
+            if text[i] == "$":
+                if i + 1 < n and text[i + 1] == "$":  # 显示块 $$...$$,原样拷贝
+                    j = text.find("$$", i + 2)
+                    if j == -1:
+                        out.append(text[i:]); break
+                    out.append(text[i:j + 2]); i = j + 2; continue
+                j = text.find("$", i + 1)  # 行内 $...$
+                if j == -1:
+                    out.append(text[i:]); break
+                out.append("$" + text[i + 1:j].replace("\n", " ") + "$")
+                i = j + 1; continue
+            out.append(text[i]); i += 1
+        return "".join(out)
 
     @staticmethod
     def _extract_stem_and_options(raw_text: str) -> tuple[str, list[str], str, str]:
