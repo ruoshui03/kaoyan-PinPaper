@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>考研数学《880》智能拼好卷 & 错题标练系统</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Serif+SC:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX for Lightning-Fast Formula Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Marked.js for Markdown -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+  <div id="app" class="app-layout">
+    
+    <!-- Top Navigation Header -->
+    <header class="app-navbar">
+      <div class="nav-brand">
+        <div class="brand-icon">📐</div>
+        <div class="brand-text">
+          <h1 class="brand-title">880 智能拼好卷</h1>
+          <span class="brand-subtitle">考研数学 1121 题全考点知识图谱 · Clean-Room 架构</span>
+        </div>
+      </div>
+
+      <nav class="nav-tabs">
+        <button class="nav-tab active" data-view="assemble">
+          <span class="tab-icon">🎲</span> 智能拼好卷
+        </button>
+        <button class="nav-tab" data-view="marker">
+          <span class="tab-icon">🏷️</span> 880 逐题标错中枢
+        </button>
+        <button class="nav-tab" data-view="wrong-practice">
+          <span class="tab-icon">🎯</span> 仅在错题池中刷题
+        </button>
+        <button class="nav-tab" data-view="radar">
+          <span class="tab-icon">📊</span> 全科考点雷达
+        </button>
+      </nav>
+
+      <div class="nav-actions">
+        <select id="globalSubjectSelector" class="subject-select-pill">
+          <option value="数学一">📐 数学一 (23章·1121题)</option>
+          <option value="数学二">📐 数学二 (12章·929题)</option>
+          <option value="数学三">📐 数学三 (21章·1028题)</option>
+        </select>
+        <div class="wrong-badge-pill" id="globalWrongCounter">
+          <span class="dot"></span> 880 错题本: <strong id="headerWrongCount">0</strong> 题
+        </div>
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="切换深色/浅色主题">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Workspaces -->
+    <main class="workspace-container">
+      
+      <!-- ============================================================= -->
+      <!-- VIEW 1: 智能拼好卷大厅 -->
+      <!-- ============================================================= -->
+      <section id="view-assemble" class="view-panel active">
+        <div class="control-panel glass-panel">
+          <div class="panel-header">
+            <h2 class="panel-title">🎛️ 智能组卷控制台</h2>
+            <span class="badge-accent" id="currentSubjectBadge">当前科目: 数学一 (全量23章)</span>
+          </div>
+
+          <div class="control-grid">
+            <!-- Mode Selector Cards -->
+            <div class="control-group">
+              <label class="control-label">📋 选择拼卷模式</label>
+              <div class="mode-card-grid">
+                <div class="mode-card active" data-mode="10-6-6">
+                  <div class="mode-card-header">
+                    <span class="mode-icon">🎯</span>
+                    <strong>10-6-6 全真模考</strong>
+                  </div>
+                  <p class="mode-desc">10 选择 + 6 填空 + 6 解答 (标准 150 分考研结构)</p>
+                </div>
+                <div class="mode-card" data-mode="5-3-3">
+                  <div class="mode-card-header">
+                    <span class="mode-icon">⚡</span>
+                    <strong>5-3-3 速刷精测</strong>
+                  </div>
+                  <p class="mode-desc">5 选择 + 3 填空 + 3 解答 (60 分钟高频演练)</p>
+                </div>
+                <div class="mode-card" data-mode="3-bundle">
+                  <div class="mode-card-header">
+                    <span class="mode-icon">📦</span>
+                    <strong>3 卷全覆盖套餐</strong>
+                  </div>
+                  <p class="mode-desc">A/B/C 三套互补试卷，100% 覆盖全部 23 章节考点</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Difficulty Sliders & Tag Filter -->
+            <div class="control-group">
+              <label class="control-label">⚖️ 难度倾向 & 考点标签</label>
+              <div class="sub-controls">
+                <div class="slider-row">
+                  <span>基础题权重: <strong id="valBasic">1.0</strong></span>
+                  <input type="range" id="sliderBasic" min="0" max="2" step="0.1" value="1.0">
+                </div>
+                <div class="slider-row">
+                  <span>综合题权重: <strong id="valComp">1.2</strong></span>
+                  <input type="range" id="sliderComp" min="0" max="2" step="0.1" value="1.2">
+                </div>
+                <div class="slider-row">
+                  <span>拓展题权重: <strong id="valAdv">0.8</strong></span>
+                  <input type="range" id="sliderAdv" min="0" max="2" step="0.1" value="0.8">
+                </div>
+                <div class="select-row">
+                  <label for="tagSelect">专项聚焦：</label>
+                  <select id="tagSelect" class="app-select">
+                    <option value="全部">全部考点</option>
+                    <option value="经典套路">经典套路</option>
+                    <option value="高频真题变式">高频真题变式</option>
+                    <option value="易错概念">易错概念</option>
+                    <option value="计算量大">计算量大</option>
+                    <option value="压轴题型">压轴题型</option>
+                    <option value="综合性强">综合性强</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Generate Action Bar -->
+          <div class="action-footer">
+            <button id="btnGeneratePaper" class="btn btn-primary btn-large">
+              🚀 立即智能生成试卷
+            </button>
+            <button id="btnResetCycle" class="btn btn-secondary" title="重置本周期的章节覆盖轮次">
+              🔄 开启新一轮全覆盖
+            </button>
+          </div>
+        </div>
+
+        <!-- Generated Paper Container -->
+        <div id="paperOutputContainer" class="paper-output-container">
+          <!-- Bundle Switcher Tabs if 3-bundle -->
+          <div id="bundleSwitcher" class="bundle-switcher" style="display:none;"></div>
+
+          <!-- Paper Toolbar -->
+          <div class="paper-toolbar glass-panel">
+            <div class="paper-meta-info">
+              <h3 id="paperDisplayTitle" class="paper-title">考研数学《880》智能拼好卷</h3>
+              <span id="paperMetaBadges" class="paper-meta-sub">卷号: -- · 题量: --</span>
+            </div>
+            <div class="paper-tools-actions">
+              <button id="btnDownloadClean" class="btn btn-tool">📥 下载纯享版 (含手写留白)</button>
+              <button id="btnDownloadSolved" class="btn btn-tool">📑 下载详细解析版 (含避坑)</button>
+              <button id="btnArchiveLocal" class="btn btn-tool btn-accent">💾 归档至【试卷库】</button>
+              <label class="checkbox-label">
+                <input type="checkbox" id="cbToggleAllAnswers"> 展开全部解析
+              </label>
+            </div>
+          </div>
+
+          <!-- Questions Render Wall -->
+          <div id="paperQuestionsList" class="questions-wall"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 2: 880 逐题标错中枢 -->
+      <!-- ============================================================= -->
+      <section id="view-marker" class="view-panel">
+        <div class="marker-header glass-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">🏷️ 880 全书题库错题标录工作台</h2>
+              <p class="panel-desc">在书桌刷纸质《880》时，直接按章找到错题打标，秒级同步到您的专属错题库！</p>
+            </div>
+            <div class="quick-batch-box">
+              <span class="batch-title">⚡ 极速批量标错输入框：</span>
+              <div class="batch-input-row">
+                <input type="text" id="batchNumInput" placeholder="输入本章错题序号，如：1, 3, 5, 12" class="app-input">
+                <button id="btnBatchMark" class="btn btn-primary">➕ 批量标错</button>
+                <button id="btnBatchUnmark" class="btn btn-secondary">🧹 批量移除</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Toolbar -->
+          <div class="marker-filter-bar">
+            <div class="filter-item">
+              <label>选择 880 章节：</label>
+              <select id="markerChapterSelect" class="app-select"></select>
+            </div>
+            <div class="filter-item">
+              <label>难度分层：</label>
+              <select id="markerDiffSelect" class="app-select">
+                <option value="全部">全部难度</option>
+                <option value="基础">基础题</option>
+                <option value="综合">综合题</option>
+                <option value="拓展">拓展题</option>
+              </select>
+            </div>
+            <div class="filter-item">
+              <label>题型：</label>
+              <select id="markerTypeSelect" class="app-select">
+                <option value="全部">全部题型</option>
+                <option value="选择题">选择题</option>
+                <option value="填空题">填空题</option>
+                <option value="解答题">解答题</option>
+              </select>
+            </div>
+            <div class="filter-item">
+              <label>关键词搜索：</label>
+              <input type="text" id="markerSearchInput" placeholder="搜索考点/公式/题号..." class="app-input">
+            </div>
+          </div>
+        </div>
+
+        <!-- Questions Matrix in Chapter -->
+        <div id="markerQuestionsList" class="questions-wall"></div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 3: 仅在错题池中刷题 -->
+      <!-- ============================================================= -->
+      <section id="view-wrong-practice" class="view-panel">
+        <div class="wrong-practice-header glass-panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">🎯 仅在 880 错题池中刷题与重练</h2>
+              <p class="panel-desc">抽题候选池 100% 严格锁定为您在 880 中标记的错题，专攻盲区薄弱考点！</p>
+            </div>
+            <div class="wrong-stats-pills">
+              <div class="stat-pill"><span class="stat-num" id="wpTotalCount">0</span> 错题总数</div>
+              <div class="stat-pill"><span class="stat-num" id="wpChaptersCount">0</span> 涉及章节</div>
+            </div>
+          </div>
+
+          <div class="wrong-practice-actions">
+            <div class="wrong-mode-radios">
+              <label class="radio-label"><input type="radio" name="wrongPracticeMode" value="all" checked> ⚡ 全部错题打乱大乱斗</label>
+              <label class="radio-label"><input type="radio" name="wrongPracticeMode" value="10-6-6"> 🎯 错题 10-6-6 模考 (22题)</label>
+              <label class="radio-label"><input type="radio" name="wrongPracticeMode" value="5-3-3"> ⚡ 错题 5-3-3 速测 (11题)</label>
+            </div>
+            <div class="wrong-btn-row">
+              <button id="btnGenerateWrongPaper" class="btn btn-primary btn-large">🔥 立即生成【纯错题专项重练卷】</button>
+              <button id="btnExportWrongJson" class="btn btn-secondary">📥 导出错题本备份 (JSON)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wrong Paper Render Area -->
+        <div id="wrongPaperContainer" class="paper-output-container"></div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- VIEW 4: 全科考点覆盖雷达 -->
+      <!-- ============================================================= -->
+      <section id="view-radar" class="view-panel">
+        <div class="radar-dashboard glass-panel">
+          <div class="radar-top-card">
+            <div class="radar-title-group">
+              <h2 class="panel-title">📊 考研数学全科考点覆盖雷达看板</h2>
+              <p class="panel-desc">实时跟踪 23 个大纲章节在当前刷题周期的覆盖分布与错题高发区</p>
+            </div>
+            <div class="radar-score-badge">
+              <span class="score-num" id="radarCoveragePercent">0%</span>
+              <span class="score-label">全科章节覆盖率</span>
+            </div>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="progress-bar-wrap">
+            <div id="radarProgressBar" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+
+          <!-- 23 Chapters Matrix Wall -->
+          <h3 class="section-subhead">📚 23 章节全景覆盖徽章墙</h3>
+          <div id="radarChaptersMatrix" class="chapters-matrix-grid"></div>
+
+          <!-- Three Disciplines Breakdown -->
+          <div class="discipline-columns">
+            <div class="discipline-card glass-panel">
+              <h4 class="disc-title">📐 高等数学 (1~9章)</h4>
+              <div id="discAdvList" class="disc-chapter-list"></div>
+            </div>
+            <div class="discipline-card glass-panel">
+              <h4 class="disc-title">🔢 线性代数 (10~15章)</h4>
+              <div id="discLinList" class="disc-chapter-list"></div>
+            </div>
+            <div class="discipline-card glass-panel">
+              <h4 class="disc-title">🎲 概率论与数理统计 (16~23章)</h4>
+              <div id="discProbList" class="disc-chapter-list"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- AI Tutor Interactive Modal -->
+    <div id="aiModal" class="modal-backdrop" style="display:none;">
+      <div class="modal-card glass-panel">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <span class="modal-icon">🤖</span>
+            <h3>DeepSeek AI 导师 · 考研数学严谨推导</h3>
+          </div>
+          <button id="btnCloseAiModal" class="btn-close-modal">✕</button>
+        </div>
+        <div class="modal-body">
+          <div id="aiQuestionStem" class="ai-stem-box"></div>
+          <div id="aiSolutionContent" class="ai-solution-box">
+            <div class="ai-loading-pulse">AI 导师正在推导演算中...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+  </div>
+
+  <!-- Main Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>

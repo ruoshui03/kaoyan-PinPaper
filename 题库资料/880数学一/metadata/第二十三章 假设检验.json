@@ -1,0 +1,76 @@
+[
+  {
+    "id": "23-基础-01",
+    "chapter": "第二十三章 假设检验",
+    "section": "基础题",
+    "question_type": "选择题",
+    "dimension": "概念辨析",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 2
+  },
+  {
+    "id": "23-基础-02",
+    "chapter": "第二十三章 假设检验",
+    "section": "基础题",
+    "question_type": "选择题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "recommend_weight": 4
+  },
+  {
+    "id": "23-基础-03",
+    "chapter": "第二十三章 假设检验",
+    "section": "基础题",
+    "question_type": "填空题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典"
+    ],
+    "recommend_weight": 4
+  },
+  {
+    "id": "23-基础-04",
+    "chapter": "第二十三章 假设检验",
+    "section": "基础题",
+    "question_type": "填空题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "recommend_weight": 4
+  },
+  {
+    "id": "23-基础-05",
+    "chapter": "第二十三章 假设检验",
+    "section": "基础题",
+    "question_type": "解答题",
+    "dimension": "综合建模",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "recommend_weight": 4
+  },
+  {
+    "id": "23-基础-06",
+    "chapter": "第二十三章 假设检验",
+    "section": "基础题",
+    "question_type": "解答题",
+    "dimension": "综合建模",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "recommend_weight": 4
+  }
+]

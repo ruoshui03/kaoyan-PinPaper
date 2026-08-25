@@ -1,0 +1,106 @@
+[
+  {
+    "id": "19-基础-01",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "选择题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-02",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "选择题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-03",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "选择题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-04",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "填空题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-05",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "填空题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-06",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "填空题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-07",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "填空题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-08",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "解答题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "19-基础-09",
+    "chapter": "第十九章 大数定律与中心极限定理",
+    "section": "基础题",
+    "question_type": "解答题",
+    "dimension": "技巧计算",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  }
+]

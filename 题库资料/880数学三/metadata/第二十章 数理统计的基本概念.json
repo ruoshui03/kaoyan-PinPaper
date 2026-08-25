@@ -1,0 +1,267 @@
+[
+  {
+    "id": "20-基础-01",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-02",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-03",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-04",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-05",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-06",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-07",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-08",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-基础-09",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "基础题",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-01",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-02",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-03",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-04",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-05",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-06",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-07",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-08",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-09",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-10",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-11",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-12",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-13",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-14",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "recommend_weight": 3
+  },
+  {
+    "id": "20-综合-15",
+    "chapter": "第二十章 数理统计的基本概念",
+    "section": "综合题",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "recommend_weight": 3
+  }
+]

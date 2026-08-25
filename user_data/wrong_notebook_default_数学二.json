@@ -1,0 +1,2790 @@
+{
+  "username": "default",
+  "subject": "数学二",
+  "updated_at": "2026-08-24 17:30:00",
+  "seen_question_ids": [],
+  "covered_chapters": [],
+  "wrong_questions": {
+    "01-基础-13": {
+      "question_id": "01-基础-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-基础-24": {
+      "question_id": "01-基础-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-18": {
+      "question_id": "01-综合-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-19": {
+      "question_id": "01-综合-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-20": {
+      "question_id": "01-综合-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-28": {
+      "question_id": "01-综合-28",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-29": {
+      "question_id": "01-综合-29",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-30": {
+      "question_id": "01-综合-30",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-31": {
+      "question_id": "01-综合-31",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-32": {
+      "question_id": "01-综合-32",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-33": {
+      "question_id": "01-综合-33",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-综合-49": {
+      "question_id": "01-综合-49",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-拓展-01": {
+      "question_id": "01-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-拓展-02": {
+      "question_id": "01-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-拓展-03": {
+      "question_id": "01-拓展-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "01-拓展-04": {
+      "question_id": "01-拓展-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第一章 函数、极限、连续 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-18": {
+      "question_id": "02-基础-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-23": {
+      "question_id": "02-基础-23",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-24": {
+      "question_id": "02-基础-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-42": {
+      "question_id": "02-基础-42",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-45": {
+      "question_id": "02-基础-45",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-47": {
+      "question_id": "02-基础-47",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-48": {
+      "question_id": "02-基础-48",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-49": {
+      "question_id": "02-基础-49",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-50": {
+      "question_id": "02-基础-50",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-51": {
+      "question_id": "02-基础-51",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-71": {
+      "question_id": "02-基础-71",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-72": {
+      "question_id": "02-基础-72",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-74": {
+      "question_id": "02-基础-74",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-75": {
+      "question_id": "02-基础-75",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-76": {
+      "question_id": "02-基础-76",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-77": {
+      "question_id": "02-基础-77",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-基础-78": {
+      "question_id": "02-基础-78",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-01": {
+      "question_id": "02-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-29": {
+      "question_id": "02-综合-29",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-30": {
+      "question_id": "02-综合-30",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-31": {
+      "question_id": "02-综合-31",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-40": {
+      "question_id": "02-综合-40",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-41": {
+      "question_id": "02-综合-41",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-42": {
+      "question_id": "02-综合-42",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-43": {
+      "question_id": "02-综合-43",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-60": {
+      "question_id": "02-综合-60",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-62": {
+      "question_id": "02-综合-62",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-综合-64": {
+      "question_id": "02-综合-64",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-拓展-01": {
+      "question_id": "02-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-拓展-02": {
+      "question_id": "02-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "02-拓展-03": {
+      "question_id": "02-拓展-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第二章 一元函数微分学及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-17": {
+      "question_id": "03-基础-17",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-18": {
+      "question_id": "03-基础-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-35": {
+      "question_id": "03-基础-35",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-36": {
+      "question_id": "03-基础-36",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-38": {
+      "question_id": "03-基础-38",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-39": {
+      "question_id": "03-基础-39",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-40": {
+      "question_id": "03-基础-40",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-41": {
+      "question_id": "03-基础-41",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-59": {
+      "question_id": "03-基础-59",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-60": {
+      "question_id": "03-基础-60",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-基础-62": {
+      "question_id": "03-基础-62",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-01": {
+      "question_id": "03-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-18": {
+      "question_id": "03-综合-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-19": {
+      "question_id": "03-综合-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-20": {
+      "question_id": "03-综合-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-21": {
+      "question_id": "03-综合-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-22": {
+      "question_id": "03-综合-22",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-23": {
+      "question_id": "03-综合-23",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-41": {
+      "question_id": "03-综合-41",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-42": {
+      "question_id": "03-综合-42",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-43": {
+      "question_id": "03-综合-43",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-44": {
+      "question_id": "03-综合-44",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-45": {
+      "question_id": "03-综合-45",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-88": {
+      "question_id": "03-综合-88",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-92": {
+      "question_id": "03-综合-92",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-94": {
+      "question_id": "03-综合-94",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-95": {
+      "question_id": "03-综合-95",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-96": {
+      "question_id": "03-综合-96",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-97": {
+      "question_id": "03-综合-97",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-98": {
+      "question_id": "03-综合-98",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-综合-99": {
+      "question_id": "03-综合-99",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-拓展-01": {
+      "question_id": "03-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-拓展-02": {
+      "question_id": "03-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "03-拓展-06": {
+      "question_id": "03-拓展-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第三章 一元函数积分学及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-基础-25": {
+      "question_id": "04-基础-25",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-基础-36": {
+      "question_id": "04-基础-36",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-基础-37": {
+      "question_id": "04-基础-37",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-基础-38": {
+      "question_id": "04-基础-38",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-01": {
+      "question_id": "04-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-30": {
+      "question_id": "04-综合-30",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-31": {
+      "question_id": "04-综合-31",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-32": {
+      "question_id": "04-综合-32",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-33": {
+      "question_id": "04-综合-33",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-34": {
+      "question_id": "04-综合-34",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-35": {
+      "question_id": "04-综合-35",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "04-综合-36": {
+      "question_id": "04-综合-36",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第四章 多元函数微分学及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "05-基础-35": {
+      "question_id": "05-基础-35",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第五章 二重积分 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "05-综合-08": {
+      "question_id": "05-综合-08",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第五章 二重积分 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "05-拓展-02": {
+      "question_id": "05-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第五章 二重积分 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "05-拓展-03": {
+      "question_id": "05-拓展-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第五章 二重积分 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "05-拓展-04": {
+      "question_id": "05-拓展-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第五章 二重积分 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-基础-27": {
+      "question_id": "06-基础-27",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-综合-36": {
+      "question_id": "06-综合-36",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-综合-39": {
+      "question_id": "06-综合-39",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-综合-40": {
+      "question_id": "06-综合-40",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-综合-41": {
+      "question_id": "06-综合-41",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-综合-42": {
+      "question_id": "06-综合-42",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-综合-43": {
+      "question_id": "06-综合-43",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-综合-46": {
+      "question_id": "06-综合-46",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-拓展-01": {
+      "question_id": "06-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "06-拓展-03": {
+      "question_id": "06-拓展-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第六章 微分方程及其应用 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-基础-04": {
+      "question_id": "07-基础-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-基础-16": {
+      "question_id": "07-基础-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-基础-20": {
+      "question_id": "07-基础-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-综合-01": {
+      "question_id": "07-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-综合-05": {
+      "question_id": "07-综合-05",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-综合-12": {
+      "question_id": "07-综合-12",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-拓展-03": {
+      "question_id": "07-拓展-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "07-拓展-04": {
+      "question_id": "07-拓展-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第七章 行列式 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-01": {
+      "question_id": "08-基础-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-02": {
+      "question_id": "08-基础-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-03": {
+      "question_id": "08-基础-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-04": {
+      "question_id": "08-基础-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-05": {
+      "question_id": "08-基础-05",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-06": {
+      "question_id": "08-基础-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-07": {
+      "question_id": "08-基础-07",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-08": {
+      "question_id": "08-基础-08",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-09": {
+      "question_id": "08-基础-09",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-10": {
+      "question_id": "08-基础-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-11": {
+      "question_id": "08-基础-11",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-12": {
+      "question_id": "08-基础-12",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-13": {
+      "question_id": "08-基础-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-14": {
+      "question_id": "08-基础-14",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-18": {
+      "question_id": "08-基础-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-19": {
+      "question_id": "08-基础-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-20": {
+      "question_id": "08-基础-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-21": {
+      "question_id": "08-基础-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-22": {
+      "question_id": "08-基础-22",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-24": {
+      "question_id": "08-基础-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-25": {
+      "question_id": "08-基础-25",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-26": {
+      "question_id": "08-基础-26",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-27": {
+      "question_id": "08-基础-27",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-31": {
+      "question_id": "08-基础-31",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-32": {
+      "question_id": "08-基础-32",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-33": {
+      "question_id": "08-基础-33",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-34": {
+      "question_id": "08-基础-34",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-基础-35": {
+      "question_id": "08-基础-35",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-01": {
+      "question_id": "08-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-02": {
+      "question_id": "08-综合-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-03": {
+      "question_id": "08-综合-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-04": {
+      "question_id": "08-综合-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-05": {
+      "question_id": "08-综合-05",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-11": {
+      "question_id": "08-综合-11",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-12": {
+      "question_id": "08-综合-12",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-14": {
+      "question_id": "08-综合-14",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-15": {
+      "question_id": "08-综合-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-16": {
+      "question_id": "08-综合-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-17": {
+      "question_id": "08-综合-17",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-18": {
+      "question_id": "08-综合-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-综合-19": {
+      "question_id": "08-综合-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-拓展-01": {
+      "question_id": "08-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "08-拓展-02": {
+      "question_id": "08-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第八章 矩阵 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-01": {
+      "question_id": "09-基础-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-04": {
+      "question_id": "09-基础-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-06": {
+      "question_id": "09-基础-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-07": {
+      "question_id": "09-基础-07",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-08": {
+      "question_id": "09-基础-08",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-10": {
+      "question_id": "09-基础-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-11": {
+      "question_id": "09-基础-11",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-12": {
+      "question_id": "09-基础-12",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-13": {
+      "question_id": "09-基础-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-14": {
+      "question_id": "09-基础-14",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-15": {
+      "question_id": "09-基础-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-基础-17": {
+      "question_id": "09-基础-17",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-01": {
+      "question_id": "09-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-02": {
+      "question_id": "09-综合-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-03": {
+      "question_id": "09-综合-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-04": {
+      "question_id": "09-综合-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-05": {
+      "question_id": "09-综合-05",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-06": {
+      "question_id": "09-综合-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-09": {
+      "question_id": "09-综合-09",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-10": {
+      "question_id": "09-综合-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-12": {
+      "question_id": "09-综合-12",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-13": {
+      "question_id": "09-综合-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-14": {
+      "question_id": "09-综合-14",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-15": {
+      "question_id": "09-综合-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-16": {
+      "question_id": "09-综合-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "09-综合-18": {
+      "question_id": "09-综合-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第九章 向量 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-02": {
+      "question_id": "10-基础-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-05": {
+      "question_id": "10-基础-05",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-06": {
+      "question_id": "10-基础-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-07": {
+      "question_id": "10-基础-07",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-09": {
+      "question_id": "10-基础-09",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-10": {
+      "question_id": "10-基础-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-12": {
+      "question_id": "10-基础-12",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-13": {
+      "question_id": "10-基础-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-15": {
+      "question_id": "10-基础-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-16": {
+      "question_id": "10-基础-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-18": {
+      "question_id": "10-基础-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-19": {
+      "question_id": "10-基础-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-20": {
+      "question_id": "10-基础-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-21": {
+      "question_id": "10-基础-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-23": {
+      "question_id": "10-基础-23",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-24": {
+      "question_id": "10-基础-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-基础-25": {
+      "question_id": "10-基础-25",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-01": {
+      "question_id": "10-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-02": {
+      "question_id": "10-综合-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-04": {
+      "question_id": "10-综合-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-05": {
+      "question_id": "10-综合-05",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-07": {
+      "question_id": "10-综合-07",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-08": {
+      "question_id": "10-综合-08",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-10": {
+      "question_id": "10-综合-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-11": {
+      "question_id": "10-综合-11",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-13": {
+      "question_id": "10-综合-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-15": {
+      "question_id": "10-综合-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-16": {
+      "question_id": "10-综合-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-18": {
+      "question_id": "10-综合-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-19": {
+      "question_id": "10-综合-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-21": {
+      "question_id": "10-综合-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-22": {
+      "question_id": "10-综合-22",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-23": {
+      "question_id": "10-综合-23",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-24": {
+      "question_id": "10-综合-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-25": {
+      "question_id": "10-综合-25",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-综合-26": {
+      "question_id": "10-综合-26",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-拓展-01": {
+      "question_id": "10-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "10-拓展-02": {
+      "question_id": "10-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十章 线性方程组 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-01": {
+      "question_id": "11-基础-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-02": {
+      "question_id": "11-基础-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-03": {
+      "question_id": "11-基础-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-06": {
+      "question_id": "11-基础-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-07": {
+      "question_id": "11-基础-07",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-09": {
+      "question_id": "11-基础-09",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-10": {
+      "question_id": "11-基础-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-12": {
+      "question_id": "11-基础-12",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-13": {
+      "question_id": "11-基础-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-15": {
+      "question_id": "11-基础-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-16": {
+      "question_id": "11-基础-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-18": {
+      "question_id": "11-基础-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-19": {
+      "question_id": "11-基础-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-20": {
+      "question_id": "11-基础-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-21": {
+      "question_id": "11-基础-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-22": {
+      "question_id": "11-基础-22",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-24": {
+      "question_id": "11-基础-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-25": {
+      "question_id": "11-基础-25",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-26": {
+      "question_id": "11-基础-26",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-基础-27": {
+      "question_id": "11-基础-27",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-01": {
+      "question_id": "11-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-03": {
+      "question_id": "11-综合-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-04": {
+      "question_id": "11-综合-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-05": {
+      "question_id": "11-综合-05",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-06": {
+      "question_id": "11-综合-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-08": {
+      "question_id": "11-综合-08",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-14": {
+      "question_id": "11-综合-14",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-15": {
+      "question_id": "11-综合-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-16": {
+      "question_id": "11-综合-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-17": {
+      "question_id": "11-综合-17",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-18": {
+      "question_id": "11-综合-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-19": {
+      "question_id": "11-综合-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-20": {
+      "question_id": "11-综合-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-21": {
+      "question_id": "11-综合-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-22": {
+      "question_id": "11-综合-22",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-23": {
+      "question_id": "11-综合-23",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-24": {
+      "question_id": "11-综合-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-25": {
+      "question_id": "11-综合-25",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-26": {
+      "question_id": "11-综合-26",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-27": {
+      "question_id": "11-综合-27",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-29": {
+      "question_id": "11-综合-29",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-30": {
+      "question_id": "11-综合-30",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-31": {
+      "question_id": "11-综合-31",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-32": {
+      "question_id": "11-综合-32",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-综合-33": {
+      "question_id": "11-综合-33",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-拓展-01": {
+      "question_id": "11-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "11-拓展-02": {
+      "question_id": "11-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十一章 相似矩阵 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-01": {
+      "question_id": "12-基础-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-03": {
+      "question_id": "12-基础-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-06": {
+      "question_id": "12-基础-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-08": {
+      "question_id": "12-基础-08",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-09": {
+      "question_id": "12-基础-09",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-10": {
+      "question_id": "12-基础-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-15": {
+      "question_id": "12-基础-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-16": {
+      "question_id": "12-基础-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-18": {
+      "question_id": "12-基础-18",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-19": {
+      "question_id": "12-基础-19",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-20": {
+      "question_id": "12-基础-20",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-21": {
+      "question_id": "12-基础-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-基础-22": {
+      "question_id": "12-基础-22",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (基础题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-01": {
+      "question_id": "12-综合-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-03": {
+      "question_id": "12-综合-03",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-04": {
+      "question_id": "12-综合-04",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-06": {
+      "question_id": "12-综合-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-07": {
+      "question_id": "12-综合-07",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-08": {
+      "question_id": "12-综合-08",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-10": {
+      "question_id": "12-综合-10",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-13": {
+      "question_id": "12-综合-13",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-14": {
+      "question_id": "12-综合-14",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-15": {
+      "question_id": "12-综合-15",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-16": {
+      "question_id": "12-综合-16",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-21": {
+      "question_id": "12-综合-21",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-22": {
+      "question_id": "12-综合-22",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-23": {
+      "question_id": "12-综合-23",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-24": {
+      "question_id": "12-综合-24",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-26": {
+      "question_id": "12-综合-26",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-31": {
+      "question_id": "12-综合-31",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-32": {
+      "question_id": "12-综合-32",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-34": {
+      "question_id": "12-综合-34",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-35": {
+      "question_id": "12-综合-35",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-36": {
+      "question_id": "12-综合-36",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-综合-37": {
+      "question_id": "12-综合-37",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (综合题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-拓展-01": {
+      "question_id": "12-拓展-01",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-拓展-02": {
+      "question_id": "12-拓展-02",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-拓展-06": {
+      "question_id": "12-拓展-06",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    },
+    "12-拓展-07": {
+      "question_id": "12-拓展-07",
+      "added_at": "2026-08-24 17:30:00",
+      "user_note": "【数二专有题】第十二章 二次型 (拓展题)",
+      "error_tag": "数二特有",
+      "wrong_count": 1,
+      "is_active_in_pool": true,
+      "subject": "数学二"
+    }
+  }
+}

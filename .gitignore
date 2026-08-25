@@ -1,0 +1,56 @@
+# Environments & Virtual Envs
+.venv/
+.venv*/
+venv/
+env/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# IDE & OS
+.DS_Store
+.idea/
+.vscode/
+
+# Testing & Coverage
+.coverage
+htmlcov/
+
+# Logs
+*.log
+streamlit.stdout.log
+streamlit.stderr.log
+
+# Large binary files & PDFs (>100MB exceeds GitHub limits)
+*.pdf
+scratch/
+ocr_cache/
+
+# AI agent 本地配置与规则 (local agent config & rules — not needed at runtime)
+.agents/
+AGENTS.md
+GEMINI.md
+core/build_math2_math3_data.py
+.agy-staff/
+.playwright-mcp/
+
+# 调试与预览截图 (debug / preview screenshots)
+*.png
+!assets/*.png
+!web/**/*.png
+
+# 生成产物 (generated artifacts)
+试卷库/
+
+# User ephemeral session data (keep default template seeds only)
+user_data/wrong_notebook_*.json
+!user_data/wrong_notebook_default*.json
+user_wrong_notebook.json
+
+# Secrets & Local Configs
+.streamlit/secrets.toml
+# 仅忽略根目录 config.toml；.streamlit/config.toml(主题)需随仓库部署
+/config.toml
+
+# 旧历史本地备份(勿提交,验证新仓库后可删)
+.git_old/

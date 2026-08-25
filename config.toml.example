@@ -1,0 +1,4 @@
+[data]
+# 默认值已经是以下仓库相对路径；只有自定义数据位置时才需要复制本文件为 config.toml。
+directory = "data/metadata"
+content_directory = "data/problems"
