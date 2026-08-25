@@ -868,8 +868,9 @@ with tab_paper_hub:
                         with c_h2:
                             st.button("○ 标为错题", key=f"p1_mark_{q.id}_{q_idx}_{current_subject.value}", use_container_width=True, help="做错了？点击放入待练错题池", on_click=cb_toggle_wrong, args=(q.id,))
 
-                    # Question Stem
-                    st.markdown(q.stem)
+                    # Question Stem（unsafe_allow_html:题干可能含内联图片 <img> 与 <table>,
+                    # 数据来自本地可信题库,无外部输入)
+                    st.markdown(q.stem, unsafe_allow_html=True)
 
                     # Options
                     if q.options:
@@ -1256,7 +1257,8 @@ with tab_marker_hub:
                     with th2:
                         st.button("○ 标为错题", key=f"p2_toggle_{q.id}_{current_subject.value}", use_container_width=True, help="做错了？点击放入待练错题池", on_click=cb_toggle_wrong, args=(q.id,))
 
-                st.markdown(q.stem)
+                # unsafe_allow_html:题干可能含内联图片 <img> 与 <table>,数据来自本地可信题库
+                st.markdown(q.stem, unsafe_allow_html=True)
                 if q.options:
                     mc1, mc2 = st.columns(2)
                     for oi, opt in enumerate(q.options):

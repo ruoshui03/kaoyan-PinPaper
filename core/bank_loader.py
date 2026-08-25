@@ -4,8 +4,10 @@
 """
 from __future__ import annotations
 
+import base64
 import json
 import logging
+import mimetypes
 import re
 from pathlib import Path
 from typing import Any
@@ -362,6 +364,12 @@ class BankLoader:
             # (如多行矩阵)。数学模式里空白无意义、换行由 \\ 控制,故把行内公式内换行折成空格。
             stem = self._collapse_inline_math_newlines(stem)
             options = [self._collapse_inline_math_newlines(o) for o in options]
+            # 把 ![](相对路径) 图片内联成 base64 data URI(网页与 PDF 都能显示,
+            # 不依赖运行目录);源文件缺失时退化为占位文字,避免裂图。
+            stem = self._embed_images(stem)
+            # HTML <table> 转 Markdown 管道表格:raw HTML 表格内的 $...$ 不会被
+            # KaTeX 渲染(显示成源码),而管道表格单元格是 markdown 文本,公式正常渲染。
+            stem = self._html_table_to_markdown(stem)
 
             sec_short = "基础" if "基础" in section else ("拓展" if "拓展" in section else "综合")
             sec_counters[sec_short] = sec_counters.get(sec_short, 0) + 1
@@ -390,6 +398,68 @@ class BankLoader:
         if text.replace("$$", "").count("$") % 2 != 0:
             return text.replace("$", "")
         return text
+
+    @staticmethod
+    def _html_table_to_markdown(text: str) -> str:
+        """把内联 <table>...</table> 转成 Markdown 管道表格。
+
+        Streamlit/remark-math 与 Python-Markdown 都不会渲染 raw HTML 单元格里的
+        $...$ 公式(显示成源码);管道表格的单元格是 markdown 文本,公式正常渲染。
+        管道表格要求首尾有空行、每行独占一行。
+        """
+        if not text or "<table" not in text.lower():
+            return text
+
+        def cells(row_html: str) -> list[str]:
+            parts = re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", row_html, flags=re.S | re.I)
+            # 单元格内可能自带首尾空格,去掉;管道符转义避免破坏表格
+            return [c.strip().replace("|", r"\|") or " " for c in parts]
+
+        def conv(m: re.Match) -> str:
+            rows_html = re.findall(r"<tr[^>]*>(.*?)</tr>", m.group(1), flags=re.S | re.I)
+            rows = [cells(r) for r in rows_html]
+            rows = [r for r in rows if r]
+            if not rows:
+                return ""
+            ncol = max(len(r) for r in rows)
+            rows = [r + [" "] * (ncol - len(r)) for r in rows]
+            # 首行作表头,其后插入分隔行
+            head = "| " + " | ".join(rows[0]) + " |"
+            sep = "| " + " | ".join(["---"] * ncol) + " |"
+            body = ["| " + " | ".join(r) + " |" for r in rows[1:]]
+            return "\n\n" + "\n".join([head, sep, *body]) + "\n\n"
+
+        return re.sub(r"<table[^>]*>(.*?)</table>", conv, text, flags=re.S | re.I)
+
+    def _embed_images(self, text: str) -> str:
+        """把题干里的 ![alt](path) 图片引用内联成 base64 <img> 标签。
+
+        path 相对 problems 目录解析。文件存在 → data URI 内联(网页 st.markdown
+        与 PDF 无头浏览器都能显示,不受运行目录影响);文件缺失 → 退化为占位文字,
+        不再显示裂图。
+        """
+        if not text or "![" not in text:
+            return text
+
+        def repl(m: re.Match) -> str:
+            alt = m.group(1)
+            ref = m.group(2).strip()
+            # 只处理本地相对路径,http(s)/已是 data URI 的原样保留
+            if ref.startswith(("http://", "https://", "data:")):
+                return m.group(0)
+            img_path = (self.problems_dir / ref.lstrip("./")).resolve()
+            if not img_path.exists():
+                label = alt.strip() or "图"
+                return f"*({label}见原书)*"
+            mime = mimetypes.guess_type(str(img_path))[0] or "image/jpeg"
+            try:
+                b64 = base64.b64encode(img_path.read_bytes()).decode("ascii")
+            except OSError:
+                return f"*({alt.strip() or '图'}见原书)*"
+            return (f'<img src="data:{mime};base64,{b64}" alt="{alt}" '
+                    f'style="max-width:100%;height:auto;display:block;margin:8px auto;" />')
+
+        return re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", repl, text)
 
     @staticmethod
     def _collapse_inline_math_newlines(text: str) -> str:
