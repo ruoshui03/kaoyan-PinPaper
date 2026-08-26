@@ -358,18 +358,12 @@ class StateManager:
     # 串首带题库签名 sig，题库结构变化时签名不匹配即拒绝恢复，避免错位。
     # 注意：精确做错次数只保留"1 / ≥2"两档；自由备注/时间戳不进 URL。
     # =====================================================================
-    # w2:签名依据从"题号字符串"改为"题干指纹"(见 app 传入的 sig_basis),
-    # 使签名只认题目内容与顺序,题号改写/补答案解析图都不失效。旧 w1 链接自然判 stale。
-    URL_CODE_PREFIX = "w2"
+    URL_CODE_PREFIX = "w1"
 
     @staticmethod
-    def bank_signature(basis: list[str]) -> str:
-        """题库签名:哈希 canonical 顺序下的依据列表(题干指纹优先,回退题号)。
-
-        校验 URL 位图/试卷码与当前题库是否匹配。basis 传题干指纹时,签名不随题号
-        写法变化,只随题目内容与顺序变化(见 BankLoader.canonical_fingerprints)。
-        """
-        joined = "\n".join(basis)
+    def bank_signature(ordered_ids: list[str]) -> str:
+        """题库 canonical ID 列表的短签名，用于校验 URL 位图与当前题库是否匹配"""
+        joined = "\n".join(ordered_ids)
         return hashlib.sha1(joined.encode("utf-8")).hexdigest()[:8]
 
     def _state_code_for(self, qid: str) -> int:
@@ -380,12 +374,8 @@ class StateManager:
             return 2 if rec.wrong_count >= 2 else 1
         return 3  # 已归档历史错题
 
-    def to_url_code(self, ordered_ids: list[str], sig_basis: list[str] | None = None) -> str:
-        """将当前科目错题状态编码为可放进 URL 的紧凑串。
-
-        ordered_ids: 位图按此顺序逐题存 2 bit。
-        sig_basis:   签名依据(题干指纹),不传则回退 ordered_ids(旧行为)。
-        """
+    def to_url_code(self, ordered_ids: list[str]) -> str:
+        """将当前科目错题状态编码为可放进 URL 的紧凑串"""
         n = len(ordered_ids)
         packed = bytearray((n + 3) // 4)
         for i, qid in enumerate(ordered_ids):
@@ -394,9 +384,9 @@ class StateManager:
                 packed[i >> 2] |= code << ((i & 3) * 2)
         compressed = zlib.compress(bytes(packed), 9)
         b64 = base64.urlsafe_b64encode(compressed).decode("ascii").rstrip("=")
-        return f"{self.URL_CODE_PREFIX}~{self.bank_signature(sig_basis or ordered_ids)}~{b64}"
+        return f"{self.URL_CODE_PREFIX}~{self.bank_signature(ordered_ids)}~{b64}"
 
-    def apply_url_code(self, code: str, ordered_ids: list[str], sig_basis: list[str] | None = None) -> tuple[int, str]:
+    def apply_url_code(self, code: str, ordered_ids: list[str]) -> tuple[int, str]:
         """从 URL 串恢复错题状态。返回 (恢复的错题数, 状态说明)。
 
         - 前缀或格式不符 -> (0, 'invalid')
@@ -409,7 +399,7 @@ class StateManager:
             if len(parts) != 3 or parts[0] != self.URL_CODE_PREFIX:
                 return (0, "invalid")
             _, sig, b64 = parts
-            if sig != self.bank_signature(sig_basis or ordered_ids):
+            if sig != self.bank_signature(ordered_ids):
                 return (0, "stale")
             pad = "=" * (-len(b64) % 4)
             packed = zlib.decompress(base64.urlsafe_b64decode(b64 + pad))
@@ -445,15 +435,14 @@ class StateManager:
     #   [卷数] 然后每份卷 [题数][idx*题数]，idx 用 2 字节小端（题库 <65536 题足够）。
     # sig 与位图共用 bank_signature，题库变化即判 stale，拒绝错位恢复。
     # =====================================================================
-    PAPER_CODE_PREFIX = "p2"  # 与 w2 同步:签名依据改为题干指纹
+    PAPER_CODE_PREFIX = "p1"
 
     @staticmethod
-    def encode_papers_code(papers_qids: list[list[str]], ordered_ids: list[str], sig_basis: list[str] | None = None) -> str:
+    def encode_papers_code(papers_qids: list[list[str]], ordered_ids: list[str]) -> str:
         """把若干份试卷的题号列表编码为可放进 URL 的紧凑串。
 
         papers_qids: 每份卷一个题号列表（保持卷内原始顺序）。
         题号不在 canonical 列表中的会被跳过。
-        sig_basis:   签名依据(题干指纹),不传则回退 ordered_ids。
         """
         index_of = {qid: i for i, qid in enumerate(ordered_ids)}
         out = bytearray()
@@ -465,11 +454,11 @@ class StateManager:
                 out += int(idx).to_bytes(2, "little")
         compressed = zlib.compress(bytes(out), 9)
         b64 = base64.urlsafe_b64encode(compressed).decode("ascii").rstrip("=")
-        sig = StateManager.bank_signature(sig_basis or ordered_ids)
+        sig = StateManager.bank_signature(ordered_ids)
         return f"{StateManager.PAPER_CODE_PREFIX}~{sig}~{b64}"
 
     @staticmethod
-    def decode_papers_code(code: str, ordered_ids: list[str], sig_basis: list[str] | None = None) -> tuple[list[list[str]], str]:
+    def decode_papers_code(code: str, ordered_ids: list[str]) -> tuple[list[list[str]], str]:
         """从 URL 串还原试卷题号列表。返回 (每份卷的题号列表, 状态说明)。
 
         - 前缀/格式不符 -> ([], 'invalid')
@@ -481,7 +470,7 @@ class StateManager:
             if len(parts) != 3 or parts[0] != StateManager.PAPER_CODE_PREFIX:
                 return ([], "invalid")
             _, sig, b64 = parts
-            if sig != StateManager.bank_signature(sig_basis or ordered_ids):
+            if sig != StateManager.bank_signature(ordered_ids):
                 return ([], "stale")
             pad = "=" * (-len(b64) % 4)
             data = zlib.decompress(base64.urlsafe_b64decode(b64 + pad))

@@ -425,8 +425,6 @@ with st.sidebar:
     #   并配合错题本 book::id 复合键防撞号；届时按其真实题号规则一次设计。
     URL_BITMAP_BOOK = "880"
     canonical_ids = loader.canonical_ids(book=URL_BITMAP_BOOK)
-    # 签名依据用题干指纹(而非题号字符串):题号改写/补答案解析图都不失效,只认题目内容与顺序
-    canonical_fp = loader.canonical_fingerprints(book=URL_BITMAP_BOOK)
 
     # 首次进入本科目且网址带错题码时，从 URL 恢复（无后端跨设备恢复）
     if url_data_key and current_subject != SubjectType.CUSTOM:
@@ -435,7 +433,7 @@ with st.sidebar:
             st.session_state[restore_flag] = True
             incoming_code = st.query_params.get(url_data_key)
             if incoming_code:
-                n_restored, restore_status = state_mgr.apply_url_code(incoming_code, canonical_ids, sig_basis=canonical_fp)
+                n_restored, restore_status = state_mgr.apply_url_code(incoming_code, canonical_ids)
                 if restore_status == "stale":
                     st.session_state["_url_restore_stale"] = active_sub.value
 
@@ -448,7 +446,7 @@ with st.sidebar:
         papers_qids: list[list[str]] = []
         pcode = st.query_params.get(paper_url_key)
         if pcode:
-            decoded, pstatus = StateManager.decode_papers_code(pcode, canonical_ids, sig_basis=canonical_fp)
+            decoded, pstatus = StateManager.decode_papers_code(pcode, canonical_ids)
             if pstatus == "ok" and decoded:
                 papers_qids = decoded
         if not papers_qids and state_mgr.last_papers_qids:
@@ -1443,7 +1441,7 @@ with tab_coverage_hub:
 # 7. URL 错题码同步（把当前科目错题状态写回网址，保持链接可跨设备恢复）
 # =========================================================================
 if url_data_key and current_subject != SubjectType.CUSTOM:
-    latest_code = state_mgr.to_url_code(canonical_ids, sig_basis=canonical_fp)
+    latest_code = state_mgr.to_url_code(canonical_ids)
     # 仅在真正变化时写入，避免无谓 rerun
     if st.query_params.get(url_data_key) != latest_code:
         st.query_params[url_data_key] = latest_code
@@ -1458,7 +1456,7 @@ if paper_url_key and current_subject != SubjectType.CUSTOM:
     elif _cur_paper:
         _papers_qids = [[q.id for q in _cur_paper.questions]]
     if _papers_qids:
-        _pcode = StateManager.encode_papers_code(_papers_qids, canonical_ids, sig_basis=canonical_fp)
+        _pcode = StateManager.encode_papers_code(_papers_qids, canonical_ids)
         if st.query_params.get(paper_url_key) != _pcode:
             st.query_params[paper_url_key] = _pcode
 
