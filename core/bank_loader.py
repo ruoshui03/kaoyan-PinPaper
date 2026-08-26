@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 import base64
+import hashlib
 import json
 import logging
 import mimetypes
@@ -264,6 +265,25 @@ class BankLoader:
             return list(self.questions_by_id.keys())
         return [qid for qid, q in self.questions_by_id.items()
                 if getattr(q, "book", "880") == book]
+
+    @staticmethod
+    def stem_fingerprint(stem: str) -> str:
+        """题干内容指纹:剥掉内联图片与"(…见原书)"占位、去所有空白后取 sha1[:12]。
+
+        用作 URL 签名依据,使签名只反映"题目本身与顺序",对以下变化免疫:
+        题号改写(ID 格式/编号规则)、补答案/解析、补题图(内联 <img> 或占位)。
+        仅当增删题目、重排顺序、改动题面文字时签名才变。
+        """
+        s = re.sub(r"<img\b[^>]*>", "", stem or "")          # 去内联图片
+        s = re.sub(r"\*\([^)]*见原书[^)]*\)\*", "", s)         # 去缺图占位
+        s = re.sub(r"\s+", "", s)                             # 去所有空白
+        return hashlib.sha1(s.encode("utf-8")).hexdigest()[:12]
+
+    def canonical_fingerprints(self, book: str | None = None) -> list[str]:
+        """与 canonical_ids 同序的题干指纹列表,用作 URL 签名依据(不依赖题号写法)。"""
+        return [self.stem_fingerprint(q.stem)
+                for qid, q in self.questions_by_id.items()
+                if book is None or getattr(q, "book", "880") == book]
 
     @staticmethod
     def _align_bodies_by_position(

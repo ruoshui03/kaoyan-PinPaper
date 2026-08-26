@@ -68,7 +68,7 @@ def test_bitmap_roundtrip_preserves_three_states():
     sm.mark_solved_correctly(mastered)                  # 归档为历史(仍 wrong_count>0)
 
     code = sm.to_url_code(ordered)
-    assert code.startswith("w1~")
+    assert code.startswith("w2~")
 
     sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
     n, status = sm2.apply_url_code(code, ordered)
@@ -91,4 +91,44 @@ def test_stale_signature_rejected():
 
     sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
     n, status = sm2.apply_url_code(code, ordered[:-1])  # 少一题 → 签名不匹配
+    assert status == "stale" and n == 0
+
+
+def test_fingerprint_signature_survives_id_rename():
+    """签名依据用题干指纹时,改题号(顺序/内容不变)不应使 code 失效。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    ordered = loader.canonical_ids(book="880")
+    fp = loader.canonical_fingerprints(book="880")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm.batch_mark_wrong([ordered[0], ordered[5], ordered[9]])
+    code = sm.to_url_code(ordered, sig_basis=fp)
+
+    # 模拟一次题号改写:ID 全变(加后缀),但顺序与题干指纹不变
+    renamed = [q + "-X" for q in ordered]
+
+    sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n, status = sm2.apply_url_code(code, renamed, sig_basis=fp)
+    assert status == "ok" and n == 3
+    # 恢复的错题落在改写后的新题号上(按位置对齐)
+    assert sm2.is_wrong_marked(renamed[0])
+    assert sm2.is_wrong_marked(renamed[5])
+    assert sm2.is_wrong_marked(renamed[9])
+
+
+def test_fingerprint_signature_detects_content_change():
+    """题干内容变化(增删/改题面)仍应被指纹签名捕获为 stale。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    ordered = loader.canonical_ids(book="880")
+    fp = loader.canonical_fingerprints(book="880")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm.batch_mark_wrong(ordered[:3])
+    code = sm.to_url_code(ordered, sig_basis=fp)
+
+    fp_changed = fp[:-1]  # 少一题 → 指纹列表变 → 签名变
+    sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n, status = sm2.apply_url_code(code, ordered[:-1], sig_basis=fp_changed)
     assert status == "stale" and n == 0
