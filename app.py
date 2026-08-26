@@ -1237,8 +1237,12 @@ with tab_marker_hub:
                 sections_to_show.append((f"{sec_icon} · {type_label}", grp))
 
     for sec_title, sec_q_list in sections_to_show:
-        sec_wrong_n = sum(1 for q in sec_q_list if state_mgr.is_wrong_marked(q.id))
-        st.markdown(f"##### {sec_title} · 共 {len(sec_q_list)} 题 · 已标错 {sec_wrong_n} 题")
+        # 总数/已标错取本章该 篇·题型 的全量(chapter_all),不受分页与状态筛选影响
+        diff0, qtype0 = sec_q_list[0].difficulty, sec_q_list[0].question_type
+        full_group = [q for q in chapter_all if q.difficulty == diff0 and q.question_type == qtype0]
+        sec_total = len(full_group)
+        sec_wrong_n = sum(1 for q in full_group if state_mgr.is_wrong_marked(q.id))
+        st.markdown(f"##### {sec_title} · 共 {sec_total} 题 · 已标错 {sec_wrong_n} 题")
 
         for q in sec_q_list:
             q_idx_in_sec = _seq_of(q.id)
