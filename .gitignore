@@ -30,6 +30,7 @@ ocr_cache/
 .agents/
 AGENTS.md
 GEMINI.md
+.claude/
 core/build_math2_math3_data.py
 .agy-staff/
 .playwright-mcp/
