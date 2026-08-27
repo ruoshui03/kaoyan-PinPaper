@@ -1138,7 +1138,8 @@ with tab_marker_hub:
                     batch_inputs[(sec, typ)] = st.text_input(
                         f"{_TYPE_LABEL[typ]}题（1-{n_q}）",
                         placeholder="如: 1, 3, 5",
-                        key=f"p2_in_{sec}_{typ}_{current_subject.value}",
+                        # key 含章节：切章节即换一组全新空框，不残留上一章敲的题号
+                        key=f"p2_in_{sec}_{typ}_{current_subject.value}_{target_ch}",
                     )
 
         b_c1, b_c2, b_c3 = st.columns(3)
