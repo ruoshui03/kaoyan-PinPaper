@@ -52,6 +52,9 @@ class EngineRequest:
     # 是否排除"已抽过的新题"(seen)。仅作用于新题池，错题优先池不受影响；
     # 过滤后新题不足时软重置(回退完整新题池)。见 historical_seen_question_ids。
     exclude_seen: bool = True
+    # 真题章节分布软权重:{题型: {章名: 权重}}。抽题打分时乘上当前题(题型+章)的权重,
+    # 缺省 1.0(不影响)。真题里考得多的章权重>1 → 880 组卷更易抽中。空 dict = 不启用。
+    chapter_weights: dict[str, dict[str, float]] = field(default_factory=dict)
 
 
 def get_standard_slots(
@@ -459,6 +462,8 @@ class PaperEngine:
                             is_historically_uncovered=q.chapter not in globally_covered_chapters,
                             current_chapter_count=chapter_usage[q.chapter],
                             seen_knowledge=covered_knowledge,
+                            chapter_weight=request.chapter_weights.get(
+                                q.question_type.value, {}).get(q.chapter, 1.0),
                         )
                         for q in cat_pool
                     ]
@@ -630,11 +635,13 @@ class PaperEngine:
         is_historically_uncovered: bool,
         current_chapter_count: int,
         seen_knowledge: Counter[str],
+        chapter_weight: float = 1.0,
     ) -> float:
         base = max(0.1, float(question.recommend_weight))
         diff = max(0.01, difficulty_weight)
         chapter_boost = 3.5 if is_historically_uncovered else 1.0
         intra_penalty = 1.0 / (1.0 + 2.0 * current_chapter_count)
+        chapter_pref = max(0.05, float(chapter_weight))  # 真题章节分布软权重
 
         if not question.core_knowledge:
             knowledge_factor = 1.0
@@ -643,7 +650,7 @@ class PaperEngine:
             unseen = sum(1 for k in question.core_knowledge if seen_knowledge[k] == 0)
             knowledge_factor = (1.0 + 1.5 * (unseen / len(question.core_knowledge))) / (1.0 + 0.8 * repeats)
 
-        score = base * diff * chapter_boost * intra_penalty * knowledge_factor
+        score = base * diff * chapter_boost * intra_penalty * knowledge_factor * chapter_pref
         return max(1e-6, score)
 
     @staticmethod
@@ -683,6 +690,8 @@ class PaperEngine:
                     is_historically_uncovered=q.chapter in unseen_chapters,
                     current_chapter_count=chapter_usage[q.chapter],
                     seen_knowledge=covered_knowledge,
+                    chapter_weight=request.chapter_weights.get(
+                        q.question_type.value, {}).get(q.chapter, 1.0),
                 )
                 for q in work
             ]

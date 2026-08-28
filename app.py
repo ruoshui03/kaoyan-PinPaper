@@ -84,6 +84,17 @@ def get_bank_loader(subject: SubjectType = SubjectType.MATH_1) -> BankLoader:
     return loader
 
 
+@st.cache_data(show_spinner=False)
+def get_chapter_dist() -> dict:
+    """真题章节分布模型 {科: {题型: {章名: 权重}}};文件缺失(如云端未提交)则返回空 → 特性静默不启用。"""
+    p = Path(__file__).resolve().parent / "题库资料" / "真题章节分布.json"
+    try:
+        import json as _json
+        return _json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
 # 运行环境判定：Streamlit Community Cloud 把应用挂载在 /mount/src/... 目录
 IS_CLOUD = str(Path(__file__).resolve()).startswith("/mount")
 
@@ -691,6 +702,22 @@ with tab_paper_hub:
             key=f"p1_exclude_seen_{current_subject.value}",
             help="开启后组卷会跳过你之前抽到过的新题；抽完全书后自动重新允许。错题重练不受影响。",
         )
+        _dist_all = get_chapter_dist()
+        _has_dist = current_subject.value in _dist_all
+        use_real_dist = st.checkbox(
+            "📊 参考真题章节分布",
+            value=_has_dist,
+            disabled=not _has_dist,
+            key=f"p1_use_dist_{current_subject.value}",
+            help="按 2010-2026 真题各章考频加权:真题里考得多的章,组卷更易抽中(软偏好,保留随机性)。",
+        ) if _has_dist else False
+        real_dist_strength = 0.0
+        if use_real_dist:
+            real_dist_strength = st.slider(
+                "真题分布强度", 0.0, 1.0, 0.6, 0.1,
+                key=f"p1_dist_strength_{current_subject.value}",
+                help="0=不参考(与关闭同) ~ 1=完全按真题考频。默认0.6适度偏向,避免过拟合。",
+            )
 
     # 2. 规格与难度配置
     cfg_col1, cfg_col2, cfg_col3 = st.columns([1.5, 1.5, 1.5])
@@ -806,6 +833,13 @@ with tab_paper_hub:
             else:
                 target_title = f"考研数学《880》{current_subject.value} 智能拼好卷"
 
+            # 真题章节分布软权重:按强度 s 在基线1.0与真题考频权重w之间插值 eff=1+s*(w-1)
+            chapter_weights: dict = {}
+            if use_real_dist and real_dist_strength > 0:
+                s = real_dist_strength
+                for qt, chw in _dist_all.get(current_subject.value, {}).items():
+                    chapter_weights[qt] = {ch: max(0.05, 1.0 + s * (w - 1.0)) for ch, w in chw.items()}
+
             engine = PaperEngine(candidate_pool)
             req = EngineRequest(
                 title=target_title,
@@ -824,6 +858,7 @@ with tab_paper_hub:
                 priority_pool_ids=wrong_id_set,
                 priority_ratio=effective_ratio,
                 exclude_seen=exclude_seen,
+                chapter_weights=chapter_weights,
             )
             if current_mode == PaperMode.BUNDLE_3_PAPERS:
                 bundle = engine.generate_bundle(req, bundle_size=3)

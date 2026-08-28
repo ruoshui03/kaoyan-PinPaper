@@ -131,6 +131,44 @@ def test_exclude_seen_skips_seen_questions(math1_questions):
     assert len(overlap) == 0, f"exclude_seen 未生效，仍抽到 {len(overlap)} 道已见题"
 
 
+def test_chapter_weights_bias_selection(math1_questions):
+    """给某章超高权重,组多份卷后该章题占比应显著高于不加权时。"""
+    engine = PaperEngine(math1_questions)
+    # 选一个真实存在、题量足够的章(第二章 一元函数微分学)
+    target_ch = next(q.chapter for q in math1_questions if "微分学" in q.chapter)
+
+    def count_ratio(chapter_weights):
+        hits = total = 0
+        for seed in range(20):
+            req = EngineRequest(
+                title="t", subject=SubjectType.MATH_1, mode=PaperMode.FULL_10_6_6,
+                target_chapters=set(MATH_1_CHAPTERS), seed=seed,
+                chapter_weights=chapter_weights,
+            )
+            for q in engine.generate_single_paper(req).questions:
+                total += 1
+                if q.chapter == target_ch:
+                    hits += 1
+        return hits / total
+
+    base = count_ratio({})
+    # 对选择题该章给 10 倍权重
+    boosted = count_ratio({"选择题": {target_ch: 10.0}})
+    assert boosted > base, f"章节权重未提升该章占比: base={base:.3f} boosted={boosted:.3f}"
+
+
+def test_chapter_weights_absent_no_change(math1_questions):
+    """chapter_weights={} 时结果与不传一致(同 seed 逐题相同)——回归保护。"""
+    engine = PaperEngine(math1_questions)
+    def gen(cw):
+        req = EngineRequest(
+            title="t", subject=SubjectType.MATH_1, mode=PaperMode.FULL_10_6_6,
+            target_chapters=set(MATH_1_CHAPTERS), seed=777, chapter_weights=cw,
+        )
+        return [q.id for q in engine.generate_single_paper(req).questions]
+    assert gen({}) == gen({}), "空权重下同 seed 结果应完全一致"
+
+
 def test_exclude_seen_soft_reset_when_pool_exhausted(math1_questions):
     """seen 覆盖几乎全库时，软重置回退保证仍能抽满 22 题(不因排除而少题)。"""
     engine = PaperEngine(math1_questions)
