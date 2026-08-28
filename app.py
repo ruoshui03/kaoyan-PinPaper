@@ -190,11 +190,12 @@ def inject_modern_theme():
             flex-shrink: 0;
         }
         .app-hero-title {
-            font-size: 21px;
+            font-size: 21px !important;   /* !important 压过 Streamlit 默认 h1 的 44px */
             font-weight: 800;
             color: #0f172a;
             letter-spacing: -0.02em;
             margin: 0;
+            padding: 0;
             line-height: 1.3;
         }
         .app-hero-desc {
@@ -214,6 +215,30 @@ def inject_modern_theme():
             white-space: nowrap;
             flex-shrink: 0;
             box-shadow: 0 2px 4px rgba(37, 99, 235, 0.06);
+        }
+        /* 手机窄屏:hero 竖向堆叠，标题独占整行不被挤成竖排 */
+        @media (max-width: 640px) {
+            .app-hero {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                padding: 16px 18px;
+            }
+            .app-hero-main {
+                gap: 12px;
+                width: 100%;
+            }
+            .app-hero-title {
+                font-size: 18px !important;   /* 手机再收一号，确保七字一行 */
+                white-space: nowrap;
+            }
+            .app-hero-desc {
+                font-size: 12px;
+            }
+            .app-hero-badge {
+                white-space: normal;   /* 徽章移到下方，允许自然换行 */
+                align-self: flex-start;
+            }
         }
 
         /* Modern Card Styling */
@@ -418,6 +443,9 @@ with st.sidebar:
         SubjectType.MATH_3: "d3",
     }
     url_data_key = URL_SUBJECT_KEY.get(active_sub)
+    # seen 位图参数键(已抽过的题),与错题位图 d1/d2/d3 独立并存
+    URL_SEEN_KEY = {SubjectType.MATH_1: "n1", SubjectType.MATH_2: "n2", SubjectType.MATH_3: "n3"}
+    url_seen_key = URL_SEEN_KEY.get(active_sub)
     # 位图 canonical 列表锁定到具体书籍，独立于科目里是否还有别的书。
     # 今天整科==880，故此列表与全量一致、签名不变、现有 URL 不失效；
     # 将来加第二本书时，880 的题号列表/顺序/签名保持稳定 → 880 旧 URL 依然有效。
@@ -436,6 +464,10 @@ with st.sidebar:
                 n_restored, restore_status = state_mgr.apply_url_code(incoming_code, canonical_ids)
                 if restore_status == "stale":
                     st.session_state["_url_restore_stale"] = active_sub.value
+            # 恢复"已抽过题"(seen)——与错题码独立,合并进本地累积集合
+            incoming_seen = st.query_params.get(url_seen_key) if url_seen_key else None
+            if incoming_seen:
+                state_mgr.apply_seen_url_code(incoming_seen, canonical_ids)
 
     # URL 试卷码：记住上次生成的是哪几道题（不含组卷配置），做完后跨设备查阅答案。
     # 每科目一个参数键 q1/q2/q3。当右侧无当前试卷时（首次进入 / 切科目回来）从 URL 恢复。
@@ -653,6 +685,12 @@ with tab_paper_hub:
             st.warning("⚠️ 当前错题池暂无题目，将全部用新题组卷。请前往【逐题标错】录入错题。")
         else:
             st.caption(f"当前已标错题 {subject_wrong_count} 题 · 全书 {len(all_questions)} 题")
+        exclude_seen = st.checkbox(
+            "🚫 避免重复抽题（抽过的新题不再抽）",
+            value=True,
+            key=f"p1_exclude_seen_{current_subject.value}",
+            help="开启后组卷会跳过你之前抽到过的新题；抽完全书后自动重新允许。错题重练不受影响。",
+        )
 
     # 2. 规格与难度配置
     cfg_col1, cfg_col2, cfg_col3 = st.columns([1.5, 1.5, 1.5])
@@ -785,6 +823,7 @@ with tab_paper_hub:
                 candidate_question_pool=candidate_pool,
                 priority_pool_ids=wrong_id_set,
                 priority_ratio=effective_ratio,
+                exclude_seen=exclude_seen,
             )
             if current_mode == PaperMode.BUNDLE_3_PAPERS:
                 bundle = engine.generate_bundle(req, bundle_size=3)
@@ -1446,6 +1485,11 @@ if url_data_key and current_subject != SubjectType.CUSTOM:
     # 仅在真正变化时写入，避免无谓 rerun
     if st.query_params.get(url_data_key) != latest_code:
         st.query_params[url_data_key] = latest_code
+    # seen 码(已抽过题)写回 n1/n2/n3,与错题码独立
+    if url_seen_key:
+        seen_code = state_mgr.seen_to_url_code(canonical_ids)
+        if st.query_params.get(url_seen_key) != seen_code:
+            st.query_params[url_seen_key] = seen_code
 
 # 试卷码同步：把当前生成的试卷题号写回网址（q1/q2/q3），做完后可凭链接查阅答案
 if paper_url_key and current_subject != SubjectType.CUSTOM:

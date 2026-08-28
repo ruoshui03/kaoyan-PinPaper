@@ -49,6 +49,9 @@ class EngineRequest:
     # 任一侧不足时由另一侧自动补齐。ratio<=0 或池为空 → 退化为普通全书抽题。
     priority_pool_ids: set[str] = field(default_factory=set)
     priority_ratio: float = 0.0
+    # 是否排除"已抽过的新题"(seen)。仅作用于新题池，错题优先池不受影响；
+    # 过滤后新题不足时软重置(回退完整新题池)。见 historical_seen_question_ids。
+    exclude_seen: bool = True
 
 
 def get_standard_slots(
@@ -707,18 +710,41 @@ class PaperEngine:
         """
         ratio = max(0.0, min(1.0, request.priority_ratio))
         pri_ids = request.priority_pool_ids
+        # seen 排除仅作用于"新题"；错题优先池永不排除(错题必须能重练)。
+        seen = request.historical_seen_question_ids if request.exclude_seen else set()
+
+        def _drop_seen(pool: list[QuestionItem]) -> list[QuestionItem]:
+            """从新题池剔除已抽过的题；剔完为空则软重置(回退完整池)。"""
+            if not seen:
+                return pool
+            filtered = [q for q in pool if q.id not in seen]
+            return filtered if filtered else pool
+
         if ratio <= 0.0 or not pri_ids:
-            return self._pick_from_pool(cat_pool, needed, request, unseen_chapters, chapter_usage, covered_knowledge, selected_ids, rng)
+            # 全部普通抽 → 整个 cat_pool 都是"新题",按 seen 过滤 + 软重置
+            new_only = _drop_seen(cat_pool)
+            chosen = self._pick_from_pool(new_only, needed, request, unseen_chapters, chapter_usage, covered_knowledge, selected_ids, rng)
+            # 过滤后抽不满(未见题不够) → 从完整池软重置补齐
+            remaining = needed - len(chosen)
+            if remaining > 0 and seen:
+                chosen += self._pick_from_pool(cat_pool, remaining, request, unseen_chapters, chapter_usage, covered_knowledge, selected_ids, rng)
+            return chosen
 
         want_pri = int(round(needed * ratio))
         pri_pool = [q for q in cat_pool if q.id in pri_ids]
-        new_pool = [q for q in cat_pool if q.id not in pri_ids]
+        new_pool_full = [q for q in cat_pool if q.id not in pri_ids]
+        new_pool = _drop_seen(new_pool_full)  # 新题池按 seen 过滤 + 软重置
 
         chosen: list[QuestionItem] = []
         chosen += self._pick_from_pool(pri_pool, want_pri, request, unseen_chapters, chapter_usage, covered_knowledge, selected_ids, rng)
-        # 剩余名额（含错题不足时的缺口）用新题补；新题再不够则回补错题
+        # 剩余名额（含错题不足时的缺口）用新题补
         remaining = needed - len(chosen)
         chosen += self._pick_from_pool(new_pool, remaining, request, unseen_chapters, chapter_usage, covered_knowledge, selected_ids, rng)
+        # 未见新题不够 → 从完整新题池软重置补齐(允许已抽过的新题)
+        remaining = needed - len(chosen)
+        if remaining > 0 and seen:
+            chosen += self._pick_from_pool(new_pool_full, remaining, request, unseen_chapters, chapter_usage, covered_knowledge, selected_ids, rng)
+        # 新题仍不够 → 回补错题(原有兜底)
         remaining = needed - len(chosen)
         if remaining > 0:
             chosen += self._pick_from_pool(pri_pool, remaining, request, unseen_chapters, chapter_usage, covered_knowledge, selected_ids, rng)

@@ -92,3 +92,91 @@ def test_stale_signature_rejected():
     sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
     n, status = sm2.apply_url_code(code, ordered[:-1])  # 少一题 → 签名不匹配
     assert status == "stale" and n == 0
+
+
+# ============================ seen(已抽过题)功能 ============================
+
+def test_seen_roundtrip():
+    """seen 位图 roundtrip：编码 → 新档案解码 → 恢复的集合与原集合一致。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    ordered = loader.canonical_ids(book="880")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    seen_ids = set(ordered[5:20])  # 抽过 15 题
+    sm.historical_seen_ids = set(seen_ids)
+    code = sm.seen_to_url_code(ordered)
+    assert code.startswith("s1~")
+
+    sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n, status = sm2.apply_seen_url_code(code, ordered)
+    assert status == "ok" and n == len(seen_ids)
+    assert sm2.historical_seen_ids == seen_ids
+
+
+def test_seen_apply_merges_not_overwrites():
+    """apply_seen_url_code 应合并(取并集)而非覆盖本地已有 seen。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    ordered = loader.canonical_ids(book="880")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm.historical_seen_ids = {ordered[0], ordered[1]}
+    code = sm.seen_to_url_code(ordered)
+
+    sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm2.historical_seen_ids = {ordered[50]}  # 本地已有一题
+    sm2.apply_seen_url_code(code, ordered)
+    assert sm2.historical_seen_ids == {ordered[0], ordered[1], ordered[50]}  # 并集
+
+
+def test_seen_url_does_not_touch_wrong_url():
+    """加 seen 码(n1)不影响错题码(d1)的签名与内容 —— 两参数完全独立。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    ordered = loader.canonical_ids(book="880")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm.batch_mark_wrong(ordered[:3])
+    wrong_code_before = sm.to_url_code(ordered)
+
+    sm.historical_seen_ids = set(ordered[10:30])  # 再记一堆 seen
+    wrong_code_after = sm.to_url_code(ordered)
+    assert wrong_code_after == wrong_code_before, "seen 改变了错题码(d1)"
+
+
+def test_second_book_does_not_shift_seen():
+    """注入第二本书后，880 的 seen 码保持不变(与错题位图同样受书籍隔离保护)。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    ordered_before = loader.canonical_ids(book="880")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm.historical_seen_ids = set(ordered_before[:10])
+    seen_code_before = sm.seen_to_url_code(ordered_before)
+
+    loader.questions_by_id["__ghost__"] = QuestionItem(
+        id=ordered_before[0], chapter="第一章 函数、极限、连续",
+        category=ChapterCategory.ADVANCED_MATH, difficulty=DifficultyLevel.BASIC,
+        question_type=QuestionType.CHOICE, book="测试书",
+    )
+    ordered_after = loader.canonical_ids(book="880")
+    seen_code_after = sm.seen_to_url_code(ordered_after)
+    assert ordered_after == ordered_before
+    assert seen_code_after == seen_code_before, "第二本书改变了 880 的 seen 码"
+
+
+def test_old_url_without_seen_still_works():
+    """老 URL(只有 d1、无 n1)照常恢复错题，不因 seen 功能失效。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    ordered = loader.canonical_ids(book="880")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm.batch_mark_wrong(ordered[:3])
+    old_wrong_code = sm.to_url_code(ordered)  # 老链接只有这个,没有 seen 码
+
+    sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n, status = sm2.apply_url_code(old_wrong_code, ordered)
+    assert status == "ok" and n == 3  # 错题正常恢复
+    assert sm2.historical_seen_ids == set()  # 无 seen 码 → seen 为空,行为同现在

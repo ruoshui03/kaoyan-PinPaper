@@ -428,6 +428,58 @@ class StateManager:
         return (len(restored), "ok")
 
     # =====================================================================
+    # URL seen 位图:记录"已抽过的题",组卷时排除(每题 1 bit，比错题位图更省)。
+    # 参数键 n1/n2/n3，与错题位图 d1/d2/d3 完全独立、共用 bank_signature。
+    # 恢复语义是"合并"(seen 是单调累积集合，跨设备取并集)，不覆盖本地已有。
+    # =====================================================================
+    SEEN_CODE_PREFIX = "s1"
+
+    def seen_to_url_code(self, ordered_ids: list[str]) -> str:
+        """将当前科目"已抽过题"编码为可放进 URL 的紧凑串(1 bit/题)"""
+        n = len(ordered_ids)
+        packed = bytearray((n + 7) // 8)
+        for i, qid in enumerate(ordered_ids):
+            if qid in self.historical_seen_ids:
+                packed[i >> 3] |= 1 << (i & 7)
+        compressed = zlib.compress(bytes(packed), 9)
+        b64 = base64.urlsafe_b64encode(compressed).decode("ascii").rstrip("=")
+        return f"{self.SEEN_CODE_PREFIX}~{self.bank_signature(ordered_ids)}~{b64}"
+
+    def apply_seen_url_code(self, code: str, ordered_ids: list[str]) -> tuple[int, str]:
+        """从 URL 串恢复"已抽过题"并**合并**进本地 seen 集合。返回 (恢复条数, 状态)。
+
+        - 前缀/格式不符 -> (0, 'invalid')
+        - 题库签名不匹配 -> (0, 'stale')
+        - 空(全 0)      -> (0, 'empty')：不改动本地
+        - 成功           -> (并入条数, 'ok')；seen 是累积集合，取并集而非覆盖
+        """
+        try:
+            parts = code.split("~")
+            if len(parts) != 3 or parts[0] != self.SEEN_CODE_PREFIX:
+                return (0, "invalid")
+            _, sig, b64 = parts
+            if sig != self.bank_signature(ordered_ids):
+                return (0, "stale")
+            pad = "=" * (-len(b64) % 4)
+            packed = zlib.decompress(base64.urlsafe_b64decode(b64 + pad))
+        except Exception:
+            return (0, "invalid")
+
+        restored: set[str] = set()
+        for i, qid in enumerate(ordered_ids):
+            byte_i = i >> 3
+            if byte_i >= len(packed):
+                break
+            if (packed[byte_i] >> (i & 7)) & 1:
+                restored.add(qid)
+
+        if not restored:
+            return (0, "empty")
+        self.historical_seen_ids |= restored  # 合并,不覆盖
+        self.save_state()
+        return (len(restored), "ok")
+
+    # =====================================================================
     # URL 试卷编码：记住"上次生成的是哪几道题"，方便做完后跨设备查阅答案。
     # 规格无关：编码一个"试卷列表"，每份卷是变长的题号索引序列（索引=题号在 880
     # canonical 列表中的位置），故 5-3-3 / 自定义 / 3 套联考 全部统一支持。

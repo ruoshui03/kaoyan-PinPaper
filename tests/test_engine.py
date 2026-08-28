@@ -108,6 +108,44 @@ def test_math1_standard_exam_slot_restrictions(math1_questions):
     assert qs[21].category == ChapterCategory.PROBABILITY, "第 22 题应为概率大题"
 
 
+def test_exclude_seen_skips_seen_questions(math1_questions):
+    """exclude_seen=True 时，新题不应抽到已 seen 的题(题库足够大，无需软重置)。"""
+    engine = PaperEngine(math1_questions)
+    # 先生成一份，记下其题号为 seen
+    req1 = EngineRequest(
+        title="第一份", subject=SubjectType.MATH_1, mode=PaperMode.FULL_10_6_6,
+        target_chapters=set(MATH_1_CHAPTERS), seed=100, exclude_seen=True,
+    )
+    paper1 = engine.generate_single_paper(req1)
+    seen = {q.id for q in paper1.questions}
+
+    # 第二份把 paper1 的题号设为 seen，应尽量避开
+    req2 = EngineRequest(
+        title="第二份", subject=SubjectType.MATH_1, mode=PaperMode.FULL_10_6_6,
+        target_chapters=set(MATH_1_CHAPTERS), seed=200, exclude_seen=True,
+        historical_seen_question_ids=seen,
+    )
+    paper2 = engine.generate_single_paper(req2)
+    overlap = seen & {q.id for q in paper2.questions}
+    # 全书题量远大于 22，未见题充足，重叠应为 0
+    assert len(overlap) == 0, f"exclude_seen 未生效，仍抽到 {len(overlap)} 道已见题"
+
+
+def test_exclude_seen_soft_reset_when_pool_exhausted(math1_questions):
+    """seen 覆盖几乎全库时，软重置回退保证仍能抽满 22 题(不因排除而少题)。"""
+    engine = PaperEngine(math1_questions)
+    all_ids = {q.id for q in math1_questions}
+    # 把几乎所有题都标为 seen，只留极少数 —— 强制触发软重置
+    seen_almost_all = set(list(all_ids)[:-5])
+    req = EngineRequest(
+        title="软重置", subject=SubjectType.MATH_1, mode=PaperMode.FULL_10_6_6,
+        target_chapters=set(MATH_1_CHAPTERS), seed=300, exclude_seen=True,
+        historical_seen_question_ids=seen_almost_all,
+    )
+    paper = engine.generate_single_paper(req)
+    assert len(paper.questions) == 22, "软重置失效：seen 覆盖大半时抽不满 22 题"
+
+
 def test_math2_standard_exam_slot_restrictions(math2_questions):
     """验证数学二真题标准槽位：1-8高数 9-10线代 11-15高数 16线代 17-21高数 22线代"""
     engine = PaperEngine(math2_questions)
