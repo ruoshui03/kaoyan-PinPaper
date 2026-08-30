@@ -1,0 +1,336 @@
+[
+  {
+    "id": "2017-选-01",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若函数 $f(x)=\\left\\{\\begin{aligned}&\\frac{1-\\cos\\sqrt{x}}{ax},&x>0,\\\\&b,&x\\leqslant0\\end{aligned}\\right.$ 在 x=0 处连续, 则 ( )",
+    "options": [
+      "A. $ab=\\frac{1}{2}$ .",
+      "B. $ab=-\\frac{1}{2}$ .",
+      "C. ab=0.",
+      "D. ab=2."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2017-选-02",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设二阶可导函数 $f(x)$ 满足 $f(1) = f(-1) = 1, f(0) = -1$ 且 $f''(x) > 0$ , 则 ( )",
+    "options": [
+      "A. $\\int_{-1}^{1} f(x) \\, \\mathrm{d}x > 0.$",
+      "B. $\\int_{-1}^{1} f(x) \\, \\mathrm{d}x < 0.$",
+      "C. $\\int_{-1}^{0} f(x) \\, \\mathrm{d}x > \\int_{0}^{1} f(x) \\, \\mathrm{d}x.$",
+      "D. $\\int_{-1}^{0} f(x) \\, \\mathrm{d}x < \\int_{0}^{1} f(x) \\, \\mathrm{d}x.$"
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2017-选-03",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设数列 $\\{x_{n}\\}$ 收敛, 则 ( )",
+    "options": [
+      "A. 当 $\\lim_{n\\to\\infty}\\sin x_{n}=0$ 时, $\\lim_{n\\to\\infty}x_{n}=0$ .",
+      "B. 当 $\\lim_{n\\to\\infty}\\left(x_{n}+\\sqrt{|x_{n}|}\\right)=0$ 时, $\\lim_{n\\to\\infty}x_{n}=0$ .",
+      "C. 当 $\\lim_{n\\to\\infty}\\left(x_{n}+x_{n}^{2}\\right)=0$ 时, $\\lim_{n\\to\\infty}x_{n}=0$ .",
+      "D. 当 $\\lim_{n\\to\\infty}\\left(x_{n}+\\sin x_{n}\\right)=0$ 时, $\\lim_{n\\to\\infty}x_{n}=0$ ."
+    ],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2017-选-04",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "微分方程 $y'' - 4y' + 8y = \\mathrm{e}^{2x}(1 + \\cos 2x)$ 的特解可设为 $y^{*} = (\\quad)$",
+    "options": [
+      "A. $Ae^{2x} + \\mathrm{e}^{2x}(B\\cos 2x + C\\sin 2x)$ .",
+      "B. $Axe^{2x} + \\mathrm{e}^{2x}(B\\cos 2x + C\\sin 2x)$ .",
+      "C. $Ae^{2x} + xe^{2x}(B\\cos 2x + C\\sin 2x)$ .",
+      "D. $Axe^{2x} + xe^{2x}(B\\cos 2x + C\\sin 2x)$ ."
+    ],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2017-选-05",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x, y)$ 具有一阶偏导数, 且对任意的 $(x, y)$ , 都有 $\\frac{\\partial f(x, y)}{\\partial x} > 0, \\frac{\\partial f(x, y)}{\\partial y} < 0$ , 则 ( )",
+    "options": [
+      "A. $f(0,0) > f(1,1)$ .",
+      "B. $f(0,0) < f(1,1)$ .",
+      "C. $f(0,1) > f(1,0)$ .",
+      "D. $f(0,1) < f(1,0)$ ."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2017-选-06",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "甲, 乙两人赛跑, 计时开始时, 甲在乙前方 10(单位: $m$ ) 处, 图中, 实线表示甲的速度曲线 $v = v_{1}(t)$ (单位: $\\mathrm{m/s}$ ), 虚线表示乙的速度曲线 $v = v_{2}(t)$ , 三块阴影部分面积的数值依次为 10, 20, 3. 计时开始后乙追上甲的时刻记为 $t_{0}$ (单位: $s$ ), 则 ( )",
+    "options": [
+      "A. $t _ {0} = 1 0.$",
+      "B. $1 5 < t _ {0} < 2 0.$",
+      "C. $t _ {0} = 2 5.$",
+      "D. $t _ {0} > 2 5.$"
+    ],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2017-选-07",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 A 为 3 阶矩阵, $P = (\\alpha_{1}, \\alpha_{2}, \\alpha_{3})$ 为可逆矩阵, 使得 $P^{-1}AP = \\begin{pmatrix} 0 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 2 \\end{pmatrix}$ , 则 $A(\\alpha_{1} + \\alpha_{2} + \\alpha_{3}) = (\\quad)$",
+    "options": [
+      "A. $\\alpha_{1} + \\alpha_{2}.$",
+      "B. $\\alpha_{2} + 2\\alpha_{3}.$",
+      "C. $\\alpha_{2} + \\alpha_{3}.$",
+      "D. $\\alpha_{1} + 2\\alpha_{2}.$"
+    ],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2017-选-08",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知矩阵 $A = \\begin{pmatrix} 2 & 0 & 0 \\\\ 0 & 2 & 1 \\\\ 0 & 0 & 1 \\end{pmatrix}, B = \\begin{pmatrix} 2 & 1 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 1 \\end{pmatrix}, C = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 2 \\end{pmatrix}$ , 则（）",
+    "options": [
+      "A. $A$ 与 $C$ 相似, $B$ 与 $C$ 相似.",
+      "B. $A$ 与 $C$ 相似, $B$ 与 $C$ 不相似.",
+      "C. $A$ 与 $C$ 不相似, $B$ 与 $C$ 相似.",
+      "D. $A$ 与 $C$ 不相似, $B$ 与 $C$ 不相似."
+    ],
+    "chapter": "第八章 矩阵"
+  },
+  {
+    "id": "2017-填-01",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y = x \\left(1 + \\arcsin \\frac{2}{x}\\right)$ 的斜渐近线方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2017-填-02",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $y = y(x)$ 由参数方程 $\\left\\{\\begin{aligned} x &= t + e^{t}, \\\\ y &= \\sin t \\end{aligned}\\right.$ 确定, 则 $\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{t=0} =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2017-填-03",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\int_{0}^{+\\infty}\\frac{\\ln(1+x)}{(1+x)^{2}}dx=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2017-填-04",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x, y)$ 具有一阶连续偏导数, 且 $df(x, y) = ye^{y} \\mathrm{d}x + x(1 + y) \\mathrm{e}^{y} \\mathrm{d}y, f(0, 0) = 0$ , 则 $f(x, y) =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2017-填-05",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "$\\int_{0}^{1}dy\\int_{y}^{1}\\frac{\\tan x}{x}dx=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2017-填-06",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设矩阵 $A=\\begin{pmatrix}4&1&-2\\\\ 1&2&a\\\\ 3&1&-1\\end{pmatrix}$ 的一个特征向量为 $\\begin{pmatrix}1\\\\ 1\\\\ 2\\end{pmatrix}$ ，则 a= \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第八章 矩阵"
+  },
+  {
+    "id": "2017-解-01",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "求 $\\lim_{x\\to 0^{+}}\\frac{\\int_{0}^{x}\\sqrt{x - t}\\mathrm{e}^{t}dt}{\\sqrt{x^{3}}}.$",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2017-解-02",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(u,v)$ 具有2阶连续偏导数, $y = f(\\mathrm{e}^{x},\\cos x)$ , 求 $\\frac{\\mathrm{dy}}{\\mathrm{dx}}\\bigg|_{x = 0},\\frac{d^2y}{\\mathrm{dx}^2}\\bigg|_{x = 0}$ .",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2017-解-03",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "求 $\\lim_{n\\to \\infty}\\sum_{k = 1}^{n}\\frac{k}{n^2}\\ln \\left(1 + \\frac{k}{n}\\right)$",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2017-解-04",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $y(x)$ 由方程 $x^{3} + y^{3} - 3x + 3y - 2 = 0$ 确定, 求 $y(x)$ 的极值.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2017-解-05",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)$ 在区间 $[0,1]$ 上具有2阶导数，且 $f(1) > 0, \\lim_{x \\to 0^{+}} \\frac{f(x)}{x} < 0.$ 证明：\n(I) 方程 $f(x)=0$ 在区间 $(0,1)$ 内至少存在一个实根;\n(II) 方程 $f(x)f''(x)+[f'(x)]^{2}=0$ 在区间 $(0,1)$ 内至少存在两个不同实根.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2017-解-06",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "已知平面区域 $D = \\{(x,y) \\mid x^2 + y^2 \\leqslant 2y\\}$ , 计算二重积分 $\\iint_{D} (x + 1)^2 \\, \\mathrm{d}x \\, \\mathrm{d}y$ .",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2017-解-07",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $y(x)$ 是区间 $\\left(0, \\frac{3}{2}\\right)$ 内的可导函数, 且 $y(1) = 0$ . 点 $P$ 是曲线 $l: y = y(x)$ 上的任意一点, $l$ 在点 $P$ 处的切线与 $y$ 轴相交于点 $(0, Y_P)$ , 法线与 $x$ 轴相交于点 $(X_P, 0)$ , 若 $X_P = Y_P$ , 求 $l$ 上点的坐标 $(x, y)$ 满足的方程.",
+    "options": [],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2017-解-08",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设3阶矩阵 $A=(\\alpha_{1},\\alpha_{2},\\alpha_{3})$ 有3个不同的特征值,且 $\\alpha_{3}=\\alpha_{1}+2\\alpha_{2}$ .\n(I) 证明 $r(A)=2;$\n(II) 若 $\\beta = \\alpha_{1} + \\alpha_{2} + \\alpha_{3}$ , 求方程组 $Ax = \\beta$ 的通解.",
+    "options": [],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2017-解-09",
+    "book": "真题2010-2026",
+    "year": "2017",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "设二次型 $f(x_{1},x_{2},x_{3}) = 2x_{1}^{2} - x_{2}^{2} + ax_{3}^{2} + 2x_{1}x_{2} - 8x_{1}x_{3} + 2x_{2}x_{3}$ 在正交变换 $x = Qy$ 下的标准形为 $\\lambda_{1}y_{1}^{2} + \\lambda_{2}y_{2}^{2}$ ，求 $a$ 的值及一个正交矩阵 $Q$ .",
+    "options": [],
+    "chapter": "第十二章 二次型"
+  }
+]

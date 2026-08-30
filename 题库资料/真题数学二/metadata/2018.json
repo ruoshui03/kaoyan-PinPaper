@@ -1,0 +1,329 @@
+[
+  {
+    "id": "2018-选-01",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若 $\\lim_{x\\to0}\\left(\\mathrm{e}^{x}+ax^{2}+bx\\right)^{\\frac{1}{x^{2}}}=1$ , 则 ( )",
+    "options": [
+      "A. $a=\\frac{1}{2}, b=-1.$",
+      "B. $a=-\\frac{1}{2}, b=-1.$",
+      "C. $a=\\frac{1}{2}, b=1.$",
+      "D. $a=-\\frac{1}{2}, b=1.$"
+    ],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2018-选-02",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列函数中,在x=0处不可导的是()",
+    "options": [
+      "A. $f(x)=|x|\\sin|x|$ .",
+      "B. $f(x)=|x|\\sin\\sqrt{|x|}$ .",
+      "C. $f(x)=\\cos|x|$ .",
+      "D. $f(x)=\\cos\\sqrt{|x|}$ ."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2018-选-03",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)=\\begin{cases}-1,\\quad x<0,\\\\1,\\quad x\\geqslant0,\\end{cases}$ $g(x)=\\begin{cases}2-ax,\\quad x\\leqslant-1,\\\\x,\\quad -1<x<0,\\\\x-b,\\quad x\\geqslant0.\\end{cases}$ 若 $f(x)+g(x)$ 在 R 上连续, 则 ( )",
+    "options": [
+      "A. a=3, b=1.",
+      "B. a=3, b=2.",
+      "C. a=-3, b=1.",
+      "D. a=-3, b=2."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2018-选-04",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $[0,1]$ 上二阶可导, 且 $\\int_{0}^{1} f(x) \\mathrm{d}x = 0$ , 则 ( )",
+    "options": [
+      "A. 当 $f'(x) < 0$ 时, $f\\left(\\frac{1}{2}\\right) < 0$ .",
+      "B. 当 $f''(x) < 0$ 时, $f\\left(\\frac{1}{2}\\right) < 0$ .",
+      "C. 当 $f'(x) > 0$ 时, $f\\left(\\frac{1}{2}\\right) < 0$ .",
+      "D. 当 $f''(x) > 0$ 时, $f\\left(\\frac{1}{2}\\right) < 0$ ."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2018-选-05",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $M = \\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}} \\frac{(1 + x)^2}{1 + x^2} \\, \\mathrm{d}x, N = \\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}} \\frac{1 + x}{\\mathrm{e}^x} \\, \\mathrm{d}x, K = \\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}} (1 + \\sqrt{\\cos x}) \\, \\mathrm{d}x,$ 则（）",
+    "options": [
+      "A. $M > N > K$ .",
+      "B. $M > K > N$ .",
+      "C. $K > M > N$ .",
+      "D. $K > N > M$ ."
+    ],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2018-选-06",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\int_{-1}^{0} dx \\int_{-x}^{2 - x^2} (1 - xy) \\, \\mathrm{d}y + \\int_{0}^{1} dx \\int_{x}^{2 - x^2} (1 - xy) \\, \\mathrm{d}y = (\\quad)$",
+    "options": [
+      "A. $\\frac{5}{3}$ .",
+      "B. $\\frac{5}{6}$ .",
+      "C. $\\frac{7}{3}$ .",
+      "D. $\\frac{7}{6}$ ."
+    ],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2018-选-07",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列矩阵中, 与矩阵 $\\begin{pmatrix}1&1&0\\\\0&1&1\\\\0&0&1\\end{pmatrix}$ 相似的为 ( )",
+    "options": [
+      "A. $\\begin{pmatrix}1&1&-1\\\\0&1&1\\\\0&0&1\\end{pmatrix}.$",
+      "B. $\\begin{pmatrix}1&0&-1\\\\0&1&1\\\\0&0&1\\end{pmatrix}.$",
+      "C. $\\begin{pmatrix}1&1&-1\\\\0&1&0\\\\0&0&1\\end{pmatrix}.$",
+      "D. $\\begin{pmatrix}1&0&-1\\\\0&1&0\\\\0&0&1\\end{pmatrix}.$"
+    ],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2018-选-08",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 A, B 为 n 阶矩阵, 记 $r(X)$ 为矩阵 X 的秩, $(X, Y)$ 表示分块矩阵, 则 ( )",
+    "options": [
+      "A. $r(A, AB) = r(A).$",
+      "B. $r(A, BA) = r(A).$",
+      "C. $r(A, B) = \\max\\{r(A), r(B)\\}.$",
+      "D. $r(A, B) = r(A^{T}, B^{T}).$"
+    ],
+    "chapter": "第八章 矩阵"
+  },
+  {
+    "id": "2018-填-01",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\lim_{x\\to +\\infty}x^2 [\\arctan (x + 1) - \\arctan x] =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2018-填-02",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y = x^{2} + 2 \\ln x$ 在其拐点处的切线方程是 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2018-填-03",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{5}^{+\\infty}\\frac{1}{x^{2}-4x+3}dx=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2018-填-04",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $\\left\\{\\begin{aligned} x &= \\cos^{3}t, \\\\ y &= \\sin^{3}t \\end{aligned}\\right.$ 在 $t = \\frac{\\pi}{4}$ 对应点处的曲率为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2018-填-05",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $z = z(x, y)$ 由方程 $\\ln z + \\mathrm{e}^{z-1} = xy$ 确定, 则 $\\left.\\frac{\\partial z}{\\partial x}\\right|_{(2, \\frac{1}{2})} = \\underline{\\quad}$ .",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2018-填-06",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $A$ 为 3 阶矩阵, $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 为线性无关的向量组. 若 $A\\alpha_{1} = 2\\alpha_{1} + \\alpha_{2} + \\alpha_{3}, A\\alpha_{2} = \\alpha_{2} + 2\\alpha_{3}, A\\alpha_{3} = -\\alpha_{2} + \\alpha_{3}$ , 则 $A$ 的实特征值为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2018-解-01",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求不定积分 $\\int \\mathrm{e}^{2x}\\arctan \\sqrt{\\mathrm{e}^x - 1}\\mathrm{d}x.$",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2018-解-02",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知连续函数 $f(x)$ 满足 $\\int_0^x f(t)dt + \\int_0^x tf(x - t)dt = ax^2.$\n(I) 求 $f(x)$ ;\n(II) 若 $f(x)$ 在区间 $[0,1]$ 上的平均值为 1, 求 a 的值.",
+    "options": [],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2018-解-03",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设平面区域 $D$ 由曲线 $\\left\\{ \\begin{array}{l} x = t - \\sin t, \\\\ y = 1 - \\cos t \\end{array} (0 \\leqslant t \\leqslant 2\\pi) \\right.$ 与 $x$ 轴围成, 计算二重积分 $\\iint_{D} (x + 2y) \\, \\mathrm{d}x \\, \\mathrm{d}y$ .",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2018-解-04",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知常数 $k \\geqslant \\ln 2 - 1$ . 证明: $(x - 1)(x - \\ln^2 x + 2k\\ln x - 1) \\geqslant 0$ .",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2018-解-05",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "将长为 2m 的铁丝分成三段,依次围成圆、正方形与正三角形.三个图形的面积之和是否存在最小值?若存在,求出最小值.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2018-解-06",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知曲线 $L: y = \\frac{4}{9} x^2 (x \\geqslant 0)$ , 点 $O(0,0)$ , 点 $A(0,1)$ . 设 $P$ 是 $L$ 上的动点, $S$ 是直线 $OA$ 与直线 $AP$ 及曲线 $L$ 所围图形的面积. 若 $P$ 运动到点 (3,4) 时沿 $x$ 轴正向的速度是 4, 求此时 $S$ 关于时间 $t$ 的变化率.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2018-解-07",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设数列 $\\{x_{n}\\}$ 满足: $x_{1}>0, x_{n}e^{x_{n+1}}=e^{x_{n}}-1(n=1,2,\\cdots)$ . 证明 $\\{x_{n}\\}$ 收敛, 并求 $\\lim_{n\\to\\infty}x_{n}$ .",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2018-解-08",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "设实二次型 $f(x_{1},x_{2},x_{3})=(x_{1}-x_{2}+x_{3})^{2}+(x_{2}+x_{3})^{2}+(x_{1}+ax_{3})^{2}$ ，其中a是参数.\n(I) 求 $f(x_{1}, x_{2}, x_{3}) = 0$ 的解;\n(II) 求 $f(x_{1}, x_{2}, x_{3})$ 的规范形.",
+    "options": [],
+    "chapter": "第十二章 二次型"
+  },
+  {
+    "id": "2018-解-09",
+    "book": "真题2010-2026",
+    "year": "2018",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "已知 a 是常数,且矩阵 $A=\\begin{pmatrix}1&2&a\\\\1&3&0\\\\2&7&-a\\end{pmatrix}$ 可经初等列变换化为矩阵 $B=\\begin{pmatrix}1&a&2\\\\0&1&1\\\\-1&1&1\\end{pmatrix}$ .\n(I) 求 a;\n(II) 求满足 AP = B 的可逆矩阵 P.",
+    "options": [],
+    "chapter": "第八章 矩阵"
+  }
+]

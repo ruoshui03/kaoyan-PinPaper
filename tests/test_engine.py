@@ -41,8 +41,12 @@ def math3_questions() -> list[QuestionItem]:
 
 
 def test_bank_loader_math1_structure(math1_questions):
-    assert len(math1_questions) == 1121
-    chapters = {q.chapter for q in math1_questions}
+    # 880 子集应仍为 1121 题(接入真题不改变 880)
+    q880 = [q for q in math1_questions if getattr(q, "book", "880") == "880"]
+    assert len(q880) == 1121
+    # 接入真题后全量应多于 880
+    assert len(math1_questions) > 1121
+    chapters = {q.chapter for q in q880}
     assert len(chapters) == 23
 
 

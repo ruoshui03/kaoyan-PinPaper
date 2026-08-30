@@ -1,0 +1,334 @@
+[
+  {
+    "id": "2014-选-01",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}a_{n}=a$ ,且 $a\\neq0$ ,则当n充分大时有（）",
+    "options": [
+      "A. $\\left|a_{n}\\right|>\\frac{\\left|a\\right|}{2}.$",
+      "B. $\\left|a_{n}\\right|<\\frac{\\left|a\\right|}{2}.$",
+      "C. $a_{n}>a-\\frac{1}{n}.$",
+      "D. $a_{n}<a+\\frac{1}{n}.$"
+    ],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2014-选-02",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "下列曲线中有渐近线的是（）",
+    "options": [
+      "A. $y = x + \\sin x.$",
+      "B. $y = x^{2} + \\sin x.$",
+      "C. $y = x + \\sin \\frac{1}{x}.$",
+      "D. $y = x^{2} + \\sin \\frac{1}{x}.$"
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2014-选-03",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $p(x) = a + bx + cx^2 + \\mathrm{d}x^3$ . 当 $x \\to 0$ 时, 若 $p(x) - \\tan x$ 是比 $x^3$ 高阶的无穷小量, 则下列选项中错误的是 ( )",
+    "options": [
+      "A. $a = 0$ .",
+      "B. $b = 1$ .",
+      "C. $c = 0$ .",
+      "D. $d = \\frac{1}{6}$ ."
+    ],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2014-选-04",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 具有 2 阶导数, $g(x) = f(0)(1 - x) + f(1)x$ , 则在区间 $[0,1]$ 上 ( )",
+    "options": [
+      "A. 当 $f'(x) \\geqslant 0$ 时, $f(x) \\geqslant g(x)$ .",
+      "B. 当 $f'(x) \\geqslant 0$ 时, $f(x) \\leqslant g(x)$ .",
+      "C. 当 $f''(x) \\geqslant 0$ 时, $f(x) \\geqslant g(x)$ .",
+      "D. 当 $f''(x) \\geqslant 0$ 时, $f(x) \\leqslant g(x)$ ."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2014-选-05",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "行列式 $\\begin{vmatrix}0&a&b&0\\\\a&0&0&b\\\\0&c&d&0\\\\c&0&0&d\\end{vmatrix}=(\\quad)$",
+    "options": [
+      "A. $(ad-bc)^{2}.$",
+      "B. $-(ad-bc)^{2}.$",
+      "C. $a^{2}d^{2}-b^{2}c^{2}.$",
+      "D. $b^{2}c^{2}-a^{2}d^{2}.$"
+    ],
+    "chapter": "第九章 行列式"
+  },
+  {
+    "id": "2014-选-06",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 均为 3 维向量, 则对任意常数 k, l, 向量组 $\\alpha_{1} + k\\alpha_{3}, \\alpha_{2} + l\\alpha_{3}$ 线性无关是向量组 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 线性无关的 ( )",
+    "options": [
+      "A. 必要非充分条件.",
+      "B. 充分非必要条件.",
+      "C. 充分必要条件.",
+      "D. 既非充分也非必要条件."
+    ],
+    "chapter": "第十一章 向量"
+  },
+  {
+    "id": "2014-选-07",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设随机事件 A 与 B 相互独立, 且 $P(B)=0.5, P(A-B)=0.3$ , 则 $P(B-A)=(\\quad)$",
+    "options": [
+      "A. 0.1.",
+      "B. 0.2.",
+      "C. 0.3.",
+      "D. 0.4"
+    ],
+    "chapter": "第十五章 随机事件及其概率"
+  },
+  {
+    "id": "2014-选-08",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $X_{1}, X_{2}, X_{3}$ 为来自正态总体 $N(0, \\sigma^{2})$ 的简单随机样本, 则统计量 $S = \\frac{X_{1} - X_{2}}{\\sqrt{2} |X_{3}|}$ 服从的分布为 ( )",
+    "options": [
+      "A. $F(1,1)$ .",
+      "B. $F(2,1)$ .",
+      "C. $t(1)$ .",
+      "D. $t(2)$ ."
+    ],
+    "chapter": "第二十章 数理统计的基本概念"
+  },
+  {
+    "id": "2014-填-01",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设某商品的需求函数为 $Q = 40 - 2P$ ( $P$ 为商品的价格), 则该商品的边际收益为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第七章 微积分在经济学中的应用"
+  },
+  {
+    "id": "2014-填-02",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 D 是由曲线 $xy + 1 = 0$ 与直线 $y + x = 0$ 及 y = 2 围成的有界区域, 则 D 的面积为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2014-填-03",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $\\int_{0}^{a} x e^{2x} dx = \\frac{1}{4}$ ，则 a = \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2014-填-04",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "二次积分 $\\int_{0}^{1}dy\\int_{y}^{1}\\left(\\frac{\\mathrm{e}^{x^{2}}}{x}-\\mathrm{e}^{y^{2}}\\right)\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2014-填-05",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设二次型 $f(x_1, x_2, x_3) = x_1^2 - x_2^2 + 2ax_1x_3 + 4x_2x_3$ 的负惯性指数为 1, 则 $a$ 的取值范围是 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十四章 二次型"
+  },
+  {
+    "id": "2014-填-06",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 X 的概率密度为 $f(x;\\theta)=\\left\\{\\begin{aligned}&\\frac{2x}{3\\theta^{2}},&\\theta<x<2\\theta,\\\\ &0,&\\text{其他},\\end{aligned}\\right.$ 其中 $\\theta$ 是未知参数, $X_{1}, X_{2}, \\cdots, X_{n}$ 为来自总体 X 的简单随机样本. 若 $E\\left(c\\sum_{i=1}^{n}X_{i}^{2}\\right)=\\theta^{2}$ , 则 c= \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二十一章 参数估计"
+  },
+  {
+    "id": "2014-解-01",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求极限 $\\lim_{x\\to+\\infty}\\frac{\\int_{1}^{x}\\left[t^{2}\\left(\\mathrm{e}^{\\frac{1}{t}}-1\\right)-t\\right]dt}{x^{2}\\ln\\left(1+\\frac{1}{x}\\right)}$ .",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2014-解-02",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设平面区域 $D = \\{(x,y) \\mid 1 \\leqslant x^2 + y^2 \\leqslant 4, x \\geqslant 0, y \\geqslant 0\\}$ , 计算 $\\iint_{D} \\frac{x \\sin\\left(\\pi \\sqrt{x^2 + y^2}\\right)}{x + y} \\, \\mathrm{d}x \\, \\mathrm{d}y$ .",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2014-解-03",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(u)$ 具有连续导数, 且 $z = f(\\mathrm{e}^{x}\\cos y)$ 满足 $\\cos y\\frac{\\partial z}{\\partial x} - \\sin y\\frac{\\partial z}{\\partial y} = (4z + \\mathrm{e}^{x}\\cos y)\\mathrm{e}^{x}$ . 若 $f(0) = 0$ , 求 $f(u)$ 的表达式.",
+    "options": [],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2014-解-04",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大"
+    ],
+    "stem": "求幂级数 $\\sum_{n=0}^{\\infty}(n+1)(n+3)x^n$ 的收敛域及和函数.",
+    "options": [],
+    "chapter": "第八章 无穷级数"
+  },
+  {
+    "id": "2014-解-05",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x), g(x)$ 在区间 $[a, b]$ 上连续, 且 $f(x)$ 单调增加, $0 \\leqslant g(x) \\leqslant 1$ . 证明:\n$(I)0 \\leqslant \\int_{a}^{x} g(t) dt \\leqslant x - a, x \\in [a, b];$\n$(II)\\int_{a}^{a + \\int_{a}^{b}g(t)dt}f(x)\\mathrm{d}x\\leqslant \\int_{a}^{b}f(x)g(x)\\mathrm{d}x.$",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2014-解-06",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设矩阵 $A=\\begin{pmatrix}1&-2&3&-4\\\\0&1&-1&1\\\\1&2&0&-3\\end{pmatrix}$ , E 为 3 阶单位矩阵.\n(I) 求方程组 Ax = 0 的一个基础解系;\n(II) 求满足 AB = E 的所有矩阵 B.",
+    "options": [],
+    "chapter": "第十三章 相似矩阵"
+  },
+  {
+    "id": "2014-解-07",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "证明 n 阶矩阵 $\\begin{pmatrix}1&1&\\cdots&1\\\\1&1&\\cdots&1\\\\\\vdots&\\vdots&&\\vdots\\\\1&1&\\cdots&1\\end{pmatrix}$ 与 $\\begin{pmatrix}0&\\cdots&0&1\\\\0&\\cdots&0&2\\\\\\vdots&&\\vdots&\\vdots\\\\0&\\cdots&0&n\\end{pmatrix}$ 相似.",
+    "options": [],
+    "chapter": "第十三章 相似矩阵"
+  },
+  {
+    "id": "2014-解-08",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "设随机变量 X 的概率分布为 $P\\{X=1\\}=P\\{X=2\\}=\\frac{1}{2}$ . 在给定 X=i 的条件下, 随机变量 Y 服从均匀分布 $U(0,i)(i=1,2)$ .\n(I) 求 Y 的分布函数 $F_{Y}(y)$ ;\n(II) 求 $E(Y)$ .",
+    "options": [],
+    "chapter": "第十六章 随机变量及其分布"
+  },
+  {
+    "id": "2014-解-09",
+    "book": "真题2010-2026",
+    "year": "2014",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设随机变量 $X, Y$ 的概率分布相同, $X$ 的概率分布为 $P\\{X = 0\\} = \\frac{1}{3}, P\\{X = 1\\} = \\frac{2}{3}$ , 且 $X$ 与 $Y$ 的相关系数 $\\rho_{XY} = \\frac{1}{2}$ .\n(I) 求 $(X,Y)$ 的概率分布;\n(II) 求 $P\\{X + Y \\leqslant 1\\}$ .",
+    "options": [],
+    "chapter": "第十八章 随机变量的数字特征"
+  }
+]

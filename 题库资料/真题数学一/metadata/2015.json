@@ -1,0 +1,333 @@
+[
+  {
+    "id": "2015-选-01",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $(-\\infty, +\\infty)$ 上连续, 其 2 阶导函数 $f''(x)$ 的图形如右图所示, 则曲线 $y = f(x)$ 的拐点个数为 ( )",
+    "options": [
+      "A. 0.",
+      "B. 1.",
+      "C. 2.",
+      "D. 3."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2015-选-02",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $y = \\frac{1}{2} \\mathrm{e}^{2x} + \\left(x - \\frac{1}{3}\\right) \\mathrm{e}^x$ 是二阶常系数非齐次线性微分方程 $y'' + ay' + by = ce^x$ 的一个特解, 则 ( )",
+    "options": [
+      "A. $a = -3, b = 2, c = -1$ .",
+      "B. $a = 3, b = 2, c = -1$ .",
+      "C. $a = -3, b = 2, c = 1$ .",
+      "D. $a = 3, b = 2, c = 1$ ."
+    ],
+    "chapter": "第七章 微分方程及其应用"
+  },
+  {
+    "id": "2015-选-03",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若级数 $\\sum_{n=1}^{\\infty} a_n$ 条件收敛, 则 $x = \\sqrt{3}$ 与 $x = 3$ 依次为幂级数 $\\sum_{n=1}^{\\infty} na_n (x - 1)^n$ 的 ( )",
+    "options": [
+      "A. 收敛点, 收敛点.",
+      "B. 收敛点, 发散点.",
+      "C. 发散点, 收敛点.",
+      "D. 发散点, 发散点."
+    ],
+    "chapter": "第八章 无穷级数"
+  },
+  {
+    "id": "2015-选-04",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $D$ 是第一象限中的曲线 $2xy = 1, 4xy = 1$ 与直线 $y = x, y = \\sqrt{3} x$ 围成的平面区域, 函数 $f(x, y)$ 在 $D$ 上连续, 则 $\\iint_{D} f(x, y) \\mathrm{d}x \\mathrm{d}y = (\\quad)$",
+    "options": [
+      "A. $\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{3}} d\\theta \\int_{\\frac{1}{2\\sin 2\\theta}}^{\\frac{1}{\\sin 2\\theta}} f(r\\cos \\theta, r\\sin \\theta) r dr.$",
+      "B. $\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{3}} d\\theta \\int_{\\frac{1}{\\sqrt{2\\sin 2\\theta}}}^{\\frac{1}{\\sqrt{\\sin 2\\theta}}} f(r\\cos \\theta, r\\sin \\theta) r dr.$",
+      "C. $\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{3}} d\\theta \\int_{\\frac{1}{2\\sin 2\\theta}}^{\\frac{1}{\\sin 2\\theta}} f(r\\cos \\theta, r\\sin \\theta) dr.$",
+      "D. $\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{3}} d\\theta \\int_{\\frac{1}{\\sqrt{2\\sin 2\\theta}}}^{\\frac{1}{\\sqrt{\\sin 2\\theta}}} f(r\\cos \\theta, r\\sin \\theta) dr.$"
+    ],
+    "chapter": "第六章 重积分及其应用"
+  },
+  {
+    "id": "2015-选-05",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设矩阵 $A = \\begin{pmatrix} 1 & 1 & 1 \\\\ 1 & 2 & a \\\\ 1 & 4 & a^2 \\end{pmatrix}, b = \\begin{pmatrix} 1 \\\\ d \\\\ d^2 \\end{pmatrix}$ . 若集合 $\\Omega = \\{1,2\\}$ , 则线性方程组 $Ax = b$ 有无穷多解的充分必要条件为 ( )",
+    "options": [
+      "A. $a \\notin \\Omega, d \\notin \\Omega$ .",
+      "B. $a \\notin \\Omega, d \\in \\Omega$ .",
+      "C. $a \\in \\Omega, d \\notin \\Omega$ .",
+      "D. $a \\in \\Omega, d \\in \\Omega$ ."
+    ],
+    "chapter": "第十三章 线性方程组"
+  },
+  {
+    "id": "2015-选-06",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "设二次型 $f(x_1, x_2, x_3)$ 在正交变换 $x = Py$ 下的标准形为 $2y_1^2 + y_2^2 - y_3^2$ ，其中 $P = (\\mathbf{e}_1, \\mathbf{e}_2, \\mathbf{e}_3)$ . 若 $Q = (\\mathbf{e}_1, -\\mathbf{e}_3, \\mathbf{e}_2)$ ，则 $f(x_1, x_2, x_3)$ 在正交变换 $x = Qy$ 下的标准形为（）",
+    "options": [
+      "A. $2y_1^2 - y_2^2 + y_3^2$ .",
+      "B. $2y_1^2 + y_2^2 - y_3^2$ .",
+      "C. $2y_1^2 - y_2^2 - y_3^2$ .",
+      "D. $2y_1^2 + y_2^2 + y_3^2$ ."
+    ],
+    "chapter": "第十五章 二次型"
+  },
+  {
+    "id": "2015-选-07",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若 A, B 为任意两个随机事件, 则 ( )",
+    "options": [
+      "A. $P(AB) \\leqslant P(A)P(B)$ .",
+      "B. $P(AB) \\geqslant P(A)P(B)$ .",
+      "C. $P(AB) \\leqslant \\frac{P(A) + P(B)}{2}$ .",
+      "D. $P(AB) \\geqslant \\frac{P(A) + P(B)}{2}$ ."
+    ],
+    "chapter": "第十六章 随机事件及其概率"
+  },
+  {
+    "id": "2015-选-08",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设随机变量 X, Y 不相关, 且 $E(X) = 2$ , $E(Y) = 1$ , $D(X) = 3$ , 则 $E[X(X + Y - 2)] = (\\quad)$",
+    "options": [
+      "A. -3.",
+      "B. 3.",
+      "C. -5",
+      "D. 5."
+    ],
+    "chapter": "第十九章 随机变量的数字特征"
+  },
+  {
+    "id": "2015-填-01",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to0}\\frac{\\ln(\\cos x)}{x^{2}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2015-填-02",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\int_{-\\frac{\\pi}{2}}^{\\frac{\\pi}{2}}\\left(\\frac{\\sin x}{1+\\cos x}+|x|\\right)\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2015-填-03",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若函数 $z = z(x, y)$ 由方程 $\\mathrm{e}^z + xyz + x + \\cos x = 2$ 确定, 则 $\\mathrm{dz}\\big|_{(0,1)} =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第五章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2015-填-04",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $\\Omega$ 是由平面 $x + y + z = 1$ 与三个坐标平面所围成的空间区域, $\\iint_{\\Omega} (x + 2y + 3z) \\, \\mathrm{d}x \\, \\mathrm{d}y \\, \\mathrm{d}z =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第六章 重积分及其应用"
+  },
+  {
+    "id": "2015-填-05",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "n阶行列式 $\\begin{vmatrix}2&0&\\cdots&0&2\\\\-1&2&\\cdots&0&2\\\\\\vdots&\\vdots&&\\vdots&\\vdots\\\\0&0&\\cdots&2&2\\\\0&0&\\cdots&-1&2\\end{vmatrix}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十章 行列式"
+  },
+  {
+    "id": "2015-填-06",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设二维随机变量 $(X,Y)$ 服从正态分布 $N(1,0;1,1;0)$ ，则 $P\\{XY - Y < 0\\} =$ \\_\\_\\_\\_ .",
+    "options": [],
+    "chapter": "第十七章 随机变量及其分布"
+  },
+  {
+    "id": "2015-解-01",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)=x+a\\ln(1+x)+bx\\sin x,g(x)=kx^{3}$ . 若 $f(x)$ 与 $g(x)$ 在 $x\\to0$ 时是等价无穷小, 求a,b,k值.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2015-解-02",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)$ 在定义域 $I$ 上的导数大于零. 若对任意的 $x_0 \\in I$ , 曲线 $y = f(x)$ 在点 $(x_0, f(x_0))$ 处的切线与直线 $x = x_0$ 及 $x$ 轴所围成区域的面积恒为 4, 且 $f(0) = 2$ , 求 $f(x)$ 的表达式.",
+    "options": [],
+    "chapter": "第七章 微分方程及其应用"
+  },
+  {
+    "id": "2015-解-03",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知函数 $f(x,y)=x+y+xy$ ，曲线 $C:x^{2}+y^{2}+xy=3$ ，求 $f(x,y)$ 在曲线 C 上的最大方向导数.",
+    "options": [],
+    "chapter": "第五章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2015-解-04",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "(I) 设函数 $u(x), v(x)$ 可导, 利用导数定义证明 $[u(x)v(x)]' = u'(x)v(x) + u(x)v'(x)$ ;\n(II) 设函数 $u_{1}(x), u_{2}(x), \\cdots, u_{n}(x)$ 可导, $f(x) = u_{1}(x)u_{2}(x) \\cdots u_{n}(x)$ , 写出 $f(x)$ 的求导公式.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2015-解-05",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知曲线 L 的方程为 $\\left\\{\\begin{aligned}z=\\sqrt{2-x^{2}-y^{2}},\\\\ z=x,\\end{aligned}\\right.$ 起点为 $A(0,\\sqrt{2},0)$ ，终点为 $B(0,-\\sqrt{2},0)$ ，计算曲线积分 $I=\\int_{L}(y+z)\\mathrm{d}x+(z^{2}-x^{2}+y)\\mathrm{d}y+x^{2}y^{2}\\mathrm{d}z.$",
+    "options": [],
+    "chapter": "第九章 曲线积分与曲面积分"
+  },
+  {
+    "id": "2015-解-06",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设向量组 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 为 $R^{3}$ 的一个基, $\\beta_{1} = 2\\alpha_{1} + 2k\\alpha_{3}, \\beta_{2} = 2\\alpha_{2}, \\beta_{3} = \\alpha_{1} + (k+1)\\alpha_{3}$ .\n(I) 证明向量组 $\\beta_{1}, \\beta_{2}, \\beta_{3}$ 为 $R^{3}$ 的一个基;\n(II) 当 $k$ 为何值时, 存在非零向量 $\\xi$ 在基 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 与基 $\\beta_{1}, \\beta_{2}, \\beta_{3}$ 下的坐标相同, 并求所有的 $\\xi$ .",
+    "options": [],
+    "chapter": "第十二章 向量"
+  },
+  {
+    "id": "2015-解-07",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "综合压轴",
+      "易错点"
+    ],
+    "stem": "设矩阵 $A=\\begin{pmatrix}0&2&-3\\\\-1&3&-3\\\\1&-2&a\\end{pmatrix}$ 相似于矩阵 $B=\\begin{pmatrix}1&-2&0\\\\0&b&0\\\\0&3&1\\end{pmatrix}$ .\n(I) 求 a, b 的值;\n(II) 求可逆矩阵 P, 使 $P^{-1}AP$ 为对角矩阵.",
+    "options": [],
+    "chapter": "第十四章 相似矩阵"
+  },
+  {
+    "id": "2015-解-08",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设随机变量 X 的概率密度为 $f(x)=\\left\\{\\begin{aligned}&2^{-x}\\ln2,&x>0,\\\\ &0,&x\\leqslant0.\\end{aligned}\\right.$ 对 X 进行独立重复的观测, 直到第 2 个大于 3 的观测值出现时停止, 记 Y 为观测次数.\n(I) 求 Y 的概率分布;\n(II) 求 $E(Y)$ .",
+    "options": [],
+    "chapter": "第十九章 随机变量的数字特征"
+  },
+  {
+    "id": "2015-解-09",
+    "book": "真题2010-2026",
+    "year": "2015",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 X 的概率密度为 $f(x;\\theta)=\\left\\{\\begin{aligned}\\frac{1}{1-\\theta},&\\theta\\leqslant x\\leqslant1,\\\\ 0,&\\text{其他},\\end{aligned}\\right.$ 其中 $\\theta$ 为未知参数. $X_{1},X_{2},\\cdots,X_{n}$ 为来自该总体的简单随机样本.\n(I) 求 $\\theta$ 的矩估计量;\n(II) 求 $\\theta$ 的最大似然估计量.",
+    "options": [],
+    "chapter": "第二十二章 参数估计"
+  }
+]

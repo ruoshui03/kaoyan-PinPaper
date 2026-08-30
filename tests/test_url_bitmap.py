@@ -18,12 +18,17 @@ from core.state_manager import StateManager
 
 
 @pytest.mark.parametrize("subject", [SubjectType.MATH_1, SubjectType.MATH_2, SubjectType.MATH_3])
-def test_canonical_ids_880_equals_full_today(subject):
-    """今天整科只有 880，按书过滤应与全量题号完全一致（顺序也一致）。"""
+def test_canonical_ids_880_is_stable_880_subset(subject):
+    """加入真题(第二本书)后:canonical_ids(book='880') 应恰为全量里 book=='880' 的子集,
+    且顺序与全量中 880 题的相对顺序一致(真题不掺入 880 的 canonical → 880 旧 URL 不失效)。"""
     loader = BankLoader(subject=subject)
     loader.load()
-    assert loader.canonical_ids(book="880") == list(loader.questions_by_id.keys())
-    assert loader.canonical_ids() == list(loader.questions_by_id.keys())
+    c880 = loader.canonical_ids(book="880")
+    full_880 = [qid for qid, q in loader.questions_by_id.items()
+                if getattr(q, "book", "880") == "880"]
+    assert c880 == full_880 and len(c880) > 0
+    # 全量应严格多于 880(真题已接入)
+    assert len(loader.canonical_ids()) > len(c880)
 
 
 def test_second_book_does_not_shift_880_bitmap():
@@ -164,6 +169,53 @@ def test_second_book_does_not_shift_seen():
     seen_code_after = sm.seen_to_url_code(ordered_after)
     assert ordered_after == ordered_before
     assert seen_code_after == seen_code_before, "第二本书改变了 880 的 seen 码"
+
+
+def test_zhenti_restore_merge_does_not_wipe_880():
+    """真题错题码 merge 恢复后,先恢复的 880 错题必须仍在(两书共存不互相覆盖)。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    c880 = loader.canonical_ids(book="880")
+    czt = loader.canonical_ids(book="真题2010-2026")
+    assert c880 and czt, "需要 880 与真题两本书都已加载"
+
+    # 源:分别在两书标错题,各自编码
+    src = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    src.batch_mark_wrong(c880[:3])
+    code_880 = src.to_url_code(c880)
+    src2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    src2.batch_mark_wrong(czt[:2])
+    code_zt = src2.to_url_code(czt)
+
+    # 目标:先恢复 880(替换),再恢复真题(merge)——模拟 app 恢复顺序
+    dst = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n1, s1 = dst.apply_url_code(code_880, c880)
+    n2, s2 = dst.apply_url_code(code_zt, czt, merge=True)
+    assert s1 == "ok" and n1 == 3
+    assert s2 == "ok" and n2 == 2
+    # 关键:880 的 3 道 + 真题的 2 道都在,互不覆盖
+    for qid in c880[:3]:
+        assert dst.is_wrong_marked(qid), f"880 错题 {qid} 被真题恢复覆盖了"
+    for qid in czt[:2]:
+        assert dst.is_wrong_marked(qid), f"真题错题 {qid} 未恢复"
+    assert len(dst.get_all_wrong_question_ids()) == 5
+
+
+def test_zhenti_bitmap_independent_of_880_signature():
+    """真题位图用真题自己的签名,与 880 签名不同;真题码套到 880 canonical 会判 stale。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    c880 = loader.canonical_ids(book="880")
+    czt = loader.canonical_ids(book="真题2010-2026")
+    assert StateManager.bank_signature(c880) != StateManager.bank_signature(czt)
+
+    src = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    src.batch_mark_wrong(czt[:2])
+    code_zt = src.to_url_code(czt)
+    # 真题码套到 880 canonical → 签名不匹配 → stale(拒绝错位套用)
+    dst = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n, status = dst.apply_url_code(code_zt, c880)
+    assert status == "stale" and n == 0
 
 
 def test_old_url_without_seen_still_works():

@@ -1,0 +1,339 @@
+[
+  {
+    "id": "2016-选-01",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $(- \\infty, + \\infty)$ 内连续, 其导函数的图形如",
+    "options": [
+      "A. 函数 $f(x)$ 有 2 个极值点, 曲线 $y = f(x)$ 有 2 个拐点.",
+      "B. 函数 $f(x)$ 有 2 个极值点, 曲线 $y = f(x)$ 有 3 个拐点.",
+      "C. 函数 $f(x)$ 有 3 个极值点, 曲线 $y = f(x)$ 有 1 个拐点.",
+      "D. 函数 $f(x)$ 有 3 个极值点, 曲线 $y = f(x)$ 有 2 个拐点."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2016-选-02",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $f(x,y)=\\frac{\\mathrm{e}^{x}}{x-y}$ ，则（）",
+    "options": [
+      "A. $f_{x}^{\\prime}-f_{y}^{\\prime}=0.$",
+      "B. $f_{x}^{\\prime}+f_{y}^{\\prime}=0.$",
+      "C. $f_{x}^{\\prime}-f_{y}^{\\prime}=f.$",
+      "D. $f_{x}^{\\prime}+f_{y}^{\\prime}=f.$"
+    ],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2016-选-03",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $J_{i} = \\iint_{D_{i}} \\sqrt[3]{x - y} \\mathrm{d}x \\mathrm{d}y (i = 1,2,3)$ , 其中 $D_{1} = \\{(x,y) \\mid 0 \\leqslant x \\leqslant 1, 0 \\leqslant y \\leqslant 1\\}$ , $D_{2} = \\{(x,y) \\mid 0 \\leqslant x \\leqslant 1, 0 \\leqslant y \\leqslant \\sqrt{x}\\}, D_{3} = \\{(x,y) \\mid 0 \\leqslant x \\leqslant 1, x^{2} \\leqslant y \\leqslant 1\\}$ , 则 ( )",
+    "options": [
+      "A. $J_{1} < J_{2} < J_{3}$ .",
+      "B. $J_{3} < J_{1} < J_{2}$ .",
+      "C. $J_{2} < J_{3} < J_{1}$ .",
+      "D. $J_{2} < J_{1} < J_{3}$ ."
+    ],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2016-选-04",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "级数 $\\sum_{n=1}^{\\infty} \\left( \\frac{1}{\\sqrt{n}} - \\frac{1}{\\sqrt{n+1}} \\right) \\sin(n+k) (k$ 为常数) ( )",
+    "options": [
+      "A. 绝对收敛.",
+      "B. 条件收敛.",
+      "C. 发散.",
+      "D. 收敛性与 $k$ 有关."
+    ],
+    "chapter": "第八章 无穷级数"
+  },
+  {
+    "id": "2016-选-05",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设 A, B 是可逆矩阵, 且 A 与 B 相似, 则下列结论错误的是 ( )",
+    "options": [
+      "A. $A^{T}$ 与 $B^{T}$ 相似.",
+      "B. $A^{-1}$ 与 $B^{-1}$ 相似.",
+      "C. $A + A^{T}$ 与 $B + B^{T}$ 相似.",
+      "D. $A + A^{-1}$ 与 $B + B^{-1}$ 相似."
+    ],
+    "chapter": "第十三章 相似矩阵"
+  },
+  {
+    "id": "2016-选-06",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设二次型 $f(x_1, x_2, x_3) = a(x_1^2 + x_2^2 + x_3^2) + 2x_1x_2 + 2x_2x_3 + 2x_1x_3$ 的正, 负惯性指数分别为 1, 2, 则 ( )",
+    "options": [
+      "A. $a > 1$ .",
+      "B. $a < -2$ .",
+      "C. $-2 < a < 1$ .",
+      "D. $a = 1$ 或 $a = -2$ ."
+    ],
+    "chapter": "第十四章 二次型"
+  },
+  {
+    "id": "2016-选-07",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "7) 设 A, B 为两个随机事件, 且 $0 < P(A) < 1, 0 < P(B) < 1$ , 如果 $P(A \\mid B) = 1$ , 则 ( )",
+    "options": [
+      "A. $P(\\overline{B} \\mid \\overline{A}) = 1.$",
+      "B. $P(A \\mid \\overline{B}) = 0.$",
+      "C. $P(A \\cup B) = 1.$",
+      "D. $P(B \\mid A) = 1.$"
+    ],
+    "chapter": "第十五章 随机事件及其概率"
+  },
+  {
+    "id": "2016-选-08",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设随机变量 X 与 Y 相互独立, 且 $X \\sim N(1,2)$ , $Y \\sim N(1,4)$ , 则 $D(XY) = (\\quad)$",
+    "options": [
+      "A. 6.",
+      "B. 8.",
+      "C. 14.",
+      "D. 15."
+    ],
+    "chapter": "第十八章 随机变量的数字特征"
+  },
+  {
+    "id": "2016-填-01",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $f(x)$ 满足 $\\lim_{x \\to 0} \\frac{\\sqrt{1 + f(x) \\sin 2x} - 1}{\\mathrm{e}^{3x} - 1} = 2$ , 则 $\\lim_{x \\to 0} f(x) =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2016-填-02",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "极限 $\\lim_{n\\to\\infty}\\frac{1}{n^{2}}\\left(\\sin\\frac{1}{n}+2\\sin\\frac{2}{n}+\\cdots+n\\sin\\frac{n}{n}\\right)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2016-填-03",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(u, v)$ 可微, $z = z(x, y)$ 由方程 $(x + 1)z - y^2 = x^2f(x - z, y)$ 确定, 则 $\\mathrm{d}z|_{(0,1)} =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2016-填-04",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $D = \\{(x, y) \\mid |x| \\leqslant y \\leqslant 1, -1 \\leqslant x \\leqslant 1\\}$ , 则 $\\iint_{D} x^{2} \\mathrm{e}^{-y^{2}} \\mathrm{d}x \\mathrm{d}y =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2016-填-05",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "行列式 $\\begin{vmatrix}\\lambda & -1 & 0 & 0 \\\\ 0 & \\lambda & -1 & 0 \\\\ 0 & 0 & \\lambda & -1 \\\\ 4 & 3 & 2 & \\lambda + 1\\end{vmatrix} =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第九章 行列式"
+  },
+  {
+    "id": "2016-填-06",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设袋中有红、白、黑球各 1 个, 从中有放回地取球, 每次取 1 个, 直到三种颜色的球都取到时停止, 则取球次数恰好为 4 的概率为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十五章 随机事件及其概率"
+  },
+  {
+    "id": "2016-解-01",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求极限 $\\lim_{x\\to0}(\\cos2x+2x\\sin x)^{\\frac{1}{x^{4}}}$ .",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2016-解-02",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设某商品的最大需求量为1200件, 该商品的需求函数 $Q = Q(p)$ , 需求弹性 $\\eta = \\frac{p}{120 - p} (\\eta > 0)$ , p 为单价(万元).\n(I) 求需求函数的表达式;\n(II) 求 p = 100 万元时的边际收益, 并说明其经济意义.",
+    "options": [],
+    "chapter": "第七章 微积分在经济学中的应用"
+  },
+  {
+    "id": "2016-解-03",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)=\\int_{0}^{1}|t^{2}-x^{2}|dt(x>0)$ ，求 $f'(x)$ ，并求 $f(x)$ 的最小值.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2016-解-04",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 连续,且满足 $\\int_0^x f(x - t)dt = \\int_0^x (x - t)f(t)dt + \\mathrm{e}^{-x} - 1,$ 求 $f(x)$",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2016-解-05",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大"
+    ],
+    "stem": "求幂级数 $\\sum_{n=0}^{\\infty}\\frac{x^{2n+2}}{(n+1)(2n+1)}$ 的收敛域及和函数.",
+    "options": [],
+    "chapter": "第八章 无穷级数"
+  },
+  {
+    "id": "2016-解-06",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设矩阵 $A=\\begin{pmatrix}1&1&1-a\\\\1&0&a\\\\a+1&1&a+1\\end{pmatrix},\\beta=\\begin{pmatrix}0\\\\1\\\\2a-2\\end{pmatrix}$ ，且方程组 $Ax=\\beta$ 无解.\n(I) 求 a 的值;\n(II) 求方程组 $A^{T}Ax = A^{T}\\beta$ 的通解.",
+    "options": [],
+    "chapter": "第十二章 线性方程组"
+  },
+  {
+    "id": "2016-解-07",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知矩阵 $A=\\begin{pmatrix}0&-1&1\\\\ 2&-3&0\\\\ 0&0&0\\end{pmatrix}$ .\n(I) 求 $A^{99}$ ;\n(II) 设 3 阶矩阵 $B = (\\alpha_{1}, \\alpha_{2}, \\alpha_{3})$ 满足 $B^{2} = BA$ . 记 $B^{100} = (\\beta_{1}, \\beta_{2}, \\beta_{3})$ , 将 $\\beta_{1}, \\beta_{2}, \\beta_{3}$ 分别表示为 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 的线性组合.",
+    "options": [],
+    "chapter": "第十三章 相似矩阵"
+  },
+  {
+    "id": "2016-解-08",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设二维随机变量 $(X,Y)$ 在区域 $D = \\{(x,y) \\mid 0 < x < 1, x^2 < y < \\sqrt{x}\\}$ 上服从均匀分布, 令\n$$\nU = \\left\\{ \\begin{array}{l l} 1, & X \\leqslant Y \\\\ 0, & X > Y \\end{array} \\right.\n$$\n(I) 写出 $(X,Y)$ 的概率密度;\n(II) 问 U 与 X 是否相互独立？并说明理由；\n(III) 求 $Z = U + X$ 的分布函数 $F(z)$ .",
+    "options": [],
+    "chapter": "第十七章 多维随机变量及其分布"
+  },
+  {
+    "id": "2016-解-09",
+    "book": "真题2010-2026",
+    "year": "2016",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 X 的概率密度为 $f(x;\\theta)=\\left\\{\\begin{aligned}\\frac{3x^{2}}{\\theta^{3}},&0<x<\\theta,\\\\ 0,&\\text{其他},\\end{aligned}\\right.$ 其中 $\\theta\\in(0,+\\infty)$ 为未知参数, $X_{1},X_{2},X_{3}$ 为来自总体 X 的简单随机样本, 令 $T=\\max\\left\\{X_{1},X_{2},X_{3}\\right\\}$ .\n(I) 求 T 的概率密度;\n(II) 确定 a, 使得 $E(aT)=\\theta$ .",
+    "options": [],
+    "chapter": "第二十一章 参数估计"
+  }
+]

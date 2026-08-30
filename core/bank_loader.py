@@ -242,6 +242,12 @@ class BankLoader:
             renumbered[new_id] = q
 
         self.questions_by_id = renumbered
+
+        # 追加真题(第二本书):自包含加载,保留原始年份题号(如 2010-选-01),
+        # 不经 880 的重编号 → 与 880 的 章-篇-题型-序号 天然不撞;book 字段区分。
+        # 880 的 questions_by_id / canonical_ids(book="880") 不受影响 → 880 旧 URL 不失效。
+        self._append_zhenti()
+
         self._is_loaded = True
 
         # 构建章节顺序
@@ -264,6 +270,55 @@ class BankLoader:
             return list(self.questions_by_id.keys())
         return [qid for qid, q in self.questions_by_id.items()
                 if getattr(q, "book", "880") == book]
+
+    def _append_zhenti(self) -> None:
+        """加载真题(第二本书)并追加进 questions_by_id,保留原始年份题号。
+
+        真题 metadata 自包含(含 stem/options/chapter),不走 880 的题面对齐与重编号。
+        缺字段给默认:difficulty=综合(真题无难度分层)、answer/solution 暂空。
+        """
+        folder = {SubjectType.MATH_1: "真题数学一", SubjectType.MATH_2: "真题数学二",
+                  SubjectType.MATH_3: "真题数学三"}.get(self.subject)
+        if not folder:
+            return
+        root = self.metadata_dir.parent.parent  # 题库资料/
+        zt_dir = root / folder / "metadata"
+        if not zt_dir.exists():
+            return
+        TYPE_MAP = {"选择题": QuestionType.CHOICE, "填空题": QuestionType.FILL_BLANK,
+                    "解答题": QuestionType.SOLUTION}
+        items: list[QuestionItem] = []
+        for jf in zt_dir.glob("*.json"):
+            if jf.name.startswith("_"):
+                continue
+            try:
+                data = json.loads(jf.read_text(encoding="utf-8-sig"))
+            except Exception:
+                continue
+            for zt in (data if isinstance(data, list) else [data]):
+                qid = zt.get("id")
+                if not qid or qid in self.questions_by_id:
+                    continue
+                chapter = zt.get("chapter") or "未分类章节"
+                items.append(QuestionItem(
+                    id=qid,
+                    chapter=chapter,
+                    category=classify_category(chapter, parse_chapter_number(chapter, qid)),
+                    difficulty=DifficultyLevel.COMPREHENSIVE,  # 真题无难度分层,统一综合
+                    question_type=TYPE_MAP.get(zt.get("question_type", ""), QuestionType.CHOICE),
+                    core_knowledge=[],
+                    tags=zt.get("tags") or [],
+                    recommend_weight=3,
+                    stem=zt.get("stem") or "",
+                    options=zt.get("options") or [],
+                    answer=zt.get("answer") or "",
+                    solution=zt.get("solution") or "",
+                    book=zt.get("book") or "真题",
+                    year=str(zt.get("year") or ""),
+                ))
+        # 按题号(年份→题型→序号)稳定排序后追加
+        for q in sorted(items, key=lambda q: parse_qid_tuple(q.id)):
+            self.questions_by_id[q.id] = q
 
     @staticmethod
     def _align_bodies_by_position(

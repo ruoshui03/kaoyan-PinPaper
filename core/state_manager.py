@@ -386,13 +386,17 @@ class StateManager:
         b64 = base64.urlsafe_b64encode(compressed).decode("ascii").rstrip("=")
         return f"{self.URL_CODE_PREFIX}~{self.bank_signature(ordered_ids)}~{b64}"
 
-    def apply_url_code(self, code: str, ordered_ids: list[str]) -> tuple[int, str]:
+    def apply_url_code(self, code: str, ordered_ids: list[str], merge: bool = False) -> tuple[int, str]:
         """从 URL 串恢复错题状态。返回 (恢复的错题数, 状态说明)。
 
         - 前缀或格式不符 -> (0, 'invalid')
         - 题库签名不匹配 -> (0, 'stale')：题库已变，老链接失效，拒绝套用以免错位
         - 空错题(全 0)   -> (0, 'empty')：不覆盖本地已有数据
         - 成功           -> (个数, 'ok')
+
+        merge=False:整体替换 wrong_questions(单书/首个书恢复,保持原语义)。
+        merge=True :把恢复项 update 进现有 wrong_questions(第二本书如真题恢复,
+                    与另一本书的错题共存不互相覆盖;题号不撞前提下安全)。
         """
         try:
             parts = code.split("~")
@@ -423,7 +427,10 @@ class StateManager:
 
         if not restored:
             return (0, "empty")
-        self.wrong_questions = restored
+        if merge:
+            self.wrong_questions.update(restored)  # 合并:不覆盖另一本书的错题
+        else:
+            self.wrong_questions = restored
         self.save_state()
         return (len(restored), "ok")
 

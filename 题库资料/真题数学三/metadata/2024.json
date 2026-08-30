@@ -1,0 +1,330 @@
+[
+  {
+    "id": "2024-选-01",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知 $f(x) = \\lim_{n \\to \\infty} \\frac{1 + x}{1 + nx^{2n}}$ ，则 $f(x)()$",
+    "options": [
+      "A. 在 $x = 1, x = -1$ 处均连续.",
+      "B. 在 $x = 1$ 处连续, $x = -1$ 处不连续.",
+      "C. 在 $x = 1, x = -1$ 处均不连续.",
+      "D. 在 $x = 1$ 处不连续, $x = -1$ 处连续."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2024-选-02",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $I = \\int_{\\alpha}^{\\alpha + k\\pi} |\\sin x| \\, \\mathrm{d}x, k$ 为整数, 则 $I$ 的值 ( )",
+    "options": [
+      "A. 只与 $\\alpha$ 有关",
+      "B. 只与 $k$ 有关",
+      "C. 与 $\\alpha$ 和 $k$ 均有关",
+      "D. 与 $\\alpha$ 和 $k$ 均无关"
+    ],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2024-选-03",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知 $f(x, y)$ 连续, 则 $\\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}} \\mathrm{d}x \\int_{\\sin x}^{1} f(x, y) \\mathrm{d}y = (\\quad)$",
+    "options": [
+      "A. $\\int_{\\frac{1}{2}}^{1} \\mathrm{d}y \\int_{\\frac{\\pi}{6}}^{\\arcsin y} f(x, y) \\mathrm{d}x$",
+      "B. $\\int_{\\frac{1}{2}}^{1} \\mathrm{d}y \\int_{\\arcsin y}^{\\frac{\\pi}{2}} f(x, y) \\mathrm{d}x$",
+      "C. $\\int_{0}^{\\frac{1}{2}} \\mathrm{d}y \\int_{\\frac{\\pi}{6}}^{\\arcsin y} f(x, y) \\mathrm{d}x$",
+      "D. $\\int_{0}^{\\frac{1}{2}} \\mathrm{d}y \\int_{\\arcsin y}^{\\frac{\\pi}{2}} f(x, y) \\mathrm{d}x$"
+    ],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2024-选-04",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设幂级数 $\\sum_{n=0}^{+\\infty}a_{n}x^{n}$ 的和函数为 $\\ln(2+x)$ ，则 $\\sum_{n=0}^{+\\infty}na_{2n}=$",
+    "options": [
+      "A. $-\\frac{1}{6}$ .",
+      "B. $-\\frac{1}{3}$ .",
+      "C. $\\frac{1}{6}$ .",
+      "D. $\\frac{1}{3}$ ."
+    ],
+    "chapter": "第八章 无穷级数"
+  },
+  {
+    "id": "2024-选-05",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $f(x_1, x_2, x_3) = X^T AX$ 经正交变换化为 $y_1^2 - 2y_2^2 + 3y_3^2$ ，则二次型对应的矩阵 $A$ 的行列式和迹分别为（）",
+    "options": [
+      "A. -6, -2.",
+      "B. 6, -2.",
+      "C. -6, 2.",
+      "D. 6, 2."
+    ],
+    "chapter": "第十四章 二次型"
+  },
+  {
+    "id": "2024-选-06",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 A 为三阶矩阵, $P = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 1 \\end{pmatrix}$ , 若 $P^{T}AP^{2} = \\begin{pmatrix} a + 2c & 0 & c \\\\ 0 & b & 0 \\\\ 2c & 0 & c \\end{pmatrix}$ , 则 $A = (\\quad)$",
+    "options": [
+      "A. $\\begin{pmatrix} c & 0 & 0 \\\\ 0 & a & 0 \\\\ 0 & 0 & b \\end{pmatrix}$ .",
+      "B. $\\begin{pmatrix} b & 0 & 0 \\\\ 0 & c & 0 \\\\ 0 & 0 & a \\end{pmatrix}$ .",
+      "C. $\\begin{pmatrix} a & 0 & 0 \\\\ 0 & b & 0 \\\\ 0 & 0 & c \\end{pmatrix}$ .",
+      "D. $\\begin{pmatrix} c & 0 & 0 \\\\ 0 & b & 0 \\\\ 0 & 0 & a \\end{pmatrix}$ ."
+    ],
+    "chapter": "第十章 矩阵"
+  },
+  {
+    "id": "2024-选-07",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $A = \\begin{pmatrix} a + 1 & b & 3 \\\\ a & \\frac{b}{2} & 1 \\\\ 1 & 1 & 2 \\end{pmatrix}, M_{ij}$ 为 $a_{ij}$ 的余子式, 若 $|A| = -\\frac{1}{2}$ 且 $-M_{21} + M_{22} - M_{23} = 0$ , 则 ( )",
+    "options": [
+      "A. $a = 1$ 或 $a = -\\frac{3}{2}$ .",
+      "B. $a = 0$ 或 $a = \\frac{3}{2}$ .",
+      "C. $b = 1$ 或 $b = -\\frac{1}{2}$ .",
+      "D. $b = -1$ 或 $a = \\frac{1}{2}$ ."
+    ],
+    "chapter": "第十二章 线性方程组"
+  },
+  {
+    "id": "2024-选-08",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设随机变量 $X$ 的概率密度为 $f(x) = \\begin{cases} 6x(1 - x), & 0 < x < 1, \\\\ 0, & \\text{其他} \\end{cases}$ , 则 $X$ 的三阶中心矩 $E(X - EX)^3 =$",
+    "options": [
+      "A. $-\\frac{1}{32}$ .",
+      "B. 0.",
+      "C. $\\frac{1}{10}$ .",
+      "D. $\\frac{1}{2}$ ."
+    ],
+    "chapter": "第十八章 随机变量的数字特征"
+  },
+  {
+    "id": "2024-选-09",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设随机变量 $X, Y$ 相互独立, 且 $X \\sim N(0,2), Y \\sim N(-1,1)$ , 记 $p_1 = P\\{2X - Y > 0\\}$ , $p_2 = P\\{X - 2Y > 1\\}$ , 则 ( )",
+    "options": [
+      "A. $p_1 > p_2 > \\frac{1}{2}$ .",
+      "B. $p_2 > p_1 > \\frac{1}{2}$ .",
+      "C. $p_1 < p_2 < \\frac{1}{2}$ .",
+      "D. $p_2 < p_1 < \\frac{1}{2}$ ."
+    ],
+    "chapter": "第十七章 多维随机变量及其分布"
+  },
+  {
+    "id": "2024-选-10",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "设随机变量 $X, Y$ 相互独立, 且均服从参数为 $\\lambda$ 的指数分布, 令 $Z = |X - Y|$ , 则下列随机变量与 $Z$ 同分布的是 ( )",
+    "options": [
+      "A. $X + Y$ .",
+      "B. $\\frac{X + Y}{2}$ .",
+      "C. $2X$ .",
+      "D. $X$ ."
+    ],
+    "chapter": "第十七章 多维随机变量及其分布"
+  },
+  {
+    "id": "2024-填-01",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$x \\to 0$ 时, $\\int_{0}^{x} \\frac{(1 + t^2) \\sin t^2}{1 + \\cos^2 t}$ $dt$ 与 $x^k$ 是同阶无穷小, 则 $k =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2024-填-02",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{2}^{+\\infty}\\frac{5}{x^{4}+3x^{2}-4}dx=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2024-填-03",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$z=2x^{3}-9x^{2}-6y^{4}+12x+24y$ 的极值点是\\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2024-填-04",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设某商品价格 $P = \\begin{cases} 25 - 0.25Q, & Q \\leqslant 20 \\\\ 35 - 0.75Q, & Q > 20 \\end{cases}$ , 其中 $Q$ 为产量, 总成本函数 $C = 150 + 5Q + 0.25Q^2$ , 求利润的最大值为 \\_\\_\\_\\_ 万元.",
+    "options": [],
+    "chapter": "第七章 微积分在经济学中的应用"
+  },
+  {
+    "id": "2024-填-05",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$A$ 为3阶矩阵, $A^{*}$ 为其伴随矩阵, $E$ 为单位矩阵, 且 $r(2E - A) = 1, r(E + A) = 2$ , 则 $\\left|A^{*}\\right| =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十三章 相似矩阵"
+  },
+  {
+    "id": "2024-填-06",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设随机试验每次成功的概率为 $p$ , 进行 3 次独立重复试验, 在至少试验成功 1 次的条件下三次试验全部成功的概率为 $\\frac{4}{13}$ , 则 $p =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十五章 随机事件及其概率"
+  },
+  {
+    "id": "2024-解-01",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "区域D位于第一象限,由 $xy=\\frac{1}{3},xy=3,y=\\frac{1}{3}x,y=3x$ 围成,计算 $\\iint_{D}(1+x-y)\\mathrm{d}x\\mathrm{d}y$",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2024-解-02",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $z = z(x, y)$ 由 $z + \\mathrm{e}^{x} - y \\ln(1 + z^{2}) = 0$ 确定, 求 $\\left(\\frac{\\partial^{2} z}{\\partial x^{2}} + \\frac{\\partial^{2} z}{\\partial y^{2}}\\right) \\bigg|_{(0,0)}$ .",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2024-解-03",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $t > 0$ ，平面区域 $D$ 由曲线 $y = xe^{-2x}$ 与直线 $x = t, x = 2t$ 及 $x$ 轴围成，记区域 $D$ 的面积为 $S(t)$ ，求 $S(t)$ 的最大值.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2024-解-04",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 具有二阶导数,且 $f'(0)=f'(1),|f''(x)|\\leqslant1$ ,证明:\n$(1)x\\in (0,1),|f(x) - f(0)(1 - x) - f(1)x|\\leqslant \\frac{x(1 - x)}{2}.$\n(2) $\\left|\\int_{0}^{1} f(x) \\, \\mathrm{d}x - \\frac{f(0) + f(1)}{2}\\right| \\leqslant \\frac{1}{12}$",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2024-解-05",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "已知矩阵 $A=\\begin{pmatrix}1&-1&0&-1\\\\1&1&0&3\\\\2&1&2&6\\end{pmatrix},B=\\begin{pmatrix}1&0&1&2\\\\1&-1&a&a-1\\\\2&-3&2&-2\\end{pmatrix}$ ，向量 $\\alpha=\\begin{pmatrix}0\\\\2\\\\3\\end{pmatrix},$ $\\beta=\\begin{pmatrix}1\\\\0\\\\-1\\end{pmatrix}.$\n(1) 证明方程组 $Ax = \\alpha$ 的解是 $Bx = \\beta$ 的解.\n(2) 若方程组 $Ax = \\alpha$ 与 $Bx = \\beta$ 有不同的解, 求 $a$ .",
+    "options": [],
+    "chapter": "第十二章 线性方程组"
+  },
+  {
+    "id": "2024-解-06",
+    "book": "真题2010-2026",
+    "year": "2024",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体X服从 $[0,\\theta]$ 上的均匀分布,其中 $\\theta\\in(0,+\\infty)$ 为未知参数, $X_{1},X_{2},\\cdots X_{n}$ 是来自总体X的简单随机样本,记 $X_{(n)}=\\max\\left\\{X_{1},X_{2},\\cdots X_{n}\\right\\},T_{c}=cX_{(n)}$ .\n(1) 求 c, 使得 $E(T_{c}) = \\theta$ .\n(2) 记 $h(c)=E(T_{c}-\\theta)^{2}$ , 求 c 使得 $h(c)$ 最小.",
+    "options": [],
+    "chapter": "第二十一章 参数估计"
+  }
+]

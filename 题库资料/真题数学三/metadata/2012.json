@@ -1,0 +1,336 @@
+[
+  {
+    "id": "2012-选-01",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=\\frac{x^{2}+x}{x^{2}-1}$ 的渐近线的条数为（）",
+    "options": [
+      "A. 0.",
+      "B. 1.",
+      "C. 2.",
+      "D. 3."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2012-选-02",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)=(\\mathrm{e}^{x}-1)(\\mathrm{e}^{2x}-2)\\cdots(\\mathrm{e}^{nx}-n)$ ，其中 n 为正整数，则 $f'(0)=(\\quad)$",
+    "options": [
+      "A. $(-1)^{n-1}(n-1)!\\quad$",
+      "B. $(-1)^{n}(n-1)!\\quad$",
+      "C. $(-1)^{n-1}n!\\quad$",
+      "D. $(-1)^{n}n!\\quad$"
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2012-选-03",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设函数 $f(t)$ 连续, 则二次积分 $\\int_{0}^{\\frac{\\pi}{2}} d\\theta \\int_{2\\cos\\theta}^{2} f(r^{2}) r dr = (\\quad)$",
+    "options": [
+      "A. $\\int_{0}^{2}dx\\int_{\\sqrt{2x-x^{2}}}^{\\sqrt{4-x^{2}}}\\sqrt{x^{2}+y^{2}}f(x^{2}+y^{2})\\mathrm{d}y.$",
+      "B. $\\int_{0}^{2}dx\\int_{\\sqrt{2x-x^{2}}}^{\\sqrt{4-x^{2}}}f(x^{2}+y^{2})\\mathrm{d}y.$",
+      "C. $\\int_{0}^{2}dy\\int_{1+\\sqrt{1-y^{2}}}^{\\sqrt{4-y^{2}}}\\sqrt{x^{2}+y^{2}}f(x^{2}+y^{2})\\mathrm{d}x.$",
+      "D. $\\int_{0}^{2}dy\\int_{1+\\sqrt{1-y^{2}}}^{\\sqrt{4-y^{2}}}f(x^{2}+y^{2})\\mathrm{d}x.$"
+    ],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2012-选-04",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知级数 $\\sum_{n=1}^{\\infty}(-1)^{n}\\sqrt{n}\\sin\\frac{1}{n^{\\alpha}}$ 绝对收敛, 级数 $\\sum_{n=1}^{\\infty}\\frac{(-1)^{n}}{n^{2-\\alpha}}$ 条件收敛, 则 ( )",
+    "options": [
+      "A. $0 < \\alpha \\leqslant \\frac{1}{2}$ .",
+      "B. $\\frac{1}{2} < \\alpha \\leqslant 1$ .",
+      "C. $1 < \\alpha \\leqslant \\frac{3}{2}$ .",
+      "D. $\\frac{3}{2} < \\alpha < 2$ ."
+    ],
+    "chapter": "第八章 无穷级数"
+  },
+  {
+    "id": "2012-选-05",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\alpha_{1}=\\begin{pmatrix}0\\\\ 0\\\\ c_{1}\\end{pmatrix},\\alpha_{2}=\\begin{pmatrix}0\\\\ 1\\\\ c_{2}\\end{pmatrix},\\alpha_{3}=\\begin{pmatrix}1\\\\ -1\\\\ c_{3}\\end{pmatrix},\\alpha_{4}=\\begin{pmatrix}-1\\\\ 1\\\\ c_{4}\\end{pmatrix}$ ，其中 $c_{1},c_{2},c_{3},c_{4}$ 为任意常数，则下列向量组线性相关的为（）",
+    "options": [
+      "A. $\\alpha_{1},\\alpha_{2},\\alpha_{3}.$",
+      "B. $\\alpha_{1},\\alpha_{2},\\alpha_{4}.$",
+      "C. $\\alpha_{1},\\alpha_{3},\\alpha_{4}.$",
+      "D. $\\alpha_{2},\\alpha_{3},\\alpha_{4}.$"
+    ],
+    "chapter": "第十一章 向量"
+  },
+  {
+    "id": "2012-选-06",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 A 为 3 阶矩阵, P 为 3 阶可逆矩阵, 且 $P^{-1}AP = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 2 \\end{pmatrix}$ . 若 $P = (\\alpha_{1}, \\alpha_{2}, \\alpha_{3})$ , $Q = \\left( \\alpha_{1} + \\alpha_{2}, \\alpha_{2}, \\alpha_{3} \\right)$ , 则 $Q^{-1}AQ = (\\quad)$",
+    "options": [
+      "A. $\\begin{pmatrix}1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 1\\end{pmatrix}.$",
+      "B. $\\begin{pmatrix}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 2\\end{pmatrix}.$",
+      "C. $\\begin{pmatrix}2 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 2\\end{pmatrix}.$",
+      "D. $\\begin{pmatrix}2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 1\\end{pmatrix}.$"
+    ],
+    "chapter": "第十三章 相似矩阵"
+  },
+  {
+    "id": "2012-选-07",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设随机变量 X 与 Y 相互独立, 且都服从区间 $(0,1)$ 上的均匀分布, 则 $P\\{X^{2}+Y^{2}\\leqslant1\\}=(\\quad)$",
+    "options": [
+      "A. $\\frac{1}{4}$ .",
+      "B. $\\frac{1}{2}$ .",
+      "C. $\\frac{\\pi}{8}$ .",
+      "D. $\\frac{\\pi}{4}$ ."
+    ],
+    "chapter": "第十七章 多维随机变量及其分布"
+  },
+  {
+    "id": "2012-选-08",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $X_{1}, X_{2}, X_{3}, X_{4}$ 为来自总体 $N(1, \\sigma^{2})(\\sigma > 0)$ 的简单随机样本, 则统计量 $\\frac{X_{1} - X_{2}}{|X_{3} + X_{4} - 2|}$ 的分布为 ( )",
+    "options": [
+      "A. $N(0,1)$ .",
+      "B. $t(1)$ .",
+      "C. $\\chi^{2}(1)$ .",
+      "D. $F(1,1)$ ."
+    ],
+    "chapter": "第二十章 数理统计的基本概念"
+  },
+  {
+    "id": "2012-填-01",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to\\frac{\\pi}{4}}(\\tan x)^{\\frac{1}{\\cos x-\\sin x}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2012-填-02",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)=\\left\\{\\begin{aligned}&\\ln\\sqrt{x},&x\\geqslant1,\\\\&2x-1,&x<1,\\end{aligned}\\right.$ $y=f(f(x))$ , 则 $\\left.\\frac{\\mathrm{d}y}{\\mathrm{d}x}\\right|_{x=\\mathrm{e}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2012-填-03",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设连续函数 $z = f(x, y)$ 满足 $\\lim_{\\substack{x \\to 0 \\\\ y \\to 1}} \\frac{f(x, y) - 2x + y - 2}{\\sqrt{x^2 + (y - 1)^2}} = 0$ , 则 $\\mathrm{d}z \\big|_{(0,1)} = \\underline{\\quad}$ .",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2012-填-04",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "由曲线 $y=\\frac{4}{x}$ 和直线 y=x 及 y=4x 在第一象限中围成的平面图形的面积为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2012-填-05",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $A$ 为 3 阶矩阵, $|A| = 3, A^*$ 为 $A$ 的伴随矩阵, 若交换 $A$ 的第 1 行与第 2 行得矩阵 $B$ , 则 $\\left|BA^*\\right| =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十三章 相似矩阵"
+  },
+  {
+    "id": "2012-填-06",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 A, B, C 是随机事件, A 与 C 互不相容, $P(AB) = \\frac{1}{2}$ , $P(C) = \\frac{1}{3}$ , 则 $P(AB \\mid \\overline{C}) =$ \\_\\_\\_\\_ .",
+    "options": [],
+    "chapter": "第十五章 随机事件及其概率"
+  },
+  {
+    "id": "2012-解-01",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求极限 $\\lim_{x\\to0}\\frac{e^{x^{2}}-e^{2-2\\cos x}}{x^{4}}$ .",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2012-解-02",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算二重积分 $\\iint_{D} \\mathrm{e}^{x}xy\\mathrm{d}x\\mathrm{d}y$ , 其中 $D$ 是以曲线 $y = \\sqrt{x}, y = \\frac{1}{\\sqrt{x}}$ 及 $y$ 轴为边界的无界区域.",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2012-解-03",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "某企业为生产甲、乙两种型号的产品投入的固定成本为10000(万元).设该企业生产甲、乙两种产品的产量分别为x(件)和y(件),且这两种产品的边际成本分别为 $20+\\frac{x}{2}$ (万元/件)与 $6+y$ (万元/件).\n(I) 求生产甲、乙两种产品的总成本函数 $C(x,y)$ (万元);\n(II) 当总产量为 50 件时, 甲、乙两种产品的产量各为多少时可使总成本最小? 求最小总成本;\n(III) 求总产量为 50 件且总成本最小时甲产品的边际成本, 并解释其经济意义.",
+    "options": [],
+    "chapter": "第七章 微积分在经济学中的应用"
+  },
+  {
+    "id": "2012-解-04",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "证明 $x \\ln \\frac{1 + x}{1 - x} + \\cos x \\geqslant 1 + \\frac{x^2}{2} (-1 < x < 1)$ .",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2012-解-05",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知函数 $f(x)$ 满足方程 $f''(x) + f'(x) - 2f(x) = 0$ 及 $f''(x) + f(x) = 2\\mathrm{e}^x$\n(I) 求 $f(x)$ 的表达式;\n(II) 求曲线 $y = f(x^{2}) \\int_{0}^{x} f(-t^{2}) dt$ 的拐点.",
+    "options": [],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2012-解-06",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设 $A = \\begin{pmatrix} 1 & a & 0 & 0 \\\\ 0 & 1 & a & 0 \\\\ 0 & 0 & 1 & a \\\\ a & 0 & 0 & 1 \\end{pmatrix}, \\beta = \\begin{pmatrix} 1 \\\\ -1 \\\\ 0 \\\\ 0 \\end{pmatrix}.$\n(I) 计算行列式 $\\left|A\\right|$ ;\n(II) 当实数 $a$ 为何值时, 方程组 $Ax = \\beta$ 有无穷多解, 并求其通解.",
+    "options": [],
+    "chapter": "第十二章 线性方程组"
+  },
+  {
+    "id": "2012-解-07",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "已知 $A=\\begin{pmatrix}1&0&1\\\\0&1&1\\\\-1&0&a\\\\0&a&-1\\end{pmatrix}$ ，二次型 $f(x_{1},x_{2},x_{3})=x^{T}(A^{T}A)x$ 的秩为 2.\n(I) 求实数 a 的值;\n(II) 求正交变换 x = Qy 将 f 化为标准形.",
+    "options": [],
+    "chapter": "第十四章 二次型"
+  },
+  {
+    "id": "2012-解-08",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设二维离散型随机变量 $(X,Y)$ 的概率分布为\n(I) 求 $P\\{X=2Y\\}$ ;\n(II) 求 $Cov(X-Y,Y)$ .",
+    "options": [],
+    "chapter": "第十八章 随机变量的数字特征"
+  },
+  {
+    "id": "2012-解-09",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "设随机变量 X 与 Y 相互独立, 且都服从参数为 1 的指数分布. 记 $U = \\max\\{X, Y\\}, V = \\min\\{X, Y\\}$ .\n(I) 求 V 的概率密度 $f_{V}(v)$ ;\n(II) 求 $E(U+V)$ .",
+    "options": [],
+    "chapter": "第十八章 随机变量的数字特征"
+  }
+]

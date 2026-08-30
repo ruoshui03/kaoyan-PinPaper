@@ -1,0 +1,333 @@
+[
+  {
+    "id": "2010-选-01",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $f(x) = \\frac{x^2 - x}{x^2 - 1} \\sqrt{1 + \\frac{1}{x^2}}$ 的无穷间断点的个数为 ( )",
+    "options": [
+      "A. 0.",
+      "B. 1.",
+      "C. 2.",
+      "D. 3."
+    ],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2010-选-02",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $y_{1}, y_{2}$ 是一阶线性非齐次微分方程 $y' + p(x)y = q(x)$ 的两个特解, 若常数 $\\lambda, \\mu$ 使 $\\lambda y_{1} + \\mu y_{2}$ 是该方程的解, $\\lambda y_{1} - \\mu y_{2}$ 是该方程对应的齐次方程的解, 则 ( )",
+    "options": [
+      "A. $\\lambda = \\frac{1}{2}, \\mu = \\frac{1}{2}$ .",
+      "B. $\\lambda = -\\frac{1}{2}, \\mu = -\\frac{1}{2}$ .",
+      "C. $\\lambda = \\frac{2}{3}, \\mu = \\frac{1}{3}$ .",
+      "D. $\\lambda = \\frac{2}{3}, \\mu = \\frac{2}{3}$ ."
+    ],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2010-选-03",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y = x^{2}$ 与曲线 $y = a \\ln x (a \\neq 0)$ 相切, 则 $a = (\\quad)$",
+    "options": [
+      "A. 4e.",
+      "B. 3e.",
+      "C. 2e.",
+      "D. e."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2010-选-04",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 m, n 均是正整数, 则反常积分 $\\int_{0}^{1}\\frac{\\sqrt[m]{\\ln^{2}(1-x)}}{\\sqrt[n]{x}}dx$ 的收敛性 ( )",
+    "options": [
+      "A. 仅与 m 的取值有关.",
+      "B. 仅与 n 的取值有关.",
+      "C. 与 m, n 的取值都有关.",
+      "D. 与 m, n 的取值都无关."
+    ],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2010-选-05",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $z = z(x, y)$ 由方程 $F\\left(\\frac{y}{x}, \\frac{z}{x}\\right) = 0$ 确定, 其中 $F$ 为可微函数, 且 $F_{2}^{\\prime} \\neq 0$ , 则 $x \\frac{\\partial z}{\\partial x} + y \\frac{\\partial z}{\\partial y} = (\\quad)$",
+    "options": [
+      "A. $x$ .",
+      "B. $z$ .",
+      "C. $-x$ .",
+      "D. $-z$ ."
+    ],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2010-选-06",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\sum_{j=1}^{n}\\frac{n}{(n+i)(n^{2}+j^{2})}=$ ( )",
+    "options": [
+      "A. $\\int_{0}^{1}dx\\int_{0}^{x}\\frac{1}{(1+x)(1+y^{2})}dy.$",
+      "B. $\\int_{0}^{1}dx\\int_{0}^{x}\\frac{1}{(1+x)(1+y)}dy.$",
+      "C. $\\int_{0}^{1}dx\\int_{0}^{1}\\frac{1}{(1+x)(1+y)}dy.$",
+      "D. $\\int_{0}^{1}dx\\int_{0}^{1}\\frac{1}{(1+x)(1+y^{2})}dy.$"
+    ],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2010-选-07",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设向量组 $I: \\alpha_{1}, \\alpha_{2}, \\cdots, \\alpha_{r}$ 可由向量组 $II: \\beta_{1}, \\beta_{2}, \\cdots, \\beta_{s}$ 线性表示. 下列命题正确的是 ( )",
+    "options": [
+      "A. 若向量组 I 线性无关, 则 $r \\leqslant s$ .",
+      "B. 若向量组 I 线性相关, 则 r > s.",
+      "C. 若向量组 II 线性无关, 则 $r \\leqslant s$ .",
+      "D. 若向量组 II 线性相关, 则 r > s."
+    ],
+    "chapter": "第九章 向量"
+  },
+  {
+    "id": "2010-选-08",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 A 为 4 阶实对称矩阵, 则 $A^{2} + A = O$ . 若 A 的秩为 3, 则 A 相似于 ( )",
+    "options": [
+      "A. $\\begin{pmatrix}1&1&\\\\ &1&\\\\ & &0\\end{pmatrix}.$",
+      "B. $\\begin{pmatrix}1&1&\\\\ &-1&\\\\ & &0\\end{pmatrix}.$",
+      "C. $\\begin{pmatrix}1&-1&\\\\ &-1&\\\\ & &0\\end{pmatrix}.$",
+      "D. $\\begin{pmatrix}-1&-1&\\\\ &-1&\\\\ & &0\\end{pmatrix}.$"
+    ],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2010-填-01",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "3阶常系数线性齐次微分方程 $y'''-2y''+y'-2y=0$ 的通解为y= \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2010-填-02",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y = \\frac{2x^3}{x^2 + 1}$ 的渐近线方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2010-填-03",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "函数 $y = \\ln(1 - 2x)$ 在 x = 0 处的 n 阶导数 $y^{(n)}(0) =$ \\_\\_\\_\\_ .",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2010-填-04",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "当 $0 \\leqslant \\theta \\leqslant \\pi$ 时, 对数螺线 $r = e^{\\theta}$ 的弧长为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2010-填-05",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知一个长方形的长 l 以 2cm/s 的速率增加, 宽 w 以 3cm/s 的速率增加, 则当 l = 12cm, w = 5cm 时, 它的对角线增加的速率为 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2010-填-06",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 A, B 为 3 阶矩阵, 且 $\\left|A\\right|=3, \\left|B\\right|=2, \\left|A^{-1}+B\\right|=2$ , 则 $\\left|A+B^{-1}\\right|=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第七章 行列式"
+  },
+  {
+    "id": "2010-解-01",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "求函数 $f(x) = \\int_{1}^{x^2}(x^2 - t)\\mathrm{e}^{-t^2}dt$ 的单调区间与极值.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2010-解-02",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "(I) 比较 $\\int_{0}^{1}|\\ln t|[\\ln(1+t)]^{n}dt$ 与 $\\int_{0}^{1}t^{n}|\\ln t|dt(n=1,2,\\cdots)$ 的大小, 说明理由;\n(II) 记 $u_{n}=\\int_{0}^{1}|\\ln t|[\\ln(1+t)]^{n}dt(n=1,2,\\cdots)$ ，求极限 $\\lim_{n\\to\\infty}u_{n}$ .",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2010-解-03",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $y=f(x)$ 由参数方程 $\\left\\{\\begin{aligned}x=2t+t^{2},\\\\ y=\\psi(t)\\end{aligned}\\right.$ (t>-1) 所确定, 其中 $\\psi(t)$ 具有 2 阶导数, 且 $\\psi(1)=\\frac{5}{2}$ , $\\psi'(1)=6$ , 已知 $\\frac{d^{2}y}{dx^{2}}=\\frac{3}{4(1+t)}$ , 求函数 $\\psi(t)$ .",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2010-解-04",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "一个高为 $l$ 的柱体形贮油罐, 底面是长轴为 $2a$ , 短轴为 $2b$ 的椭圆. 现将贮油罐平放, 当油罐中油面高度为 $\\frac{3}{2} b$ 时 (如图), 计算油的质量. (长度单位为 $m$ , 质量单位为 $\\mathrm{kg}$ , 油的密度为常量 $\\rho$ , 单位为 $\\mathrm{kg/m^{3}}$ ).",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2010-解-05",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $u = f(x,y)$ 具有二阶连续偏导数, 且满足等式 $4\\frac{\\partial^2u}{\\partial x^2} + 12\\frac{\\partial^2u}{\\partial x\\partial y} + 5\\frac{\\partial^2u}{\\partial y^2} = 0$ . 确定 $a, b$ 的值, 使等式在变换 $\\xi = x + ay, \\eta = x + by$ 下简化为 $\\frac{\\partial^2u}{\\partial\\xi\\partial\\eta} = 0$ .",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2010-解-06",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "计算二重积分 $I = \\iint_{D}r^{2}\\sin \\theta \\sqrt{1 - r^{2}\\cos 2\\theta} drd\\theta$ ，其中 $D = \\left\\{(r,\\theta)|0\\leqslant r\\leqslant \\sec \\theta ,0\\leqslant \\theta \\leqslant \\frac{\\pi}{4}\\right\\} .$",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2010-解-07",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设函数 $f(x)$ 在闭区间 $[0,1]$ 上连续, 在开区间 $(0,1)$ 内可导, 且 $f(0)=0, f(1)=\\frac{1}{3}$ . 证明:\n存在 $\\xi \\in \\left(0, \\frac{1}{2}\\right), \\eta \\in \\left(\\frac{1}{2}, 1\\right)$ , 使得: $f'(\\xi) + f'(\\eta) = \\xi^2 + \\eta^2$ .",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2010-解-08",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $A=\\begin{pmatrix}\\lambda&1&1\\\\0&\\lambda-1&0\\\\1&1&\\lambda\\end{pmatrix},b=\\begin{pmatrix}a\\\\1\\\\1\\end{pmatrix}$ . 已知线性方程组 Ax=b 存在两个不同的解.\n(I) 求 $\\lambda, a;$\n(II) 求方程组 Ax = b 的通解.",
+    "options": [],
+    "chapter": "第十章 线性方程组"
+  },
+  {
+    "id": "2010-解-09",
+    "book": "真题2010-2026",
+    "year": "2010",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设 $A = \\begin{pmatrix} 0 & -1 & 4 \\\\ -1 & 3 & a \\\\ 4 & a & 0 \\end{pmatrix}$ , 正交矩阵 $Q$ 使 $Q^T A Q$ 为对角矩阵, 若 $Q$ 的第1列为 $\\frac{1}{\\sqrt{6}} (1,2,1)^T$ , 求 $a, Q$ .",
+    "options": [],
+    "chapter": "第十一章 相似矩阵"
+  }
+]

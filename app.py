@@ -16,7 +16,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from core.bank_loader import BankLoader
+from core.bank_loader import BankLoader, parse_qid_tuple, parse_chapter_number
 from core.models import (
     ChapterCategory,
     DifficultyLevel,
@@ -410,20 +410,22 @@ with st.sidebar:
     else:
         current_subject = SubjectType.CUSTOM
 
-    # 2. 再选择参考书籍 (支持多选汇聚题库池)
-    available_books = ["880"]
+    # 先加载题库(含 880 + 真题),再据实际书籍渲染多选
+    loader = get_bank_loader(current_subject if current_subject != SubjectType.CUSTOM else SubjectType.MATH_1)
+    raw_questions = loader.load()
+
+    # 2. 选择参考书籍 (支持多选汇聚题库池)。选项来自题库实际书籍,880 置顶、默认勾选
+    _books_present = {getattr(q, "book", "880") for q in raw_questions}
+    available_books = (["880"] if "880" in _books_present else []) + sorted(_books_present - {"880"})
     selected_books = st.multiselect(
         "📚 选择参考书籍",
         options=available_books,
-        default=available_books,
+        default=["880"] if "880" in available_books else available_books,
         placeholder="请选择参考书籍...",
-        help="勾选需要纳入组卷题库池的书籍，支持多选",
+        help="勾选纳入组卷题库池的书籍，支持多选。真题2010-2026 可与 880 一起混合抽题。",
     )
     current_books_str = "、".join(selected_books) if selected_books else "未选择书籍"
 
-    # 动态加载对应科目题库并根据多选书籍进行汇聚
-    loader = get_bank_loader(current_subject if current_subject != SubjectType.CUSTOM else SubjectType.MATH_1)
-    raw_questions = loader.load()
     all_questions = [q for q in raw_questions if getattr(q, "book", "880") in selected_books]
 
     # 动态提炼章节结构，彻底避免写死任何固定参考书的章节划分与数量
@@ -457,13 +459,17 @@ with st.sidebar:
     # seen 位图参数键(已抽过的题),与错题位图 d1/d2/d3 独立并存
     URL_SEEN_KEY = {SubjectType.MATH_1: "n1", SubjectType.MATH_2: "n2", SubjectType.MATH_3: "n3"}
     url_seen_key = URL_SEEN_KEY.get(active_sub)
-    # 位图 canonical 列表锁定到具体书籍，独立于科目里是否还有别的书。
-    # 今天整科==880，故此列表与全量一致、签名不变、现有 URL 不失效；
-    # 将来加第二本书时，880 的题号列表/顺序/签名保持稳定 → 880 旧 URL 依然有效。
-    # 【待办·第二本书】该书需自己的 canonical 列表 + 独立参数(如 d1b)，
-    #   并配合错题本 book::id 复合键防撞号；届时按其真实题号规则一次设计。
+    # 位图 canonical 列表锁定到具体书籍(880),独立于科目里是否还有别的书。
+    # 880 的题号列表/顺序/签名恒定 → 880 旧 URL 永不失效(真题接入不影响)。
     URL_BITMAP_BOOK = "880"
     canonical_ids = loader.canonical_ids(book=URL_BITMAP_BOOK)
+    # 真题(第二本书)独立位图参数,锚定真题自己的 canonical,与 880 的 d/n 完全隔离。
+    ZHENTI_BOOK = "真题2010-2026"
+    URL_ZHENTI_KEY = {SubjectType.MATH_1: "z1", SubjectType.MATH_2: "z2", SubjectType.MATH_3: "z3"}
+    URL_ZHENTI_SEEN_KEY = {SubjectType.MATH_1: "zn1", SubjectType.MATH_2: "zn2", SubjectType.MATH_3: "zn3"}
+    url_zhenti_key = URL_ZHENTI_KEY.get(active_sub)
+    url_zhenti_seen_key = URL_ZHENTI_SEEN_KEY.get(active_sub)
+    zhenti_canonical = loader.canonical_ids(book=ZHENTI_BOOK)
 
     # 首次进入本科目且网址带错题码时，从 URL 恢复（无后端跨设备恢复）
     if url_data_key and current_subject != SubjectType.CUSTOM:
@@ -475,10 +481,18 @@ with st.sidebar:
                 n_restored, restore_status = state_mgr.apply_url_code(incoming_code, canonical_ids)
                 if restore_status == "stale":
                     st.session_state["_url_restore_stale"] = active_sub.value
+            # 真题错题码:merge=True 合并,不覆盖上面恢复的 880 错题(题号不撞)
+            incoming_zt = st.query_params.get(url_zhenti_key) if url_zhenti_key else None
+            if incoming_zt and zhenti_canonical:
+                state_mgr.apply_url_code(incoming_zt, zhenti_canonical, merge=True)
             # 恢复"已抽过题"(seen)——与错题码独立,合并进本地累积集合
             incoming_seen = st.query_params.get(url_seen_key) if url_seen_key else None
             if incoming_seen:
                 state_mgr.apply_seen_url_code(incoming_seen, canonical_ids)
+            # 真题 seen(apply_seen 本就是并集合并,天然安全)
+            incoming_zt_seen = st.query_params.get(url_zhenti_seen_key) if url_zhenti_seen_key else None
+            if incoming_zt_seen and zhenti_canonical:
+                state_mgr.apply_seen_url_code(incoming_zt_seen, zhenti_canonical)
 
     # URL 试卷码：记住上次生成的是哪几道题（不含组卷配置），做完后跨设备查阅答案。
     # 每科目一个参数键 q1/q2/q3。当右侧无当前试卷时（首次进入 / 切科目回来）从 URL 恢复。
@@ -667,9 +681,10 @@ st.markdown(
 # =========================================================================
 # 6. Three Core Workspaces (Tabs)
 # =========================================================================
-tab_paper_hub, tab_marker_hub, tab_coverage_hub = st.tabs([
+tab_paper_hub, tab_marker_hub, tab_wrongbook_hub, tab_coverage_hub = st.tabs([
     "🎯 智能拼好卷",
     "🏷️ 题库逐题标错",
+    "📕 我的错题本",
     "📈 全科考点雷达",
 ])
 
@@ -695,7 +710,14 @@ with tab_paper_hub:
         if wrong_ratio_pct > 0 and subject_wrong_count == 0:
             st.warning("⚠️ 当前错题池暂无题目，将全部用新题组卷。请前往【逐题标错】录入错题。")
         else:
-            st.caption(f"当前已标错题 {subject_wrong_count} 题 · 全书 {len(all_questions)} 题")
+            # 按书分别统计:每本书 总题数 · 已标错题数
+            _wrong_ids_now = {q.id for q in subject_active_wrong_pool}
+            _lines = []
+            for _bk in selected_books:
+                _tot = sum(1 for q in all_questions if getattr(q, "book", "880") == _bk)
+                _wr = sum(1 for q in all_questions if getattr(q, "book", "880") == _bk and q.id in _wrong_ids_now)
+                _lines.append(f"《{_bk}》{_tot} 题 · 已标错 {_wr} 题")
+            st.caption(" ｜ ".join(_lines) if _lines else "未选择书籍")
         exclude_seen = st.checkbox(
             "🚫 避免重复抽题（抽过的新题不再抽）",
             value=True,
@@ -818,6 +840,33 @@ with tab_paper_hub:
             state_mgr.reset_coverage_cycle()
             st.success("已重置覆盖轮次！")
             st.rerun()
+
+    # 整套真题卷:选年份 → 直接出该年完整原卷(绕过组卷引擎,按题号原序)
+    _zhenti_qs = [q for q in raw_questions if getattr(q, "year", "")]
+    if _zhenti_qs:
+        with st.expander("📅 或:直接做整套历年真题卷", expanded=False):
+            _years = sorted({q.year for q in _zhenti_qs}, reverse=True)
+            zy1, zy2 = st.columns([2, 1])
+            with zy1:
+                pick_year = st.selectbox("选择年份", _years, index=0, key=f"p1_zhenti_year_{current_subject.value}")
+            with zy2:
+                gen_zhenti = st.button("📄 出这套真题", use_container_width=True, key=f"p1_zhenti_gen_{current_subject.value}")
+            st.caption("整套真题按原卷题号顺序呈现(暂无答案解析,可用 AI 名师答疑)。")
+            if gen_zhenti:
+                year_qs = sorted([q for q in _zhenti_qs if q.year == pick_year], key=lambda q: parse_qid_tuple(q.id))
+                paper = PaperItem(
+                    title=f"{pick_year}年 {current_subject.value} 考研真题(原卷)",
+                    paper_id=f"真题-{current_subject.value}-{pick_year}",
+                    subject=current_subject,
+                    mode=PaperMode.FULL_10_6_6,
+                    questions=year_qs,
+                    target_chapters={q.chapter for q in year_qs},
+                )
+                st.session_state.current_paper_p1 = paper
+                st.session_state.current_bundle_p1 = None
+                state_mgr.record_paper_generation(year_qs)
+                state_mgr.set_last_papers([[q.id for q in year_qs]])
+                st.rerun()
 
     # 仅在点击生成按钮时触发组卷
     if start_assemble:
@@ -1406,7 +1455,124 @@ with tab_marker_hub:
 
 
 # -------------------------------------------------------------------------
-# WORKSPACE 3: 全科考点覆盖与错题画像 (进度雷达)
+# WORKSPACE 3: 我的错题本 (全科错题总览，看具体是哪几道)
+# -------------------------------------------------------------------------
+with tab_wrongbook_hub:
+    st.markdown(f"### 📕 {current_subject.value} 错题本 · 全科错题一览")
+
+    # 全科所有曾错题(含已归档历史);按 待练/顽固/历史 分类
+    wb_all = [q for q in all_questions if q.id in all_wrong_ids]
+
+    def _wb_status(qid: str) -> str:
+        """行标签用:最具体的状态 'stubborn' | 'active' | 'history' | ''。
+        顽固是待练的子集(做错≥2),历史为已归档。"""
+        if state_mgr.is_in_active_pool(qid):
+            return "stubborn" if state_mgr.get_wrong_count(qid) >= 2 else "active"
+        if state_mgr.is_temporarily_mastered(qid):
+            return "history"
+        return ""
+
+    # 概览语义与侧边栏画像一致:待练=全部活跃错题(含顽固);顽固=其中做错≥2的子集;历史=已归档
+    wb_active_all = [q for q in wb_all if state_mgr.is_in_active_pool(q.id)]
+    wb_stubborn = [q for q in wb_active_all if state_mgr.get_wrong_count(q.id) >= 2]
+    wb_history = [q for q in wb_all if state_mgr.is_temporarily_mastered(q.id)]
+
+    wb_c1, wb_c2, wb_c3 = st.columns(3)
+    with wb_c1: st.metric("🎯 待练错题", f"{len(wb_active_all)} 题")
+    with wb_c2: st.metric("🔥 顽固错题", f"{len(wb_stubborn)} 题")
+    with wb_c3: st.metric("🏆 历史错题", f"{len(wb_history)} 题")
+
+    if not wb_all:
+        st.info("还没有标记任何错题。去『🏷️ 题库逐题标错』把做错的题录进来，这里就能看到全科错题清单。")
+    else:
+        # 导出错题本备份
+        st.download_button(
+            "📥 导出错题本备份 (JSON)",
+            data=state_mgr.export_wrong_questions_json().encode("utf-8"),
+            file_name=f"错题本_{current_subject.value}.json",
+            mime="application/json",
+            key=f"wb_export_{current_subject.value}",
+        )
+
+        # 筛选行:书籍 / 状态 / 章节 / 题型
+        f0, f1, f2, f3 = st.columns(4)
+        with f0:
+            wb_books = ["全部"] + sorted({getattr(q, "book", "880") for q in wb_all})
+            wb_book_pick = st.selectbox("书籍", wb_books, index=0, key=f"wb_book_{current_subject.value}")
+        with f1:
+            wb_status_pick = st.selectbox(
+                "状态", ["全部", "🎯 待练", "🔥 顽固", "🏆 历史"], index=0,
+                key=f"wb_status_{current_subject.value}")
+        with f2:
+            wb_chs = ["全部"] + sorted({q.chapter for q in wb_all}, key=lambda c: parse_chapter_number(c))
+            wb_ch_pick = st.selectbox("章节", wb_chs, index=0, key=f"wb_ch_{current_subject.value}")
+        with f3:
+            wb_type_pick = st.selectbox(
+                "题型", ["全部", "选择题", "填空题", "解答题"], index=0,
+                key=f"wb_type_{current_subject.value}")
+
+        _STATUS_LABEL = {
+            "active": ('🎯 待练错题', 'badge-adv'),
+            "stubborn": ('🎯 待练 · 🔥 顽固', 'badge-wrong'),  # 顽固也是待练的一种
+            "history": ('🏆 历史错题', 'badge-comp'),
+        }
+
+        # 应用筛选(待练=全部活跃含顽固;顽固=活跃且做错≥2 —— 与概览重叠语义一致)
+        def _wb_pass(q) -> bool:
+            if wb_book_pick != "全部" and getattr(q, "book", "880") != wb_book_pick:
+                return False
+            active = state_mgr.is_in_active_pool(q.id)
+            if wb_status_pick == "🎯 待练" and not active:
+                return False
+            if wb_status_pick == "🔥 顽固" and not (active and state_mgr.get_wrong_count(q.id) >= 2):
+                return False
+            if wb_status_pick == "🏆 历史" and not state_mgr.is_temporarily_mastered(q.id):
+                return False
+            if wb_ch_pick != "全部" and q.chapter != wb_ch_pick:
+                return False
+            if wb_type_pick != "全部" and q.question_type.value != wb_type_pick:
+                return False
+            return True
+
+        shown = sorted([q for q in wb_all if _wb_pass(q)], key=lambda q: parse_qid_tuple(q.id))
+        st.caption(f"共 {len(shown)} 道（按题号排序）")
+
+        for q in shown:
+            stt = _wb_status(q.id)
+            w_cnt = state_mgr.get_wrong_count(q.id)
+            label, _ = _STATUS_LABEL.get(stt, ('', ''))
+            # 摘要标题:一眼看清"哪几道" + 状态 + 做错次数
+            head = f"{label}　{q.id}　·　{q.chapter}　·　[{q.difficulty.value}]　·　做错 {w_cnt} 次"
+            with st.expander(head):
+                render_stem(q.stem)
+                if q.options:
+                    oc1, oc2 = st.columns(2)
+                    for oi, opt in enumerate(q.options):
+                        (oc1 if oi % 2 == 0 else oc2).markdown(opt)
+                if q.answer:
+                    st.markdown(f"**【参考答案】**：`{q.answer}`")
+                if q.solution:
+                    st.markdown(f"**【详细解析】**：\n{q.solution}")
+                # 操作按钮(按状态给对应动作)
+                b1, b2, b3, b4 = st.columns(4)
+                if stt in ("active", "stubborn"):
+                    with b1:
+                        st.button("🏆 归为历史", key=f"wb_arch_{q.id}", use_container_width=True,
+                                  help="已掌握，移出待练池、归档为历史错题", on_click=cb_archive_to_history, args=(q.id,))
+                    with b2:
+                        st.button("➕ 又错一次", key=f"wb_inc_{q.id}", use_container_width=True,
+                                  help="再次做错，做错次数+1", on_click=cb_inc_wrong, args=(q.id,))
+                elif stt == "history":
+                    with b1:
+                        st.button("🎯 放回待练", key=f"wb_react_{q.id}", type="primary", use_container_width=True,
+                                  help="重新放回活跃错题池参与组卷", on_click=cb_reactivate_wrong, args=(q.id,))
+                with b4:
+                    st.button("🗑️ 删除", key=f"wb_del_{q.id}", use_container_width=True,
+                              help="彻底从错题记录中移除", on_click=cb_remove_wrong, args=(q.id,))
+
+
+# -------------------------------------------------------------------------
+# WORKSPACE 4: 全科考点覆盖与错题画像 (进度雷达)
 # -------------------------------------------------------------------------
 with tab_coverage_hub:
     st.markdown(f"### 📈 {current_books_str} · {current_subject.value} 考点覆盖与错题画像")
@@ -1525,6 +1691,15 @@ if url_data_key and current_subject != SubjectType.CUSTOM:
         seen_code = state_mgr.seen_to_url_code(canonical_ids)
         if st.query_params.get(url_seen_key) != seen_code:
             st.query_params[url_seen_key] = seen_code
+    # 真题错题/seen 码写回 z1/zn1 等(锚定真题 canonical,与 880 的 d/n 独立)
+    if url_zhenti_key and zhenti_canonical:
+        zt_code = state_mgr.to_url_code(zhenti_canonical)
+        if st.query_params.get(url_zhenti_key) != zt_code:
+            st.query_params[url_zhenti_key] = zt_code
+    if url_zhenti_seen_key and zhenti_canonical:
+        zt_seen_code = state_mgr.seen_to_url_code(zhenti_canonical)
+        if st.query_params.get(url_zhenti_seen_key) != zt_seen_code:
+            st.query_params[url_zhenti_seen_key] = zt_seen_code
 
 # 试卷码同步：把当前生成的试卷题号写回网址（q1/q2/q3），做完后可凭链接查阅答案
 if paper_url_key and current_subject != SubjectType.CUSTOM:

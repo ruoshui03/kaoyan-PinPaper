@@ -1,0 +1,331 @@
+[
+  {
+    "id": "2012-选-01",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=\\frac{x^{2}+x}{x^{2}-1}$ 的渐近线的条数为（）",
+    "options": [
+      "A. 0.",
+      "B. 1.",
+      "C. 2.",
+      "D. 3."
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2012-选-02",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)=(\\mathrm{e}^{x}-1)(\\mathrm{e}^{2x}-2)\\cdots(\\mathrm{e}^{nx}-n)$ ，其中 n 为正整数，则 $f'(0)=(\\quad)$",
+    "options": [
+      "A. $(-1)^{n-1}(n-1)!\\quad$",
+      "B. $(-1)^{n}(n-1)!\\quad$",
+      "C. $(-1)^{n-1}n!\\quad$",
+      "D. $(-1)^{n}n!$"
+    ],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2012-选-03",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $a_{n}>0(n=1,2,\\cdots), S_{n}=a_{1}+a_{2}+\\cdots+a_{n}$ ，则数列 $\\{S_{n}\\}$ 有界是数列 $\\{a_{n}\\}$ 收敛的（）",
+    "options": [
+      "A. 充分必要条件.",
+      "B. 充分非必要条件.",
+      "C. 必要非充分条件.",
+      "D. 既非充分也非必要条件."
+    ],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2012-选-04",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $I_{k} = \\int_{0}^{k\\pi} \\mathrm{e}^{x^{2}} \\sin x \\mathrm{d}x (k = 1,2,3)$ , 则有 ( )",
+    "options": [
+      "A. $I_{1} < I_{2} < I_{3}$ .",
+      "B. $I_{3} < I_{2} < I_{1}$ .",
+      "C. $I_{2} < I_{3} < I_{1}$ .",
+      "D. $I_{2} < I_{1} < I_{3}$ ."
+    ],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2012-选-05",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x, y)$ 可微, 且对任意的 $x, y$ 都有 $\\frac{\\partial f(x, y)}{\\partial x} > 0, \\frac{\\partial f(x, y)}{\\partial y} < 0$ , 则使不等式 $f(x_1, y_1) < f(x_2, y_2)$ 成立的一个充分条件是 ( )",
+    "options": [
+      "A. $x_1 > x_2, y_1 < y_2$ .",
+      "B. $x_1 > x_2, y_1 > y_2$ .",
+      "C. $x_1 < x_2, y_1 < y_2$ .",
+      "D. $x_1 < x_2, y_1 > y_2$ ."
+    ],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2012-选-06",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设区域 $D$ 由曲线 $y = \\sin x, x = \\pm \\frac{\\pi}{2}, y = 1$ 围成, 则 $\\iint_{D} (xy^5 - 1) \\, \\mathrm{d}x \\, \\mathrm{d}y = (\\quad)$",
+    "options": [
+      "A. $\\pi$ .",
+      "B. 2.",
+      "C. -2.",
+      "D. $-\\pi$ ."
+    ],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2012-选-07",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\alpha_{1}=\\begin{pmatrix}0\\\\ 0\\\\ c_{1}\\end{pmatrix},\\alpha_{2}=\\begin{pmatrix}0\\\\ 1\\\\ c_{2}\\end{pmatrix},\\alpha_{3}=\\begin{pmatrix}1\\\\ -1\\\\ c_{3}\\end{pmatrix},\\alpha_{4}=\\begin{pmatrix}-1\\\\ 1\\\\ c_{4}\\end{pmatrix}$ ，其中 $c_{1},c_{2},c_{3},c_{4}$ 为任意常数，则下列向量组线性相关的为（）",
+    "options": [
+      "A. $\\alpha_{1},\\alpha_{2},\\alpha_{3}.$",
+      "B. $\\alpha_{1},\\alpha_{2},\\alpha_{4}.$",
+      "C. $\\alpha_{1},\\alpha_{3},\\alpha_{4}.$",
+      "D. $\\alpha_{2},\\alpha_{3},\\alpha_{4}.$"
+    ],
+    "chapter": "第九章 向量"
+  },
+  {
+    "id": "2012-选-08",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "选择题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 A 为 3 阶矩阵, P 为 3 阶可逆矩阵, 且 $P^{-1}AP = \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 2 \\end{pmatrix}$ . 若 $P = (\\alpha_{1}, \\alpha_{2}, \\alpha_{3})$ , $Q = (\\alpha_{1} + \\alpha_{2}, \\alpha_{2}, \\alpha_{3})$ , 则 $Q^{-1}AQ = (\\quad)$",
+    "options": [
+      "A. $\\begin{pmatrix}1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 1\\end{pmatrix}.$",
+      "B. $\\begin{pmatrix}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 2\\end{pmatrix}.$",
+      "C. $\\begin{pmatrix}2 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 2\\end{pmatrix}.$",
+      "D. $\\begin{pmatrix}2 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 1\\end{pmatrix}.$"
+    ],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2012-填-01",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $y = y(x)$ 是由方程 $x^{2} - y + 1 = \\mathrm{e}^{y}$ 所确定的隐函数, 则 $\\left.\\frac{d^{2}y}{\\mathrm{d}x^{2}}\\right|_{x=0} =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2012-填-02",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}n\\left(\\frac{1}{1+n^{2}}+\\frac{1}{2^{2}+n^{2}}+\\cdots+\\frac{1}{n^{2}+n^{2}}\\right)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2012-填-03",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $z = f\\left(\\ln x + \\frac{1}{y}\\right)$ , 其中函数 $f(u)$ 可微, 则 $x \\frac{\\partial z}{\\partial x} + y^2 \\frac{\\partial z}{\\partial y} = \\underline{\\hspace{2cm}}$ .",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2012-填-04",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "微分方程 $y \\, dx + (x - 3y^{2}) \\, dy = 0$ 满足条件 $y \\big|_{x=1} = 1$ 的解为 y = \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2012-填-05",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y = x^{2} + x (x < 0)$ 上曲率为 $\\frac{\\sqrt{2}}{2}$ 的点的坐标是 \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第二章 一元函数微分学及其应用"
+  },
+  {
+    "id": "2012-填-06",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "填空题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $A$ 为 3 阶矩阵, $|A| = 3, A^*$ 为 $A$ 的伴随矩阵, 若交换 $A$ 的第 1 行与第 2 行得矩阵 $B$ , 则 $\\left|BA^*\\right| =$ \\_\\_\\_\\_.",
+    "options": [],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2012-解-01",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知函数 $f(x) = \\frac{1 + x}{\\sin x} - \\frac{1}{x}$ ，记 $a = \\lim_{x \\to 0} f(x)$ .\n(I) 求 a 的值;\n(II) 若当 $x \\to 0$ 时, $f(x) - a$ 与 $x^k$ 是同阶无穷小量, 求常数 $k$ 的值.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2012-解-02",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "求函数 $f(x,y)=xe^{-\\frac{x^{2}+y^{2}}{2}}$ 的极值.",
+    "options": [],
+    "chapter": "第四章 多元函数微分学及其应用"
+  },
+  {
+    "id": "2012-解-03",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "过点 $(0,1)$ 作曲线 $L:y = \\ln x$ 的切线, 切点为 $A$ , 又 $L$ 与 $x$ 轴交于 $B$ 点, 区域 $D$ 由 $L$ 与直线 $AB$ 围成. 求区域 $D$ 的面积及 $D$ 绕 $x$ 轴旋转一周所得旋转体的体积.",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2012-解-04",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算二重积分 $\\iint_{D} xy d\\sigma$ , 其中区域 $D$ 由曲线 $r = 1 + \\cos \\theta (0 \\leqslant \\theta \\leqslant \\pi)$ 与极轴围成.",
+    "options": [],
+    "chapter": "第五章 二重积分"
+  },
+  {
+    "id": "2012-解-05",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知函数 $f(x)$ 满足方程 $f''(x) + f'(x) - 2f(x) = 0$ 及 $f''(x) + f(x) = 2\\mathrm{e}^x$\n(I) 求 $f(x)$ 的表达式;\n(II) 求曲线 $y = f(x^{2}) \\int_{0}^{x} f(-t^{2}) dt$ 的拐点.",
+    "options": [],
+    "chapter": "第六章 微分方程及其应用"
+  },
+  {
+    "id": "2012-解-06",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "证明: $x\\ln\\frac{1+x}{1-x}+\\cos x\\geqslant1+\\frac{x^{2}}{2}(-1<x<1).$",
+    "options": [],
+    "chapter": "第三章 一元函数积分学及其应用"
+  },
+  {
+    "id": "2012-解-07",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "(I) 证明方程 $x^{n} + x^{n-1} + \\cdots + x = 1$ (n 为大于 1 的整数) 在区间 $\\left(\\frac{1}{2}, 1\\right)$ 内有且仅有一个实根;\n(II) 记 (I) 中的实根为 $x_{n}$ , 证明 $\\lim_{n\\to \\infty}x_n$ 存在, 并求此极限.",
+    "options": [],
+    "chapter": "第一章 函数、极限、连续"
+  },
+  {
+    "id": "2012-解-08",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设 $A = \\begin{pmatrix} 1 & a & 0 & 0 \\\\ 0 & 1 & a & 0 \\\\ 0 & 0 & 1 & a \\\\ a & 0 & 0 & 1 \\end{pmatrix}, \\beta = \\begin{pmatrix} 1 \\\\ -1 \\\\ 0 \\\\ 0 \\end{pmatrix}.$\n(I) 计算行列式 $\\left|A\\right|$ ;\n(II) 当实数 $a$ 为何值时, 方程组 $Ax = \\beta$ 有无穷多解, 并求其通解.",
+    "options": [],
+    "chapter": "第十一章 相似矩阵"
+  },
+  {
+    "id": "2012-解-09",
+    "book": "真题2010-2026",
+    "year": "2012",
+    "question_type": "解答题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "已知 $A=\\begin{pmatrix}1&0&1\\\\0&1&1\\\\-1&0&a\\\\0&a&-1\\end{pmatrix}$ ，二次型 $f(x_{1},x_{2},x_{3})=x^{T}(A^{T}A)x$ 的秩为 2.\n(I) 求实数 a 的值;\n(II) 求正交变换 x = Qy 将 f 化为标准形.",
+    "options": [],
+    "chapter": "第十二章 二次型"
+  }
+]
