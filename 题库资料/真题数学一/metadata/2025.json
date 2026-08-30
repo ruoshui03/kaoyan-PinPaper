@@ -15,7 +15,8 @@
       "C. $x = 0$ 是 $f(x)$ 的极值点，(0,0) 是曲线 $y = f(x)$ 的拐点",
       "D. (0,0) 是曲线 $y = f(x)$ 的拐点，也是曲线 $y = g(x)$ 的拐点"
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-选-02",
@@ -33,7 +34,8 @@
       "C. ①绝对收敛,②条件收敛",
       "D. ①与②均绝对收敛"
     ],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-选-03",
@@ -51,7 +53,8 @@
       "C. 当 $\\lim_{x \\to +\\infty} \\frac{\\int_{0}^{x} f(t) dt}{x}$ 存在时, $\\lim_{x \\to +\\infty} f(x)$ 存在",
       "D. 当 $\\lim_{x \\to +\\infty} f(x)$ 存在时, $\\lim_{x \\to +\\infty} \\frac{\\int_{0}^{x} f(t) dt}{x}$ 存在"
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-选-04",
@@ -69,7 +72,8 @@
       "C. $\\int_0^4 \\left[ \\int_{-2}^{-\\sqrt{4 - y}} f(x, y) \\mathrm{d}x + \\int_{2}^{\\sqrt{4 - y}} f(x, y) \\mathrm{d}x \\right] \\mathrm{d}y$",
       "D. $2 \\int_0^4 \\mathrm{d}y \\left[ \\int_{\\sqrt{4 - y}}^2 f(x, y) \\mathrm{d}x \\right] \\mathrm{d}y$"
     ],
-    "chapter": "第六章 重积分及其应用"
+    "chapter": "第六章 重积分及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-选-05",
@@ -87,7 +91,8 @@
       "C. 2",
       "D. 3"
     ],
-    "chapter": "第十五章 二次型"
+    "chapter": "第十五章 二次型",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-选-06",
@@ -104,7 +109,8 @@
       "C. 不过原点的一个平面",
       "D. 不过原点的一条直线"
     ],
-    "chapter": "第十二章 向量"
+    "chapter": "第十二章 向量",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-选-07",
@@ -121,7 +127,8 @@
       "C. ②④",
       "D. ③④"
     ],
-    "chapter": "第十一章 矩阵"
+    "chapter": "第十一章 矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-选-08",
@@ -138,7 +145,8 @@
       "C. $1 + |P|$",
       "D. $1 + P^{2}$"
     ],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-选-09",
@@ -156,7 +164,8 @@
       "C. $\\frac{3}{e^{2}}$",
       "D. $\\frac{4}{e^{2}}$"
     ],
-    "chapter": "第二十一章 数理统计的基本概念"
+    "chapter": "第二十一章 数理统计的基本概念",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-选-10",
@@ -174,7 +183,8 @@
       "C. $\\left\\{(x_{1}, x_{2}, \\cdots, x_{n}) \\mid \\overline{X} > 1 + \\frac{2}{\\sqrt{n}} Z_{\\alpha}\\right\\}$",
       "D. $\\left\\{(x_{1}, x_{2}, \\cdots, x_{n}) \\mid \\overline{X} > 1 + \\sqrt{\\frac{2}{n}} Z_{\\alpha}\\right\\}$"
     ],
-    "chapter": "第二十三章 假设检验"
+    "chapter": "第二十三章 假设检验",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-填-01",
@@ -187,7 +197,8 @@
     ],
     "stem": "$\\lim_{x\\to0^{+}}\\frac{x^{x}-1}{\\ln x\\cdot\\ln(1-x)}=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-填-02",
@@ -201,7 +212,8 @@
     ],
     "stem": "已知函数 $f(x) = \\begin{cases} 0, & 0 \\leqslant x < \\frac{1}{2} \\\\ x^2, & \\frac{1}{2} \\leqslant x \\leqslant 1 \\end{cases}$ 的傅里叶级数为 $\\sum_{n=1}^{\\infty} b_n \\sin n \\pi x, S(x)$ 为 $\\sum_{n=1}^{\\infty} b_n \\sin n \\pi x$ 的和函数, 则 $S\\left(-\\frac{7}{2}\\right) =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-填-03",
@@ -213,7 +225,8 @@
     ],
     "stem": "已知函数 $U(x,y,z) = xy^2 z^3$ , 向量 $n = (2,2,-1)$ , 则 $\\left.\\frac{\\partial v}{\\partial n}\\right|_{(1,1,1)} = \\underline{\\hspace{2cm}}$ .",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-填-04",
@@ -225,7 +238,8 @@
     ],
     "stem": "已知有向曲线 L 是沿抛物线 $y = 1 - x^{2}$ 从点 (1,0) 到 $(-1,0)$ 的段, 则曲线积分 $\\int_{L}(y + \\cos x)dx + (2x + \\cos y)dy =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-填-05",
@@ -238,7 +252,8 @@
     ],
     "stem": "设矩阵 $A = \\begin{pmatrix} 4 & 2 & -3 \\\\ a & 3 & -4 \\\\ b & 5 & -7 \\end{pmatrix}$ , 若方程组 $A^2 X = 0$ 与 $AX = 0$ 不同解, 则 $a - b =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十三章 线性方程组"
+    "chapter": "第十三章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-填-06",
@@ -250,7 +265,8 @@
     ],
     "stem": "设 A, B 为两个不同随机事件, 且相互独立, 已知 $P(A) = 2P(B)$ , $P(A \\cup B) = \\frac{5}{8}$ , 则 A, B 中至少有一个发生的条件下, A, B 中恰好有一个发生的概率为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十六章 随机事件及其概率"
+    "chapter": "第十六章 随机事件及其概率",
+    "difficulty": "基础题"
   },
   {
     "id": "2025-解-01",
@@ -262,7 +278,8 @@
     ],
     "stem": "计算 $\\int_{0}^{1}\\frac{1}{(x+1)(x^{2}-2x+2)}dx.$",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-解-02",
@@ -275,7 +292,8 @@
     ],
     "stem": "已知函数 $f(u)$ 在区间 $(0, +\\infty)$ 内具有二阶导数, 记 $g(x, y) = f\\left(\\frac{x}{y}\\right)$ , 若 $g(x, y)$ 满足 $x^{2} \\frac{\\partial^{2} g}{\\partial x^{2}} + xy \\frac{\\partial^{2} g}{\\partial x \\partial y} + y^{2} \\frac{\\partial^{2} g}{\\partial y^{2}} = 1$ , 且 $g(x, x) = 1$ , $\\left. \\frac{\\partial g}{\\partial x} \\right|_{(x, x)} = \\frac{2}{x}$ , 求 $f(u)$ .",
     "options": [],
-    "chapter": "第七章 微分方程及其应用"
+    "chapter": "第七章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-解-03",
@@ -289,7 +307,8 @@
     ],
     "stem": "设函数 $f(x)$ 在区间 $(a,b)$ 内可导, 证明: 导函数 $f'(x)$ 在 $(a,b)$ 内严格单调增加的充分必要条件是: 对 $(a,b)$ 内任意的 $x_1, x_2, x_3$ , 当 $x_1 < x_2 < x_3$ 时, $\\frac{f(x_2) - f(x_1)}{x_2 - x_1} < \\frac{f(x_3) - f(x_2)}{x_3 - x_2}$",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-解-04",
@@ -301,7 +320,8 @@
     ],
     "stem": "设 $\\Sigma$ 是由直线 $\\left\\{\\begin{aligned} x &= 0 \\\\ y &= 0 \\end{aligned}\\right.$ 绕直线 $\\left\\{\\begin{aligned} x &= t \\\\ y &= t (t \\text{ 为参数}) \\end{aligned}\\right.$ 旋转一周得到的曲面, $\\sum_{1}$ 是 $\\Sigma$ 介于平面 $x + y + z = 0$ 与 $x + y + z = 1$ 之间部分的外侧, 计算曲面积分 $\\iint_{\\Sigma_{1}} x \\, \\mathrm{d}y \\, \\mathrm{d}z + (y + 1) \\, \\mathrm{d}z \\, \\mathrm{d}x + (z + 2) \\, \\mathrm{d}x \\, \\mathrm{d}y$",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-解-05",
@@ -313,7 +333,8 @@
     ],
     "stem": "设矩阵 $A=\\begin{pmatrix}0&-1&2\\\\-1&0&2\\\\-1&-1&a\\end{pmatrix}$ ,已知1是A的特征多项式的重根.\n(1) 求 $a$ 的值\n(2) 求所有满足 $A\\alpha = \\alpha + \\beta, A^2\\alpha = \\alpha + 2\\beta$ 的非零列向量 $\\alpha, \\beta$ .",
     "options": [],
-    "chapter": "第十三章 线性方程组"
+    "chapter": "第十三章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2025-解-06",
@@ -325,6 +346,7 @@
     ],
     "stem": "投保人的损失事件发生时, 保险公司的赔付额 Y 与投保人的损失额 X 的关系为 (I), 设损失事件发生时, 投保人的损失额 X 的概率密度为 (II).\n$$\n(I) Y = \\left\\{ \\begin{array}{c} 0, X \\leqslant 1 0 0 \\\\ X - 1 0 0, X > 1 0 0 \\end{array} , \\quad (I I) f (x) = \\left\\{ \\begin{array}{c} \\frac {2 \\times 1 0 0 ^ {2}}{(1 0 0 + x) ^ {3}}, x > 0 \\\\ 0, x \\leqslant 0 \\end{array} \\right. \\right.\n$$\n(1) 求 $P\\{Y > 0\\}$ 及 $E(Y)$\n(2) 这种损失事件在一年内发生的次数记为 N, 保险公司在一年内就这种损失事件产生的理赔次数记为 M, 假设 N 服从参数为 8 的泊松分布, 在 $N = n (n \\geqslant 1)$ 的条件下, M 服从二项分布 $B(n, P)$ , 其中 $P = P\\{Y > 0\\}$ , 求 M 的概率分布.",
     "options": [],
-    "chapter": "第十七章 随机变量及其分布"
+    "chapter": "第十七章 随机变量及其分布",
+    "difficulty": "综合题"
   }
 ]

@@ -14,7 +14,8 @@
       "C. $a_2, a_1, a_3$ .",
       "D. $a_3, a_2, a_1$ ."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-选-02",
@@ -32,7 +33,8 @@
       "C. $F(x) = \\begin{cases} (x-1)^2, & x < 1, \\\\ x(\\ln x+1)+1, & x \\geqslant 1. \\end{cases}$",
       "D. $F(x) = \\begin{cases} (x-1)^2, & x < 1, \\\\ x(\\ln x-1)+1, & x \\geqslant 1. \\end{cases}$"
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-选-03",
@@ -49,7 +51,8 @@
       "C. ①发散,②收敛.",
       "D. ①发散,②发散."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-选-04",
@@ -67,7 +70,8 @@
       "C. 函数 $f(x)$ 有 3 个极值点, 曲线 $y = f(x)$ 有 1 个拐点.",
       "D. 函数 $f(x)$ 有 3 个极值点, 曲线 $y = f(x)$ 有 2 个拐点."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-选-05",
@@ -85,7 +89,8 @@
       "C. $f_{1}(x) \\leqslant g(x) \\leqslant f_{2}(x)$ .",
       "D. $f_{2}(x) \\leqslant g(x) \\leqslant f_{1}(x)$ ."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-选-06",
@@ -103,7 +108,8 @@
       "C. $f_{x}^{\\prime}-f_{y}^{\\prime}=f.$",
       "D. $f_{x}^{\\prime}+f_{y}^{\\prime}=f.$"
     ],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-选-07",
@@ -122,7 +128,8 @@
       "C. $A + A^{T}$ 与 $B + B^{T}$ 相似.",
       "D. $A + A^{-1}$ 与 $B + B^{-1}$ 相似."
     ],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-选-08",
@@ -140,7 +147,8 @@
       "C. $-2 < a < 1$ .",
       "D. $a = 1$ 或 $a = -2$ ."
     ],
-    "chapter": "第十二章 二次型"
+    "chapter": "第十二章 二次型",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-填-01",
@@ -153,7 +161,8 @@
     ],
     "stem": "曲线 $y=\\frac{x^{3}}{1+x^{2}}+\\arctan(1+x^{2})$ 的斜渐近线方程为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-填-02",
@@ -166,7 +175,8 @@
     ],
     "stem": "极限 $\\lim_{n\\to\\infty}\\frac{1}{n^{2}}\\left(\\sin\\frac{1}{n}+2\\sin\\frac{2}{n}+\\cdots+n\\sin\\frac{n}{n}\\right)=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-填-03",
@@ -178,7 +188,8 @@
     ],
     "stem": "以 $y = x^{2} - e^{x}$ 和 $y = x^{2}$ 为特解的一阶非齐次线性微分方程为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-填-04",
@@ -191,7 +202,8 @@
     ],
     "stem": "已知函数 $f(x)$ 在 $(- \\infty, + \\infty)$ 上连续, 且 $f(x) = (x + 1)^2 + 2 \\int_0^x f(t) dt$ , 则当 $n \\geqslant 2$ 时, $f^{(n)}(0) =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-填-05",
@@ -203,7 +215,8 @@
     ],
     "stem": "已知动点 P 在曲线 $y = x^{3}$ 上运动, 记坐标原点与点 P 间的距离为 l. 若点 P 的横坐标对时间的变化率为常数 $v_{0}$ , 则当点 P 运动到点 (1,1) 时, l 对时间的变化率是 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-填-06",
@@ -216,7 +229,8 @@
     ],
     "stem": "设矩阵 $\\begin{pmatrix} a & -1 & -1 \\\\ -1 & a & -1 \\\\ -1 & -1 & a \\end{pmatrix}$ 与矩阵 $\\begin{pmatrix} 1 & 1 & 0 \\\\ 0 & -1 & 1 \\\\ 1 & 0 & 1 \\end{pmatrix}$ 等价, 则 $a =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第八章 矩阵"
+    "chapter": "第八章 矩阵",
+    "difficulty": "基础题"
   },
   {
     "id": "2016-解-01",
@@ -228,7 +242,8 @@
     ],
     "stem": "求极限 $\\lim_{x\\to0}(\\cos2x+2x\\sin x)^{\\frac{1}{x^{4}}}$ .",
     "options": [],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-02",
@@ -241,7 +256,8 @@
     ],
     "stem": "设函数 $f(x) = \\int_{0}^{1}|t^{2} - x^{2}|dt (x > 0)$ ，求 $f'(x)$ ，并求 $f(x)$ 的最小值.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-03",
@@ -254,7 +270,8 @@
     ],
     "stem": "已知函数 $z = z(x, y)$ 由方程 $(x^{2} + y^{2})z + \\ln z + 2(x + y + 1) = 0$ 确定, 求 $z = z(x, y)$ 的极值.",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-04",
@@ -267,7 +284,8 @@
     ],
     "stem": "设 $D$ 是由直线 $y = 1, y = x, y = -x$ 围成的有界区域, 计算二重积分 $\\iint_{D} \\frac{x^2 - xy - y^2}{x^2 + y^2} \\, \\mathrm{d}x \\, \\mathrm{d}y$ .",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-05",
@@ -279,7 +297,8 @@
     ],
     "stem": "已知 $y_{1}(x) = \\mathrm{e}^{x},y_{2}(x) = u(x)\\mathrm{e}^{x}$ 是二阶微分方程 $(2x - 1)y^{\\prime \\prime} - (2x + 1)y^{\\prime} + 2y = 0$ 的两个解.若 $u(-1)$ $= \\mathrm{e},u(0) = -1$ ，求 $u(x)$ ，并写出该微分方程的通解.",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-06",
@@ -293,7 +312,8 @@
     ],
     "stem": "设 $D$ 是由曲线 $y = \\sqrt{1 - x^2}$ ( $0 \\leqslant x \\leqslant 1$ ) 与 $\\left\\{ \\begin{array}{l} x = \\cos^3 t, \\\\ y = \\sin^3 t \\end{array} \\left( 0 \\leqslant t \\leqslant \\frac{\\pi}{2} \\right)\\right.$ 围成的平面区域, 求 $D$ 绕 $x$ 轴旋转一周所得旋转体的体积和表面积.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-07",
@@ -305,7 +325,8 @@
     ],
     "stem": "已知函数 $f(x)$ 在 $\\left[0, \\frac{3\\pi}{2}\\right]$ 上连续，在 $\\left(0, \\frac{3\\pi}{2}\\right)$ 内是函数 $\\frac{\\cos x}{2x - 3\\pi}$ 的一个原函数，且 $f(0) = 0$ .\n(I) 求 $f(x)$ 在区间 $\\left[0, \\frac{3\\pi}{2}\\right]$ 上的平均值;\n(II) 证明 $f(x)$ 在区间 $\\left(0, \\frac{3\\pi}{2}\\right)$ 内存在唯一零点.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-08",
@@ -318,7 +339,8 @@
     ],
     "stem": "设矩阵 $A=\\begin{pmatrix}1&1&1-a\\\\1&0&a\\\\a+1&1&a+1\\end{pmatrix},\\beta=\\begin{pmatrix}0\\\\1\\\\2a-2\\end{pmatrix}$ ，且方程组 $Ax=\\beta$ 无解.\n(I) 求 a 的值;\n(II) 求方程组 $A^{T}Ax = A^{T}\\beta$ 的通解.",
     "options": [],
-    "chapter": "第十章 线性方程组"
+    "chapter": "第十章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2016-解-09",
@@ -330,6 +352,7 @@
     ],
     "stem": "已知矩阵 $A=\\begin{pmatrix}0&-1&1\\\\ 2&-3&0\\\\ 0&0&0\\end{pmatrix}$ .\n(I) 求 $A^{99}$ ;\n(II) 设 3 阶矩阵 $B = (\\alpha_{1}, \\alpha_{2}, \\alpha_{3})$ 满足 $B^{2} = BA$ . 记 $B^{100} = (\\beta_{1}, \\beta_{2}, \\beta_{3})$ , 将 $\\beta_{1}, \\beta_{2}, \\beta_{3}$ 分别表示为 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 的线性组合.",
     "options": [],
-    "chapter": "第八章 矩阵"
+    "chapter": "第八章 矩阵",
+    "difficulty": "综合题"
   }
 ]

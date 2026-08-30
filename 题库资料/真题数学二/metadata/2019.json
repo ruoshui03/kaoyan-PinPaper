@@ -14,7 +14,8 @@
       "C. 3.",
       "D. 4."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-02",
@@ -31,7 +32,8 @@
       "C. $\\left(\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ .",
       "D. $\\left(\\frac{3\\pi}{2}, -\\frac{3\\pi}{2}\\right)$ ."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-03",
@@ -49,7 +51,8 @@
       "C. $\\int_0^{+\\infty}\\frac{\\arctan x}{1 + x^2}\\mathrm{d}x.$",
       "D. $\\int_0^{+\\infty}\\frac{x}{1 + x^2}\\mathrm{d}x.$"
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-04",
@@ -66,7 +69,8 @@
       "C. 2,1,3.",
       "D. 2,1,4."
     ],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-05",
@@ -84,7 +88,8 @@
       "C. $I_1 < I_2 < I_3$ .",
       "D. $I_2 < I_3 < I_1$ ."
     ],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-选-06",
@@ -101,7 +106,8 @@
       "C. 必要非充分条件.",
       "D. 既非充分又非必要条件."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-选-07",
@@ -118,7 +124,8 @@
       "C. 2.",
       "D. 3."
     ],
-    "chapter": "第十章 线性方程组"
+    "chapter": "第十章 线性方程组",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-08",
@@ -137,7 +144,8 @@
       "C. $y_{1}^{2} - y_{2}^{2} - y_{3}^{2}$ .",
       "D. $-y_{1}^{2} - y_{2}^{2} - y_{3}^{2}$ ."
     ],
-    "chapter": "第十二章 二次型"
+    "chapter": "第十二章 二次型",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-填-01",
@@ -150,7 +158,8 @@
     ],
     "stem": "$\\lim_{x\\to0}(x+2^{x})^{\\frac{2}{x}}=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-02",
@@ -162,7 +171,8 @@
     ],
     "stem": "曲线 $\\left\\{\\begin{aligned} x &= t - \\sin t, \\\\ y &= 1 - \\cos t \\end{aligned}\\right.$ 在 $t = \\frac{3\\pi}{2}$ 对应点处的切线在 y 轴上的截距为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-03",
@@ -174,7 +184,8 @@
     ],
     "stem": "设函数 $f(u)$ 可导, $z = yf\\left(\\frac{y^{2}}{x}\\right)$ , 则 $2x\\frac{\\partial z}{\\partial x} + y\\frac{\\partial z}{\\partial y} =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-04",
@@ -186,7 +197,8 @@
     ],
     "stem": "曲线 $y = \\ln \\cos x \\left( 0 \\leqslant x \\leqslant \\frac{\\pi}{6} \\right)$ 的弧长为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-05",
@@ -199,7 +211,8 @@
     ],
     "stem": "已知函数 $f(x) = x \\int_{1}^{x} \\frac{\\sin t^2}{t} dt$ ，则 $\\int_{0}^{1} f(x) \\, \\mathrm{d}x =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-填-06",
@@ -211,7 +224,8 @@
     ],
     "stem": "已知矩阵 $A=\\begin{pmatrix}1&-1&0&0\\\\-2&1&-1&1\\\\3&-2&2&-1\\\\0&0&3&4\\end{pmatrix}, A_{ij}$ 表示 $|A|$ 中 $(i,j)$ 元的代数余子式, 则 $A_{11}-A_{12}=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第七章 行列式"
+    "chapter": "第七章 行列式",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-解-01",
@@ -224,7 +238,8 @@
     ],
     "stem": "已知函数 $f(x) = \\begin{cases} x^{2x}, & x > 0, \\\\ xe^{x} + 1, & x \\leqslant 0. \\end{cases}$ 求 $f'(x)$ ，并求 $f(x)$ 的极值.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-02",
@@ -236,7 +251,8 @@
     ],
     "stem": "求不定积分 $\\int \\frac{3x + 6}{(x - 1)^2(x^2 + x + 1)}\\mathrm{d}x.$",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-03",
@@ -250,7 +266,8 @@
     ],
     "stem": "设函数 $y(x)$ 是微分方程 $y' - xy = \\frac{1}{2\\sqrt{x}}\\mathrm{e}^{\\frac{x^2}{2}}$ 满足条件 $y(1) = \\sqrt{\\mathrm{e}}$ 的特解.\n(I) 求 $y(x)$ ;\n(II) 设平面区域 $D = \\{(x, y) \\mid 1 \\leqslant x \\leqslant 2, 0 \\leqslant y \\leqslant y(x)\\}$ , 求 $D$ 绕 $x$ 轴旋转所得旋转体的体积.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-04",
@@ -263,7 +280,8 @@
     ],
     "stem": "已知平面区域 $D = \\{(x,y)\\big| |x| \\leqslant y, (x^2 + y^2)^3 \\leqslant y^4\\}$ , 计算二重积分 $\\iint_{D} \\frac{x + y}{\\sqrt{x^2 + y^2}} \\, \\mathrm{d}x \\, \\mathrm{d}y$ .",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-05",
@@ -275,7 +293,8 @@
     ],
     "stem": "设 $n$ 为正整数, 记 $S_{n}$ 为曲线 $y = \\mathrm{e}^{-x}\\sin x (0 \\leqslant x \\leqslant n\\pi)$ 与 $x$ 轴所围图形的面积, 求 $S_{n}$ , 并求 $\\lim_{n\\to \\infty}S_{n}$ .",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-06",
@@ -288,7 +307,8 @@
     ],
     "stem": "已知函数 $u(x,y)$ 满足 $2\\frac{\\partial^2u}{\\partial x^2} - 2\\frac{\\partial^2u}{\\partial y^2} + 3\\frac{\\partial u}{\\partial x} + 3\\frac{\\partial u}{\\partial y} = 0,$ 求 $a,b$ 的值, 使得在变换 $u(x,y) = v(x,y)\\mathrm{e}^{ax + by}$ 下, 上述等式可化为 $v(x,y)$ 不含一阶偏导数的等式.",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-07",
@@ -302,7 +322,8 @@
     ],
     "stem": "已知函数 $f(x)$ 在 $[0,1]$ 上具有2阶导数，且 $f(0) = 0, f(1) = 1, \\int_0^1 f(x) \\, \\mathrm{d}x = 1$ ，证明：\n(I) 存在 $\\xi \\in (0,1)$ ，使得 $f'(\\xi) = 0$ ;\n(II) 存在 $\\eta \\in (0,1)$ ，使得 $f''(\\eta) < -2$ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-08",
@@ -314,7 +335,8 @@
     ],
     "stem": "已知向量组 $I: \\alpha_{1} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 4 \\end{pmatrix}, \\alpha_{2} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 4 \\end{pmatrix}, \\alpha_{3} = \\begin{pmatrix} 1 \\\\ 2 \\\\ a^{2} + 3 \\end{pmatrix}$ 与 $II: \\beta_{1} = \\begin{pmatrix} 1 \\\\ 1 \\\\ a + 3 \\end{pmatrix}, \\beta_{2} = \\begin{pmatrix} 0 \\\\ 2 \\\\ 1 - a \\end{pmatrix}, \\beta_{3} = \\begin{pmatrix} 1 \\\\ 3 \\\\ a^{2} + 3 \\end{pmatrix}$ . 若向量组 $I$ 与 $II$ 等价, 求 $a$ 的取值, 并将 $\\beta_{3}$ 用 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 线性表示.",
     "options": [],
-    "chapter": "第九章 向量"
+    "chapter": "第九章 向量",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-09",
@@ -328,6 +350,7 @@
     ],
     "stem": "已知矩阵 $A=\\begin{pmatrix}-2&-2&1\\\\2&x&-2\\\\0&0&-2\\end{pmatrix}$ 与 $B=\\begin{pmatrix}2&1&0\\\\0&-1&0\\\\0&0&y\\end{pmatrix}$ 相似.\n(I) 求 x, y;\n(II) 求可逆矩阵 P, 使得 $P^{-1}AP = B$ .",
     "options": [],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "综合题"
   }
 ]

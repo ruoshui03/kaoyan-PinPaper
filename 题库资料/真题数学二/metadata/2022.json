@@ -14,7 +14,8 @@
       "C. ①③④.",
       "D. ②③④."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-02",
@@ -32,7 +33,8 @@
       "C. $\\frac{\\sqrt{2}}{3}$ .",
       "D. $\\frac{2}{3}$ ."
     ],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-选-03",
@@ -50,7 +52,8 @@
       "C. 当 $f(x)$ 在 $x_0$ 的某邻域内是凹函数时， $f''(x_0) > 0$ .",
       "D. 当 $f''(x_0) > 0$ 时， $f(x)$ 在 $x_0$ 的某邻域内是凹函数."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-04",
@@ -67,7 +70,8 @@
       "C. $\\frac{\\partial F}{\\partial x} = -\\frac{\\partial F}{\\partial y}, \\frac{\\partial^2 F}{\\partial x^2} = \\frac{\\partial^2 F}{\\partial y^2}$ .",
       "D. $\\frac{\\partial F}{\\partial x} = -\\frac{\\partial F}{\\partial y}, \\frac{\\partial^2 F}{\\partial x^2} = -\\frac{\\partial^2 F}{\\partial y^2}$ ."
     ],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-05",
@@ -85,7 +89,8 @@
       "C. $(- \\infty, 1)$ .",
       "D. $(- \\infty, 2)$ ."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-06",
@@ -102,7 +107,8 @@
       "C. 若 $\\lim_{n \\to \\infty} \\cos(\\sin x_{n})$ 存在, 则 $\\lim_{n \\to \\infty} \\sin x_{n}$ 存在, 但 $\\lim_{n \\to \\infty} x_{n}$ 不一定存在.",
       "D. 若 $\\lim_{n \\to \\infty} \\sin(\\cos x_{n})$ 存在, 则 $\\lim_{n \\to \\infty} \\cos x_{n}$ 存在, 但 $\\lim_{n \\to \\infty} x_{n}$ 不一定存在."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-07",
@@ -119,7 +125,8 @@
       "C. $I_{1} < I_{3} < I_{2}$ .",
       "D. $I_{3} < I_{2} < I_{1}$ ."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-08",
@@ -136,7 +143,8 @@
       "C. 存在正交矩阵 Q, 使得 $A = Q \\Lambda Q^{-1}$ .",
       "D. 存在可逆矩阵 P, 使得 $A = P \\Lambda P^{T}$ ."
     ],
-    "chapter": "第八章 矩阵"
+    "chapter": "第八章 矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-09",
@@ -154,7 +162,8 @@
       "C. 有无穷多解或无解.",
       "D. 有唯一解或无解."
     ],
-    "chapter": "第十章 线性方程组"
+    "chapter": "第十章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-10",
@@ -171,7 +180,8 @@
       "C. $\\{\\lambda \\mid \\lambda \\in R, \\lambda \\neq -1, \\lambda \\neq -2\\}$ .",
       "D. $\\{\\lambda \\mid \\lambda \\in R, \\lambda \\neq -1\\}$ ."
     ],
-    "chapter": "第九章 向量"
+    "chapter": "第九章 向量",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-填-01",
@@ -183,7 +193,8 @@
     ],
     "stem": "$\\lim_{x\\to0}\\left(\\frac{1+e^{x}}{2}\\right)^{\\cot x}=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-02",
@@ -196,7 +207,8 @@
     ],
     "stem": "已知函数 $y = y(x)$ 由方程 $x^{2} + xy + y^{3} = 3$ 确定，则 $y''(1) =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-03",
@@ -208,7 +220,8 @@
     ],
     "stem": "$\\int_{0}^{1}\\frac{2x+3}{x^{2}-x+1}dx=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-04",
@@ -220,7 +233,8 @@
     ],
     "stem": "微分方程 $y''' - 2y'' + 5y' = 0$ 的通解为 $y(x) =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-05",
@@ -232,7 +246,8 @@
     ],
     "stem": "已知曲线 $L$ 的极坐标方程为 $r = \\sin 3\\theta \\left(0 \\leqslant \\theta \\leqslant \\frac{\\pi}{3}\\right)$ , 则 $L$ 围成的有界区域的面积为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-06",
@@ -244,7 +259,8 @@
     ],
     "stem": "设 A 为 3 阶矩阵, 交换 A 的第 2 行和第 3 行, 再将第 2 列的 -1 倍加到第 1 列, 得到矩阵 $\\begin{pmatrix}-2&1&-1\\\\1&-1&0\\\\-1&0&0\\end{pmatrix}$ , 则 $A^{-1}$ 的迹 $tr(A^{-1})=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第八章 矩阵"
+    "chapter": "第八章 矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-01",
@@ -257,7 +273,8 @@
     ],
     "stem": "已知函数 $f(x)$ 在 $x = 1$ 处可导且 $\\lim_{x \\to 0} \\frac{f(e^{x^2}) - 3f(1 + \\sin^2 x)}{x^2} = 2$ , 求 $f'(1)$ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-02",
@@ -269,7 +286,8 @@
     ],
     "stem": "设函数 $y(x)$ 是微分方程 $2xy' - 4y = 2\\ln x - 1$ 的满足条件 $y(1) = \\frac{1}{4}$ 的解, 求曲线 $y = y(x) (1 \\leqslant x \\leqslant \\mathrm{e})$ 的弧长.",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-03",
@@ -282,7 +300,8 @@
     ],
     "stem": "已知平面区域 $D = \\{(x,y) \\mid y - 2 \\leqslant x \\leqslant \\sqrt{4 - y^2}, 0 \\leqslant y \\leqslant 2\\}$ , 计算 $I = \\iint_{D} \\frac{(x - y)^2}{x^2 + y^2} \\, \\mathrm{d}x \\, \\mathrm{d}y$ .",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-04",
@@ -295,7 +314,8 @@
     ],
     "stem": "已知可微函数 $f(u,v)$ 满足 $\\frac{\\partial f(u,v)}{\\partial u} -\\frac{\\partial f(u,v)}{\\partial v} = 2(u - v)\\mathrm{e}^{-(u + v)}$ ，且 $f(u,0) = u^{2}\\mathrm{e}^{-u}$\n(I) 记 $g(x,y)=f(x,y-x)$ ，求 $\\frac{\\partial g(x,y)}{\\partial x}$ ;\n(II) 求 $f(u,v)$ 的表达式与极值.",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-05",
@@ -308,7 +328,8 @@
     ],
     "stem": "设函数 $f(x)$ 在 $(-\\infty, +\\infty)$ 上有二阶连续导数, 证明: $f''(x) \\geqslant 0$ 的充分必要条件是对任意不同的实数 $a, b$ , 都有 $f\\left(\\frac{a + b}{2}\\right) \\leqslant \\frac{1}{b - a} \\int_{a}^{b} f(x) \\, \\mathrm{d}x$ 成立.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-06",
@@ -322,6 +343,7 @@
     ],
     "stem": "已知二次型 $f(x_{1},x_{2},x_{3})=3x_{1}^{2}+4x_{2}^{2}+3x_{3}^{2}+2x_{1}x_{3}.$\n(I) 求正交矩阵 Q，使正交变换 x = Qy 将二次型 $f(x_{1}, x_{2}, x_{3})$ 化为标准形；\n(II) 证明 $\\min_{x\\neq0}\\frac{f(x)}{x^{T}x}=2.$",
     "options": [],
-    "chapter": "第十二章 二次型"
+    "chapter": "第十二章 二次型",
+    "difficulty": "综合题"
   }
 ]

@@ -97,6 +97,11 @@ def parse_qid_tuple(qid: str) -> tuple[int, int, int, int]:
     """
     parts = qid.split("-")
     ch_num = int(parts[0]) if parts and parts[0].isdigit() else 99
+    # 真题三段 年份-题型-序号(如 2010-选-01):第二段是题型「选/填/解」,不是篇。
+    # 按 题型→序号 排序(年份内),难度档统一置 2 不参与排序。
+    if len(parts) == 3 and len(parts) >= 2 and any(t in parts[1] for t in ("选", "填", "解")):
+        return (ch_num, 2, get_type_rank(parts[1]),
+                int(parts[2]) if parts[2].isdigit() else 99)
     diff_rank = get_diff_rank(parts[1]) if len(parts) >= 2 else 2
     if len(parts) >= 4:  # 章-篇-题型-序号
         type_rank = get_type_rank(parts[2])
@@ -300,11 +305,15 @@ class BankLoader:
                 if not qid or qid in self.questions_by_id:
                     continue
                 chapter = zt.get("chapter") or "未分类章节"
+                # 难度读 metadata(大模型逐题判的 基础/综合;缺则综合兜底)
+                _dstr = zt.get("difficulty") or ""
+                _diff = DifficultyLevel.BASIC if "基础" in _dstr else (
+                    DifficultyLevel.ADVANCED if "拓展" in _dstr else DifficultyLevel.COMPREHENSIVE)
                 items.append(QuestionItem(
                     id=qid,
                     chapter=chapter,
                     category=classify_category(chapter, parse_chapter_number(chapter, qid)),
-                    difficulty=DifficultyLevel.COMPREHENSIVE,  # 真题无难度分层,统一综合
+                    difficulty=_diff,
                     question_type=TYPE_MAP.get(zt.get("question_type", ""), QuestionType.CHOICE),
                     core_knowledge=[],
                     tags=zt.get("tags") or [],

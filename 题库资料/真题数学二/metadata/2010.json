@@ -15,7 +15,8 @@
       "C. 2.",
       "D. 3."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-选-02",
@@ -32,7 +33,8 @@
       "C. $\\lambda = \\frac{2}{3}, \\mu = \\frac{1}{3}$ .",
       "D. $\\lambda = \\frac{2}{3}, \\mu = \\frac{2}{3}$ ."
     ],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2010-选-03",
@@ -49,7 +51,8 @@
       "C. 2e.",
       "D. e."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2010-选-04",
@@ -66,7 +69,8 @@
       "C. 与 m, n 的取值都有关.",
       "D. 与 m, n 的取值都无关."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-选-05",
@@ -84,7 +88,8 @@
       "C. $-x$ .",
       "D. $-z$ ."
     ],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-选-06",
@@ -102,7 +107,8 @@
       "C. $\\int_{0}^{1}dx\\int_{0}^{1}\\frac{1}{(1+x)(1+y)}dy.$",
       "D. $\\int_{0}^{1}dx\\int_{0}^{1}\\frac{1}{(1+x)(1+y^{2})}dy.$"
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-选-07",
@@ -120,7 +126,8 @@
       "C. 若向量组 II 线性无关, 则 $r \\leqslant s$ .",
       "D. 若向量组 II 线性相关, 则 r > s."
     ],
-    "chapter": "第九章 向量"
+    "chapter": "第九章 向量",
+    "difficulty": "基础题"
   },
   {
     "id": "2010-选-08",
@@ -138,7 +145,8 @@
       "C. $\\begin{pmatrix}1&-1&\\\\ &-1&\\\\ & &0\\end{pmatrix}.$",
       "D. $\\begin{pmatrix}-1&-1&\\\\ &-1&\\\\ & &0\\end{pmatrix}.$"
     ],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-填-01",
@@ -150,7 +158,8 @@
     ],
     "stem": "3阶常系数线性齐次微分方程 $y'''-2y''+y'-2y=0$ 的通解为y= \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2010-填-02",
@@ -163,7 +172,8 @@
     ],
     "stem": "曲线 $y = \\frac{2x^3}{x^2 + 1}$ 的渐近线方程为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-填-03",
@@ -175,7 +185,8 @@
     ],
     "stem": "函数 $y = \\ln(1 - 2x)$ 在 x = 0 处的 n 阶导数 $y^{(n)}(0) =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2010-填-04",
@@ -187,7 +198,8 @@
     ],
     "stem": "当 $0 \\leqslant \\theta \\leqslant \\pi$ 时, 对数螺线 $r = e^{\\theta}$ 的弧长为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2010-填-05",
@@ -199,7 +211,8 @@
     ],
     "stem": "已知一个长方形的长 l 以 2cm/s 的速率增加, 宽 w 以 3cm/s 的速率增加, 则当 l = 12cm, w = 5cm 时, 它的对角线增加的速率为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-填-06",
@@ -212,7 +225,8 @@
     ],
     "stem": "设 A, B 为 3 阶矩阵, 且 $\\left|A\\right|=3, \\left|B\\right|=2, \\left|A^{-1}+B\\right|=2$ , 则 $\\left|A+B^{-1}\\right|=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第七章 行列式"
+    "chapter": "第七章 行列式",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-01",
@@ -225,7 +239,8 @@
     ],
     "stem": "求函数 $f(x) = \\int_{1}^{x^2}(x^2 - t)\\mathrm{e}^{-t^2}dt$ 的单调区间与极值.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-02",
@@ -237,7 +252,8 @@
     ],
     "stem": "(I) 比较 $\\int_{0}^{1}|\\ln t|[\\ln(1+t)]^{n}dt$ 与 $\\int_{0}^{1}t^{n}|\\ln t|dt(n=1,2,\\cdots)$ 的大小, 说明理由;\n(II) 记 $u_{n}=\\int_{0}^{1}|\\ln t|[\\ln(1+t)]^{n}dt(n=1,2,\\cdots)$ ，求极限 $\\lim_{n\\to\\infty}u_{n}$ .",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-03",
@@ -250,7 +266,8 @@
     ],
     "stem": "设函数 $y=f(x)$ 由参数方程 $\\left\\{\\begin{aligned}x=2t+t^{2},\\\\ y=\\psi(t)\\end{aligned}\\right.$ (t>-1) 所确定, 其中 $\\psi(t)$ 具有 2 阶导数, 且 $\\psi(1)=\\frac{5}{2}$ , $\\psi'(1)=6$ , 已知 $\\frac{d^{2}y}{dx^{2}}=\\frac{3}{4(1+t)}$ , 求函数 $\\psi(t)$ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-04",
@@ -262,7 +279,8 @@
     ],
     "stem": "一个高为 $l$ 的柱体形贮油罐, 底面是长轴为 $2a$ , 短轴为 $2b$ 的椭圆. 现将贮油罐平放, 当油罐中油面高度为 $\\frac{3}{2} b$ 时 (如图), 计算油的质量. (长度单位为 $m$ , 质量单位为 $\\mathrm{kg}$ , 油的密度为常量 $\\rho$ , 单位为 $\\mathrm{kg/m^{3}}$ ).",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-05",
@@ -275,7 +293,8 @@
     ],
     "stem": "设函数 $u = f(x,y)$ 具有二阶连续偏导数, 且满足等式 $4\\frac{\\partial^2u}{\\partial x^2} + 12\\frac{\\partial^2u}{\\partial x\\partial y} + 5\\frac{\\partial^2u}{\\partial y^2} = 0$ . 确定 $a, b$ 的值, 使等式在变换 $\\xi = x + ay, \\eta = x + by$ 下简化为 $\\frac{\\partial^2u}{\\partial\\xi\\partial\\eta} = 0$ .",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-06",
@@ -288,7 +307,8 @@
     ],
     "stem": "计算二重积分 $I = \\iint_{D}r^{2}\\sin \\theta \\sqrt{1 - r^{2}\\cos 2\\theta} drd\\theta$ ，其中 $D = \\left\\{(r,\\theta)|0\\leqslant r\\leqslant \\sec \\theta ,0\\leqslant \\theta \\leqslant \\frac{\\pi}{4}\\right\\} .$",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-07",
@@ -302,7 +322,8 @@
     ],
     "stem": "设函数 $f(x)$ 在闭区间 $[0,1]$ 上连续, 在开区间 $(0,1)$ 内可导, 且 $f(0)=0, f(1)=\\frac{1}{3}$ . 证明:\n存在 $\\xi \\in \\left(0, \\frac{1}{2}\\right), \\eta \\in \\left(\\frac{1}{2}, 1\\right)$ , 使得: $f'(\\xi) + f'(\\eta) = \\xi^2 + \\eta^2$ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-08",
@@ -314,7 +335,8 @@
     ],
     "stem": "设 $A=\\begin{pmatrix}\\lambda&1&1\\\\0&\\lambda-1&0\\\\1&1&\\lambda\\end{pmatrix},b=\\begin{pmatrix}a\\\\1\\\\1\\end{pmatrix}$ . 已知线性方程组 Ax=b 存在两个不同的解.\n(I) 求 $\\lambda, a;$\n(II) 求方程组 Ax = b 的通解.",
     "options": [],
-    "chapter": "第十章 线性方程组"
+    "chapter": "第十章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2010-解-09",
@@ -328,6 +350,7 @@
     ],
     "stem": "设 $A = \\begin{pmatrix} 0 & -1 & 4 \\\\ -1 & 3 & a \\\\ 4 & a & 0 \\end{pmatrix}$ , 正交矩阵 $Q$ 使 $Q^T A Q$ 为对角矩阵, 若 $Q$ 的第1列为 $\\frac{1}{\\sqrt{6}} (1,2,1)^T$ , 求 $a, Q$ .",
     "options": [],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "综合题"
   }
 ]

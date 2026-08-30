@@ -14,7 +14,8 @@
       "C. 3.",
       "D. 4."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-02",
@@ -32,7 +33,8 @@
       "C. 可导点, 非极值点.",
       "D. 不可导点, 非极值点."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-03",
@@ -50,7 +52,8 @@
       "C. $\\sum_{n=1}^{\\infty}\\left(1-\\frac{u_{n}}{u_{n+1}}\\right).$",
       "D. $\\sum_{n=1}^{\\infty}\\left(u_{n+1}^{2}-u_{n}^{2}\\right).$"
     ],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-选-04",
@@ -67,7 +70,8 @@
       "C. $\\frac{1}{x} - \\frac{1}{y}$ .",
       "D. $x - \\frac{1}{y}$ ."
     ],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-05",
@@ -86,7 +90,8 @@
       "C. $y_1^2 - y_2^2 - y_3^2$ .",
       "D. $-y_1^2 - y_2^2 - y_3^2$ ."
     ],
-    "chapter": "第十五章 二次型"
+    "chapter": "第十五章 二次型",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-选-06",
@@ -103,7 +108,8 @@
       "C. $r(A)=1,r(\\overline{A})=2.$",
       "D. $r(A)=1,r(\\overline{A})=1.$"
     ],
-    "chapter": "第十三章 线性方程组"
+    "chapter": "第十三章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-选-07",
@@ -121,7 +127,8 @@
       "C. $P(A\\overline{B}) = P(B\\overline{A}).$",
       "D. $P(AB) = P(\\overline{AB}).$"
     ],
-    "chapter": "第十六章 随机事件及其概率"
+    "chapter": "第十六章 随机事件及其概率",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-选-08",
@@ -141,7 +148,8 @@
       "C. 与 $\\mu,\\sigma^{2}$ 都有关.",
       "D. 与 $\\mu,\\sigma^{2}$ 都无关."
     ],
-    "chapter": "第十八章 多维随机变量及其分布"
+    "chapter": "第十八章 多维随机变量及其分布",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-01",
@@ -153,7 +161,8 @@
     ],
     "stem": "设函数 $f(u)$ 可导, $z = f(\\sin y - \\sin x) + xy$ , 则 $\\frac{1}{\\cos x} \\cdot \\frac{\\partial z}{\\partial x} + \\frac{1}{\\cos y} \\cdot \\frac{\\partial z}{\\partial y} =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-02",
@@ -165,7 +174,8 @@
     ],
     "stem": "微分方程 $2yy' - y^2 - 2 = 0$ 满足条件 $y(0) = 1$ 的特解 $y =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第七章 微分方程及其应用"
+    "chapter": "第七章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-03",
@@ -177,7 +187,8 @@
     ],
     "stem": "幂级数 $\\sum_{n=0}^{\\infty}\\frac{(-1)^{n}}{(2n)!}x^{n}$ 在 $(0,+\\infty)$ 内的和函数 $S(x)=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-04",
@@ -190,7 +201,8 @@
     ],
     "stem": "设 $\\Sigma$ 设为曲面 $x^{2} + y^{2} + 4z^{2} = 4 (z \\geqslant 0)$ 的上侧, 则 $\\iint_{\\Sigma} \\sqrt{4 - x^{2} - 4z^{2}} \\mathrm{d}x \\mathrm{~d}y =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第六章 重积分及其应用"
+    "chapter": "第六章 重积分及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-填-05",
@@ -203,7 +215,8 @@
     ],
     "stem": "设 $A = (\\alpha_{1}, \\alpha_{2}, \\alpha_{3})$ 为 3 阶矩阵. 若 $\\alpha_{1}, \\alpha_{2}$ 线性无关, 且 $a_{3} = -a_{1} + 2a_{2}$ , 则线性方程组 $Ax = 0$ 的通解为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十三章 线性方程组"
+    "chapter": "第十三章 线性方程组",
+    "difficulty": "基础题"
   },
   {
     "id": "2019-填-06",
@@ -217,7 +230,8 @@
     ],
     "stem": "设随机变量 X 的概率密度为 $f(x)=\\left\\{\\begin{aligned}\\frac{x}{2},&0<x<2,\\\\ &0,\\text{其他},\\end{aligned}\\right.$ F(x) 为 X 的分布函数, E(X) 为 X 的数学期望,\n则 $P\\{F(X)>E(X)-1\\}=$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-01",
@@ -229,7 +243,8 @@
     ],
     "stem": "设函数 $y(x)$ 是微分方程 $y' + xy = \\mathrm{e}^{-\\frac{x^2}{2}}$ 满足条件 $y(0) = 0$ 的特解.\n(I) 求 $y(x)$ ;\n(II) 求曲线 $y = y(x)$ 的凹凸区间及拐点.",
     "options": [],
-    "chapter": "第七章 微分方程及其应用"
+    "chapter": "第七章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-02",
@@ -241,7 +256,8 @@
     ],
     "stem": "设 $a, b$ 为实数, 函数 $z = 2 + ax^2 + by^2$ 在点 (3,4) 处的方向导数中, 沿方向 $l = -3i - 4j$ 的方向导数最大, 最大值为 10.\n(I) 求 a, b;\n(II) 求曲面 $z = 2 + ax^{2} + by^{2} (z \\geqslant 0)$ 的面积.",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-03",
@@ -255,7 +271,8 @@
     ],
     "stem": "求曲线 $y=e^{-x}\\sin x(x\\geqslant0)$ 与 x 轴之间图形的面积.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-04",
@@ -269,7 +286,8 @@
     ],
     "stem": "设 $a_{n}=\\int_{0}^{1}x^{n}\\sqrt{1-x^{2}}\\mathrm{d}x(n=0,1,2,\\cdots)$ .\n(I) 证明数列 $\\{a_{n}\\}$ 单调递减, 且 $a_{n}=\\frac{n-1}{n+2}a_{n-2}(n=2,3,\\cdots)$ ;\n(II) 求 $\\lim_{n\\to\\infty}\\frac{a_{n}}{a_{n-1}}$ .",
     "options": [],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-05",
@@ -282,7 +300,8 @@
     ],
     "stem": "设 $\\Omega$ 是由锥面 $x^{2}+(y-z)^{2}=(1-z)^{2}(0\\leqslant z\\leqslant1)$ 与平面 z=0 围成的锥体, 求 $\\Omega$ 的形心坐标.",
     "options": [],
-    "chapter": "第六章 重积分及其应用"
+    "chapter": "第六章 重积分及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-06",
@@ -294,7 +313,8 @@
     ],
     "stem": "设向量组 $\\alpha_{1} = (1,2,1)^{T},\\alpha_{2} = (1,3,2)^{T},\\alpha_{3} = (1,a,3)^{T}$ 为 $R^3$ 的一个基， $\\beta = (1,1,1)^T$ 在这个基下的坐标为 $(b,c,1)^{T}$\n(I) 求 a, b, c;\n(II) 证明 $\\alpha_{2}, \\alpha_{3}, \\beta$ 为 $R^{3}$ 的一个基, 并求 $\\alpha_{2}, \\alpha_{3}, \\beta$ 到 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}$ 的过渡矩阵.",
     "options": [],
-    "chapter": "第十二章 向量"
+    "chapter": "第十二章 向量",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-07",
@@ -308,7 +328,8 @@
     ],
     "stem": "已知矩阵 $A=\\begin{pmatrix}-2&-2&1\\\\2&x&-2\\\\0&0&-2\\end{pmatrix}$ 与 $B=\\begin{pmatrix}2&1&0\\\\0&-1&0\\\\0&0&y\\end{pmatrix}$ 相似.\n(I) 求 x, y;\n(II) 求可逆矩阵 P 使得 $P^{-1}AP = B$ .",
     "options": [],
-    "chapter": "第十四章 相似矩阵"
+    "chapter": "第十四章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-08",
@@ -323,7 +344,8 @@
     ],
     "stem": "设随机变量 X 与 Y 相互独立, X 服从参数为 1 的指数分布, Y 的概率分布为 $P\\{Y = -1\\} = p, P\\{Y = 1\\} = 1 - p (0 < p < 1)$ . 令 Z = XY.\n(I) 求 Z 的概率密度;\n$(II)p$ 为何值时,X 与 Z 不相关;\n(III) $X$ 与 $Z$ 是否相互独立？",
     "options": [],
-    "chapter": "第十八章 多维随机变量及其分布"
+    "chapter": "第十八章 多维随机变量及其分布",
+    "difficulty": "综合题"
   },
   {
     "id": "2019-解-09",
@@ -335,6 +357,7 @@
     ],
     "stem": "设总体 X 的概率密度为 $f(x;\\sigma^{2})=\\left\\{\\begin{aligned}\\frac{A}{\\sigma}\\mathrm{e}^{-\\frac{(x-\\mu)^{2}}{2\\sigma^{2}}},&x\\geqslant\\mu,\\\\ 0,&x<\\mu,\\end{aligned}\\right.$ 其中 $\\mu$ 是已知参数, $\\sigma>0$ 是未知参数, A 是常数. $X_{1}, X_{2}, \\cdots, X_{n}$ 是来自总体 X 的简单随机样本.\n(I) 求 A;\n(II) 求 $\\sigma^{2}$ 的最大似然估计量.",
     "options": [],
-    "chapter": "第二十二章 参数估计"
+    "chapter": "第二十二章 参数估计",
+    "difficulty": "综合题"
   }
 ]

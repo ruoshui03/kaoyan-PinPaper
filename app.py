@@ -65,6 +65,12 @@ def render_stem(text: str) -> None:
         st.markdown(rest, unsafe_allow_html=True)
 
 
+def diff_badge(q) -> str:
+    """难度标签 HTML(基础/综合/拓展)。真题已由大模型逐题判定真实难度,同 880 正常显示。"""
+    cls = "badge-basic" if q.difficulty == DifficultyLevel.BASIC else ("badge-adv" if q.difficulty == DifficultyLevel.ADVANCED else "badge-comp")
+    return f'<span class="badge {cls}">[{q.difficulty.value}]</span>'
+
+
 # =========================================================================
 # 1. Page Configuration
 # =========================================================================
@@ -1051,8 +1057,8 @@ with tab_paper_hub:
                         meta_row = (
                             f'<div style="display:flex; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">'
                             f'<span class="badge badge-ch">《{getattr(q, "book", "880")}》</span>'
-                            f'<span class="badge {diff_b}">[{q.difficulty.value}]</span>'
-                            f'<span class="badge badge-ch">{q.chapter}</span>'
+                            + diff_badge(q)
+                            + f'<span class="badge badge-ch">{q.chapter}</span>'
                             f'<span style="font-size:11.5px; color:#64748b; font-family:monospace; margin-right:4px;">ID: {q.id}</span>'
                             f'{tags_html} {status_badge}'
                             f'</div>'
@@ -1225,11 +1231,15 @@ with tab_marker_hub:
         and (target_type == "全部" or target_type == q.question_type.value)
         and status_check(q)
     ]
-    ch_questions.sort(key=lambda q: (
-        diff_order_list.index(q.difficulty) if q.difficulty in diff_order_list else 9,
-        (QuestionType.CHOICE, QuestionType.FILL_BLANK, QuestionType.SOLUTION).index(q.question_type) if q.question_type in (QuestionType.CHOICE, QuestionType.FILL_BLANK, QuestionType.SOLUTION) else 9,
-        q.id,
-    ))
+    if is_zhenti:
+        # 真题按原卷题号序(题型→序号),不掺难度,避免同题型内基础/综合错位
+        ch_questions.sort(key=lambda q: parse_qid_tuple(q.id))
+    else:
+        ch_questions.sort(key=lambda q: (
+            diff_order_list.index(q.difficulty) if q.difficulty in diff_order_list else 9,
+            (QuestionType.CHOICE, QuestionType.FILL_BLANK, QuestionType.SOLUTION).index(q.question_type) if q.question_type in (QuestionType.CHOICE, QuestionType.FILL_BLANK, QuestionType.SOLUTION) else 9,
+            q.id,
+        ))
 
     # 本章全部题目(不受上方难度/题型/状态筛选影响),用于批量标错的题号匹配
     chapter_all = [q for q in book_questions if dim_of(q) == target_ch]
@@ -1237,10 +1247,11 @@ with tab_marker_hub:
     _TYPE_SHORT = {QuestionType.CHOICE: "选", QuestionType.FILL_BLANK: "填", QuestionType.SOLUTION: "解"}
     _TYPE_LABEL = {"选": "选择", "填": "填空", "解": "解答"}
     _SEC_ICON = {"基础": "🟢 基础篇", "综合": "🔵 综合篇", "拓展": "🟣 拓展篇"}
-    # 本章实际存在的 (篇, 题型) 组合及其题目 —— 决定网格显示哪些输入框
+    # (篇, 题型) 组合 → 题目。真题无篇分层,篇塌缩为空("")→ 每题型只一框、题号题型内全局连续。
     combos: dict[tuple[str, str], list] = {}
     for q in chapter_all:
-        combos.setdefault((_SEC_SHORT.get(q.difficulty, "综合"), _TYPE_SHORT.get(q.question_type, "选")), []).append(q)
+        sec_key = "" if is_zhenti else _SEC_SHORT.get(q.difficulty, "综合")
+        combos.setdefault((sec_key, _TYPE_SHORT.get(q.question_type, "选")), []).append(q)
 
     def _resolve_ids(inputs: dict[tuple[str, str], str]) -> list[str]:
         """把各 (篇,题型) 框里的题号解析成精确题目 ID。序号取 ID 末段:
@@ -1260,7 +1271,9 @@ with tab_marker_hub:
                        else "刷完一章后，按 **篇 × 题型** 分别输入原书题号") + "（每个题型各自从 1 编号），用逗号或空格隔开："
         st.markdown(_batch_hint)
         batch_inputs: dict[tuple[str, str], str] = {}
-        for sec in ("基础", "综合", "拓展"):
+        # 真题:单一空篇桶(每题型一框);880:三篇各一组
+        _secs = [""] if is_zhenti else ["基础", "综合", "拓展"]
+        for sec in _secs:
             sec_types = [t for t in ("选", "填", "解") if (sec, t) in combos]
             if not sec_types:
                 continue
@@ -1381,9 +1394,13 @@ with tab_marker_hub:
                     sections_to_show.append((f"{sec_icon} · {type_label}", grp))
 
     for sec_title, sec_q_list in sections_to_show:
-        # 总数/已标错取本章该 篇·题型 的全量(chapter_all),不受分页与状态筛选影响
+        # 总数/已标错取本章该组全量(chapter_all),不受分页与状态筛选影响。
+        # 真题按题型全量(无篇);880 按 篇·题型 全量。
         diff0, qtype0 = sec_q_list[0].difficulty, sec_q_list[0].question_type
-        full_group = [q for q in chapter_all if q.difficulty == diff0 and q.question_type == qtype0]
+        if is_zhenti:
+            full_group = [q for q in chapter_all if q.question_type == qtype0]
+        else:
+            full_group = [q for q in chapter_all if q.difficulty == diff0 and q.question_type == qtype0]
         sec_total = len(full_group)
         sec_wrong_n = sum(1 for q in full_group if state_mgr.is_wrong_marked(q.id))
         st.markdown(f"##### {sec_title} · 共 {sec_total} 题 · 已标错 {sec_wrong_n} 题")
@@ -1462,8 +1479,8 @@ with tab_marker_hub:
                     meta_tags_row = (
                         f'<div style="display:flex; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:8px;">'
                         f'<span class="badge badge-ch">《{getattr(q, "book", "880")}》</span>'
-                        f'<span class="badge {diff_cls}">[{q.difficulty.value}]</span>'
-                        f'<span class="badge badge-ch">{q.chapter}</span>'
+                        + diff_badge(q)
+                        + f'<span class="badge badge-ch">{q.chapter}</span>'
                         f'<span class="badge badge-ch">{q.question_type.value}</span>'
                         f'<span style="font-size:11.5px; color:#64748b; font-family:monospace; margin-right:4px;">ID: {q.id}</span>'
                         f'{tags_html} {status_badge}'

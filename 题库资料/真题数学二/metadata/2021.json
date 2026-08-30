@@ -15,7 +15,8 @@
       "C. 高阶无穷小.",
       "D. 同阶但非等价无穷小."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-选-02",
@@ -33,7 +34,8 @@
       "C. 可导且导数为0.",
       "D. 可导且导数不为0."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-选-03",
@@ -50,7 +52,8 @@
       "C. $-100 \\pi \\mathrm{cm}^{3} / \\mathrm{s}, 40 \\pi \\mathrm{cm}^{2} / \\mathrm{s}.$",
       "D. $-100 \\pi \\mathrm{cm}^{3} / \\mathrm{s}, -40 \\pi \\mathrm{cm}^{2} / \\mathrm{s}.$"
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-选-04",
@@ -67,7 +70,8 @@
       "C. $\\left(0, \\frac{1}{\\mathrm{e}}\\right)$ .",
       "D. $\\left(\\frac{1}{\\mathrm{e}}, +\\infty\\right)$ ."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-选-05",
@@ -85,7 +89,8 @@
       "C. $a=0, b=-\\frac{1}{2}$ .",
       "D. $a=0, b=\\frac{1}{2}$ ."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-选-06",
@@ -103,7 +108,8 @@
       "C. $\\mathrm{dy}$ .",
       "D. $-\\mathrm{dy}$ ."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-选-07",
@@ -121,7 +127,8 @@
       "C. $\\lim_{n \\to \\infty} \\sum_{k=1}^{2n} f\\left(\\frac{k-1}{2n}\\right) \\cdot \\frac{1}{n}$ .",
       "D. $\\lim_{x \\to 0} \\sum_{k=1}^{2n} f\\left(\\frac{k}{2n}\\right) \\cdot \\frac{2}{n}$ ."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-选-08",
@@ -139,7 +146,8 @@
       "C. 2,1.",
       "D. 1,2."
     ],
-    "chapter": "第十二章 二次型"
+    "chapter": "第十二章 二次型",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-选-09",
@@ -156,7 +164,8 @@
       "C. $Bx = 0$ 的解均为 $Ax = 0$ 的解.",
       "D. $B^{T}x = 0$ 的解均为 $A^{T}x = 0$ 的解."
     ],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-选-10",
@@ -173,7 +182,8 @@
       "C. $\\begin{pmatrix} 1 & 0 & 0 \\\\ 2 & -1 & 0 \\\\ -3 & 2 & 1 \\end{pmatrix}, \\begin{pmatrix} 1 & 0 & 1 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & 1 \\end{pmatrix}.$",
       "D. $\\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 1 & 3 & 1 \\end{pmatrix}, \\begin{pmatrix} 1 & 2 & -3 \\\\ 0 & -1 & 2 \\\\ 0 & 0 & 1 \\end{pmatrix}.$"
     ],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-填-01",
@@ -185,7 +195,8 @@
     ],
     "stem": "$\\int_{-\\infty}^{+\\infty}|x|3^{-x^{2}}dx=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-填-02",
@@ -198,7 +209,8 @@
     ],
     "stem": "设函数 $y = y(x)$ 由参数方程 $\\left\\{\\begin{aligned} x &= 2e^{t} + t + 1 \\\\ y &= 4(t - 1)e^{t} + t^{2} \\end{aligned}\\right.$ 确定, 则 $\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{t=0} =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-填-03",
@@ -211,7 +223,8 @@
     ],
     "stem": "设函数 $z = z(x, y)$ 由方程 $(x + 1)z + y \\ln z - \\arctan(2xy) = 1$ 确定, 则 $\\left.\\frac{\\partial z}{\\partial x}\\right|_{(0,2)} = \\underline{\\quad}$ .",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-填-04",
@@ -224,7 +237,8 @@
     ],
     "stem": "已知函数 $f(t) = \\int_{1}^{t} \\mathrm{d}x \\int_{\\sqrt{x}}^{1} \\sin \\frac{x}{y} \\, \\mathrm{d}y$ , 则 $f'\\left(\\frac{\\pi}{2}\\right)$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-填-05",
@@ -236,7 +250,8 @@
     ],
     "stem": "微分方程 $y''' - y = 0$ 的通解 y = \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2021-填-06",
@@ -249,7 +264,8 @@
     ],
     "stem": "多项式 $f(x)=\\left|\\begin{matrix}x&x&1&2x\\\\ 1&x&2&-1\\\\ 2&1&x&1\\\\ 2&-1&1&x\\end{matrix}\\right|$ 中 $x^{3}$ 项的系数为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第七章 行列式"
+    "chapter": "第七章 行列式",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-解-01",
@@ -261,7 +277,8 @@
     ],
     "stem": "求极限 $\\lim_{x\\to0}\\left(\\frac{1+\\int_{0}^{x}\\mathrm{e}^{t^{2}}dt}{\\mathrm{e}^{x}-1}-\\frac{1}{\\sin x}\\right)$ .",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-解-02",
@@ -273,7 +290,8 @@
     ],
     "stem": "已知 $f(x)=\\frac{x|x|}{1+x}$ ，求 $f(x)$ 的凹凸性及渐近线.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-解-03",
@@ -285,7 +303,8 @@
     ],
     "stem": "$f(x)$ 满足 $\\int \\frac{f(x)}{\\sqrt{x}}\\mathrm{d}x = \\frac{1}{6} x^2 -x + C,L$ 为曲线 $y = f(x)(4\\leqslant x\\leqslant 9),L$ 的弧长为 $s,L$ 绕 $x$ 轴旋转一周所形成的曲面的面积为 $A$ ，求 $s$ 和 $A$",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-解-04",
@@ -297,7 +316,8 @@
     ],
     "stem": "函数 $y = y(x)$ 的微分方程 $xy' - 6y = -6$ ，满足 $y(\\sqrt{3}) = 10$ ，\n(1) 求 $y(x)$ ;\n(2) $P$ 为曲线 $y = y(x)$ 上的一点, 曲线 $y = y(x)$ 在点 $P$ 的法线在 $y$ 轴上的截距为 $I_y$ , 为使 $I_y$ 最小, 求 $P$ 的坐标.",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-解-05",
@@ -310,7 +330,8 @@
     ],
     "stem": "曲线 $\\left(x^{2} + y^{2}\\right)^{2} = x^{2} - y^{2}(x\\geqslant 0,y\\geqslant 0)$ 与 $x$ 轴围成的区域为 $D$ ，求 $\\iint_{D}xy\\mathrm{d}x\\mathrm{d}y.$",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2021-解-06",
@@ -323,6 +344,7 @@
     ],
     "stem": "(本小题满分12分)\n设矩阵 $A=\\begin{pmatrix}2&1&0\\\\ 1&2&0\\\\ 1&a&b\\end{pmatrix}$ 仅有两个不同的特征值. 若 A 相似于对角矩阵, 求 a, b 的值, 并求可逆矩阵 P, 使 $P^{-1}AP$ 为对角矩阵.",
     "options": [],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "综合题"
   }
 ]

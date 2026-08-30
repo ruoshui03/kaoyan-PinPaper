@@ -14,7 +14,8 @@
       "C. $\\int_{0}^{\\sin x} \\sin t^2 dt$",
       "D. $\\int_{0}^{1 - \\cos x} \\sqrt{\\sin^3 t} dt$"
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-选-02",
@@ -32,7 +33,8 @@
       "C. 当 $f(x)$ 在 $x = 0$ 处可导时， $\\lim_{x\\to 0}\\frac{f(x)}{\\sqrt{|x|}} = 0$",
       "D. 当 $f(x)$ 在 $x = 0$ 处可导时， $\\lim_{x\\to 0}\\frac{f(x)}{x^2} = 0$"
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-选-03",
@@ -49,7 +51,8 @@
       "C. $\\lim_{(x,y)\\to(0,0)}\\frac{|\\alpha\\cdot(x,y,f(x,y))|}{\\sqrt{x^2+y^2}}$ 存在",
       "D. $\\lim_{(x,y)\\to(0,0)}\\frac{|\\alpha\\times(x,y,f(x,y))|}{\\sqrt{x^2+y^2}}$ 存在"
     ],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-选-04",
@@ -67,7 +70,8 @@
       "C. 当 $|r| \\geqslant R$ 时, $\\sum_{n=1}^{\\infty} a_{2n} r^{2n}$ 发散",
       "D. 当 $|r| \\leqslant R$ 时, $\\sum_{n=1}^{\\infty} a_{2n} r^{2n}$ 收敛"
     ],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-选-05",
@@ -84,7 +88,8 @@
       "C. 存在矩阵 $P$ , 使得 $PB = A$",
       "D. 方程组 $AX = 0$ 与 $BX = 0$ 同解"
     ],
-    "chapter": "第十一章 矩阵"
+    "chapter": "第十一章 矩阵",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-选-06",
@@ -102,7 +107,8 @@
       "C. $\\alpha_{3}$ 可由 $\\alpha_{1},\\alpha_{2}$ 线性表示",
       "D. $\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 线性无关"
     ],
-    "chapter": "第四章 空间解析几何"
+    "chapter": "第四章 空间解析几何",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-选-07",
@@ -120,7 +126,8 @@
       "C. $\\frac{1}{2}$",
       "D. $\\frac{5}{12}$"
     ],
-    "chapter": "第十六章 随机事件及其概率"
+    "chapter": "第十六章 随机事件及其概率",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-选-08",
@@ -137,7 +144,8 @@
       "C. $1 - \\Phi(0.2)$",
       "D. $\\Phi(0.2)$"
     ],
-    "chapter": "第二十章 大数定律与中心极限定理"
+    "chapter": "第二十章 大数定律与中心极限定理",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-填-01",
@@ -150,7 +158,8 @@
     ],
     "stem": "$\\lim_{x\\to0}\\left[\\frac{1}{\\mathrm{e}^{x}-1}-\\frac{1}{\\ln(1+x)}\\right]=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-填-02",
@@ -163,7 +172,8 @@
     ],
     "stem": "设 $\\left\\{\\begin{aligned} x &= \\sqrt{t^{2}+1}, \\\\ y &= \\ln(t + \\sqrt{t^{2}+1}), \\end{aligned}\\right.$ 则 $\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{t=1} =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-填-03",
@@ -176,7 +186,8 @@
     ],
     "stem": "设函数 $f(x)$ 满足 $f''(x) + af'(x) + f(x) = 0 (a > 0)$ ，且 $f(0) = m, f'(0) = n$ ，则 $\\int_{0}^{+\\infty} f(x) \\, \\mathrm{d}x =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第七章 微分方程及其应用"
+    "chapter": "第七章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-填-04",
@@ -189,7 +200,8 @@
     ],
     "stem": "设函数 $f(x,y)=\\int_{0}^{xy}e^{xt^{2}}dt$ ，则 $\\left.\\frac{\\partial^{2}f}{\\partial x\\partial y}\\right|_{(1,1)}=$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-填-05",
@@ -202,7 +214,8 @@
     ],
     "stem": "行列式 $\\begin{vmatrix}a&0&-1&1\\\\0&a&1&-1\\\\-1&1&a&0\\\\1&-1&0&a\\end{vmatrix}=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十章 行列式"
+    "chapter": "第十章 行列式",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-填-06",
@@ -214,7 +227,8 @@
     ],
     "stem": "设 $X$ 服从区间 $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$ 上的均匀分布, $Y = \\sin X$ , 则 $Cov(X, Y) =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-01",
@@ -226,7 +240,8 @@
     ],
     "stem": "求函数 $f(x,y)=x^{3}+8y^{3}-xy$ 的极值.",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2020-解-02",
@@ -238,7 +253,8 @@
     ],
     "stem": "计算曲线积分 $I = \\int_{L}\\frac{4x - y}{4x^{2} + y^{2}}\\mathrm{d}x + \\frac{x + y}{4x^{2} + y^{2}}\\mathrm{d}y,$ 其中 $L$ 是 $x^{2} + y^{2} = 2,$ 方向为逆时针方向.",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-03",
@@ -251,7 +267,8 @@
     ],
     "stem": "设数列 $\\{a_{n}\\}$ 满足: $a_{1} = 1, (n + 1)a_{n + 1} = \\left(n + \\frac{1}{2}\\right)a_{n}$ , 证明: 当 $|x| < 1$ 时, 幂级数 $\\sum_{n=1}^{\\infty} a_{n}x^{n}$ 收敛, 并求其和函数.",
     "options": [],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-04",
@@ -263,7 +280,8 @@
     ],
     "stem": "设 $\\Sigma$ 为曲面 $z=\\sqrt{x^{2}+y^{2}}\\left(1\\leqslant x^{2}+y^{2}\\leqslant4\\right)$ 的下侧, $f(x)$ 是连续函数, 计算\n$$\nI = \\iint_ {\\Sigma} [ x f (x y) + 2 x - y ] \\mathrm{d} y \\mathrm{d} z + [ y f (x y) + 2 y + x ] \\mathrm{d} z \\mathrm{d} x + [ z f (x y) + z ] \\mathrm{d} x \\mathrm{d} y.\n$$",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-05",
@@ -277,7 +295,8 @@
     ],
     "stem": "设函数 $f(x)$ 在区间 $[0,2]$ 上具有连续导数, $f(0) = f(2) = 0, M = \\max_{x \\in [0,2]} \\{|f(x)|\\}$ , 证明:\n(I) 存在 $\\xi \\in (0,2)$ ，使得 $|f'(\\xi)| \\geqslant M$ ;\n(II) 若对任意的 $x \\in (0,2), |f'(x)| \\leqslant M$ , 则 $M = 0$ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-06",
@@ -291,7 +310,8 @@
     ],
     "stem": "设二次型 $f(x_{1},x_{2})=x_{1}^{2}-4x_{1}x_{2}+4x_{2}^{2}$ 经正交变换 $\\begin{pmatrix}x_{1}\\\\x_{2}\\end{pmatrix}=Q\\begin{pmatrix}y_{1}\\\\y_{2}\\end{pmatrix}$ 化为二次型 $g(y_{1},y_{2})=ay_{1}^{2}+4y_{1}y_{2}+by_{2}^{2}$ ，其中 $a\\geqslant b$ .\n(I) 求 a, b 的值;\n(II) 求正交矩阵 Q.",
     "options": [],
-    "chapter": "第十五章 二次型"
+    "chapter": "第十五章 二次型",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-07",
@@ -305,7 +325,8 @@
     ],
     "stem": "设 A 为 2 阶矩阵, $P = (\\alpha, A\\alpha)$ , 其中 $\\alpha$ 是非零向量且不是 A 的特征向量.\n(I) 证明 P 为可逆矩阵;\n(II) 若 $A^2\\alpha + A\\alpha - 6\\alpha = 0$ , 求 $P^{-1}AP$ , 并判断 $A$ 是否相似于对角矩阵.",
     "options": [],
-    "chapter": "第十四章 相似矩阵"
+    "chapter": "第十四章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-08",
@@ -320,7 +341,8 @@
     ],
     "stem": "设随机变量 $X_{1}, X_{2}, X_{3}$ 相互独立, 其中 $X_{1}$ 与 $X_{2}$ 均服从标准正态分布, $X_{3}$ 的概率分布为 $P\\{X_{3} = 0\\} = P\\{X_{3} = 1\\} = \\frac{1}{2}$ . $Y = X_{3}X_{1} + (1 - X_{3})X_{2}$ .\n(I) 求二维随机变量 $(X_{1}, Y)$ 的分布函数, 结果用标准正态分布函数 $\\Phi(x)$ 表示;\n(II) 证明随机变量 Y 服从标准正态分布.",
     "options": [],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2020-解-09",
@@ -332,6 +354,7 @@
     ],
     "stem": "设某元件的使用寿命 T 的分布函数为 $F(t)=\\left\\{\\begin{aligned}1-\\mathrm{e}^{-\\left(\\frac{t}{\\theta}\\right)^{m}},&t\\geqslant0,\\\\ 0,&\\text{其他},\\end{aligned}\\right.$ 其中 $\\theta,m$ 为参数且大于零.\n(I) 求概率 $P\\{T > t\\}$ 与 $P\\{T > s + t \\mid T > s\\}$ ，其中 s > 0, t > 0;\n(II) 任取 n 个这种元件做寿命试验, 测得它们的寿命分别为 $t_{1}, t_{2}, \\cdots, t_{n}$ , 若 m 已知, 求 $\\theta$ 的最大似然估计值 $\\hat{\\theta}$ .",
     "options": [],
-    "chapter": "第十七章 随机变量及其分布"
+    "chapter": "第十七章 随机变量及其分布",
+    "difficulty": "综合题"
   }
 ]

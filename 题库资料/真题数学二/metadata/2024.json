@@ -15,7 +15,8 @@
       "C. 1",
       "D. 0"
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-02",
@@ -33,7 +34,8 @@
       "C. $\\frac{2}{3}\\mathrm{e}$",
       "D. $\\frac{\\mathrm{e}}{3}$"
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-03",
@@ -51,7 +53,8 @@
       "C. $f(x)$ 为偶函数, $g(x)$ 为偶函数",
       "D. $f(x)$ 为偶函数, $g(x)$ 为奇函数"
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-04",
@@ -68,7 +71,8 @@
       "C. $\\left\\{e^{a_{n}}+\\frac{1}{e^{a_{n}}}\\right\\}$ 发散",
       "D. $\\left\\{e^{a_{n}}-\\frac{1}{e^{a_{n}}}\\right\\}$ 发散"
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-05",
@@ -86,7 +90,8 @@
       "C. $\\frac{\\partial f(x, y)}{\\partial x}$ 不连续, $f(x, y)$ 可微.",
       "D. $\\frac{\\partial f(x, y)}{\\partial x}$ 不连续, $f(x, y)$ 不可微."
     ],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-06",
@@ -104,7 +109,8 @@
       "C. $\\int_{0}^{\\frac{1}{2}} dy \\int_{\\frac{\\pi}{6}}^{\\arcsin y} f(x, y) \\, \\mathrm{d}x$",
       "D. $\\int_{0}^{\\frac{1}{2}} dy \\int_{\\arcsin y}^{\\frac{\\pi}{2}} f(x, y) \\, \\mathrm{d}x$"
     ],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "基础题"
   },
   {
     "id": "2024-选-07",
@@ -121,7 +127,8 @@
       "C. 2",
       "D. 3"
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-08",
@@ -138,7 +145,8 @@
       "C. $\\begin{pmatrix} a & 0 & 0 \\\\ 0 & b & 0 \\\\ 0 & 0 & c \\end{pmatrix}$",
       "D. $\\begin{pmatrix} c & 0 & 0 \\\\ 0 & b & 0 \\\\ 0 & 0 & a \\end{pmatrix}$"
     ],
-    "chapter": "第八章 矩阵"
+    "chapter": "第八章 矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-09",
@@ -155,7 +163,8 @@
       "C. 2 或 3",
       "D. 1 或 2"
     ],
-    "chapter": "第八章 矩阵"
+    "chapter": "第八章 矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-选-10",
@@ -173,7 +182,8 @@
       "C. 必要不充分条件",
       "D. 既不充分也不必要条件"
     ],
-    "chapter": "第十一章 相似矩阵"
+    "chapter": "第十一章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-填-01",
@@ -186,7 +196,8 @@
     ],
     "stem": "曲线 $y^{2}=x$ 在点 $(0,0)$ 处的曲率圆方程为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-填-02",
@@ -198,7 +209,8 @@
     ],
     "stem": "设 $f(x, y) = 2x^3 - 9x^2 - 6y^4 + 12x + 24y$ 的极值点是 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-填-03",
@@ -211,7 +223,8 @@
     ],
     "stem": "已知微分方程 $y'=\\frac{1}{(x+y)^{2}}$ ，满足 $y(1)=0$ 的解为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-填-04",
@@ -224,7 +237,8 @@
     ],
     "stem": "函数 $f(x)=x^{2}(\\mathrm{e}^{x}+1)$ ，求 $f^{(5)}(x)=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2024-填-05",
@@ -236,7 +250,8 @@
     ],
     "stem": "某物体以速度 $v(t) = t + k \\sin \\pi t$ 作直线运动, 若它从 $t = 0$ 到 $t = 3$ 的时间段内平均速度为 $\\frac{5}{2}$ , 则 $k =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2024-填-06",
@@ -248,7 +263,8 @@
     ],
     "stem": "设 $\\alpha_{1}=\\begin{pmatrix}a\\\\1\\\\-1\\\\1\\end{pmatrix},\\alpha_{2}=\\begin{pmatrix}1\\\\1\\\\b\\\\a\\end{pmatrix},\\alpha_{3}=\\begin{pmatrix}1\\\\a\\\\-1\\\\1\\end{pmatrix}$ ，若 $\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 线性相关，且其中任意两个向量均线性无关，则\nab= \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第九章 向量"
+    "chapter": "第九章 向量",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-解-01",
@@ -261,7 +277,8 @@
     ],
     "stem": "已知函设平面有界区域 $D$ 位于第一象限, 由曲线 $xy = \\frac{1}{3}, xy = 3$ 与直线 $y = \\frac{1}{3} x, y = 3x$ 围成的平面区域, 计算 $\\iint_{D}(1 + x - y)\\mathrm{d}x\\mathrm{d}y$",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-解-02",
@@ -273,7 +290,8 @@
     ],
     "stem": "已知 $y(x)$ 满足 $x^{2}y'' + xy' - 9y = 0$ , 满足 $y(1) = 2, y'(1) = 6$ .\n(1) 利用变换 $x = e^{t}$ 将上述方程化为常系数线性方程, 并求 $y(x)$ ;\n(2) 计算 $\\int_{1}^{2} y(x) \\sqrt{4 - x^{2}} \\, dx.$",
     "options": [],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-解-03",
@@ -287,7 +305,8 @@
     ],
     "stem": "设 $t > 0$ , 平面有界区域 $D$ 由曲线 $y = \\sqrt{x} \\mathrm{e}^{-x}, x = t, x = 2t$ 及 $x$ 轴围成, $D$ 绕 $x$ 轴旋转一周所得旋转体的体积为 $V(t)$ , 求 $V(t)$ 的最大值.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-解-04",
@@ -300,7 +319,8 @@
     ],
     "stem": "已知 $f(u,v)$ 具有二阶连续偏导数,且 $g(x,y)=f(2x+y,3x-y)$ 满足 $\\frac{\\partial^{2}g}{\\partial x^{2}}+\\frac{\\partial^{2}g}{\\partial x\\partial y}-6\\frac{\\partial^{2}g}{\\partial y^{2}}=1.$\n(1) 求 $\\frac{\\partial^{2}f}{\\partial u\\partial v}$ ;\n(2) 若 $\\frac{\\partial f(u,0)}{\\partial u}=ue^{-u}, f(0,v)=\\frac{1}{50}v^{2}-1$ , 求 $f(u,v)$ 的表达式.",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-解-05",
@@ -313,7 +333,8 @@
     ],
     "stem": "设函数 $f(x)$ 具有2阶导数,且 $f'(0)=f'(1),|f''(x)|\\leqslant1$ .证明:\n(1) 当 $x \\in (0,1)$ 时, $|f(x) - f(0)(1 - x) - f(1)x| \\leqslant \\frac{x(1 - x)}{2}$ ;\n(2) $\\left|\\int_{0}^{1} f(x) \\, \\mathrm{d}x - \\frac{f(0) + f(1)}{2}\\right| \\leqslant \\frac{1}{12}$ .",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2024-解-06",
@@ -325,6 +346,7 @@
     ],
     "stem": "已知 $A = \\begin{pmatrix} 0 & a & 0 \\\\ 1 & 0 & 1 \\end{pmatrix}, B = \\begin{pmatrix} 1 & 1 \\\\ 1 & 1 \\\\ 2 & b \\end{pmatrix}, Ax = 0$ 的解均为 $B^T x = 0$ 的解, 但 $Ax = 0$ 与 $B^T x = 0$ 不同解.\n(1) 求 a, b 的值;\n(2) 求正交变换 $x = Qy$ , 使 $f(x_{1}, x_{2}, x_{3}) = x^{T} B A x$ 为标准形.",
     "options": [],
-    "chapter": "第十章 线性方程组"
+    "chapter": "第十章 线性方程组",
+    "difficulty": "综合题"
   }
 ]

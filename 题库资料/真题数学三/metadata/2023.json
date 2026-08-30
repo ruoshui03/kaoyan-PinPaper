@@ -15,7 +15,8 @@
       "C. $\\left.\\frac{\\partial f}{\\partial x}\\right|_{(0,1)},\\left.\\frac{\\partial f}{\\partial y}\\right|_{(0,1)}$ 均存在.",
       "D. $\\left.\\frac{\\partial f}{\\partial x}\\right|_{(0,1)},\\left.\\frac{\\partial f}{\\partial y}\\right|_{(0,1)}$ 均不存在."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-选-02",
@@ -33,7 +34,8 @@
       "C. $F(x) = \\begin{cases} \\ln(\\sqrt{1 + x^2} + x), & x \\leqslant 0, \\\\ (x + 1)\\sin x + \\cos x, & x > 0. \\end{cases}$",
       "D. $F(x) = \\begin{cases} \\ln(\\sqrt{1 + x^2} + x) + 1, & x \\leqslant 0, \\\\ (x + 1)\\sin x + \\cos x, & x > 0. \\end{cases}$"
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-选-03",
@@ -50,7 +52,8 @@
       "C. $a = 0, b > 0$ .",
       "D. $a = 0, b < 0$ ."
     ],
-    "chapter": "第六章 微分方程及其应用"
+    "chapter": "第六章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-选-04",
@@ -68,7 +71,8 @@
       "C. 必要不充分条件.",
       "D. 既不充分也不必要条件."
     ],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-选-05",
@@ -86,7 +90,8 @@
       "C. $\\begin{bmatrix} |B|A^{*} & -B^{*}A^{*} \\\\ O & |A|B^{*} \\end{bmatrix}$ .",
       "D. $\\begin{bmatrix} |A|B^{*} & -A^{*}B^{*} \\\\ O & |B|A^{*} \\end{bmatrix}$ ."
     ],
-    "chapter": "第十章 矩阵"
+    "chapter": "第十章 矩阵",
+    "difficulty": "基础题"
   },
   {
     "id": "2023-选-06",
@@ -105,7 +110,8 @@
       "C. $y_{1}^{2}+y_{2}^{2}-4y_{3}^{2}.$",
       "D. $y_{1}^{2}+y_{2}^{2}-y_{3}^{2}.$"
     ],
-    "chapter": "第十四章 二次型"
+    "chapter": "第十四章 二次型",
+    "difficulty": "基础题"
   },
   {
     "id": "2023-选-07",
@@ -122,7 +128,8 @@
       "C. $k\\begin{pmatrix}-1\\\\1\\\\2\\end{pmatrix}, k \\in R.$",
       "D. $k\\begin{pmatrix}1\\\\5\\\\8\\end{pmatrix}, k \\in R.$"
     ],
-    "chapter": "第十一章 向量"
+    "chapter": "第十一章 向量",
+    "difficulty": "基础题"
   },
   {
     "id": "2023-选-08",
@@ -140,7 +147,8 @@
       "C. $\\frac{2}{\\mathrm{e}}$ .",
       "D. 1."
     ],
-    "chapter": "第十八章 随机变量的数字特征"
+    "chapter": "第十八章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-选-09",
@@ -158,7 +166,8 @@
       "C. $\\frac{2S_{1}^{2}}{S_{2}^{2}} \\sim F(n, m)$ .",
       "D. $\\frac{2S_{1}^{2}}{S_{2}^{2}} \\sim F(n-1, m-1)$ ."
     ],
-    "chapter": "第二十章 数理统计的基本概念"
+    "chapter": "第二十章 数理统计的基本概念",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-选-10",
@@ -176,7 +185,8 @@
       "C. $\\sqrt{\\pi}$ .",
       "D. $\\sqrt{2\\pi}$ ."
     ],
-    "chapter": "第二十章 数理统计的基本概念"
+    "chapter": "第二十章 数理统计的基本概念",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-填-01",
@@ -188,7 +198,8 @@
     ],
     "stem": "$\\lim_{x\\to\\infty}x^{2}\\left(2-x\\sin\\frac{1}{x}-\\cos\\frac{1}{x}\\right)=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第四章 多元函数微分学及其应用"
+    "chapter": "第四章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2023-填-02",
@@ -200,7 +211,8 @@
     ],
     "stem": "已知函数 $f(x, y)$ 满足 $df(x, y) = \\frac{x \\, \\mathrm{d}y - y \\, \\mathrm{d}x}{x^2 + y^2}, f(1, 1) = \\frac{\\pi}{4}$ , 则 $f(\\sqrt{3}, 3) =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "基础题"
   },
   {
     "id": "2023-填-03",
@@ -213,7 +225,8 @@
     ],
     "stem": "$\\sum_{n=0}^{\\infty}\\frac{x^{2n}}{(2n)!}=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "基础题"
   },
   {
     "id": "2023-填-04",
@@ -226,7 +239,8 @@
     ],
     "stem": "设某公司在 $t$ 时刻的资产为 $f(t)$ , 从 0 时刻到 $t$ 时刻的平均资产等于 $\\frac{f(t)}{t} - t$ . 假设 $f(t)$ 连续且 $f(0) = 0$ , 则 $f(t) =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第七章 微积分在经济学中的应用"
+    "chapter": "第七章 微积分在经济学中的应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-填-05",
@@ -238,7 +252,8 @@
     ],
     "stem": "已知线性方程组 $\\left\\{\\begin{array}{c} ax_{1} + x_{3} = 1, \\\\ x_{1} + ax_{2} + x_{3} = 0, \\\\ x_{1} + 2x_{2} + ax_{3} = 0, \\\\ ax_{1} + bx_{2} = 2 \\end{array}\\right.$ 有解, 其中 a, b 为常数. 若 $\\begin{vmatrix} a & 0 & 1 \\\\ 1 & a & 1 \\\\ 1 & 2 & a \\end{vmatrix} = 4$ , 则 $\\begin{vmatrix} 1 & a & 1 \\\\ 1 & 2 & a \\\\ a & b & 0 \\end{vmatrix} =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十二章 线性方程组"
+    "chapter": "第十二章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-填-06",
@@ -252,7 +267,8 @@
     ],
     "stem": "设随机变量 $X$ 与 $Y$ 相互独立, 且 $X \\sim B(1, p), Y \\sim B(2, p), p \\in (0, 1)$ , 则 $X + Y$ 与 $X - Y$ 的相关系数为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十八章 随机变量的数字特征"
+    "chapter": "第十八章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-解-01",
@@ -264,7 +280,8 @@
     ],
     "stem": "已知可导函数 $y = y(x)$ 满足 $ae^{x} + y^{2} + y - \\ln(1 + x)\\cos y + b = 0$ ，且 $y(0) = 0, y'(0) = 0$ .\n(I) 求 a, b 的值;\n(II) 判断 x=0 是否为 $y(x)$ 的极值点.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-解-02",
@@ -278,7 +295,8 @@
     ],
     "stem": "已知平面区域 $D = \\left\\{(x,y)\\mid 0\\leqslant y\\leqslant \\frac{1}{x\\sqrt{1 + x^2}},x\\geqslant 1\\right\\} .$\n(I) 求 D 的面积;\n(II) 求 D 绕 x 轴旋转所成旋转体的体积.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-解-03",
@@ -291,7 +309,8 @@
     ],
     "stem": "已知平面区域 $D = \\{(x,y)\\mid (x - 1)^2 +y^2\\leqslant 1\\}$ ，计算二重积分 $\\iint_{D}\\big|\\sqrt{x^2 + y^2} -1\\big|\\mathrm{d}x\\mathrm{d}y.$",
     "options": [],
-    "chapter": "第五章 二重积分"
+    "chapter": "第五章 二重积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-解-04",
@@ -303,7 +322,8 @@
     ],
     "stem": "设函数 $f(x)$ 在 $[-a,a]$ 上具有2阶连续导数,证明:\n(I) 若 $f(0) = 0$ , 则存在 $\\xi \\in (-a, a)$ , 使得 $f''(\\xi) = \\frac{1}{a^2} [f(a) + f(-a)]$ ;\n(II) 若 $f(x)$ 在 $(-a, a)$ 内取得极值, 则存在 $\\eta \\in (-a, a)$ , 使得 $|f''(\\eta)| \\geqslant \\frac{1}{2a^2} |f(a) - f(-a)|$ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-解-05",
@@ -316,7 +336,8 @@
     ],
     "stem": "设矩阵 A 满足: 对任意 $x_{1}, x_{2}, x_{3}$ 均有 $A\\begin{pmatrix} x_{1} \\\\ x_{2} \\\\ x_{3} \\end{pmatrix} = \\begin{pmatrix} x_{1} + x_{2} + x_{3} \\\\ 2x_{1} - x_{2} + x_{3} \\\\ x_{2} - x_{3} \\end{pmatrix}$ .\n(I) 求 A;\n(II) 求可逆矩阵 P 与对角矩阵 $\\Lambda$ ，使得 $P^{-1}AP = \\Lambda$ .",
     "options": [],
-    "chapter": "第十三章 相似矩阵"
+    "chapter": "第十三章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2023-解-06",
@@ -330,6 +351,7 @@
     ],
     "stem": "设随机变量 X 的概率密度为 $f(x)=\\frac{\\mathrm{e}^{x}}{(1+\\mathrm{e}^{x})^{2}}, -\\infty < x < +\\infty,$ 令 $Y = e^{x}$ .\n(I) 求 X 的分布函数;\n(II) 求 Y 的概率密度;\n(III)Y的期望是否存在?",
     "options": [],
-    "chapter": "第十八章 随机变量的数字特征"
+    "chapter": "第十八章 随机变量的数字特征",
+    "difficulty": "综合题"
   }
 ]

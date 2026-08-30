@@ -14,7 +14,8 @@
       "C. $y = x + \\sin \\frac{1}{x}.$",
       "D. $y = x^{2} + \\sin \\frac{1}{x}.$"
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-选-02",
@@ -32,7 +33,8 @@
       "C. 当 $f''(x) \\geqslant 0$ 时, $f(x) \\geqslant g(x)$ .",
       "D. 当 $f''(x) \\geqslant 0$ 时, $f(x) \\leqslant g(x)$ ."
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-选-03",
@@ -50,7 +52,8 @@
       "C. $\\int_{0}^{\\frac{\\pi}{2}} d\\theta \\int_{0}^{\\frac{1}{\\cos\\theta + \\sin\\theta}} f(r\\cos\\theta, r\\sin\\theta) dr + \\int_{\\frac{\\pi}{2}}^{\\pi} d\\theta \\int_{0}^{1} f(r\\cos\\theta, r\\sin\\theta) dr.$",
       "D. $\\int_{0}^{\\frac{\\pi}{2}} d\\theta \\int_{0}^{\\frac{1}{\\cos\\theta + \\sin\\theta}} f(r\\cos\\theta, r\\sin\\theta) dr + \\int_{\\frac{\\pi}{2}}^{\\pi} d\\theta \\int_{0}^{1} f(r\\cos\\theta, r\\sin\\theta) dr.$"
     ],
-    "chapter": "第六章 重积分及其应用"
+    "chapter": "第六章 重积分及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-选-04",
@@ -67,7 +70,8 @@
       "C. $2\\pi\\sin x.$",
       "D. $2\\pi\\cos x.$"
     ],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-选-05",
@@ -85,7 +89,8 @@
       "C. $a^{2}d^{2}-b^{2}c^{2}.$",
       "D. $b^{2}c^{2}-a^{2}d^{2}.$"
     ],
-    "chapter": "第十章 行列式"
+    "chapter": "第十章 行列式",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-选-06",
@@ -103,7 +108,8 @@
       "C. 充分必要条件.",
       "D. 既非充分也非必要条件."
     ],
-    "chapter": "第十二章 向量"
+    "chapter": "第十二章 向量",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-选-07",
@@ -121,7 +127,8 @@
       "C. 0.3.",
       "D. 0.4."
     ],
-    "chapter": "第十六章 随机事件及其概率"
+    "chapter": "第十六章 随机事件及其概率",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-选-08",
@@ -139,7 +146,8 @@
       "C. $E(Y_{1}) = E(Y_{2}), D(Y_{1}) < D(Y_{2}).$",
       "D. $E(Y_{1}) = E(Y_{2}), D(Y_{1}) > D(Y_{2}).$"
     ],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-填-01",
@@ -151,7 +159,8 @@
     ],
     "stem": "曲面 $z = x^{2}(1 - \\sin y) + y^{2}(1 - \\sin x)$ 在点 $(1,0,1)$ 处的切平面方程为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-填-02",
@@ -163,7 +172,8 @@
     ],
     "stem": "设 $f(x)$ 是周期为 4 的可导奇函数, 且 $f'(x) = 2(x - 1), x \\in [0,2]$ , 则 $f(7) =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-填-03",
@@ -176,7 +186,8 @@
     ],
     "stem": "微分方程 $xy' + y(\\ln x - \\ln y) = 0$ 满足条件 $y(1) = e^{3}$ 的解为 y = \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第七章 微分方程及其应用"
+    "chapter": "第七章 微分方程及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-填-04",
@@ -189,7 +200,8 @@
     ],
     "stem": "设 L 是柱面 $x^{2} + y^{2} = 1$ 与平面 $y + z = 0$ 的交线, 从 z 轴正向往 z 轴负向看去为逆时针方向, 则曲线积分 $\\oint_{L} z \\, dx + y \\, dz =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-填-05",
@@ -202,7 +214,8 @@
     ],
     "stem": "设二次型 $f(x_1, x_2, x_3) = x_1^2 - x_2^2 + 2ax_1x_3 + 4x_2x_3$ 的负惯性指数为 1, 则 $a$ 的取值范围是 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十五章 二次型"
+    "chapter": "第十五章 二次型",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-填-06",
@@ -214,7 +227,8 @@
     ],
     "stem": "设总体 X 的概率密度为 $f(x;\\theta)=\\left\\{\\begin{aligned}&\\frac{2x}{3\\theta^{2}},&\\theta<x<2\\theta,\\\\ &0,&\\text{其他},\\end{aligned}\\right.$ 其中 $\\theta$ 是未知参数, $X_{1}, X_{2}, \\cdots, X_{n}$ 为来自总体 X 的简单随机样本, 若 $c\\sum_{i=1}^{n}X_{i}^{2}$ 是 $\\theta^{2}$ 的无偏估计, 则 c= \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第二十二章 参数估计"
+    "chapter": "第二十二章 参数估计",
+    "difficulty": "基础题"
   },
   {
     "id": "2014-解-01",
@@ -226,7 +240,8 @@
     ],
     "stem": "求极限 $\\lim_{x\\to+\\infty}\\frac{\\int_{1}^{x}\\left[t^{2}\\left(\\mathrm{e}^{\\frac{1}{t}}-1\\right)-t\\right]dt}{x^{2}\\ln\\left(1+\\frac{1}{x}\\right)}$ .",
     "options": [],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-02",
@@ -238,7 +253,8 @@
     ],
     "stem": "设函数 $y=f(x)$ 由方程 $y^{3}+xy^{2}+x^{2}y+6=0$ 确定, 求 $f(x)$ 的极值.",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-03",
@@ -251,7 +267,8 @@
     ],
     "stem": "设函数 $f(u)$ 具有二阶连续导数, $z = f(\\mathrm{e}^{x}\\cos y)$ 满足 $\\frac{\\partial^2z}{\\partial x^2} +\\frac{\\partial^2z}{\\partial y^2} = (4z + \\mathrm{e}^x\\cos y)\\mathrm{e}^{2x}$ . 若 $f(0) = 0,f'(0)$ $= 0$ ，求 $f(u)$ 的表达式.",
     "options": [],
-    "chapter": "第七章 微分方程及其应用"
+    "chapter": "第七章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-04",
@@ -264,7 +281,8 @@
     ],
     "stem": "设 $\\Sigma$ 为曲面 $z = x^{2} + y^{2}(z\\leqslant 1)$ 的上侧, 计算曲面积分 $I = \\iint_{\\Sigma}(x - 1)^{3}\\mathrm{d}y\\mathrm{d}z + (y - 1)^{3}\\mathrm{d}z\\mathrm{d}x + (z - 1)\\mathrm{d}x\\mathrm{d}y.$",
     "options": [],
-    "chapter": "第六章 重积分及其应用"
+    "chapter": "第六章 重积分及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-05",
@@ -277,7 +295,8 @@
     ],
     "stem": "设数列 $\\{a_{n}\\}, \\{b_{n}\\}$ 满足 $0 < a_{n} < \\frac{\\pi}{2}, 0 < b_{n} < \\frac{\\pi}{2}, \\cos a_{n} - a_{n} = \\cos b_{n}$ , 且级数 $\\sum_{n=1}^{\\infty} b_{n}$ 收敛.\n(I) 证明 $\\lim_{n\\to\\infty}a_{n}=0;$\n(II) 证明级数 $\\sum_{n=1}^{\\infty}\\frac{a_{n}}{b_{n}}$ 收敛.",
     "options": [],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-06",
@@ -290,7 +309,8 @@
     ],
     "stem": "设 $A=\\begin{pmatrix}1&-2&3&-4\\\\0&1&-1&1\\\\1&2&0&-3\\end{pmatrix},E$ 为 3 阶单位矩阵.\n(I) 求方程组 Ax = 0 的一个基础解系;\n(II) 求满足 AB = E 的所有矩阵 B.",
     "options": [],
-    "chapter": "第十四章 相似矩阵"
+    "chapter": "第十四章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-07",
@@ -303,7 +323,8 @@
     ],
     "stem": "证明 n 阶矩阵 $\\begin{pmatrix}1&1&\\cdots&1\\\\1&1&\\cdots&1\\\\\\vdots&\\vdots&&\\vdots\\\\1&1&\\cdots&1\\end{pmatrix}$ 与 $\\begin{pmatrix}0&\\cdots&0&1\\\\0&\\cdots&0&2\\\\\\vdots&&\\vdots&\\vdots\\\\0&\\cdots&0&n\\end{pmatrix}$ 相似.",
     "options": [],
-    "chapter": "第十一章 矩阵"
+    "chapter": "第十一章 矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-08",
@@ -317,7 +338,8 @@
     ],
     "stem": "设随机变量 X 的概率分布为 $P\\{X=1\\}=P\\{X=2\\}=\\frac{1}{2}$ . 在给定 X=i 的条件下, 随机变量 Y 服从均匀分布 $U(0,i)(i=1,2)$ .\n(I) 求 Y 的分布函数 $F_{Y}(y)$ ;\n(II) 求 $E(Y)$ .",
     "options": [],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2014-解-09",
@@ -329,6 +351,7 @@
     ],
     "stem": "设总体 X 的分布函数为 $F(x;\\theta)=\\left\\{\\begin{aligned}1-\\mathrm{e}^{-\\frac{x^{2}}{\\theta}},&x\\geqslant0,\\\\ 0,&x<0,\\end{aligned}\\right.$ 其中 $\\theta$ 是未知参数且大于零. $X_{1},X_{2},\\cdots,X_{n}$ 为来自总体 X 的简单随机样本.\n(I) 求 $E(X)$ 与 $E(X^{2})$ ;\n(II) 求 $\\theta$ 的最大似然估计量 $\\widehat{\\theta_{n}}$ ;\n(III) 是否存在实数 $a$ , 使得对任何 $\\varepsilon > 0$ , 都有 $\\lim_{n \\to \\infty} P\\left\\{\\left|\\widehat{\\theta}_n - a\\right| \\geqslant \\varepsilon\\right\\} = 0$ ?",
     "options": [],
-    "chapter": "第二十二章 参数估计"
+    "chapter": "第二十二章 参数估计",
+    "difficulty": "综合题"
   }
 ]

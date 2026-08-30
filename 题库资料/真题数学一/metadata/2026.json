@@ -15,7 +15,8 @@
       "C. $\\frac{\\partial z}{\\partial x} - \\frac{\\partial z}{\\partial y} = -\\frac{1}{a}$",
       "D. $\\frac{\\partial z}{\\partial x} + \\frac{\\partial z}{\\partial y} = -\\frac{1}{a}$"
     ],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-选-02",
@@ -33,7 +34,8 @@
       "C. (-2,2)",
       "D. (-1,1)"
     ],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-选-03",
@@ -50,7 +52,8 @@
       "C. 当 $f(x)$ 的图形在 $[-1,1]$ 上是凹的时, $\\frac{f(x) - f(1)}{x - 1}$ 在 $[-1,1)$ 上单调递增",
       "D. 当 $\\frac{f(x) - f(1)}{x - 1}$ 在 $[-1,1)$ 上单调递增时, $f(x)$ 的图形在 $[-1,1]$ 上是凹的"
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-选-04",
@@ -67,7 +70,8 @@
       "C. $\\int_0^{2\\pi} d\\theta \\int_0^{\\frac{\\pi}{4}} d\\varphi \\int_0^2 f(r^2) r^2 \\sin \\varphi dr$",
       "D. $\\int_0^{2\\pi} d\\theta \\int_0^{\\frac{\\pi}{2}} d\\varphi \\int_0^2 f(r^2) r^2 \\sin \\varphi dr$"
     ],
-    "chapter": "第六章 重积分及其应用"
+    "chapter": "第六章 重积分及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-选-05",
@@ -85,7 +89,8 @@
       "C. $A^{-1} = A$",
       "D. $A^{-1} = -A$"
     ],
-    "chapter": "第十一章 矩阵"
+    "chapter": "第十一章 矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-选-06",
@@ -103,7 +108,8 @@
       "C. 当 $Bx = \\beta$ 有解时, $Ax = \\beta$ 有解",
       "D. 当 $B^T x = \\beta$ 有解时, $A^T x = \\beta$ 有解"
     ],
-    "chapter": "第十三章 线性方程组"
+    "chapter": "第十三章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-选-07",
@@ -120,7 +126,8 @@
       "C. $a = 2$ ，且 $f(x_1, x_2, x_3)$ 的规范形为 $-y_1^2 - y_2^2 - y_3^2$",
       "D. $a = 2$ ，且 $f(x_1, x_2, x_3)$ 在正交变换下标准型为 $-6y_1^2 - 6y_2^2$"
     ],
-    "chapter": "第十五章 二次型"
+    "chapter": "第十五章 二次型",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-选-08",
@@ -137,7 +144,8 @@
       "C. -1,2",
       "D. -1,4"
     ],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-选-09",
@@ -154,7 +162,8 @@
       "C. $a = \\frac{1}{\\sigma}, b = \\mu$",
       "D. $a = \\frac{1}{\\sigma}, b = -\\mu$"
     ],
-    "chapter": "第十七章 随机变量及其分布"
+    "chapter": "第十七章 随机变量及其分布",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-选-10",
@@ -171,7 +180,8 @@
       "C. $P\\{X>m+n \\mid X>m\\}>P\\{X>m\\}$",
       "D. $P\\{X>m+n \\mid X>m\\}>P\\{X>n\\}$"
     ],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-填-01",
@@ -183,7 +193,8 @@
     ],
     "stem": "11. 设向量 $v_{1}=(0,x,z)$ , $v_{2}=(y,0,1)$ ，令 $F(x,y,z)=v_{1}\\times v_{2}$ ，则 $divF=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-填-02",
@@ -196,7 +207,8 @@
     ],
     "stem": "12. $\\lim_{x\\to0}\\left(\\frac{1}{x}-\\frac{\\ln(1+x)}{x\\sin x}\\right)=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-填-03",
@@ -209,7 +221,8 @@
     ],
     "stem": "13. 设函数 $y = y(x)$ 由参数方程 $\\left\\{ \\begin{aligned} & x = 2\\sin^{2}t \\\\ & y = t + \\cos t \\end{aligned} \\left( t \\in \\left( 0, \\frac{\\pi}{2} \\right) \\right) \\right.$ 确定, 则 $\\left. \\frac{d^2y}{\\mathrm{d}x^2} \\right|_{t = \\frac{\\pi}{4}} =$ \\_\\_\\_\\_",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-填-04",
@@ -221,7 +234,8 @@
     ],
     "stem": "$\\int_{1}^{+\\infty} \\frac{\\ln(x+1)}{x^2} \\mathrm{d}x =$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-填-05",
@@ -233,7 +247,8 @@
     ],
     "stem": "15. 设矩阵 $A = \\begin{pmatrix} 1 & 0 & 0 \\\\ 2 & a & 2 \\\\ 0 & 2 & a \\end{pmatrix}$ , $B = \\begin{pmatrix} a & -1 & -1 \\\\ -1 & 2 & 1 \\\\ -1 & -1 & a \\end{pmatrix}$ , 设 $m(X)$ 为 3 阶矩阵 $X$ 的实特征值中的最大值. 若 $m(A) < m(B)$ , 则 $a$ 的取值范围是 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十四章 相似矩阵"
+    "chapter": "第十四章 相似矩阵",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-填-06",
@@ -248,7 +263,8 @@
     ],
     "stem": "16. 设随机变量 X 服从参数为 1 的泊松分布, 随机变量 Y 服从参数为 3 的泊松分布, X 与 Y - X 相互独立, 则 $E(XY) =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第十八章 多维随机变量及其分布"
+    "chapter": "第十八章 多维随机变量及其分布",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-解-01",
@@ -260,7 +276,8 @@
     ],
     "stem": "17.(本题满分10分)\n求函数 $f(x,y)=(2x^{2}-y^{2})\\mathrm{e}^{x}$ 的极值.",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2026-解-02",
@@ -272,7 +289,8 @@
     ],
     "stem": "18.(本题满分12分)\n设 $f(u)$ 在区间 $(0, +\\infty)$ 内具有3阶连续导数, 且存在可微函数 $F(x, y)$ 使得\n$$\nF (x, y) = \\frac {f (x y)}{x ^ {2} y} \\mathrm{d} x + \\frac {f ^ {\\prime \\prime} (x y)}{x y ^ {2}} \\mathrm{d} y (x y > 0).\n$$\n(1) 证明: $\\frac{f''(u)}{u} - \\frac{f(u)}{u} = C, C$ 为常数;\n(2) 设 $f(1) = 1, f'(1) = -1, f''(1) = 0$ , 求 $f(u)$ 的表达式.",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-解-03",
@@ -284,7 +302,8 @@
     ],
     "stem": "19.(本题满分12分)\n设有向曲线 $L$ 为椭圆 $x^{2} + 3y^{2} = 1$ 上沿逆时针方向从点 $A\\left(-\\frac{1}{2}, - \\frac{1}{2}\\right)$ 到 $B\\left(\\frac{1}{2},\\frac{1}{2}\\right)$ 的部分,计算曲线\n积分 $I = \\int_{L}\\left(\\mathrm{e}^{x^2}\\sin x - 2xy\\right)\\mathrm{d}x + (6x - x^2 -y\\cos^4 y)\\mathrm{d}y.$",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-解-04",
@@ -296,7 +315,8 @@
     ],
     "stem": "20.(本题满分12分)\n设可导函数 $f(x)$ 严格单调递增且满足 $\\int_{-1}^{1}f(x)\\mathrm{d}x = 0.$ 记 $a = \\int_0^1 f(x)\\mathrm{d}x.$\n(1) 证明 a > 0;\n(2) 令 $F(x) = a(1 - x^2) + \\int_1^x f(t)dt$ , 证明: 存在 $\\xi \\in (-1,1)$ , 使 $F''(\\xi) = 0$ .",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-解-05",
@@ -309,7 +329,8 @@
     ],
     "stem": "21.(本题满分12分)\n已知向量组 $\\alpha_{1}=\\begin{pmatrix}1\\\\ 0\\\\ -1\\\\ -1\\end{pmatrix},\\alpha_{2}=\\begin{pmatrix}1\\\\ -1\\\\ 0\\\\ -2\\end{pmatrix},\\alpha_{3}=\\begin{pmatrix}0\\\\ -1\\\\ 1\\\\ -1\\end{pmatrix},\\alpha_{4}=\\begin{pmatrix}0\\\\ 1\\\\ -1\\\\ 1\\end{pmatrix}.$ 设 $A=(\\alpha_{1},\\alpha_{2},\\alpha_{3},\\alpha_{4}), G=(\\alpha_{1},\\alpha_{2}).$\n(1) 证明: $\\alpha_{1}, \\alpha_{2}$ 是 $\\alpha_{1}, \\alpha_{2}, \\alpha_{3}, \\alpha_{4}$ 的极大线性无关组;\n(2) 求矩阵 H 使得 A = GH, 并求 $A^{10}$ .",
     "options": [],
-    "chapter": "第十二章 向量"
+    "chapter": "第十二章 向量",
+    "difficulty": "综合题"
   },
   {
     "id": "2026-解-06",
@@ -321,6 +342,7 @@
     ],
     "stem": "22.(本题满分12分)\n假设某种元件的寿命服从指数分布, 其均值 $\\theta$ 是未知参数, 为估计 $\\theta$ , 取 n 个这种元件同时做寿命试验, 试验到出现 $k(1 \\leqslant k \\leqslant n)$ 个元件失效时停止.\n(1) 若 k=1, 失效元件寿命记为 T.\n(i) 求 T 的概率密度; (ii) 确定 a, 使 $\\hat{\\theta} = aT$ 是 $\\theta$ 的无偏估计, 求 $D(\\hat{\\theta})$ .\n(2) 已知 k 个失效元件寿命值分别为 $t_{1}, t_{2}, \\cdots, t_{k}$ 且 $t_{1} \\leqslant t_{2} \\leqslant \\cdots \\leqslant t_{k}$ ，似然函数为\n$L(\\theta)=\\frac{1}{\\theta^{k}}\\mathrm{e}^{-\\frac{1}{\\theta}\\left[\\sum_{i=1}^{k}l_{i}+(n-k)l_{k}\\right]}$ , 求 $\\theta$ 的最大似然估计值.",
     "options": [],
-    "chapter": "第二十二章 参数估计"
+    "chapter": "第二十二章 参数估计",
+    "difficulty": "综合题"
   }
 ]

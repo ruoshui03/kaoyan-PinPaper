@@ -15,7 +15,8 @@
       "C. $f'(1)=1.$",
       "D. $\\lim_{x\\to1}f'(x)=1.$"
     ],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-选-02",
@@ -32,7 +33,8 @@
       "C. $f(1)=\\frac{1}{2}, f'(1)=1.$",
       "D. $f(1)=0, f'(1)=1.$"
     ],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-03",
@@ -49,7 +51,8 @@
       "C. 若 $\\lim_{n \\to \\infty} \\cos(\\sin x_{n})$ 存在，则 $\\lim_{n \\to \\infty} \\sin x_{n}$ 存在，但 $\\lim_{n \\to \\infty} x_{n}$ 不一定存在.",
       "D. 若 $\\lim_{n \\to \\infty} \\sin(\\cos x_{n})$ 存在，则 $\\lim_{n \\to \\infty} \\cos x_{n}$ 存在，但 $\\lim_{n \\to \\infty} x_{n}$ 不一定存在."
     ],
-    "chapter": "第一章 函数、极限、连续"
+    "chapter": "第一章 函数、极限、连续",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-04",
@@ -66,7 +69,8 @@
       "C. $I_{1} < \\bar{I}_{3} < I_{2}$ .",
       "D. $I_{3} < I_{2} < I_{1}$ ."
     ],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-05",
@@ -83,7 +87,8 @@
       "C. A有3个两两线性无关的特征向量.",
       "D. A的属于不同特征值的特征向量相互正交."
     ],
-    "chapter": "第十四章 相似矩阵"
+    "chapter": "第十四章 相似矩阵",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-选-06",
@@ -102,7 +107,8 @@
       "C. $\\begin{pmatrix} A & B \\\\ O & B \\end{pmatrix} y = 0$ 与 $\\begin{pmatrix} B & A \\\\ O & A \\end{pmatrix} y = 0$ 同解.",
       "D. $\\begin{pmatrix} AB & B \\\\ O & A \\end{pmatrix} y = 0$ 与 $\\begin{pmatrix} BA & A \\\\ O & B \\end{pmatrix} y = 0$ 同解."
     ],
-    "chapter": "第十三章 线性方程组"
+    "chapter": "第十三章 线性方程组",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-07",
@@ -119,7 +125,8 @@
       "C. $\\{\\lambda \\mid \\lambda \\in R, \\lambda \\neq -1, \\lambda \\neq -2\\}$ .",
       "D. $\\{\\lambda \\mid \\lambda \\in R, \\lambda \\neq -1\\}$ ."
     ],
-    "chapter": "第十二章 向量"
+    "chapter": "第十二章 向量",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-选-08",
@@ -138,7 +145,8 @@
       "C. 9.",
       "D. 12."
     ],
-    "chapter": "第十七章 随机变量及其分布"
+    "chapter": "第十七章 随机变量及其分布",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-选-09",
@@ -156,7 +164,8 @@
       "C. $\\frac{\\mu_{2}-\\mu_{1}^{2}}{n\\varepsilon^{2}}$ .",
       "D. $\\frac{\\mu_{2}-\\mu_{1}^{2}}{\\sqrt{n}\\varepsilon^{2}}$ ."
     ],
-    "chapter": "第二十章 大数定律与中心极限定理"
+    "chapter": "第二十章 大数定律与中心极限定理",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-选-10",
@@ -174,7 +183,8 @@
       "C. $\\frac{\\sqrt{3}}{3}$ .",
       "D. $\\frac{\\sqrt{2}}{2}$ ."
     ],
-    "chapter": "第十九章 随机变量的数字特征"
+    "chapter": "第十九章 随机变量的数字特征",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-填-01",
@@ -186,7 +196,8 @@
     ],
     "stem": "函数 $f(x,y)=x^{2}+2y^{2}$ 在点 $(0,1)$ 处的最大方向导数为 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-02",
@@ -199,7 +210,8 @@
     ],
     "stem": "$\\int_{1}^{e^{2}}\\frac{\\ln x}{\\sqrt{x}}dx=$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第三章 一元函数积分学及其应用"
+    "chapter": "第三章 一元函数积分学及其应用",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-03",
@@ -212,7 +224,8 @@
     ],
     "stem": "当 $x \\geqslant 0, y \\geqslant 0$ 时, $x^{2} + y^{2} \\leqslant k e^{x + y}$ 恒成立, 则 k 的取值范围是 \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第五章 多元函数微分学及其应用"
+    "chapter": "第五章 多元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-填-04",
@@ -225,7 +238,8 @@
     ],
     "stem": "已知级数 $\\sum_{n=1}^{\\infty}\\frac{n!}{n^{n}}e^{-nx}$ 的收敛域为 $(a,+\\infty)$ ，则 a= \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第八章 无穷级数"
+    "chapter": "第八章 无穷级数",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-填-05",
@@ -237,7 +251,8 @@
     ],
     "stem": "已知矩阵 $A$ 和 $E - A$ 可逆, 其中 $E$ 为单位矩阵, 若矩阵 $B$ 满足 $\\left[E - (E - A)^{-1}\\right]B = A$ , 则 $B - A = \\_$ \\_\\_\\_\\_.",
     "options": [],
-    "chapter": "第十一章 矩阵"
+    "chapter": "第十一章 矩阵",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-填-06",
@@ -250,7 +265,8 @@
     ],
     "stem": "设 A, B, C 为随机事件, 且 A 与 B 互不相容, A 与 C 互不相容, B 与 C 相互独立, $P(A) = P(B) = P(C) = \\frac{1}{3}$ , 则 $P(B \\cup C \\mid A \\cup B \\cup C) =$ \\_\\_\\_\\_ .",
     "options": [],
-    "chapter": "第十六章 随机事件及其概率"
+    "chapter": "第十六章 随机事件及其概率",
+    "difficulty": "基础题"
   },
   {
     "id": "2022-解-01",
@@ -262,7 +278,8 @@
     ],
     "stem": "设函数 $y(x)$ 是微分方程 $y' + \\frac{1}{2\\sqrt{x}} y = 2 + \\sqrt{x}$ 的满足条件 $y(1) = 3$ 的解, 求曲线 $y = y(x)$ 的渐近线.",
     "options": [],
-    "chapter": "第七章 微分方程及其应用"
+    "chapter": "第七章 微分方程及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-02",
@@ -275,7 +292,8 @@
     ],
     "stem": "已知平面区域 $D = \\{(x,y)\\mid y - 2\\leqslant x\\leqslant \\sqrt{4 - y^2},0\\leqslant y\\leqslant 2\\}$ ，计算 $I = \\iint_{D}\\frac{(x - y)^{2}}{x^{2} + y^{2}}\\mathrm{d}x\\mathrm{d}y.$",
     "options": [],
-    "chapter": "第六章 重积分及其应用"
+    "chapter": "第六章 重积分及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-03",
@@ -287,7 +305,8 @@
     ],
     "stem": "已知曲线 L 是曲面 $\\Sigma:4x^{2}+y^{2}+z^{2}=1, x\\geqslant0, y\\geqslant0, z\\geqslant0$ 的边界, 曲面 $\\Sigma$ 方向朝上, 曲线 L 的方向和曲面 $\\Sigma$ 的方向符合右手法则, 计算 $I=\\oint_{L}(yz^{2}-\\cos z)\\mathrm{d}x+2xz^{2}\\mathrm{d}y+(2xyz+x\\sin z)\\mathrm{d}z.$",
     "options": [],
-    "chapter": "第九章 曲线积分与曲面积分"
+    "chapter": "第九章 曲线积分与曲面积分",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-04",
@@ -300,7 +319,8 @@
     ],
     "stem": "设函数 $f(x)$ 在 $(-\\infty, +\\infty)$ 上有二阶连续导数, 证明: $f''(x) \\geqslant 0$ 的充分必要条件是对任意不同的实数 $a, b$ , 都有 $f\\left(\\frac{a + b}{2}\\right) \\leqslant \\frac{1}{b - a} \\int_{a}^{b} f(x) \\mathrm{d}x$ 成立.",
     "options": [],
-    "chapter": "第二章 一元函数微分学及其应用"
+    "chapter": "第二章 一元函数微分学及其应用",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-05",
@@ -314,7 +334,8 @@
     ],
     "stem": "设二次型 $f(x_{1},x_{2},x_{3})=\\sum_{i=1}^{3}\\sum_{j=1}^{3}ijx_{i}x_{j}.$\n(I) 写出 $f(x_{1}, x_{2}, x_{3})$ 对应的矩阵;\n(II) 求正交变换 x = Qy 将 $f(x_{1}, x_{2}, x_{3})$ 化为标准形;\n(III) 求 $f(x_{1}, x_{2}, x_{3}) = 0$ 的解.",
     "options": [],
-    "chapter": "第十五章 二次型"
+    "chapter": "第十五章 二次型",
+    "difficulty": "综合题"
   },
   {
     "id": "2022-解-06",
@@ -326,6 +347,7 @@
     ],
     "stem": "设 $X_{1}, X_{2}, \\cdots, X_{n}$ 为来自均值为 $\\theta$ 的指数分布总体的简单随机样本, $Y_{1}, Y_{2}, \\cdots, Y_{m}$ 为来自均值为 $2\\theta$ 的指数分布总体的简单随机样本, 且两样本相互独立, 其中 $\\theta(\\theta > 0)$ 是未知参数. 利用样本 $X_{1}, X_{2}, \\cdots, X_{n}, Y_{1}, Y_{2}, \\cdots, Y_{m}$ , 求 $\\theta$ 的最大似然估计量 $\\hat{\\theta}$ , 并求 $D(\\hat{\\theta})$ .",
     "options": [],
-    "chapter": "第二十二章 参数估计"
+    "chapter": "第二十二章 参数估计",
+    "difficulty": "综合题"
   }
 ]
