@@ -851,7 +851,7 @@ with tab_paper_hub:
     _zhenti_qs = [q for q in raw_questions if getattr(q, "year", "")]
     if _zhenti_qs:
         with st.expander("📅 或:直接做整套历年真题卷", expanded=False):
-            _years = sorted({q.year for q in _zhenti_qs}, reverse=True)
+            _years = sorted({q.year for q in _zhenti_qs})  # 2010 在最前
             zy1, zy2 = st.columns([2, 1])
             with zy1:
                 pick_year = st.selectbox("选择年份", _years, index=0, key=f"p1_zhenti_year_{current_subject.value}")
@@ -1172,7 +1172,7 @@ with tab_marker_hub:
             seen_dim.add(d)
             book_dims.append(d)
     if is_zhenti:
-        book_dims.sort(reverse=True)  # 年份新→旧
+        book_dims.sort()  # 年份旧→新,2010 在最前
     if not book_dims:
         book_dims = loaded_chapters
 
