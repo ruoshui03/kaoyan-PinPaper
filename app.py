@@ -1153,21 +1153,29 @@ with tab_marker_hub:
 
     # 当前书籍对应的题目与真实章节划分
     book_questions = [q for q in raw_questions if getattr(q, "book", "880") == target_book]
-    seen_b_ch = set()
-    book_chapters = []
+    # 分组维度:真题按「年份」,880 等按「章节」。dim_of(q) 取该题的维度值。
+    is_zhenti = any(getattr(q, "year", "") for q in book_questions)
+    dim_label = "选择年份" if is_zhenti else "选择章节"
+    def dim_of(q):
+        return (q.year if is_zhenti else q.chapter) or ""
+    seen_dim = set()
+    book_dims = []
     for q in book_questions:
-        if q.chapter and q.chapter not in seen_b_ch:
-            seen_b_ch.add(q.chapter)
-            book_chapters.append(q.chapter)
-    if not book_chapters:
-        book_chapters = loaded_chapters
+        d = dim_of(q)
+        if d and d not in seen_dim:
+            seen_dim.add(d)
+            book_dims.append(d)
+    if is_zhenti:
+        book_dims.sort(reverse=True)  # 年份新→旧
+    if not book_dims:
+        book_dims = loaded_chapters
 
     # Filters
     m_col1, m_col2, m_col3, m_col4 = st.columns([1.8, 1, 1, 1.2])
     with m_col1:
         target_ch = st.selectbox(
-            "选择章节",
-            options=book_chapters,
+            dim_label,
+            options=book_dims,
             index=0,
             key=f"p2_ch_select_{current_subject.value}_{target_book}",
         )
@@ -1179,7 +1187,7 @@ with tab_marker_hub:
         target_status = st.selectbox("错题状态", options=["全部题目", "🎯 仅看待练错题", "🏆 仅看历史错题", "🔥 仅看顽固错题", "⭐ 仅看所有曾错题", "✅ 仅看未错题"], index=0, key=f"p2_status_select_{current_subject.value}")
 
     # 本章多维统计指示条
-    all_ch_qs = [q for q in book_questions if q.chapter == target_ch]
+    all_ch_qs = [q for q in book_questions if dim_of(q) == target_ch]
     ch_active_n = sum(1 for q in all_ch_qs if state_mgr.is_in_active_pool(q.id))
     ch_stubborn_n = sum(1 for q in all_ch_qs if state_mgr.is_in_active_pool(q.id) and state_mgr.get_wrong_count(q.id) >= 2)
     ch_past_n = sum(1 for q in all_ch_qs if state_mgr.is_temporarily_mastered(q.id))
@@ -1212,7 +1220,7 @@ with tab_marker_hub:
 
     ch_questions = [
         q for q in book_questions
-        if q.chapter == target_ch
+        if dim_of(q) == target_ch
         and (target_diff == "全部" or target_diff in q.difficulty.value)
         and (target_type == "全部" or target_type == q.question_type.value)
         and status_check(q)
@@ -1224,7 +1232,7 @@ with tab_marker_hub:
     ))
 
     # 本章全部题目(不受上方难度/题型/状态筛选影响),用于批量标错的题号匹配
-    chapter_all = [q for q in book_questions if q.chapter == target_ch]
+    chapter_all = [q for q in book_questions if dim_of(q) == target_ch]
     _SEC_SHORT = {DifficultyLevel.BASIC: "基础", DifficultyLevel.COMPREHENSIVE: "综合", DifficultyLevel.ADVANCED: "拓展"}
     _TYPE_SHORT = {QuestionType.CHOICE: "选", QuestionType.FILL_BLANK: "填", QuestionType.SOLUTION: "解"}
     _TYPE_LABEL = {"选": "选择", "填": "填空", "解": "解答"}
@@ -1235,10 +1243,11 @@ with tab_marker_hub:
         combos.setdefault((_SEC_SHORT.get(q.difficulty, "综合"), _TYPE_SHORT.get(q.question_type, "选")), []).append(q)
 
     def _resolve_ids(inputs: dict[tuple[str, str], str]) -> list[str]:
-        """把各 (篇,题型) 框里的题号解析成精确题目 ID(章-篇-题型-序号)。"""
+        """把各 (篇,题型) 框里的题号解析成精确题目 ID。序号取 ID 末段:
+        880 四段 01-基础-选-03 → '03';真题三段 2010-选-01 → '01'(兼容不越界)。"""
         ids: list[str] = []
         for (sec, typ), text in inputs.items():
-            present = {int(q.id.split("-")[3]): q.id for q in combos.get((sec, typ), []) if q.id.split("-")[3].isdigit()}
+            present = {int(q.id.split("-")[-1]): q.id for q in combos.get((sec, typ), []) if q.id.split("-")[-1].isdigit()}
             for n in re.findall(r"\d+", text or ""):
                 qid = present.get(int(n))
                 if qid:
@@ -1247,13 +1256,16 @@ with tab_marker_hub:
 
     # Quick Batch Marker Box & Export
     with st.expander("⚡ 批量标错与数据导出", expanded=True):
-        st.markdown("刷完一章后，按 **篇 × 题型** 分别输入原书题号（每个题型各自从 1 编号），用逗号或空格隔开：")
+        _batch_hint = ("按 **题型** 分别输入该年真题题号" if is_zhenti
+                       else "刷完一章后，按 **篇 × 题型** 分别输入原书题号") + "（每个题型各自从 1 编号），用逗号或空格隔开："
+        st.markdown(_batch_hint)
         batch_inputs: dict[tuple[str, str], str] = {}
         for sec in ("基础", "综合", "拓展"):
             sec_types = [t for t in ("选", "填", "解") if (sec, t) in combos]
             if not sec_types:
                 continue
-            st.markdown(f"**{_SEC_ICON[sec]}**")
+            if not is_zhenti:  # 真题无篇分层,不显示篇标题
+                st.markdown(f"**{_SEC_ICON[sec]}**")
             cols = st.columns(len(sec_types))
             for col, typ in zip(cols, sec_types):
                 with col:
@@ -1351,14 +1363,22 @@ with tab_marker_hub:
 
     def _seq_of(qid: str) -> int:
         parts = qid.split("-")
-        return int(parts[3]) if len(parts) >= 4 and parts[3].isdigit() else 0
+        # 序号取末段:880 四段取第4段,真题三段取第3段,均为题型内序号
+        return int(parts[-1]) if parts and parts[-1].isdigit() else 0
 
     sections_to_show = []
-    for diff, sec_icon in _SEC_ORDER:
+    if is_zhenti:
+        # 真题无篇分层,直接按题型分组(标题只显示题型)
         for qtype, type_label in _TYPE_ORDER:
-            grp = [q for q in display_questions if q.difficulty == diff and q.question_type == qtype]
+            grp = [q for q in display_questions if q.question_type == qtype]
             if grp:
-                sections_to_show.append((f"{sec_icon} · {type_label}", grp))
+                sections_to_show.append((f"📝 {type_label}", grp))
+    else:
+        for diff, sec_icon in _SEC_ORDER:
+            for qtype, type_label in _TYPE_ORDER:
+                grp = [q for q in display_questions if q.difficulty == diff and q.question_type == qtype]
+                if grp:
+                    sections_to_show.append((f"{sec_icon} · {type_label}", grp))
 
     for sec_title, sec_q_list in sections_to_show:
         # 总数/已标错取本章该 篇·题型 的全量(chapter_all),不受分页与状态筛选影响
