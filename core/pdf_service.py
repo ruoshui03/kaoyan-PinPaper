@@ -337,6 +337,34 @@ table th {
     height: 140mm;
 }
 
+/* 题目元信息行(书籍/难度/章节/ID/考点标签) —— 与 app 卡片一致 */
+.meta-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 2px 0 6px 0;
+}
+.badge {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 5px;
+    font-size: 8.5pt;
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+.badge-basic { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+.badge-comp  { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.badge-adv   { background: #faf5ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+.badge-ch    { background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; }
+.badge-tag   { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+.meta-id {
+    font-size: 8.5pt;
+    color: #64748b;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
 /* 解析版区块 */
 .solution-block {
     background: #f8fafc;
@@ -519,12 +547,32 @@ table th {
     # =========================================================================
     # 3. 详细解析版 HTML
     # =========================================================================
+    @staticmethod
+    def _build_meta_row(q: QuestionItem) -> str:
+        """题目元信息行:与 app「查看答案与解析」展开后的一致(书籍/难度/章节/ID/考点标签)。"""
+        diff_val = q.difficulty.value
+        diff_cls = "badge-basic" if diff_val == "基础题" else ("badge-adv" if diff_val == "拓展题" else "badge-comp")
+        book = getattr(q, "book", "880") or "880"
+        tags_html = "".join(
+            f'<span class="badge badge-tag">#{html.escape(str(t))}</span>' for t in q.tags
+        ) if q.tags else ""
+        return (
+            '<div class="meta-row">'
+            f'<span class="badge badge-ch">《{html.escape(str(book))}》</span>'
+            f'<span class="badge {diff_cls}">[{html.escape(diff_val)}]</span>'
+            f'<span class="badge badge-ch">{html.escape(str(q.chapter))}</span>'
+            f'<span class="meta-id">ID: {html.escape(str(q.id))}</span>'
+            f'{tags_html}'
+            '</div>'
+        )
+
     def _build_solution_html(self, paper: PaperItem) -> str:
         sub_cn, _ = self._get_subject_info(paper.subject)
-        
+
         blocks: list[str] = []
         for idx, q in enumerate(paper.questions, start=1):
             stem_html = self.format_question_stem(idx, q.stem)
+            meta_row = self._build_meta_row(q)
             options_html = self._render_options_grid(q.options) if q.options else ""
 
             ans_str = q.answer if q.answer else "略"
@@ -540,6 +588,7 @@ table th {
             blocks.append(f"""
             <div class="q-card">
                 <div class="q-stem">{stem_html}</div>
+                {meta_row}
                 {options_html}
                 {solution_box}
             </div>
