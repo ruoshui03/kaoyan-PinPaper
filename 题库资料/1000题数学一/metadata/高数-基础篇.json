@@ -1,0 +1,6762 @@
+[
+  {
+    "id": "高数-基00-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "“ $\\sin^2\\alpha+\\sin^2\\beta=1$ ”是“ $\\sin\\alpha+\\cos\\beta=0$ ”的（）.",
+    "options": [
+      "A. 充分非必要条件",
+      "B. 必要非充分条件",
+      "C. 充分必要条件",
+      "D. 既非充分又非必要条件"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "证明: 对任意正整数 n, 均有 $2^{n}+2>n^{2}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设实数 $a\\in(0,1)$ . 数列 $\\{x_n\\}$ 满足 $x_0=1$ , 且对任意正整数 $n$ , 均有 $x_n=\\dfrac{1}{x_{n-1}}+a$ . 证明: 对任意正整数 $n$ , 有 $x_n>1$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$(2a^{3}+ab^{2}+b^{3})(a^{2}b-ab^{2})=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $\\lambda\\neq0,2$ , 则 $\\dfrac{\\lambda^{4}-3\\lambda^{3}-6\\lambda^{2}+16\\lambda}{\\lambda^{2}-2\\lambda}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)=\\dfrac{x^2}{1+x^2}$ ，则 $f(1)+f(2)+f(3)+f(4)+f\\left(\\dfrac{1}{2}\\right)+f\\left(\\dfrac{1}{3}\\right)+f\\left(\\dfrac{1}{4}\\right)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 $f(x)$ 在 $[0,1]$ 上有定义, $f(0)=f(1)$ , 且对任意 $x_1,x_2\\in[0,1]$ , 均有\n$$\n\\left|f(x_{1})-f(x_{2})\\right|\\leqslant\\left|x_{1}-x_{2}\\right|.\n$$\n证明: 当 $a,b\\in[0,1]$ 时, $|f(a)-f(b)|\\leqslant\\dfrac{1}{2}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $x>0$ , 求函数 $y=x+\\dfrac{4}{x^2}$ 的最小值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设实数 x, y 满足 $3x^{2}+2y^{2}=6$ , 求 $2x+y$ 的最大值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "函数 $f(x)=ax^{3}+bx^{2}-2x(a,b\\in R,ab\\neq0)$ 的图像如图所示，且 $x_{1}+x_{2}<0$ ，则有（）.",
+    "options": [
+      "A. a > 0, b > 0",
+      "B. $a<0,b<0$",
+      "C. $a<0,b>0$",
+      "D. $a>0,b<0$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 满足 $af(x)+f\\left(\\dfrac{1}{x}\\right)=ax$ , 其中 $x\\neq0,a^2\\neq1$ , 求函数 $f(x)$ 的表达式.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $\\cos\\left(\\dfrac{\\pi}{12}-\\theta\\right)=\\dfrac{1}{3}$ ，则 $\\sin\\left(\\dfrac{5\\pi}{12}+\\theta\\right)$ 的值为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $|x_1-3|<1,|x_2-3|<1$ . 求证:\n(1) $4<x_{1}+x_{2}<8,|x_{1}-x_{2}|<2;$\n(2) 若 $f(x)=x^2-x+1$ ，且 $x_1\\neq x_2$ ，则 $|x_1-x_2|<|f(x_1)-f(x_2)|<7|x_1-x_2|$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知等差数列 $\\{a_{n}\\}$ 满足 $(a_{1}+a_{2})+(a_{2}+a_{3})+\\cdots+(a_{n}+a_{n+1})=2n(n+1)(n\\in N_{+})$ . 求:\n(1) 数列 $\\{a_{n}\\}$ 的通项公式;\n(2) 数列 $\\left\\{\\dfrac{a_{n}}{2^{n-1}}\\right\\}$ 的前 n 项和 $S_{n}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基00-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "函数 $y=-x^{2}+(\\mathrm{e}^{x}-\\mathrm{e}^{-x})\\sin x$ 在区间 $[-2.8,2.8]$ 的图像大致为（）.",
+    "options": [
+      "![选项A](images/高数_基00_15_A.jpg)",
+      "![选项B](images/高数_基00_15_B.jpg)",
+      "![选项C](images/高数_基00_15_C.jpg)",
+      "![选项D](images/高数_基00_15_D.jpg)"
+    ],
+    "answer": "",
+    "solution": "",
+    "_figopt": true
+  },
+  {
+    "id": "高数-基00-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第0章 零基础",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知曲线 C 的极坐标方程是 r=1，以极点为原点，极轴为 x 轴的正半轴建立平面直角坐标系，直线 l 的参数方程为 $\\left\\{\\begin{aligned}x&=1+\\dfrac{t}{2},\\\\y&=2+\\dfrac{\\sqrt{3}}{2}t\\end{aligned}\\right.$ (t 为参数).\n(1) 写出直线 l 与曲线 C 的直角坐标方程;\n(2) 设曲线 $C$ 经过伸缩变换 $\\left\\{\\begin{array}{l}x'=3x,\\\\y'=y\\end{array}\\right.$ 得到曲线 $C'$ ，设曲线 $C'$ 上任一点为 $M(x,y)$ ，求 $\\dfrac{x}{3}+\\sqrt{3}y$ 的最小值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $f(x)=x^{2}\\tan xe^{\\cos x}$ 是（）.",
+    "options": [
+      "A. 有界函数",
+      "B. 单调函数",
+      "C. 周期函数",
+      "D. 奇函数"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 内有定义, 在区间 $[0,2]$ 上, $f(x)=x(x^2-4)$ , 若对任意的 $x$ 都满足 $f(x)=-\\dfrac{1}{2}f(x+2)$ . 写出 $f(x)$ 在 $[-2,0)$ 上的表达式.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)=\\begin{cases}1-2x^2,&x<-1,\\\\x^3,&-1\\leqslant x\\leqslant2,\\\\12x-16,&x>2.\\end{cases}$ 写出 $f(x)$ 的反函数 $g(x)$ 的表达式.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $(-\\infty,+\\infty)$ 上满足 $f(x)=f(x-\\pi)+\\sin x$ ，且 $f(x)=x,x\\in[0,\\pi)$ ，求 $f(x)$ 在 $[\\pi,3\\pi)$ 上的表达式.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "当 $x\\to0$ 时, $\\mathrm{e}-\\mathrm{e}^{\\cos x}$ 是 $\\sqrt[3]{1+x^2}-1$ 的 ( ).",
+    "options": [
+      "A. 高阶无穷小",
+      "B. 低阶无穷小",
+      "C. 同阶但非等价无穷小",
+      "D. 等价无穷小"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列选项中, 极限存在的是( )",
+    "options": [
+      "A. $\\lim_{x\\to0}\\dfrac{\\sin x}{|x|}\\arctan\\dfrac{1}{|x|}$",
+      "B. $\\lim_{x\\to0}\\dfrac{\\sin x}{x}\\arctan\\dfrac{1}{x}$",
+      "C. $\\lim_{x\\to0}\\dfrac{|\\sin x|}{|x|}\\arctan\\dfrac{1}{x}$",
+      "D. $\\lim_{x\\to0}\\dfrac{|\\sin x|}{x}\\arctan\\dfrac{1}{x}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $x\\to0$ 时, $\\ln\\dfrac{2+x}{2+\\sin x}$ 与 $x^n$ 为同阶无穷小, 则 $n=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\lim_{x\\to0}\\dfrac{\\sin2x+xf(x)}{x^{3}}=1$ ，则 $\\lim_{x\\to0}\\dfrac{2\\cos x+f(x)}{x^{2}}=(\\quad)$ .",
+    "options": [
+      "A. 0",
+      "B. $-\\dfrac{2}{3}$",
+      "C. $\\dfrac{4}{3}$",
+      "D. $\\infty$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x),g(x)$ 在 $x=0$ 的某去心邻域内有定义且不为零, 若当 $x\\to0$ 时, $f(x)$ 是 $g(x)$ 的高阶无穷小, 则当 $x\\to0$ 时, 对于以下结论:\n① $f(x)+g(x)=o(f(x))$ ; ② $f(x)g(x)=o(g^2(x))$ ;\n③ $f(x)=o(\\ln[1+g(x)])$ ; ④ $f(x)=o(g^2(x))$ .\n正确结论的个数为( ).",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\lim_{x\\to+\\infty}x\\left(2^{1/x}-3^{1/x}\\right)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to0}\\dfrac{\\sqrt{1+2x}-\\sqrt[3]{1+3x}}{\\ln(1+x^{2})}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to0}\\left(\\dfrac{\\arctan x}{x}\\right)^{\\dfrac{1}{\\tan^{2}x}}=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $\\lim_{x\\to-2}\\dfrac{2x^3+ax^2-3x+6}{x+2}=b,$ 则 $ab=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to0}\\dfrac{\\sqrt{1+\\tan x}-\\sqrt{1+\\sin x}}{x^2-x\\ln(1+x)}=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to+\\infty}\\ln(1+2^x)\\ln\\left(1+\\dfrac{2}{x}\\right)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\lim_{x\\to\\infty}\\left(\\cos\\dfrac{1}{x}+\\sin\\dfrac{1}{x}\\right)^{x/2}=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$f(x)=\\dfrac{\\tan x}{1+x^2}$ 在 $x=0$ 处的3次泰勒多项式为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知 $\\lim_{x\\to1}f(x)$ 存在, 且 $f(x)=x^{2}+\\mathrm{e}^{x}\\lim_{x\\to1}f(x)$ , 则 $f(x)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\dfrac{\\mathrm{e}^x+xe^x}{\\mathrm{e}^x-1}-\\dfrac{1}{x}$ 在 $x=0$ 处连续, 则应补充 $f(0)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\dfrac{1-x\\cdot2^{1-x}}{(2-x)(1-x)}(x\\neq1,2)$ , 若 $f(x)$ 在 $[1,2]$ 上连续, 则 $f(1)f(2)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $f(x)=\\dfrac{|x|^x-1}{x(x+1)\\ln|x|}$ 的可去间断点的个数为（）.",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-22",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $f(x)=\\dfrac{\\ln|1-x|}{(\\mathrm{e}^x-1)(x+2)}$ 的第二类间断点的个数为（）.",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基01-23",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第1章 函数极限与连续",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\lim_{t\\to+\\infty}\\dfrac{x+\\mathrm{e}^{tx}}{1+\\mathrm{e}^{tx}}$ ，则 $x=0$ 是 $f(x)$ 的（）.",
+    "options": [
+      "A. 可去间断点",
+      "B. 跳跃间断点",
+      "C. 振荡间断点",
+      "D. 无穷间断点"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\left(\\dfrac{4}{\\pi}\\arctan\\dfrac{n}{n+1}\\right)^n=(\\quad)$ .",
+    "options": [
+      "A. $\\mathrm{e}^{-\\dfrac{2}{\\pi}}$",
+      "B. $\\mathrm{e}^{-\\dfrac{\\pi}{2}}$",
+      "C. $\\dfrac{\\pi}{2}$",
+      "D. $\\dfrac{2}{\\pi}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\dfrac{n^{99}}{n^{100}-(n-1)^{100}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\{a_{n}\\}$ 非负有界, $b_{n}=\\sum_{k=1}^{n}\\dfrac{k}{a_{n}+n^{2}}$ , 则 $\\lim_{n\\to\\infty}\\dfrac{1}{b_{n}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $x_{0}>0,x_{n+1}=\\dfrac{1}{2}\\left(x_{n}+\\dfrac{a}{x_{n}}\\right)(n=0,1,2,\\cdots)$ ，且 a>0，证明 $\\lim_{n\\to\\infty}x_{n}$ 存在，并求此极限.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "当 $0\\leqslant x\\leqslant\\dfrac{\\pi}{2}$ 时, $\\lim_{n\\to\\infty}\\sqrt[n]{\\sin^nx+\\cos^nx}=\\underline{\\quad}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\sqrt[n]{1+|x|^{3n}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设数列 $\\{x_{n}\\}$ 满足 $x_{n+1}=\\ln x_{n}+1,x_{n}>0,n=1,2,\\cdots$ ，则 $\\{x_{n}\\}$ ( ).",
+    "options": [
+      "A. 单调不减",
+      "B. 单调不增",
+      "C. 严格单调递增",
+      "D. 严格单调递减"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若对于数列 $\\{x_{n}\\}$ ，存在常数 $k(0<k<1)$ ，使得 $\\left|x_{n+1}-a\\right|\\leqslant k|x_{n}-a|$ ， $n=1,2,\\cdots$ 证明 $\\{x_{n}\\}$ 收敛于 a.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若对于数列 $\\{x_{n}\\},x_{n+1}=f(x_{n}),n=1,2,\\cdots,f(x)$ 可导, a 是 $f(x)=x$ 的唯一解, 且对任意的 $x\\in R$ , 有 $|f'(x)|\\leqslant k<1$ . 证明 $\\{x_{n}\\}$ 收敛于 a.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "综合压轴",
+      "易错点"
+    ],
+    "stem": "设 $a_{n}>0,\\lim_{n\\to\\infty}b_{n}=0$ , 且 $\\mathrm{e}^{a_{n}}+a_{n}=\\mathrm{e}^{b_{n}},n=1,2,\\dots$ , 求 $\\lim_{n\\to\\infty}a_{n}$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $c=2\\ln(1+b),b>a>0$ , 且 $a$ 是方程 $x-2\\ln(1+x)=0$ 的唯一非零解, 证明 $c>a$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基02-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第2章 数列极限",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设单调递减数列 $\\{x_{n}\\}$ 满足 $x_{n+1}=2\\ln(1+x_{n}),n=1,2,\\cdots,x_{1}>a>0$ ，且 a 是 $x-2\\ln(1+x)=0$ 的唯一非零解，证明 $\\{x_{n}\\}$ 收敛.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 满足 $f(0)=0$ , 且 $f'(0)$ 存在, 则 $\\lim_{x\\to0}\\dfrac{f(1-\\cos x)}{\\ln(1-x\\sin x)}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $F(x)=g(x)\\varphi(x),\\varphi(x)$ 在 $x=a$ 处连续但不可导, $g(x)$ 在 $x=a$ 处可导, $F(x)$ 在 $x=a$ 处可导, 则一定有 ( ).",
+    "options": [
+      "A. $g(a)\\neq0$",
+      "B. $g(a)\\neq0$",
+      "C. $g'(a)=0$",
+      "D. $g(a)$ 可以为任意实数"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设连续函数 $f(x)$ 满足 $\\lim_{x\\to2}\\dfrac{\\ln(x-1)}{f(3-x)}=2$ , 且 $f(1)=0$ , 则 $f'(1)$ 的值为 ( ).",
+    "options": [
+      "A. 2",
+      "B. -2",
+      "C. $\\dfrac{1}{2}$",
+      "D. $-\\dfrac{1}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 在 $x=0$ 处可导, $f(0)=f'(0)=\\sqrt{2}$ , 则 $\\lim_{x\\to0}\\dfrac{f^2(x)-2}{x}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\dfrac{1}{n^2},\\dfrac{1}{(n+1)^2}<x\\leqslant\\dfrac{1}{n^2},n=1,2,\\cdots,f(0)=0$ , 则 $f_+(0)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设可导函数 $f(x)>0$ ，则 $\\lim_{n\\to\\infty}n\\ln\\dfrac{f\\left(\\dfrac{1}{n}\\right)}{f(0)}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 可导， $|f(x)|$ 在 $x=0$ 处不可导，则（）.",
+    "options": [
+      "A. $f(0)=0,f'(0)=0$",
+      "B. $f(0)=0,f'(0)\\neq0$",
+      "C. $f(0)\\neq0,f'(0)=0$",
+      "D. $f(0)\\neq0,f'(0)\\neq0$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 连续, $\\lim_{x\\to1}\\dfrac{f(x)-1}{\\ln x}=2$ , 则曲线 $y=f(x)$ 在点 $x=1$ 处的切线方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $x=1$ 处可导, 且 $\\Delta f(1)$ 是 $f(x)$ 在增量为 $\\Delta x$ 时的函数值增量, 则 $\\lim_{\\Delta x\\to0}\\dfrac{\\Delta f(1)-df(1)}{\\Delta x}=(\\quad)$ .",
+    "options": [
+      "A. $f'(1)$",
+      "B. 1",
+      "C. $\\infty$",
+      "D. 0"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\begin{cases}x^3\\sin\\dfrac{1}{x},&x>0,\\\\x^2,&x\\leqslant0,\\end{cases}$ 则 $f(x)$ 在 $x=0$ 处（）.",
+    "options": [
+      "A. 不连续",
+      "B. 连续,但不可导",
+      "C. 可导,但导函数不连续",
+      "D. 可导,且导函数连续"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\varphi(x)$ 具有一阶连续导数, $f(x)=\\varphi(x)[1+|\\ln(1+x)|]$ , 则 $\\varphi(0)=0$ 是 $f(x)$ 在 $x=0$ 处可导的 ( )",
+    "options": [
+      "A. 充分必要条件",
+      "B. 充分非必要条件",
+      "C. 必要非充分条件",
+      "D. 既非充分又非必要条件"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 在 $x_0$ 处可导, $x_n=\\sin\\dfrac{1}{n}+\\dfrac{1}{n^2}$ , 则 $\\lim_{n\\to\\infty}\\dfrac{f(x_0+\\dfrac{1}{n})-f(x_0-x_n)}{\\sin\\dfrac{1}{n}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 为在 $x=0$ 处可导的奇函数, 则 $\\lim_{x\\to0}\\dfrac{f(tx)-5f(x)}{x}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\max\\{2x,x^2\\},x\\in(0,4)$ ，且 $f'(a)$ 不存在， $a\\in(0,4)$ ，则 $a=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基03-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第3章 一元函数微分学的概念",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)=\\lim_{n\\to\\infty}\\dfrac{x^2\\mathrm{e}^{n(x-1)}+ax+b}{5+\\mathrm{e}^{n(x-1)}}$ ，求 $f(x)$ 并讨论 $f(x)$ 的连续性及可导性与 $a,b$ 的关系.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=x^2,h(x)=f[1+g(x)]$ ，其中 $g(x)$ 可导，且 $g'(1)=h'(1)=2$ ，则 $g(1)=(\\quad)$ .",
+    "options": [
+      "A. -2",
+      "B. $-\\dfrac{1}{2}$",
+      "C. 0",
+      "D. 2"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=(\\ln x-1)(\\ln^2x-2)\\cdots(\\ln^nx-n),n\\geqslant2$ ，则 $f'(\\mathrm{e})=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 可导, $f(0)=-1,f'(0)=1$ , 若 $y(x)=|f(x-1)|$ , 则 $y'(1)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 可导, $f(1)=f'(1)=\\dfrac{1}{4}$ , 若 $y(x)=\\mathrm{e}^{\\sqrt{f(2x-1)}}$ , 则 $y'(1)=(\\quad)$ .",
+    "options": [
+      "A. $\\sqrt{\\mathrm{e}}$",
+      "B. $\\dfrac{1}{4}\\sqrt{\\mathrm{e}}$",
+      "C. $\\dfrac{1}{2}\\sqrt{\\mathrm{e}}$",
+      "D. $2\\sqrt{\\mathrm{e}}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $y=y(x)$ 满足 $(x+y^2)y'=1,y(-1)=0$ ，则 $\\left.\\dfrac{\\mathrm{d}x}{\\mathrm{d}y}\\right|_{y=0}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $y=\\ln\\sqrt{\\dfrac{1-x}{1+x^{2}}}$ ，则 $y'\\bigg|_{x=0}=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\left\\{\\begin{aligned}x&=t-t^{2},\\\\te^{y}+y+1&=0,\\end{aligned}\\right.$ 则 $\\left.\\dfrac{dy}{dx}\\right|_{t=0}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $y=f(x)$ 由 $\\begin{cases}x=2t+|t|,\\\\y=|t|\\tan t\\end{cases}$ 所确定, 则在 $\\left(-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)$ 内 ( ).",
+    "options": [
+      "A. $f(x)$ 连续, $f'(0)$ 不存在",
+      "B. $f'(0)$ 存在, $f'(x)$ 在 $x=0$ 处不连续",
+      "C. $f'(x)$ 连续, $f''(0)$ 不存在",
+      "D. $f''(0)$ 存在, $f''(x)$ 在 $x=0$ 处不连续"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设可导的奇函数 $f(x)$ 满足 $f'(x)=f^2(x)$ ，且 $f(-1)=1$ ，则 $f'''(1)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设可导函数 $f(x)$ 满足 $f'(x)=f^2(x)$ ，且 $f(0)=-1$ ，则在 $x=0$ 处的三阶导数 $f'''(0)=(\\quad)$ .",
+    "options": [
+      "A. -6",
+      "B. -4",
+      "C. 4",
+      "D. 6"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $f(x)=x^{2}\\ln(1-x)$ ，则当 $n\\geqslant3$ 时， $f^{(n)}(0)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(t)=\\lim_{n\\to\\infty}\\cos t\\cdot\\left(\\dfrac{n+t}{n-t}\\right)^n$ ，则 $f'(0)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\lim_{t\\to\\infty}x\\left(1+\\dfrac{1}{t}\\right)^{t\\sin x}$ ，则 $f'(x)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\max\\{x,x^2\\},0<x<2$ ，则 $f'(x)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $\\left\\{\\begin{aligned}x&=e^{t}\\sin2t,\\\\y&=e^{t}\\cos t\\end{aligned}\\right.$ 在对应 t = 0 处的点的切线方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若 $\\left\\{\\begin{aligned}x&=\\ln|t|,\\\\y&=e^{-t^{2}},\\end{aligned}\\right.$ 则 $\\left.\\dfrac{d^{2}y}{dx^{2}}\\right|_{t=\\sqrt{2}}=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $f(x)=x^{2}(\\mathrm{e}^{x}+5)$ ，则 $f^{(5)}(1)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基04-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第4章 一元函数微分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=(x-1)^{10}\\sin x$ ，则 $f^{(10)}(1)=(\\quad)$",
+    "options": [
+      "A. $10!\\cdot\\cos1$",
+      "B. $11!\\cdot\\cos1$",
+      "C. $10!-\\sin1$",
+      "D. $11!\\cdot\\sin1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $y=e^{x}+\\dfrac{e^{-x}}{2}$ 的最小值为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若函数 $f(x)=\\mathrm{e}^{-ax}-ex$ 的极值点小于零，则常数 $a$ 的取值范围为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)=\\begin{cases}\\cos|x|-1,&x\\leqslant0,\\\\x\\ln x,&x>0,\\end{cases}$ 则 $x=0$ 是 $f(x)$ 的（）.",
+    "options": [
+      "A. 可导点, 极值点",
+      "B. 不可导点, 极值点",
+      "C. 可导点, 非极值点",
+      "D. 不可导点, 非极值点"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知 $x^{2}+ax^{-3}\\geqslant\\dfrac{10}{3}(x>0)$ 恒成立, 则 $a$ 的取值范围为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $y=f(x)$ 连续, 其二阶导函数的图像如图所示, 则曲线 $y=f(x)$ 的拐点个数为 ( ).",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)>0$ 且二阶可导, 曲线 $y=\\sqrt{f(x)}$ 有拐点 $(1,\\sqrt{2}),f'(1)=2$ , 则 $f''(1)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y(x)=\\ln\\left|\\mathrm{e}^{2x}-1\\right|$ 的斜渐近线为（）.",
+    "options": [
+      "A. $y=2x+\\dfrac{1}{\\mathrm{e}}$",
+      "B. $y=2x$",
+      "C. $y=-2x+\\dfrac{1}{\\mathrm{e}}$",
+      "D. $y=-2x$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=x\\ln\\left(e+\\dfrac{1}{x}\\right)$ 的斜渐近线为 ( ).",
+    "options": [
+      "A. $y=x+e$",
+      "B. $y=x-e$",
+      "C. $y=x+\\dfrac{1}{e}$",
+      "D. $y=x-\\dfrac{1}{e}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $x^{2}-xy+y^{2}=1$ 在点 (1,1) 处的曲率为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知曲线 $y=f(x)$ 在其点 (0,1) 处的曲率圆方程为 $(x-1)^2+y^2=2$ ，且当 $x\\to0$ 时，二阶可导函数 $f(x)$ 与 $a+bx+cx^2$ 的差为 $o(x^2)$ ，则（）.",
+    "options": [
+      "A. $a=0,b=1,c=\\dfrac{3}{2}$",
+      "B. $a=1,b=0,c=1$",
+      "C. $a=1,b=1,c=-1$",
+      "D. $a=1,b=0,c=-1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设在 $(-\\infty,+\\infty)$ 内, $f''(x)<0,f(0)\\geqslant0$ , 则函数 $\\dfrac{f(x)}{x}(\\quad)$ .",
+    "options": [
+      "A. 在 $(-\\infty,0)$ 内单调减少, 在 $(0,+\\infty)$ 内单调增加",
+      "B. 在 $(-\\infty,0)$ 和 $(0,+\\infty)$ 内单调减少",
+      "C. 在 $(-\\infty,0)$ 内单调增加, 在 $(0,+\\infty)$ 内单调减少",
+      "D. 在 $(-\\infty,0)$ 和 $(0,+\\infty)$ 内单调增加"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 连续, 且 $\\lim_{x\\to0}\\dfrac{f(x)}{x^2}=k(k<0)$ , 则 $f(x)$ 在点 $x=0$ 处 ( ).",
+    "options": [
+      "A. 导数不存在",
+      "B. 导数存在, 且 $f'(0)\\neq0$",
+      "C. 取得极小值",
+      "D. 取得极大值"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $M=\\max\\{1,\\sqrt{2},\\sqrt[3]{3},\\cdots,\\sqrt[n]{n}\\}(n>4)$ ，则 $M=(\\quad)$",
+    "options": [
+      "A. $\\sqrt{2}$",
+      "B. $\\sqrt[3]{3}$",
+      "C. $\\sqrt[4]{4}$",
+      "D. $\\sqrt[n]{n}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)=n^2\\mathrm{e}^{x/n}-(1+n)x$ ，若 $f(x)$ 在 $x=\\xi_n$ 处取得极值，则 $\\lim_{n\\to\\infty}\\xi_n=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=x+\\dfrac{|\\ln x|}{x}$ ( ).",
+    "options": [
+      "A. 有铅直渐近线,也有斜渐近线",
+      "B. 有水平渐近线,也有斜渐近线",
+      "C. 有且仅有铅直渐近线",
+      "D. 有且仅有水平渐近线"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $[0,1]$ 上可导， $f(0)=0$ ， $f'(x)$ 严格单调递增，则对任意 $x\\in(0,1)$ ，有（）.",
+    "options": [
+      "A. $f(x)>f'(0)x>f(1)x$",
+      "B. $f'(0)x>f(x)>f(1)x$",
+      "C. $f(1)x>f'(0)x>f(x)$",
+      "D. $f(1)x>f(x)>f'(0)x$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $y=f(x)$ 对一切 $x$ 满足 $\\sqrt[3]{x}f''(x)+xf'(x)=\\mathrm{e}^{-x}-1$ ，若 $f'(x_0)=0(x_0\\neq0)$ ，则（ ）",
+    "options": [
+      "A. $x=x_0$ 是 $f(x)$ 的极小值点",
+      "B. $x=x_0$ 是 $f(x)$ 的极大值点",
+      "C. $(x_0,f(x_0))$ 是曲线 $y=f(x)$ 的拐点",
+      "D. 以上结论均不正确"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知函数 $f(x)=ax^{3}+x^{2}+2$ 在 $x=0$ 和 $x=-1$ 处取得极值, 求 $f(x)$ 的增减区间、极大值、极小值和拐点.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)=nx(1-x)^n(n\\in N_+)$ ，且记 $M(n)=\\max_{x\\in[0,1]}f(x)$ ，则必有（）.",
+    "options": [
+      "A. $\\lim_{n\\to\\infty}M(n)=\\mathrm{e}$",
+      "B. $\\lim_{n\\to\\infty}M(n)=\\dfrac{1}{\\mathrm{e}}$",
+      "C. $\\lim_{n\\to\\infty}M(n)=0$",
+      "D. $\\lim_{n\\to\\infty}M(n)=\\infty$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=\\dfrac{x^{2}+1}{\\sqrt{x^{2}-1}}$ 的渐近线的条数为（）.",
+    "options": [
+      "A. 4",
+      "B. 3",
+      "C. 2",
+      "D. 1"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y=\\dfrac{2+e^{-x^{4}}}{1-e^{-x^{4}}}$ ().",
+    "options": [
+      "A. 仅有斜渐近线",
+      "B. 仅有水平渐近线",
+      "C. 仅有铅直渐近线",
+      "D. 既有水平渐近线, 又有铅直渐近线"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-22",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=(4+5x)\\mathrm{e}^{1/x}$ 的斜渐近线是 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-23",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=\\mathrm{e}^{1/x}\\sqrt{x^2-4x+1}$ 的渐近线条数为（）.",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基05-24",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第5章 一元函数微分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $x^{2}=y+1$ 在点 $(0,-1)$ 的曲率圆方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)=x(2x-3)(4x-5)$ ，则方程 $f'(x)=0$ 的实根个数为（）.",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若方程 $x-e\\ln x-k=0$ 在 $(0,1]$ 上有解, 则 $k$ 的最小值为 ( ).",
+    "options": [
+      "A. -1",
+      "B. $\\dfrac{1}{e}$",
+      "C. 1",
+      "D. e"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)=ae^{x}-bx(a>0)$ 有两个零点，则 $\\dfrac{b}{a}$ 的取值范围是（）.",
+    "options": [
+      "A. $\\left(0,\\dfrac{1}{\\mathrm{e}}\\right)$",
+      "B. $(0,\\mathrm{e})$",
+      "C. $\\left(\\dfrac{1}{\\mathrm{e}},+\\infty\\right)$",
+      "D. $(\\mathrm{e},+\\infty)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知函数 $f(x)=\\ln x-\\dfrac{x}{\\mathrm{e}}+a(x>0)$ 有两个零点, 则 $a$ 的取值范围是 ( ).",
+    "options": [
+      "A. $(-1,0)$",
+      "B. $(0,1)$",
+      "C. $(-\\infty,0)$",
+      "D. $(0,+\\infty)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设存在 $0<\\theta<1$ ，使得 $\\arcsin x=\\dfrac{x}{\\sqrt{1-(\\theta x)^2}}$ ， $-1\\leqslant x\\leqslant1$ ，则 $\\lim_{x\\to0}\\theta=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $x>0$ , 证明 $\\dfrac{x}{1+x}<\\ln(1+x)<x$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $x>0$ , 证明 $\\dfrac{1}{1+x}<\\ln\\left(1+\\dfrac{1}{x}\\right)<\\dfrac{1}{x}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 可导, 且 $|f'(x)|\\leqslant1,f(0)=1$ , 证明 $|f(x)|\\leqslant1+x,0<x<1$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $[a,+\\infty)(a>0)$ 上一阶导数连续, $\\lim_{x\\to+\\infty}f'(x)=0$ , 则 ( ).",
+    "options": [
+      "A. $\\lim_{x\\to+\\infty}[f(2x)+f(x)]=0$",
+      "B. $\\lim_{x\\to+\\infty}[f(2x)-f(x)]=0$",
+      "C. $\\lim_{x\\to+\\infty}[f(x+1)-f(x)]=0$",
+      "D. $\\lim_{x\\to+\\infty}[f(x+1)+f(x)]=0$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $x=1$ 处一阶导数连续, 且 $f'(1)=2$ , 则 $\\lim_{x\\to1^+}\\dfrac{f(x)-f(1)}{\\ln x}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f'(1)=2$ , 计算 $\\lim_{x\\to1^{+}}\\dfrac{f(x)-f(1)}{\\ln x}$ , 并指出与第 10 题的区别.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "(1) 将 $\\sin x$ 在 $x=0$ 处展开成一阶带拉格朗日余项的泰勒公式;\n(2) 证明 $\\left|\\dfrac{\\sin x}{x}-1\\right|\\leqslant\\dfrac{1}{2}|x|,x\\neq0.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求曲线 $y=\\mathrm{e}^{-\\dfrac{x}{2}}$ 与曲线 $y=x^3-3x$ 的交点个数.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)$ 是连续可导函数，当 $0<a<x<b$ 时，恒有 $xf'(x)<f(x)$ ，则（）.",
+    "options": [
+      "A. $af(x)>xf(a)$",
+      "B. $bf(x)>xf(b)$",
+      "C. $xf(x)>bf(b)$",
+      "D. $xf(x)<af(a)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "方程 $x^{4}+4x+b=0$ 有两个不等的实根，则 $b$ 的取值满足（）.",
+    "options": [
+      "A. $b<3$",
+      "B. $b>3$",
+      "C. $b<-3$",
+      "D. $b>-3$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设常数 $k>0$ , 函数 $f(x)=\\dfrac{1}{\\ln x-\\dfrac{x}{\\mathrm{e}}+k}$ 在 $(0,+\\infty)$ 内的间断点个数为 ( ).",
+    "options": [
+      "A. 3",
+      "B. 2",
+      "C. 1",
+      "D. 0"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x),g(x)$ 为恒大于零的可导函数, 且 $f'(x)g(x)<f(x)g'(x)$ , 则当 $a<x<b$ 时, 下列不等式恒成立的是 ( ).",
+    "options": [
+      "A. $f(a)g(x)>f(x)g(b)$",
+      "B. $f(x)g(a)>f(b)g(x)$",
+      "C. $f(a)g(b)>f(b)g(x)$",
+      "D. $f(x)g(b)>f(b)g(x)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $0\\leqslant x\\leqslant1,p>1$ , 证明 $\\dfrac{1}{2^{p-1}}\\leqslant x^p+(1-x)^p\\leqslant1$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "对于 $k$ 的不同取值情况, 确定方程 $x^{3}-3x+k=0$ 实根的个数, 并证明你的结论.\n在 $(a,b)$ 内 $2x[f(b)-f(a)]=(b^{2}-a^{2})f^{\\prime}(x)$ 至少有一个实根.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设 $f(x)$ 在 $[a,b]$ 上连续, 在 $(a,b)$ 内可导 $(a>0)$ , 证明:",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $a_{0}+\\dfrac{a_{1}}{2}+\\cdots+\\dfrac{a_{n}}{n+1}=0$ ( $a_{i}$ 为实数, $i=0,1,2,\\cdots,n$ ), 则在区间 $(0,1)$ 内, 方程 $a_{0}+a_{1}x+\\cdots+a_{n}x^{n}=0$ .",
+    "options": [
+      "A. 没有实根",
+      "B. 至少有一个实根",
+      "C. 仅有一个实根",
+      "D. 是否有实根不能判定"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基06-22",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第6章 一元函数微分学的应用(二)--中值定理、微分等式与微分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "综合压轴",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在 $[a,b]$ 上可导, $c\\in(a,b)$ , 证明:\n(1) 存在一点 $\\xi\\in(a,c)$ ，使得 $f(c)-f(a)=f'(\\xi)(c-a)$ ;\n(2) 存在一点 $\\eta\\in(a,b)$ ，使得 $f(b)-f(a)=f'(\\eta)(b-a)$ 且 $\\eta>\\xi$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基07-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第7章 一元函数微分学的应用 (三) 物理应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "一动点 $P$ 在曲线 $9y=4x^{2}$ 上运动, 设坐标轴的单位长度是 $1\\mathrm{cm}$ , 若点 $P$ 横坐标的变化率是 $30\\mathrm{cm/s}$ , 则当点 $P$ 经过点 (3,4) 时, 点 $P$ 到原点距离的变化率为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基07-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第7章 一元函数微分学的应用 (三) 物理应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设二阶可导函数 $y=f(t)$ 表示某人在 10 分钟内心跳次数的变化曲线，如图所示. 则关于此人心跳次数的增长速度，说法正确的是（）.",
+    "options": [
+      "A. 0～3 分钟增速变大; 7～10 分钟增速变大",
+      "B. 0～3 分钟增速变大; 7～10 分钟增速变小",
+      "C. 0～3 分钟增速变大; 7～10 分钟增速变大",
+      "D. 0～3 分钟增速变小; 7～10 分钟增速变小"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基07-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第7章 一元函数微分学的应用 (三) 物理应用",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知一容器中水增加的速率为 $1m^{3}/min$ ，且水的体积 V 与水面高度 y 满足 $V=\\dfrac{\\pi}{2}y^{2}$ ，当水面上升到高为 1m 时，求水面高度上升的速率.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基07-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第7章 一元函数微分学的应用 (三) 物理应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知某圆柱体底面半径与高随时间变化的速率分别为 $2\\mathrm{~cm}/\\mathrm{s},-3\\mathrm{~cm}/\\mathrm{s}$ , 且圆柱体的体积与表面积随时间变化的速率分别为 $-100\\pi\\mathrm{cm}^{3}/\\mathrm{s},40\\pi\\mathrm{cm}^{2}/\\mathrm{s}$ , 则圆柱体的底面半径与高分别为 ( ).",
+    "options": [
+      "A. $5\\mathrm{~cm},5\\mathrm{~cm}$",
+      "B. $10\\mathrm{~cm},5\\mathrm{~cm}$",
+      "C. $5\\mathrm{~cm},10\\mathrm{~cm}$",
+      "D. $10\\mathrm{~cm},10\\mathrm{~cm}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基07-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第7章 一元函数微分学的应用 (三) 物理应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "一物体在距离同一水平面上的地面观测器 $10m$ 处离地匀速垂直上升, 其速度为 $a\\mathrm{~m}/\\mathrm{s}$ . 若该物体上升到离地 $20m$ 时, 观测器视线倾角的变化率为 $\\dfrac{1}{10}$ , 则 $a=(\\quad)$ .",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 5"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)$ 在区间 $[0,1]$ 上连续, 则 $\\int_0^1f(x)\\mathrm{d}x=(\\quad)$ .",
+    "options": [
+      "A. $\\lim_{n\\to\\infty}\\sum_{k=1}^{n}f\\left(\\dfrac{3k-1}{3n}\\right)\\dfrac{1}{3n}$",
+      "B. $\\lim_{n\\to\\infty}\\sum_{k=1}^{n}f\\left(\\dfrac{3k-1}{3n}\\right)\\dfrac{1}{n}$",
+      "C. $\\lim_{n\\to\\infty}\\sum_{k=1}^{3n}f\\left(\\dfrac{k-1}{3n}\\right)\\dfrac{1}{n}$",
+      "D. $\\lim_{n\\to\\infty}\\sum_{k=1}^{3n}f\\left(\\dfrac{k}{3n}\\right)\\dfrac{3}{n}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\dfrac{1}{n^{3}}\\left[\\ln\\dfrac{1}{n}+4\\ln\\dfrac{2}{n}+\\cdots+(n-1)^{2}\\ln\\dfrac{n-1}{n}\\right]=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "甲、乙两人赛跑,图中实线和虚线分别为甲和乙的速度曲线(单位:m/s),三块阴影部分面积依次为15,20,10,且当t=0时,甲在乙前面10m处,则在 $[0,t_{3}]$ 上,甲、乙相遇的次数为().\n\n![图](images/高数_基08_03_fig.jpg)",
+    "options": [
+      "A. $1$",
+      "B. $2$",
+      "C. $4$",
+      "D. $4$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $M=\\int_{-\\dfrac{1}{2}}^{1/2}\\left(1+\\dfrac{x}{1+x^2}\\right)\\mathrm{d}x,N=\\int_0^1\\dfrac{(1+x)\\ln^2(1+x)}{x^2}\\mathrm{d}x,K=\\int_0^1\\dfrac{\\mathrm{e}^x}{1+x}\\mathrm{d}x,$ 则（）.",
+    "options": [
+      "A. $M>N>K$",
+      "B. $N>K>M$",
+      "C. $K>M>N$",
+      "D. $K>N>M$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)$ 是 $(0,+\\infty)$ 内的正值连续函数, 且 $f'(x)<0,g(x)=\\int_{1}^{x}f(t)dt$ , 则 $g\\left(\\dfrac{1}{2}\\right)$ 和 $g\\left(\\dfrac{3}{2}\\right)$ 的可能取值是 ( ).",
+    "options": [
+      "A. -2, 1",
+      "B. -2, 3",
+      "C. 2, -1",
+      "D. 2, -3"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\begin{cases}x\\ln x,&x>0,\\\\x^2+x,&x\\leqslant0,\\end{cases}$ 若 $\\int_{a}^{b}f(x)\\,\\mathrm{d}x(a<b)$ 取得最小值, 则 $(a,b)=(\\quad)$ .",
+    "options": [
+      "A. $(-1,1)$",
+      "B. $(-1,2)$",
+      "C. $(0,1)$",
+      "D. $(1,2)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $g(x)$ 在 $\\left[0,\\dfrac{\\pi}{2}\\right]$ 上连续, 若在 $\\left(0,\\dfrac{\\pi}{2}\\right)$ 内 $g'(x)\\geqslant0$ , 则对任意的 $x\\in\\left(0,\\dfrac{\\pi}{2}\\right)$ , 有 ( ).",
+    "options": [
+      "A. $\\int_{x}^{\\pi/2}g(t)dt\\geqslant\\int_{x}^{\\pi/2}g(\\sin t)dt$",
+      "B. $\\int_{x}^{1}g(t)dt\\leqslant\\int_{x}^{1}g(\\sin t)dt$",
+      "C. $\\int_{x}^{1}g(t)dt\\geqslant\\int_{x}^{1}g(\\sin t)dt$",
+      "D. $\\int_{x}^{\\pi/2}g(t)dt\\leqslant\\int_{x}^{\\pi/2}g(\\sin t)dt$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若 $\\sqrt{1-x^{2}}$ 是 $xf(x)$ 的一个原函数，则 $\\int_{0}^{1}\\dfrac{1}{f(x)}\\mathrm{d}x=(\\quad)$ .",
+    "options": [
+      "A. -1",
+      "B. $\\dfrac{\\pi}{4}$",
+      "C. $-\\dfrac{\\pi}{4}$",
+      "D. 1"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\dfrac{1}{\\sqrt{in}}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)$ 是 $(-\\infty,+\\infty)$ 上可导的奇函数, 任意的 $x\\in(-\\infty,+\\infty)$ , 均有 $f(x+1)-f(x)=f(1)$ , $f\\left(\\dfrac{1}{2}\\right)=0$ , 则以下是偶函数的是 ( ).",
+    "options": [
+      "A. $\\int_{0}^{x}[\\sin f(t)+f(t+1)]dt$",
+      "B. $\\int_{0}^{x}[\\sin f'(t)+f'(t+1)]dt$",
+      "C. $\\int_{0}^{x}[\\cos f(t)+f(t+2)]dt$",
+      "D. $\\int_{0}^{x}[\\cos f'(t)+f'(t+2)]dt$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)$ 是实数集上连续的偶函数, 在 $(-\\infty,0)$ 上有唯一零点 $x_0=-1$ , 且 $f'(x_0)=1$ , 则函数 $F(x)=\\int_0^xf(t)dt$ 的严格单调增区间是 ( ).",
+    "options": [
+      "A. $(-\\infty,-1)$",
+      "B. $(-1,+\\infty)$",
+      "C. $(-1,1)$",
+      "D. $(1,+\\infty)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)$ 在 $[0,2]$ 上单调连续, $f(0)=1,f(2)=2$ , 且对任意 $x_1,x_2\\in[0,2]$ 总有 $f\\left(\\dfrac{x_1+x_2}{2}\\right)>\\dfrac{f(x_1)+f(x_2)}{2}$ , $g(x)$ 是 $f(x)$ 的反函数, $P=\\int_1^2g(x)\\,\\mathrm{d}x$ , 则 ( ).",
+    "options": [
+      "A. $3<P<4$",
+      "B. $2<P<3$",
+      "C. $1<P<2$",
+      "D. $0<P<1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列反常积分中, 发散的是 ( ).",
+    "options": [
+      "A. $\\int_{0}^{+\\infty}x\\mathrm{e}^{-x}\\mathrm{d}x$",
+      "B. $\\int_{-\\infty}^{+\\infty}x\\mathrm{e}^{-x^2}\\mathrm{d}x$",
+      "C. $\\int_{-\\infty}^{+\\infty}\\dfrac{\\arctan x}{1+x^2}\\mathrm{d}x$",
+      "D. $\\int_{-\\infty}^{+\\infty}\\dfrac{x}{1+x^2}\\mathrm{d}x$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若反常积分 $\\int_{0}^{+\\infty}\\dfrac{\\ln x}{(1+x)x^{1-p}}\\mathrm{d}x$ 收敛，则（）.",
+    "options": [
+      "A. $p<1$",
+      "B. $p>1$",
+      "C. $0\\leqslant p<1$",
+      "D. $0\\leqslant p<1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列反常积分收敛的是（）.",
+    "options": [
+      "A. $\\int_{2}^{+\\infty}\\dfrac{1}{x\\ln x}dx$",
+      "B. $\\int_{0}^{+\\infty}e^{-x^{2}}dx$",
+      "C. $\\int_{-1}^{1}\\dfrac{1}{\\sin x}dx$",
+      "D. $\\int_{0}^{1}\\dfrac{x}{\\ln^{2}(1+x)}dx$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\dfrac{1}{n^{2}}\\left[\\sqrt{n^{2}-1}+\\sqrt{n^{2}-2^{2}}+\\cdots+\\sqrt{n^{2}-(n-1)^{2}}\\right]=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\dfrac{n}{n^2+9i^2}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "定积分 $I=\\int_{\\pi/4}^{\\pi/2}\\dfrac{\\sin x}{x}\\,\\mathrm{d}x$ 的值满足（）.",
+    "options": [
+      "A. $0\\leqslant I\\leqslant\\dfrac{1}{2}$",
+      "B. $\\dfrac{1}{2}\\leqslant I\\leqslant\\dfrac{\\sqrt{2}}{2}$",
+      "C. $\\dfrac{\\sqrt{2}}{2}\\leqslant I\\leqslant1$",
+      "D. $1\\leqslant I\\leqslant2\\sqrt{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)\\neq0$ 为 $(-\\infty,+\\infty)$ 上可导的奇函数，则下列函数为奇函数的是（）.",
+    "options": [
+      "A. $x^{3}\\int_{0}^{x}f'(t)dt$",
+      "B. $\\int_{0}^{x}f(-t)dt$",
+      "C. $\\int_{0}^{x}[f'(t)+f(t)]dt$",
+      "D. $\\int_{0}^{x}|f(t)|dt$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $M=\\int_{-\\dfrac{\\pi}{2}}^{\\pi/2}\\dfrac{x}{1+x^2}\\cos^5x\\,\\mathrm{d}x,N=\\int_{-\\dfrac{\\pi}{2}}^{\\pi/2}(x^2\\sin x+\\sin^2x\\cos x)\\,\\mathrm{d}x,P=\\int_{-\\dfrac{\\pi}{2}}^{\\pi/2}(\\sin^3x-\\cos^4x)\\,\\mathrm{d}x,$ 则有（）.",
+    "options": [
+      "A. $N<P<M$",
+      "B. $M<P<N$",
+      "C. $N<M<P$",
+      "D. $P<M<N$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 a, b 为常数， $\\int_{0}^{1}\\dfrac{\\ln x}{x^{a}\\left(\\tan\\dfrac{\\pi}{2}x\\right)^{b}}dx$ 收敛，则（）.",
+    "options": [
+      "A. $a+b>1$ 且 b > -2",
+      "B. $a+b<1$ 且 b > -2",
+      "C. $a+b>1$ 且 b < -2",
+      "D. $a+b<1$ 且 b < -2"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-22",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $F(x)=\\int_{0}^{x}(t-[t])dt$ , 其中 $[x]$ 表示不超过 $x$ 的最大整数, 则 $F_{-}^{\\prime}(1)-F_{+}^{\\prime}(1)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-23",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列命题中不成立的是 ( ).",
+    "options": [
+      "A. 若 $f(x)$ 连续, $x\\in[a,b]$ , 则 $\\int_{a}^{x}f(t)dt$ 必为 $f(x)$ 的原函数",
+      "B. 若 $f(x)$ 可积, $x\\in[a,b]$ , 则 $f(x)$ 在 $(a,b)$ 内存在原函数",
+      "C. 若 $f(x)$ 连续, 且为奇函数, $x\\in[-a,a]$ , 则 $\\int_{-a}^{a}f(x)\\mathrm{d}x=0$",
+      "D. 若 $f(x)$ 连续, $T$ 为其周期, 则 $\\int_{a}^{a+T}f(x)\\mathrm{d}x=\\int_{0}^{T}f(x)\\mathrm{d}x$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-24",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x-5)=\\dfrac{4}{x^{2}-10x}$ ，则 $\\int_{0}^{4}f(2x+1)\\mathrm{d}x()$ .",
+    "options": [
+      "A. 为反常积分,且发散",
+      "B. 为反常积分,且收敛",
+      "C. 不是反常积分,且其值为10",
+      "D. 不是反常积分,且其值为 $\\dfrac{\\pi}{4}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基08-25",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第8章 一元函数积分学的概念与性质",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列表达式中正确的是( ).",
+    "options": [
+      "A. $\\int_{\\pi}^{2\\pi}|\\sin x|\\mathrm{d}x\\leqslant\\int_{\\pi}^{2\\pi}\\sin^2x\\mathrm{d}x$",
+      "B. $\\int_{-\\dfrac{\\pi}{4}}^{\\pi/4}\\dfrac{x}{1+\\cos x}\\mathrm{d}x<\\int_{-\\dfrac{\\pi}{4}}^{\\pi/4}\\left(\\dfrac{\\sin x}{1+x^4}+\\dfrac{1}{1+x^2}\\right)\\mathrm{d}x$",
+      "C. $\\int_{a}^{b}f(x)\\mathrm{d}x\\leqslant\\int_{c}^{d}f(x)\\mathrm{d}x,[a,b]\\subset[c,d],f(x)$ 连续， $x\\in[c,d]$",
+      "D. $\\int_{-1}^{1}|f(x)|\\mathrm{d}x=2\\int_{0}^{1}|f(x)|\\mathrm{d}x,f(x)$ 连续, $x\\in[-1,1]$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算下列不定积分.\n(1) $\\int\\cos^3x\\,\\mathrm{d}x$ ;\n(2) $\\int\\sin^{3}xdx;$\n(3) $\\int\\sec xdx;$\n(4) $\\int\\sec^3x\\,\\mathrm{d}x$ ;\n(5) $\\int\\dfrac{1}{a^2-x^2}\\,\\mathrm{d}x(a\\neq0)$ ;\n(6) $\\int\\dfrac{1}{x^2-a^2}\\,\\mathrm{d}x(a\\neq0)$ ;\n(7) $\\int\\dfrac{1}{a^2+x^2}\\,\\mathrm{d}x(a\\neq0)$ ;\n(8) $\\int\\dfrac{1}{a^2+(x+b)^2}\\,\\mathrm{d}x(a\\neq0)$ ;\n(9) $\\int\\dfrac{1}{a^2-(x+b)^2}\\,\\mathrm{d}x(a>0)$ ;\n(10) $\\int\\dfrac{1}{(x+b)^2-a^2}\\,\\mathrm{d}x(a>0)$ ;\n(11) $\\int\\dfrac{1}{\\sqrt{x^2-a^2}}\\mathrm{d}x(a>0)$ ;\n(12) $\\int\\dfrac{1}{\\sqrt{a^2-x^2}}\\mathrm{d}x(a>0);$\n(13) $\\int\\dfrac{1}{\\sqrt{x^2+a^2}}\\mathrm{d}x(a>0);$\n(14) $\\int\\csc^{3}x\\,dx;$\n(15) $\\int\\tan^{2}x\\,dx;$\n(16) $\\int\\tan^{3}x\\,dx;$\n(17) $\\int\\tan^{4}x\\,dx;$\n(18) $\\int\\cot^3x\\,\\mathrm{d}x$ ;\n(19) $\\int\\dfrac{\\cos x}{1+\\sin x}\\,\\mathrm{d}x$ ;\n(20) $\\int\\dfrac{1}{a^2\\sin^2x+b^2\\cos^2x}\\mathrm{d}x;$\n(21) $\\int\\dfrac{1}{\\sin2x}\\,\\mathrm{d}x$ ;\n(22) $\\int\\dfrac{1}{\\cos2x}dx;$\n(23) $\\int\\dfrac{1}{a+b\\cos x}\\mathrm{d}x(a>0,b>0);$\n$$\n(24)\\int\\dfrac{1}{a+b\\sin x}\\mathrm{d}x(a>0,b>0).\n$$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算不定积分 $\\int\\dfrac{e^{2x}}{\\sqrt{e^{x}-1}}dx.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算不定积分 $\\int\\ln\\left(1+\\sqrt{\\dfrac{1+x}{x}}\\right)\\mathrm{d}x(x>0)$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算不定积分 $\\int\\mathrm{e}^{2x}\\arctan\\sqrt{\\mathrm{e}^{x}-1}\\,\\mathrm{d}x$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\int_0^1\\mathrm{e}^{-\\sqrt{x}}\\mathrm{d}x=(\\quad)$ .",
+    "options": [
+      "A. 2",
+      "B. $2-\\dfrac{4}{\\mathrm{e}}$",
+      "C. $1-\\dfrac{2}{\\mathrm{e}}$",
+      "D. $1-\\dfrac{1}{\\mathrm{e}}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{0}^{1}\\dfrac{4x-3}{x^2-x+1}\\,\\mathrm{d}x=\\underline{\\hspace{2cm}}.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\int_0^1\\dfrac{\\arctan\\sqrt{x}}{\\sqrt{x}(1+x)}\\mathrm{d}x=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{0}^{\\pi/4}\\sec^{3}\\theta d\\theta=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设连续函数 $f(x)$ 满足 $f(x+1)-f(x)=x\\ln x$ ， $\\int_{0}^{1}f(x)\\,\\mathrm{d}x=0$ ，则 $\\int_{1}^{2}f(x)\\,\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $y=\\dfrac{x}{\\sqrt{1+x^{2}}}$ ，则 $\\int_{1/2}^{\\dfrac{\\sqrt{3}}{2}}xydy=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若 $e^{-x}$ 是 $f(x)$ 的一个原函数, 则 $\\int_{T}^{\\sqrt{2}}\\dfrac{1}{x^{2}}f(\\ln x)\\,dx=(\\quad)$ .",
+    "options": [
+      "A. $-\\dfrac{1}{4}$",
+      "B. -1",
+      "C. $\\dfrac{1}{4}$",
+      "D. 1"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若函数 $f(x)$ 在 $[0,+\\infty)$ 上连续, $g(x)=\\int_{0}^{2x}f\\left(x+\\dfrac{t}{2}\\right)dt$ , 则当 $x\\to0^{+}$ 时, $g(x)$ 是 $\\sqrt{x}$ 的 ( ).",
+    "options": [
+      "A. 高阶无穷小",
+      "B. 低阶无穷小",
+      "C. 等价无穷小",
+      "D. 同阶但非等价无穷小"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 在 $x=0$ 的某邻域内连续, 在 $x=0$ 处可导, 且 $f(0)=0$ , $\\varphi(x)=\\begin{cases}\\dfrac{1}{x^2}\\int_{0}^{x}tf(t)dt,&x\\neq0,\\\\0,&x=0,\\end{cases}$ 则 $\\varphi(x)$ 在 $x=0$ 处 ( ).",
+    "options": [
+      "A. 不连续",
+      "B. 连续但不可导",
+      "C. 可导但 $\\varphi'(x)$ 在 $x=0$ 处不连续",
+      "D. 可导且 $\\varphi'(x)$ 在 $x=0$ 处连续"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若连续周期函数 $y=f(x)$ (不恒为常数) 对任何 $x$ 恒有 $\\int_{-1}^{x+6}f(t)dt+\\int_{x-3}^{4}f(t)dt=14$ 成立, 则 $f(x)$ 的周期是 ( ).",
+    "options": [
+      "A. 7",
+      "B. 8",
+      "C. 9",
+      "D. 10"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 在 $[-a,a]$ 上是连续的偶函数， $a>0$ ， $g(x)=\\int_{-a}^{a}|x-t|f(t)dt$ ，则在 $[-a,a]$ 上（）.",
+    "options": [
+      "A. $g(x)$ 是奇函数",
+      "B. $g(x)$ 是单调递减函数",
+      "C. $g(x)$ 是偶函数",
+      "D. $g(x)$ 是奇函数"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若 $F(x)=\\int_{-\\pi}^{\\pi}|x-t|\\sin tdt$ ，则 $F'(0)=(\\quad)$ .",
+    "options": [
+      "A. -4",
+      "B. -2",
+      "C. 2",
+      "D. 4"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若函数 $y(x)=\\int_{2}^{x^{2}}\\mathrm{e}^{-\\sqrt{t}}dt$ ，则 $\\left.\\dfrac{d^{2}[y(x)]}{\\mathrm{d}x^{2}}\\right|_{x=-1}=(\\quad)$ .",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. $4e^{-1}$",
+      "D. 4e"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $f(x)=\\int_{1}^{x}\\sqrt{1+t^3}dt$ ，则 $\\int_{0}^{1}xf(x)\\,\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设连续函数 $f(x)$ 满足 $\\int_{0}^{x}f(t)dt=xe^{x}$ ，则 $\\int_{1}^{\\mathrm{e}}\\dfrac{f(\\ln x)}{x}\\,\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "综合压轴",
+      "易错点"
+    ],
+    "stem": "设 $a_{n}=\\int_{0}^{1}x^{n}\\sqrt{1-x^{2}}\\mathrm{d}x(n\\equiv0,1,2,\\cdots)$ ，则 $\\lim_{n\\to\\infty}\\left(\\dfrac{a_{n}}{a_{n-2}}\\right)^{n}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{\\sqrt{5}}^{5}\\dfrac{1}{\\sqrt{|x^2-9|}}\\mathrm{d}x=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-22",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{-\\infty}^{+\\infty}|x|\\mathrm{e}^{-x^2}\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-23",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\lim_{n\\to\\infty}\\dfrac{1-x^{2n}}{1+x^{2n}}x$ ，且 $\\int_0^2f(x)\\mathrm{d}x=a$ ，则 $a=(\\quad)$",
+    "options": [
+      "A. 2",
+      "B. 1",
+      "C. 0",
+      "D. -1"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-24",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{-1}^{1}\\left(\\dfrac{1}{1+2^{-\\dfrac{1}{x}}}\\right)'\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-25",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{-\\dfrac{1}{2}}^{1/2}\\dfrac{|x|(\\arcsin x+\\arccos x)}{\\sqrt{1-x^2}}\\mathrm{d}x=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-26",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{1}^{3/2}\\dfrac{(1-x)\\arcsin(1-x)}{\\sqrt{2x-x^2}}\\mathrm{d}x=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-27",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若 $f(x)=\\dfrac{1}{1+x^2}+x^3\\int_0^1f(x)\\,\\mathrm{d}x$ , 则 $f(x)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-28",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{-1}^{1}\\left[x^{3}\\cos x+\\ln\\left(x+\\sqrt{x^{2}+1}\\right)\\right]\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-29",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\int_{0}^{x}\\dfrac{\\cos t}{1+\\sin^2t}dt$ ，则 $\\int_{0}^{\\pi/2}\\dfrac{f'(x)}{1+f^2(x)}\\,\\mathrm{d}x=(\\quad)$ .",
+    "options": [
+      "A. $-\\dfrac{\\pi}{4}$",
+      "B. $-\\arctan\\dfrac{\\pi}{4}$",
+      "C. $\\dfrac{\\pi}{4}$",
+      "D. $\\arctan\\dfrac{\\pi}{4}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-30",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\int_{1}^{+\\infty}f(x)dx$ 收敛, $f(x)=x^{3}e^{-x^{2}}+\\dfrac{1}{x(1+x)}\\int_{1}^{+\\infty}f(x)dx$ , 则 $\\int_{1}^{+\\infty}f(x)dx=(\\quad)$ .",
+    "options": [
+      "A. $\\dfrac{1}{1-\\ln2}$",
+      "B. $\\dfrac{1}{\\ln2}$",
+      "C. $\\dfrac{e}{1-\\ln2}$",
+      "D. $\\dfrac{1}{(1-\\ln2)e}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-31",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $f(x)=\\begin{cases}\\dfrac{1}{\\sqrt{1+x^2}},&x\\leqslant0,\\\\(x+1)\\mathrm{e}^x,&x>0\\end{cases}$ 的一个原函数为（）.",
+    "options": [
+      "A. $F(x)=\\begin{cases}\\ln(\\sqrt{1+x^2}-x),&x\\leqslant0,\\\\(x-1)\\mathrm{e}^x,&x>0\\end{cases}$",
+      "B. $F(x)=\\begin{cases}\\ln(\\sqrt{1+x^2}-x)+1,&x\\leqslant0,\\\\(x-1)\\mathrm{e}^x,&x>0\\end{cases}$",
+      "C. $F(x)=\\begin{cases}\\ln(\\sqrt{1+x^2}+x)+1,&x\\leqslant0,\\\\xe^x,&x>0\\end{cases}$",
+      "D. $F(x)=\\begin{cases}\\ln(\\sqrt{1+x^2}+x)+1,&x\\leqslant0,\\\\xe^x+1,&x>0\\end{cases}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-32",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{0}^{1/2}\\dfrac{x\\arcsin x}{\\sqrt{1-x^2}}\\mathrm{d}x=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-33",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_0^1x\\arcsin(1-x)\\mathrm{d}x=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-34",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $y=y(x)$ 满足 $xy'=\\sqrt{1-x^2}$ , $y(1)=0$ , 则 $\\int_0^1y(x)\\,\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-35",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\int_{1}^{+\\infty}\\dfrac{1}{x(x+2)}\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基09-36",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第9章 一元函数积分学的计算",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f'(\\mathrm{e}^x)=\\sin x$ , 求 $f(x)$ 的表达式.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y=\\dfrac{1}{x^{2}+4x+5}$ 在区间 $(0,+\\infty)$ 上与 x 轴所围成的图形的面积为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y=\\dfrac{\\ln x}{\\sqrt{x}}$ 在 $[1,e^{2}]$ 上与 x 轴所围成的图形的面积是 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "如图所示，抛物线 $y=(\\sqrt{2}-1)x^2$ 把曲线 $y=x(b-x)(b>0)$ 与 $x$ 轴所围成的闭区域分成面积为\n$S_{A}$ 与 $S_{B}$ 的两部分，则（）.",
+    "options": [
+      "A. $S_{A}<S_{B}$",
+      "B. $S_{A}=S_{B}$",
+      "C. $S_{A}>S_{B}$",
+      "D. $S_{A}$ 与 $S_{B}$ 的大小关系与 $b$ 的数值有关"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "过点 $(p,\\sin p)$ 作曲线 $y=\\sin x$ 的切线 (见图), 设该曲线与切线及 $y$ 轴所围成的图形的面积为 $S_{1}$ , 曲线与直线 $x=p$ 及 $x$ 轴所围成的图形的面积为 $S_{2}$ , 则 ( ).",
+    "options": [
+      "A. $\\lim_{p\\to0^{+}}\\dfrac{S_2}{S_1+S_2}=\\dfrac{1}{3}$",
+      "B. $\\lim_{p\\to0^{+}}\\dfrac{S_{2}}{S_{1}+S_{2}}=\\dfrac{1}{2}$",
+      "C. $\\lim_{p\\to0^{+}}\\dfrac{S_{2}}{S_{1}+S_{2}}=\\dfrac{2}{3}$",
+      "D. $\\lim_{p\\to0^{+}}\\dfrac{S_2}{S_1+S_2}=1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "平面无界区域 $D=\\{(x,y)|(1+x^2)|y|\\leqslant1\\}$ 的面积为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设平面区域 $D$ 由曲线段 $y=\\sin\\pi x(0\\leqslant x\\leqslant1)$ 与 $x$ 轴围成, 则 $D$ 绕 $y$ 轴旋转一周所成旋转体的体积为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $f(x)=x\\int_{1}^{x}\\dfrac{\\mathrm{e}^{t^2}}{t}dt$ ，则 $f(x)$ 在 (0,1) 上的平均值为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知曲线 $L:y=\\mathrm{e}^{-x}(x\\geqslant0)$ , 设 $P$ 是 $L$ 上的动点, $V$ 是 $L$ 上从点 $A(0,1)$ 到点 $P$ 的一段弧绕 $x$ 轴旋转一周所得的旋转体体积, 当 $P$ 运动到点 $\\left(1,\\dfrac{1}{\\mathrm{e}}\\right)$ 时, 沿 $x$ 轴正向的速度为 1, 求此时 $V$ 关于时间 $t$ 的变化率.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y=\\ln\\sin x\\left(\\dfrac{\\pi}{6}\\leqslant x\\leqslant\\dfrac{\\pi}{3}\\right)$ 的弧长为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $r=\\mathrm{e}^{\\theta}$ 从 $\\theta=0$ 到 $\\theta=1$ 的弧长为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知函数 $y=y(x)$ 由方程 $y^4-6xy+3=0(1\\leqslant y\\leqslant2)$ 所确定, 则曲线 $y=y(x)$ 从点 $\\left(\\dfrac{2}{3},1\\right)$ 到点 $\\left(\\dfrac{19}{12},2\\right)$ 的长度为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y=\\mathrm{e}^{x}$ 与其过原点的切线及 $y$ 轴所围图形的面积为（）.",
+    "options": [
+      "A. $\\int_{0}^{1}(\\ln y-y\\ln y)\\,\\mathrm{d}x$",
+      "B. $\\int_{0}^{1}(\\mathrm{e}^{x}-ex)\\,\\mathrm{d}x$",
+      "C. $\\int_{1}^{\\mathrm{e}}(\\ln y-y\\ln y)\\,\\mathrm{d}x$",
+      "D. $\\int_{1}^{\\mathrm{e}}(\\mathrm{e}^{x}-xe^{x})\\,\\mathrm{d}x$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "曲线 $y=x^{2}\\mathrm{e}^{-x}(0\\leqslant x<+\\infty)$ 绕 $x$ 轴旋转一周所得延展到无穷远的旋转体的体积为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "曲线 $f(x)=x\\ln x(0<x\\leqslant2)$ 绕 x 轴旋转一周所得旋转体的体积为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=\\dfrac{1}{2}x^{2}(0\\leqslant x\\leqslant1)$ 的长度为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设平面 $D$ 是由 $y=\\ln x,x=1,y=1$ 围成的第一象限的有界区域, 记 $D$ 绕 $x$ 轴与绕 $y=1$ 旋转一周所得旋转体的体积分别为 $V_{1},V_{2}$ , 则 ( ).",
+    "options": [
+      "A. $V_{1}>\\dfrac{\\pi}{2}>V_{2}$",
+      "B. $V_{2}>\\dfrac{\\pi}{2}>V_{1}$",
+      "C. $\\dfrac{\\pi}{2}>V_{1}>V_{2}$",
+      "D. $\\dfrac{\\pi}{2}>V_{2}>V_{1}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲线 $y=x^2$ 从点 (1,1) 到点 (2,4) 的一段弧绕 $y$ 轴旋转一周所得旋转体的侧面积为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $y=\\dfrac{x^{2}}{\\sqrt{1-x^{2}}}$ 在区间 $[0,1]$ 上的平均值为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基10-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第10章 一元函数积分学的应用 (一)-- 几何应用",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "综合压轴"
+    ],
+    "stem": "设平面区域 $D=\\left\\{(x,y)\\mid0\\leqslant y\\leqslant\\dfrac{\\sqrt{x^2-1}}{x^2},\\sqrt{2}\\leqslant x\\leqslant2\\right\\}$ , 求:\n(1)D 的面积;\n(2)D绕x轴旋转一周所成旋转体的体积.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $a>0$ , 则在 $[0,a]$ 上方程 $\\int_{0}^{x}\\sqrt{4a^{2}-t^{2}}dt+\\int_{a}^{x}\\dfrac{1}{\\sqrt{4a^{2}-t^{2}}}dt=0$ 的根的个数为 ( ).",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x)$ 具有二阶导数, $f'(x)>0,f^n(x)<0$ , 记 $I_1=\\int_{-\\pi}^{\\pi}f(x)\\sin x\\,\\mathrm{d}x,I_2=\\int_{-\\pi}^{\\pi}f(x)\\cos x\\,\\mathrm{d}x$ , 则 ( ).",
+    "options": [
+      "A. $I_1>0,I_2<0$",
+      "B. $I_1<0,I_2>0$",
+      "C. $I_1<0,I_2<0$",
+      "D. $I_1>0,I_2>0$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)$ 为连续函数, $T>0$ , 证明: $f(x)$ 以 $T$ 为周期的充分必要条件是任给常数 $a,\\int_{a}^{a+T}f(x)\\,\\mathrm{d}x$ 为常数.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 连续, 证明: $\\int_{0}^{x}\\left[\\int_{0}^{t}f(u)\\mathrm{d}u\\right]dt=\\int_{0}^{x}f(t)(x-t)dt.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "综合压轴",
+      "易错点"
+    ],
+    "stem": "设 $f(x),g(x)$ 连续, $x\\in[a,b]$ , 证明至少存在一点 $\\xi\\in(a,b)$ , 使 $f(\\xi)\\int_{\\xi}^{b}g(x)\\mathrm{d}x=g(\\xi)\\int_{a}^{\\xi}f(x)\\mathrm{d}x$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "证明: $\\int_{0}^{+\\infty}\\dfrac{\\mathrm{d}x}{1+x^4}=\\int_{0}^{+\\infty}\\dfrac{x^2}{1+x^4}\\mathrm{d}x=\\dfrac{\\sqrt{2}}{4}\\pi.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $f(x),g(x)$ 可导, 且 $f'(x)>0,g'(x)<0$ , 则 ( ).",
+    "options": [
+      "A. $\\int_{-1}^{0}f(x)g(x)\\mathrm{d}x>\\int_{0}^{1}f(x)g(x)\\mathrm{d}x$",
+      "B. $\\int_{-1}^{0}|f(x)g(x)|\\mathrm{d}x>\\int_{0}^{1}|f(x)g(x)|\\mathrm{d}x$",
+      "C. $\\int_{-1}^{0}f[g(x)]\\mathrm{d}x>\\int_{0}^{1}f[g(x)]\\mathrm{d}x$",
+      "D. $\\int_{-1}^{0}f[f(x)]\\mathrm{d}x>\\int_{0}^{1}g[g(x)]\\mathrm{d}x$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x),g(x)$ 在 $[0,1]$ 上连续, 则使得 $\\int_{0}^{1}f(x)\\mathrm{d}x\\int_{0}^{1}g(x)\\mathrm{d}x\\geqslant\\int_{0}^{1}f(x)g(x)\\mathrm{d}x$ 成立的条件是在 $[0,1]$ 上 ( ).",
+    "options": [
+      "A. $f(x),g(x)$ 均为增函数",
+      "B. $f(x),g(x)$ 均为减函数",
+      "C. $f(x)$ 为减函数, $g(x)$ 为增函数",
+      "D. $f(x)$ 为奇函数, $g(x)$ 为偶函数"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 $f'(x)$ 在 $[a,b]$ 上连续, $f(a)=f(b)=0$ , 证明: 当 $x\\in(a,b)$ 时, $|f(x)|\\leqslant\\dfrac{1}{2}\\int_{a}^{b}|f'(x)|\\,\\mathrm{d}x$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f'(x)$ 在 $[0,1]$ 上连续, 且 $f(0)=0$ , 证明: $\\left|\\int_0^1f(x)\\mathrm{d}x\\right|\\leqslant\\dfrac{M}{2}$ , 其中 $M=\\max_{0\\leqslant x\\leqslant1}|f'(x)|$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基11-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第11章 一元函数积分学的应用(二)--积分等式与积分不等式",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\int_{x}^{x+1}\\sin u^2\\,\\mathrm{d}u$ ，证明：当 $x>0$ 时，有 $|f(x)|\\leqslant\\dfrac{1}{x}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基12-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第12章 一元函数积分学的应用 (三) -- 物理应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设沿 $y$ 轴上的区间 $[0,1]$ 放置一长度为 1 且线密度为 $\\rho$ 的均匀细杆, 在 $x$ 轴上 $x=1$ 处有一单位质点, 则该细杆对此质点的引力 ( $G$ 为引力常量) 沿 $x$ 轴正向的分力为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基12-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第12章 一元函数积分学的应用 (三) -- 物理应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "边长为 $a$ 的正方形平板置于水面下, 且一个顶点与水面相齐, 其中一条对角线与水面垂直, 如图所示. 记水的密度为 $\\rho$ , 重力加速度为 $g$ , 则其一侧所受的静水压力为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基12-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第12章 一元函数积分学的应用 (三) -- 物理应用",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "将地面上质量为 1 的物体铅直向上举高，记地球半径为 R，质量为 M，引力常数为 G，则物体摆脱地球引力所做的功至少为 \\_\\_\\_\\_。",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基12-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第12章 一元函数积分学的应用 (三) -- 物理应用",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "有一内表面为旋转抛物面的水缸, 其深为 $a$ (单位: 米), 缸口直径为 $2a$ (单位: 米), 缸内盛满了水, 设水的密度为 $\\rho$ (单位: 千克 / 立方米). 若以每秒 $Q$ 立方米的速率将缸中的水全部抽出, 问:\n(1)共需多少时间？\n(2) 需做多少功?",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基12-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第12章 一元函数积分学的应用 (三) -- 物理应用",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "在一个高为 $1m$ 的圆柱形容器内储存某种液体, 并将容器横放. 底面圆的方程为 $x^{2}+y^{2}=1$ (单位: $m$ ). 如果容器内存满了液体后, 以 $0.2m^{3}/\\min$ 的速率将液体从容器顶端抽出.\n(1) 当液面在 y=0 时, 求液面下降的速率;\n(2) 如果 $1m^{3}$ 液体所受重力为 1N，求抽完全部液体需做多少功？",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基12-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第12章 一元函数积分学的应用 (三) -- 物理应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设一单位质量细杆的长为 $1,G$ 为引力常数. 当质量为 $a$ 的质点在细杆延长线上距杆右端点的 $\\dfrac{1}{2}$ 处移至 $\\dfrac{1}{3}$ 处时, 引力做功大小为 ( ).",
+    "options": [
+      "A. $G\\ln\\dfrac{4}{3}$",
+      "B. $G\\ln\\dfrac{5}{3}$",
+      "C. $G\\ln2$",
+      "D. $G\\ln3$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基12-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第12章 一元函数积分学的应用 (三) -- 物理应用",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "直角三角板的斜边长度为1, 将该直角三角板竖直插入水中, 并使其中一个直角边与水面对齐, 当三角板受到水的压力最大时, 其水平直角边的长度为 ( ).",
+    "options": [
+      "A. $\\dfrac{\\sqrt{3}}{3}$",
+      "B. $\\dfrac{\\sqrt{5}}{5}$",
+      "C. $\\dfrac{\\sqrt{6}}{3}$",
+      "D. $\\dfrac{\\sqrt{2}}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $z=\\arctan[xy+\\cos(x+y)]$ , 则 $\\mathrm{d}z|_{(0,x)}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(u)$ 可导, $z=f(\\cos y-\\cos x)+xy$ , 则 $\\dfrac{1}{\\sin x}\\cdot\\dfrac{\\partial z}{\\partial x}+\\dfrac{1}{\\sin y}\\cdot\\dfrac{\\partial z}{\\partial y}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(u)$ 可导, $z=yf\\left(x^{y^2}\\right)$ , 则 $2x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $z=z(x,y)$ 由方程 $(x+1)z+2y\\ln z-\\arctan(xy)=1$ 确定，则 $\\dfrac{\\partial z}{\\partial x}\\bigg|_{(0,2)}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $F(x,y)=\\int_{0}^{x-y}(x-y-t)\\mathrm{e}^{t}dt$ , 则 $\\dfrac{\\partial^2F}{\\partial x^2}+\\dfrac{\\partial^2F}{\\partial y^2}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $f(x,\\sin x)=x+\\sin x,f_x'(x,y)=1+2\\cos x$ ，则 $f_y'(x,y)\\bigg|_{y=\\sin x}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x,y)$ 具有二阶连续偏导数，且满足 $\\dfrac{\\partial^2[f(x,y)]}{\\partial x\\partial y}=1,f(0,y)=\\sin y,f(x,0)=\\sin x$ ，则 $f\\left(\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f\\left(x+y,\\dfrac{x}{y}\\right)=x^{2}-xy+y^{2}$ ，则 $f_{x}^{\\prime}(x,y)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x,y)=\\sqrt{|xy|}$ ，求 $\\dfrac{\\partial[f(x,y)]}{\\partial x}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $Q(x,y)=\\dfrac{x}{y^2},y>0,P(x,y)\\mathrm{d}x+Q(x,y)\\mathrm{d}y$ 是某二元函数的全微分, 则 $P(x,y)$ 可取为 ( ).",
+    "options": [
+      "A. $y^2-\\dfrac{x^2}{y^3}$",
+      "B. $x^2-\\dfrac{1}{y}$",
+      "C. $\\dfrac{1}{y^2}-\\dfrac{x^2}{y^3}$",
+      "D. $\\dfrac{1}{x^2}-\\dfrac{1}{y}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $z=f(u)$ 可导, $u=u(x,y)$ 由方程 $u=\\varphi(u)+\\int_{y}^{x}P(t)dt$ 所确定, 其中函数 $P$ 连续, $\\varphi$ 有连续导数, 且 $\\varphi'(u)\\neq1$ , 则 $P(x)\\dfrac{\\partial z}{\\partial y}+P(y)\\dfrac{\\partial z}{\\partial x}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f$ 具有二阶连续偏导数, 且 $u=f(x^{2}+y,xy)$ , 则 $u_{xy}''=\\underline{\\hspace{2cm}}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(u,v)$ 具有二阶连续偏导数, 函数 $g(x,y)=xy-f\\left(\\dfrac{y}{x},\\dfrac{x}{y}\\right)$ , 求\n$$\nx^{2}\\dfrac{\\partial^{2}g}{\\partial x^{2}}+2xy\\dfrac{\\partial^{2}g}{\\partial x\\partial y}+y^{2}\\dfrac{\\partial^{2}g}{\\partial y^{2}}.\n$$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $z=xyf\\left(\\dfrac{y}{x}\\right)$ , 其中 $f(u)$ 可导, 且满足 $x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}=y^2(\\ln y-\\ln x)$ , 求:\n(1) $f(x)$ 的表达式;\n(2) $f(x)$ 与x轴所围图形的面积及该图形绕x轴旋转一周所得旋转体的体积.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知函数 $u(x,y)$ 满足 $2\\dfrac{\\partial^2u}{\\partial x^2}-2\\dfrac{\\partial^2u}{\\partial y^2}+3\\dfrac{\\partial u}{\\partial x}+3\\dfrac{\\partial u}{\\partial y}=0$ , 求 $a,b$ 的值使得在变换\n$$\nu(x,y)=v(x,y)\\mathrm{e}^{ax+by}\n$$\n后，上述等式可化为函数 $v(x,y)$ 的不含一阶偏导数的等式.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $u=f(x,y)$ 具有二阶连续偏导数, 作变量代换 $\\xi=x,\\eta=y-x$ , 将方程 $\\dfrac{\\partial^2u}{\\partial x^2}+2\\dfrac{\\partial^2u}{\\partial x\\partial y}+\\dfrac{\\partial^2u}{\\partial y^2}=0$ 化为以 $\\xi,\\eta$ 为自变量的方程.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $z=z(x,y)$ 由方程 $F\\left(x+\\dfrac{z}{y},y+\\dfrac{z}{x}\\right)=0$ 确定, 且 $F(u,v)$ 具有连续偏导数, 求 $x\\dfrac{\\partial z}{\\partial x}+y\\dfrac{\\partial z}{\\partial y}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x,y)$ 在有界闭区域 $D$ 上连续, 在 $D$ 内有一阶偏导数. 若 $f(x,y)$ 在 $D$ 的边界 $\\partial D$ 上的值均为0, 且 $\\dfrac{\\partial[f(x,y)]}{\\partial x}+\\dfrac{\\partial[f(x,y)]}{\\partial y}=f(x,y)$ , 则 $f(x,y)$ ( ).",
+    "options": [
+      "A. 在 $D$ 内有正的最大值",
+      "B. 在 $D$ 内有负的最小值",
+      "C. 只在 $D$ 的边界 $\\partial D$ 上取到最大值",
+      "D. 在 $D$ 的边界 $\\partial D$ 上可以取到最小值"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x,y)$ 在平面有界闭区域 $D$ 上具有二阶连续偏导数, 且满足 $\\dfrac{\\partial^2f}{\\partial x\\partial y}>0$ 与 $\\dfrac{\\partial^2f}{\\partial x^2}+\\dfrac{\\partial^2f}{\\partial y^2}=0$ , 则 ( ).",
+    "options": [
+      "A. $f(x,y)$ 的最小值点和最大值点都在 $D$ 的内部",
+      "B. $f(x,y)$ 的最小值点和最大值点都在 $D$ 的边界上",
+      "C. $f(x,y)$ 的最小值点在 $D$ 的内部, 最大值点在 $D$ 的边界上",
+      "D. $f(x,y)$ 的最大值点在 $D$ 的内部, 最小值点在 $D$ 的边界上"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x,y)=x^4+y^4-(x+y)^2$ ，且 (1,1) 与 (-1,-1) 为函数 $f(x,y)$ 的两个驻点，则 ( ).",
+    "options": [
+      "A. $f(1,1)$ 与 $f(-1,-1)$ 都是极大值",
+      "B. $f(1,1)$ 与 $f(-1,-1)$ 都是极小值",
+      "C. $f(1,1)$ 是极大值, $f(-1,-1)$ 是极小值",
+      "D. $f(1,1)$ 是极小值, $f(-1,-1)$ 是极大值"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求函数 $f(x,y)=x^3-3xy-y^2-y-9$ 的极值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-22",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "求函数 $f(x,y)=x^{2}\\left(2x^{2}-4y-\\dfrac{1}{7}x^{5}\\right)+y^{2}$ 的极值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-23",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x,y)$ 满足 $f_x'(x,y)=y(1+x)\\mathrm{e}^{x-y},f(1,y)=ye^{1-y}$ . 求:\n(1) $f(x,y)$ 的表达式;\n(2) $f(x,y)$ 的极值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基13-24",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第13章 多元函数微分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求曲线 $x^{2}+xy+y^{2}+2x-2y-12=0$ 上的点到原点距离的最大值和最小值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $D$ 为由 $x=0,y=0,x+y=\\dfrac{1}{2},x+y=1$ 所围成的区域, $I_{1}=\\iint_{D}\\ln^{7}(x+y)d\\sigma,I_{2}=\\iint_{D}(x+y)^{7}d\\sigma,I_{3}=\\iint_{D}\\sin^{7}(x+y)d\\sigma$ , 则 ( ).",
+    "options": [
+      "A. $I_{1}<I_{2}<I_{3}$",
+      "B. $I_{1}<I_{3}<I_{2}$",
+      "C. $I_{3}<I_{2}<I_{1}$",
+      "D. $I_{3}<I_{1}<I_{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $I_{i}=\\iint_{D_{i}}\\mathrm{e}^{-(x^{2}+y^{2})}d\\sigma,\\mathrm{i}=1,2,3$ , 其中 $D_{1}=\\{(x,y)|x^{2}+y^{2}\\leqslant R^{2}\\},D_{2}=\\{(x,y)|x^{2}+y^{2}\\leqslant2R^{2}\\},D_{3}=\\{(x,y)x|\\leqslant R,|y\\leqslant R\\},R>0$ , 则 ( )",
+    "options": [
+      "A. $I_{1}<I_{2}<I_{3}$",
+      "B. $I_{2}<I_{3}<I_{1}$",
+      "C. $I_{1}<I_{3}<I_{2}$",
+      "D. $I_{3}^{-}<I_{2}<I_{1}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "$\\lim_{r\\to0}\\dfrac{1}{\\pi r^2}\\iint_{x^2+y^2\\leqslant r^2}\\mathrm{e}^{x^2-y^2}\\cos(x+y)\\mathrm{d}x\\mathrm{d}y=(\\quad)$ .",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. $\\pi r^2$",
+      "D. $\\dfrac{1}{\\pi r^2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $D$ 是由曲线 $y=x^{2}-1$ 和 $y=\\sqrt{1-x^{2}}$ 围成的平面区域, 则 $\\iint_{D}(axy+by^{2})\\,\\mathrm{d}x\\,\\mathrm{d}y$ ( )",
+    "options": [
+      "A. 等于 0",
+      "B. 符号与 $a$ 有关, 与 $b$ 无关",
+      "C. 符号与 $a,b$ 都有关",
+      "D. 符号与 $a,b$ 都有关"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_0^1dx\\int_0^{\\sqrt{x}}\\mathrm{e}^{-\\dfrac{y^2}{2}}\\mathrm{d}y=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_0^1dy\\int_0^{y^2}\\dfrac{xe^{x-}}{1-\\sqrt{x}}\\mathrm{d}x=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$I=\\int_{1}^{\\mathrm{e}}dy\\int_{0}^{\\ln y}f(x,y)\\mathrm{d}x$ （其中 $f(x,y)$ 连续）交换积分次序得（）.",
+    "options": [
+      "A. $I=\\int_0^{\\ln y}dx\\int_1^{\\mathrm{e}}f(x,y)\\mathrm{d}y$",
+      "B. $I=\\int_0^1dx\\int_{\\mathrm{e}^x}^{\\mathrm{e}}f(x,y)\\mathrm{d}y$",
+      "C. $I=\\int_{1}^{\\mathrm{e}}dx\\int_{0}^{\\ln y}f(x,y)\\mathrm{d}y$",
+      "D. $I=\\int_{\\mathrm{e}^x}^{\\mathrm{e}}dx\\int_0^1f(x,y)\\mathrm{d}y$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x,y)$ 是连续函数，则 $\\int_{\\pi/2}^{5\\pi/6}dx\\int_{\\sin x}^{1}f(x,y)\\,\\mathrm{d}y=(\\quad)$ .",
+    "options": [
+      "A. $\\int_{1/2}^{1}dy\\int_{\\pi/2}^{\\arcsin y}f(x,y)\\,\\mathrm{d}x$",
+      "B. $\\int_{1/2}^{1}dy\\int_{\\pi-\\arcsin y}^{5\\pi/6}f(x,y)\\,\\mathrm{d}x$",
+      "C. $\\int_{0}^{1/2}dy\\int_{\\pi/2}^{\\arcsin y}f(x,y)\\,\\mathrm{d}x$",
+      "D. $\\int_{0}^{1/2}dy\\int_{\\pi-\\arcsin y}^{\\pi/2}f(x,y)\\,\\mathrm{d}x$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设函数 $f(x,y)$ 连续, 且 $f(x,y)=f(y,x)=f(-x,y)$ , 则 $\\int_{-2}^{2}dx\\int_{\\sqrt{4-x^2}}^{2}f(x,y)\\,\\mathrm{d}y=(\\quad)$",
+    "options": [
+      "A. $\\int_{0}^{2}\\left[\\int_{-2}^{-\\sqrt{4-y^2}}f(x,y)\\,\\mathrm{d}x+\\int_{-\\sqrt{4-y^2}}^{2}f(x,y)\\,\\mathrm{d}x\\right]\\,\\mathrm{d}y$",
+      "B. $2\\int_{0}^{2}\\left[\\int_{\\sqrt{4-y^2}}^{2}f(x,y)\\,\\mathrm{d}y\\right]\\,\\mathrm{d}x$",
+      "C. $4\\int_{0}^{\\pi/4}d\\theta\\int_{2}^{2\\sec\\theta}f(r\\cos\\theta,r\\sin\\theta)rdr$",
+      "D. $4\\int_{0}^{\\arctan\\dfrac{1}{2}}d\\theta\\int_{2}^{2\\sec\\theta}f(r\\cos\\theta,r\\sin\\theta)rdr$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "已知曲线 $L$ 的极坐标方程为 $r=\\sin3\\theta\\left(0\\leqslant\\theta\\leqslant\\dfrac{\\pi}{3}\\right)$ , $D$ 为曲线 $L$ 围成的区域, 则 $\\iint_{D}\\sqrt{x^2+y^2}\\,\\mathrm{d}x\\,\\mathrm{d}y=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $D$ 是第一象限内在曲线 $y=4x^{2}$ 与 $y=9x^{2}$ 之间的区域, 则 $\\iint_{D}x\\mathrm{e}^{-y^{2}}\\mathrm{d}x\\mathrm{d}y=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "已知 $D=\\{(x,y)\\mid(x-a)^2+y^2\\leqslant a^2,y\\geqslant0\\}$ , $a>0$ , 则 $\\iint_{D}\\sqrt{4a^2-x^2-y^2}\\,\\mathrm{d}x\\,\\mathrm{d}y=$ \\_\\_\\_\\_.\n$$\n\\iint_{D}(x^{2}+y^{2})\\mathrm{d}x\\mathrm{d}y\n$$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设平面区域 $D$ 由曲线 $y=\\sqrt{3(1-x^2)}$ 与直线 $y=\\sqrt{3}x$ 及 $y$ 轴所围成. 计算二重积分",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设平面区域 $D=\\{(x,y)\\mid1\\leqslant x^2+y^2\\leqslant4,x\\geqslant0,y\\geqslant0\\}$ , 计算 $\\iint_{D}\\dfrac{x\\cos\\sqrt{x^2+y^2}}{x+y}\\,\\mathrm{d}x\\,\\mathrm{d}y$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $D$ 是由 $y=|x|$ 及 $y=1$ 围成的有界区域, 计算二重积分 $\\iint_{D}\\dfrac{x^2-x\\cos y-y^2}{x^2+y^2}\\,\\mathrm{d}x\\,\\mathrm{d}y$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "计算二重积分 $\\iint_{D}\\sqrt{1-x^2-y^2}d\\sigma$ , 其中 $D=\\{(x,y)\\mid x^2+y^2\\leqslant y\\}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设平面区域 $D=\\{(x,y)\\mid x^3\\leqslant y\\leqslant1,-1\\leqslant x\\leqslant1\\}$ , $f(x)$ 是定义在 $[-a,a](a\\geqslant1)$ 上的任意连续函数, 求 $\\iint_{D}[(x+1)f(x)+(x-1)f(-x)]\\sin y\\,\\mathrm{d}x\\,\\mathrm{d}y$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "计算 $I=\\int_{0}^{1}dy\\int_{y}^{\\sqrt{2y-y^2}}\\dfrac{1}{\\sqrt{x^2+y^2}\\sqrt{4-x^2-y^2}}\\,\\mathrm{d}x$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "计算 $\\iint_{D}f(x,y)d\\sigma$ , 其中 $D=\\{(x,y)\\mid x^2+y^2\\geqslant2x\\},f(x,y)=\\begin{cases}y,&1\\leqslant x\\leqslant2,0\\leqslant y\\leqslant x,\\\\0,&\\text{其他}.\\end{cases}$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设平面区域 $D=\\{(x,y)\\mid x+y\\leqslant1,x\\geqslant0,y\\geqslant0\\}$ , 计算 $\\iint_{D}\\dfrac{\\mathrm{e}^{-(x+y)}}{\\sqrt{xy}}d\\sigma$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "已知平面区域 $D=\\{(x,y)\\mid(x-1)^2+y^2\\leqslant1\\}$ , 计算二重积分 $I=\\iint_{D}(x^2-3y^2)\\,\\mathrm{d}x\\,\\mathrm{d}y$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-22",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "计算二重积分 $\\iint_{D}(x+y^2)d\\sigma$ , 其中 $D=\\{(x,y)\\mid x^2+y^2\\leqslant x+y\\}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-23",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "计算 $I=\\iint_{D}\\sqrt{x^2+y^2}\\,\\mathrm{d}x\\,\\mathrm{d}y$ , 其中 $D$ 是 $x^2+y^2\\leqslant a^2$ 和 $\\left(x-\\dfrac{a}{2}\\right)^2+y^2\\geqslant\\dfrac{a^2}{4}$ 的公共部分, $a>0$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基14-24",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第14章 二重积分",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "计算 $\\iint_{D}\\sqrt{\\dfrac{1-x^2-y^2}{1+x^2+y^2}}\\,\\mathrm{d}x\\,\\mathrm{d}y,$ 其中 $D$ 为圆 $x^2+y^2=1$ 所包围的在第一象限内的区域.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$x\\,dy+y\\,dx=\\sin x\\,dx$ 满足 $y(\\pi)=0$ 的特解为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知曲线上任一点的切线在 $y$ 轴上的截距与法线在 $x$ 轴上的截距之比为 3:1, 则该曲线方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $y_{1},y_{2}$ 是一阶非齐次线性微分方程 $y'+p(x)y=q(x)$ 的两个特解, 若常数 $\\lambda,\\mu$ 使 $\\lambda y_{1}+\\mu y_{2}$ 是该方程的解, $\\lambda y_{1}-\\mu y_{2}$ 是该方程对应的齐次方程的解, 则 ( ).",
+    "options": [
+      "A. $\\lambda=\\dfrac{1}{2},\\mu=\\dfrac{1}{2}$",
+      "B. $\\lambda=-\\dfrac{1}{2},\\mu=-\\dfrac{1}{2}$",
+      "C. $\\lambda=\\dfrac{2}{3},\\mu=\\dfrac{1}{3}$",
+      "D. $\\lambda=\\dfrac{2}{3},\\mu=\\dfrac{2}{3}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求微分方程 $(2x-3xy^{2}-y^{3})y'+y^{3}=0$ 的通解.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "过原点的曲线 $y=y(x)$ 满足 $\\dfrac{\\mathrm{dy}}{\\mathrm{dx}}=(x+y)^2$ ，则 $\\lim_{x\\to0^+}[y(x)]^x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "微分方程 $y'=(x+1)\\sec y-\\tan y$ 的通解为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $y(x)$ 是微分方程 $y'+\\dfrac{1}{x^2}y=2\\mathrm{e}^{1/x}$ 满足 $y\\left(\\dfrac{1}{2}\\right)=0$ 的解.\n(1) 求 $y=y(x)$ 的表达式;\n(2) 求曲线 $y(x)$ 的斜渐近线.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "以 $yOz$ 面上的平面曲线段 $y=f(z)(z\\geqslant0)$ 绕 $z$ 轴旋转一周所成旋转曲面与 $xOy$ 面围成一个无上盖容器 (见图), 现以 $3\\mathrm{cm}^3/s$ 的速率把水注入容器内, 水面的面积以 $\\pi cm^2/s$ 的速率增大. 已知容器底面积为 $16\\pi cm^2$ , 求曲线 $y=f(z)$ 的方程.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)$ 有连续导数, $x\\in[0,+\\infty)$ , 且满足方程 $\\int_{0}^{x}(x-1)f(t)dt-\\int_{0}^{x}ff(t)dt=x$ , 求函数 $f(x)$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $\\varphi(x)$ 为连续函数, $|\\varphi(x)|\\leqslant k$ ( $k$ 为常数), 求微分方程 $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}+y=\\varphi(x)$ 满足初始条件 $y(0)=0$ 的特解 $y(x)$ , 并证明当 $x\\geqslant0$ 时, 有 $|y(x)|\\leqslant k(1-\\mathrm{e}^{-x})$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设函数 $y=y(x)$ 是微分方程 $2xy'-4y=2\\ln x-1$ 满足条件 $y(1)=\\dfrac{1}{4}$ 的解, 求曲线 $y=y(x)$ 在 $[1,\\mathbf{e}]$ 上的平均值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设曲线 $y=y(x)(x>0)$ 经过点 (1,0)，该曲线上任一点 $P(x,y)$ 到 $y$ 轴的距离等于该点处的切线在 $y$ 轴上的截距，求 $y(x)$ 在区间 (0,1) 上与 $x$ 轴所围平面图形的面积.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设曲线 $y=y(x)$ 上点 $P(0,4)$ 处的切线垂直于直线 $x-2y+5=0$ ，且该曲线满足微分方程 $y''+2y'+y=0$ ，则此曲线方程为（）.",
+    "options": [
+      "A. $y=\\dfrac{9}{2}xe^{-x}$",
+      "B. $y=(4+\\dfrac{9}{2}x)e^{-x}$",
+      "C. $y=(C_1x+C_2)e^{-x}$",
+      "D. $y=2(x+2)e^{-x}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设曲线 $y=y(x)$ 经过原点, 且在原点处的切线与直线 $2x+y+6=0$ 平行, 而 $y(x)$ 满足微分方程 $y''-2y'+5y=0$ , 则此曲线的方程为 ( ).",
+    "options": [
+      "A. $y=\\mathrm{e}^{x}\\sin2x$",
+      "B. $y=-\\mathrm{e}^{x}\\sin2x$",
+      "C. $y=\\mathrm{e}^{x}(\\cos2x-\\sin2x)$",
+      "D. $y=\\mathrm{e}^{x}(\\sin2x-\\cos2x)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $y=y(x)$ 满足 $y''-2y'+y=0$ ，且 $y(0)=0,y'(0)=1$ ，则 $\\int_{-\\infty}^{0}y(x)\\,\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知某常系数齐次线性微分方程的通解为 $y=C_1+\\mathrm{e}^x(C_2\\cos2x+C_3\\sin2x)$ ，则该微分方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "微分方程 $4y''-12y'+9y=\\mathrm{e}^{\\dfrac{3}{2}x}(3x^2+2)$ 的特解形式为（）.",
+    "options": [
+      "A. $Ax^2+Bx+C+De^{\\dfrac{3}{2}x}$",
+      "B. $(Ax^2+Bx+C)\\mathrm{e}^{\\dfrac{3}{2}x}$",
+      "C. $x(Ax^2+Bx+C)\\mathrm{e}^{\\dfrac{3}{2}x}$",
+      "D. $x^2(Ax^2+Bx+C)\\mathrm{e}^{\\dfrac{3}{2}x}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $y_{1}=xe^{x}+\\mathrm{e}^{2x},y_{2}=xe^{x}+\\mathrm{e}^{-x},y_{3}=xe^{x}+\\mathrm{e}^{2x}-\\mathrm{e}^{-x}$ 是某二阶常系数非齐次线性微分方程的三个解, 则此微分方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求微分方程 $y''-2y'+y=2(3x^2-2)\\mathrm{e}^x$ 的通解.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-20",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求微分方程 $y''+4y'+5y=8\\cos x$ ，当 $x\\to-\\infty$ 时为有界的特解.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基15-21",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第15章 微分方程",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "欧拉方程 $x^{2}y''+3xy'+3y=0$ 满足条件 $y(1)=0,y'(1)=\\sqrt{2}$ 的解为 y = \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $p$ 为常数，若级数 $\\sum_{n=1}^{\\infty}\\dfrac{(\\sqrt{n+1}-\\sqrt{n})^p}{n}$ 与 $\\sum_{n=1}^{\\infty}\\left[\\dfrac{1}{n^p}-\\dfrac{1}{(n+1)^p}\\right]$ 均收敛，则（）.",
+    "options": [
+      "A. $-2<p\\leqslant-1$",
+      "B. $-1\\leqslant p<0$",
+      "C. $1<p\\leqslant0$",
+      "D. $p>0$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "判断级数 $\\sum_{n=1}^{\\infty}\\left(\\ln\\dfrac{1}{n}-\\ln\\sin\\dfrac{1}{n}\\right)$ 的敛散性.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\lambda>0$ 是常数, 则 $\\sum_{n=1}^{\\infty}(-1)^{n}\\sin\\dfrac{\\lambda+2n^{2}}{n^{3}}$ ( ).",
+    "options": [
+      "A. 发散",
+      "B. 条件收敛",
+      "C. 绝对收敛",
+      "D. 敛散性与 $\\lambda$ 有关"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "以下结论正确的是（）.",
+    "options": [
+      "A. 若 $\\sum_{n=0}^{\\infty}a_{n}^{2}$ 收敛，则 $\\sum_{n=0}^{\\infty}a_{n}^{3}$ 收敛",
+      "B. 若 $\\sum_{n=0}^{\\infty}a_{n}^{2}$ 发散, 则 $\\sum_{n=0}^{\\infty}a_{n}^{3}$ 发散",
+      "C. 若 $\\sum_{n=0}^{\\infty}a_{n}^{3}$ 收敛, 则 $\\sum_{n=0}^{\\infty}a_{n}^{4}$ 收敛",
+      "D. 若 $\\sum_{n=0}^{\\infty}a_{n}^{3}$ 发散, 则 $\\sum_{n=0}^{\\infty}a_{n}^{4}$ 发散"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $u_{n}=\\sqrt{\\arctan(n+k)-\\arctan n},k$ 为正常数, 则 $\\sum_{n=1}^{\\infty}(-1)^{n}u_{n}(\\quad)$ .",
+    "options": [
+      "A. 绝对收敛",
+      "B. 条件收敛",
+      "C. 发散",
+      "D. 敛散性与 $k$ 有关"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $\\sum_{n=1}^{\\infty}(u_{n+1}-u_{n})$ 收敛，则下列级数中收敛的是（）.",
+    "options": [
+      "A. $\\sum_{n=1}^{\\infty}\\dfrac{u_{n}}{n}$",
+      "B. $\\sum_{n=1}^{\\infty}(-1)^{n}\\dfrac{1}{u_{n}}$",
+      "C. $\\sum_{n=1}^{\\infty}\\left(1-\\dfrac{u_{n}}{u_{n+1}}\\right)$",
+      "D. $\\sum_{n=1}^{\\infty}\\left(u_{n+1}^{2}-u_{n}^{2}\\right)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $y=y(x)$ 满足 $(1-x)y'+2y=0,y(0)=1,a_n(x)=\\int_{0}^{x}y(t)\\sin^ntdt,n=1,2,\\cdots$ .\n(1) 求 $y(x)$ 的表达式;\n(2) 证明 $\\sum_{n=1}^{\\infty}a_{n}(1)$ 收敛.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $a_{n}(x)$ 满足 $a_{n}^{\\prime}(x)-\\dfrac{n}{(1+x)\\ln(1+x)}a_{n}(x)+\\ln^{n}(1+x)=0,x>0,n=1,2,\\dots,a_{n}(1)=0.$\n(1) 求 $a_{n}(x)$ 的表达式;\n(2) 判别 $\\sum_{n=1}^{\\infty}\\int_{0}^{1}a_{n}(x)dx$ 的敛散性.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设幂级数 $\\sum_{n=1}^{\\infty}na_n(x+1)^n$ 的收敛区间为 $(-3,1)$ , 则 $\\sum_{n=1}^{\\infty}a_n(x-1)^{2n}$ 的收敛区间为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大"
+    ],
+    "stem": "级数 $\\sum_{n=1}^{\\infty}\\dfrac{n!}{n^{n}}e^{-nx}$ 的收敛域为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "幂级数 $\\sum_{n=1}^{\\infty}(-1)^{n-1}\\cdot\\dfrac{x^{n/2}}{n}$ 在 $(0,1]$ 内的和函数 $S(x)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\sum_{n=1}^{\\infty}\\dfrac{1}{(n+1)2^{n}}=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\sum_{n=2}^{\\infty}\\dfrac{1}{(n^2-1)2^n}=\\underline{\\quad}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "求幂级数 $\\sum_{n=0}^{\\infty}\\dfrac{(-2)^{n}+2}{2^{n}(2n+1)}x^{2n}$ 的收敛域及和函数 $S(x)$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "(1) 求微分方程 $y'(x)+y(x)=\\dfrac{(-x)^{n-1}}{3^n\\mathrm{e}^x}$ 的通解, 其中 $n$ 为任意正整数;\n(2) 记 $a_{n}(x)(n=1,2,\\cdots)$ 是 (1) 中满足条件 $y(0)=0$ 的特解, 求级数 $\\sum_{n=1}^{\\infty}a_{n}(x)$ 的和函数.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x)=\\dfrac{x^2-x-1}{x^2(x+1)}$ 的幂级数展开式为 $\\sum_{n=0}^{\\infty}a_n(x-1)^n,x\\in(0,2)$ ，求 $\\lim_{n\\to\\infty}\\dfrac{(-1)^na_n}{\\sqrt{n^2+1}}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-17",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)=\\left\\{\\begin{aligned}x^{2},&0\\leqslant x\\leqslant\\dfrac{1}{2},\\\\x-1,&\\dfrac{1}{2}<x<1,\\end{aligned}\\right.$ $S(x)=\\sum_{n=1}^{\\infty}b_{n}\\sin n\\pi x$ ，其中 $b_{n}=2\\int_{0}^{1}f(x)\\sin n\\pi x\\mathrm{d}x$ ( $n=1,2,\\cdots$ )，则 $S\\left(-\\dfrac{5}{2}\\right)=(\\quad)$ .",
+    "options": [
+      "A. $\\dfrac{1}{8}$",
+      "B. $\\dfrac{1}{4}$",
+      "C. $-\\dfrac{1}{8}$",
+      "D. $-\\dfrac{1}{4}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-18",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\sin x$ , 若 $f(x)=\\dfrac{a_0}{2}+\\sum_{n=1}^{\\infty}a_n\\cos nx,x\\in[0,\\pi]$ , 则 $\\lim_{n\\to\\infty}n^2\\ln(1+a_{2n})=$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基16-19",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第16章 无穷级数",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知 $f(x)=|x|,-\\pi\\leqslant x\\leqslant\\pi$ .\n(1) 将 $f(x)$ 展开成余弦级数；\n(2) 求 $\\sum_{n=1}^{\\infty}\\dfrac{1}{(2n-1)^{2}}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "已知函数 $f(x,y)$ 在点 (0,0) 处可微, $f(0,0)=0,f_x'(0,0)=1,f_y'(0,0)=-1$ , 且 $n=(-1,1,1)$ , 则 $\\lim_{\\substack{x\\to0\\\\y\\to0}}\\dfrac{(x,y,f(x,y))\\cdot n}{\\mathrm{e}^{\\sqrt{x^2+y^2}}-1}=\\underline{\\quad}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设有直线 $L:\\begin{cases}x+3y+2z+1=0,\\\\2x-y-10z+3=0\\end{cases}$ 及平面 $\\pi:4x-2y+z-2=0$ , 则直线 $L(\\quad)$ .",
+    "options": [
+      "A. 平行于 $\\pi$",
+      "B. 在 $\\pi$ 上",
+      "C. 垂直于 $\\pi$",
+      "D. 与 $\\pi$ 斜交"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "曲面 $z=4-x^{2}-y^{2}$ 在点 $P(1,1,2)$ 处的切平面方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "过点 $(1,0,1)$ 与点 $(0,1,1)$ 且与曲面 $z=1+x^{2}+y^{2}$ 相切的平面为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知曲面 $z=f(x,y)$ 由方程 $z-x\\ln\\left(1+z^2\\right)+\\mathrm{e}^y=0$ 所确定，则该曲面在点 $(0,0,-1)$ 处的切平面方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$z=\\ln\\left(\\mathrm{e}^{-y}+\\dfrac{y^2}{x}\\right)$ 在点 $(1,1)$ 处沿 $l=(1,0)$ 的方向导数为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "求以 $M_0(1,1,1)$ 为顶点, 以曲线 $C(C$ 是平面 $z=0$ 上 $y^2=x$ 被 $x=1$ 截下的有限部分)为准线的锥面方程.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $f(x,y)=\\left\\{\\begin{aligned}\\dfrac{x^{2}|y|}{x^{2}+y^{2}},&(x,y)\\neq(0,0),\\\\0,&(x,y)=(0,0),\\end{aligned}\\right.$ 则 $f(x,y)$ 在点 $(0,0)$ 处沿 $l=(1,1)$ 的方向导数是 \\_\\_\\_\\_.\n\\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "函数 $f(x,y)=2x^{2}+y^{2}$ 在点 $(0,1)$ 处的最大方向导数为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x,y,z)=x^2\\mathrm{e}^{yz^2}$ ，则 $f(x,y,z)$ 在点 $(-1,0,1)$ 处的方向导数的最小值为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 a, b 为实数, 函数 $z=2+ax^{2}+by^{2}$ 在点 (1,2) 处的方向导数中, 沿方向 $l=i+2j$ 的方向导数最大, 最大值为 10. 求 a, b.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $g(x,y)$ 是函数 $f(x,y)=x+2y+xy$ 在点 $(x,y)$ 处的最大方向导数.\n(1) 求 $g(x,y)$ 的表达式;\n(2) 求 $g(x,y)$ 在曲线 $C:x^{2}+y^{2}=5$ 上的最大值.\n(1) 求 $z(x,y)$ 的表达式;",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设可微函数 $z=z(x,y)$ 在平面上任一点 $(x,y)$ 处沿 $x$ 轴正向 $i$ 与 $y$ 轴正向 $j$ 的方向导数分别为 $[\\mathrm{e}^{-x}-f(x)]y$ 与 $f(x)$ , 其中 $f(x)$ 的一阶导数连续, 且 $f(0)=1$ .\n(2) 判断 $z(x,y)$ 是否有极值, 若有, 求之, 若无, 说明理由.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基17-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第17章 多元函数积分学的预备知识",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $F(x,y,z)=xyi-y\\cos zj+z\\sin xk$ ，则 $\\left.rotF\\right|_{(1,1,0)}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-01",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设平面曲线 $z^2=2x$ 绕 $x$ 轴旋转一周所得空间曲面 $\\Sigma$ 与平面 $x=1,x=2$ 围成的空间区域为 $\\Omega$ ，则 $I=\\iiint_{\\Omega}\\dfrac{1}{x^2+y^2+z^2}\\,\\mathrm{d}v=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-02",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $\\Omega$ 是由上半球面 $z=\\sqrt{4-x^{2}-y^{2}}$ 与曲面 $x^{2}+y^{2}=3z$ 所围成的空间有界闭区域, 则 $\\Omega$ 的形心竖坐标 $\\vec{z}=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-03",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 L 为圆周 $x^{2}+y^{2}=1$ ，则 $\\oint_{L}(x^{3}+y^{2})ds=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-04",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设曲线 $\\Gamma$ 为曲面 $x^{2}+y^{2}+z^{2}=1$ 与平面 $x+y+z=1$ 的交线, 则 $\\oint_{\\Gamma}(y^{2}+2x-z)ds=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-05",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 l 是从点 $(1,1,1)$ 到点 $(4,4,4)$ 的直线段, 则 $\\int_{l}\\dfrac{xdx+ydy+zdz}{\\sqrt{x^{2}+y^{2}+z^{2}-x-y+2z}}=\\underline{\\hspace{2cm}}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-06",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若 $(2ax^{3}y^{3}-3y^{2}+5)\\mathrm{d}x+(3x^{4}y^{2}-2bxy-4)\\mathrm{d}y$ 是某函数 $u(x,y)$ 的全微分, 则 $u(x,y)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-07",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "选择题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "使得 $\\oint_{L}(2y^3-3y)\\mathrm{d}x-x^3\\mathrm{d}y$ 的值最大的平面正向边界曲线 $L$ 为（）.",
+    "options": [
+      "A. $3x^{2}+y^{2}=1$",
+      "B. $2x^{2}+y^{2}=1$",
+      "C. $x^{2}+3y^{2}=1$",
+      "D. $x^{2}+2y^{2}=1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-08",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $x>0,I=\\int_{L}x(1+y\\sin x)\\,\\mathrm{d}x+\\dfrac{f(x)}{x}\\,\\mathrm{d}y$ 与路径 $L$ 无关, $f(x)$ 有连续导数且 $f\\left(\\dfrac{\\pi}{2}\\right)=0$ . 当 $L$ 是从点 $A\\left(\\dfrac{\\pi}{2},1\\right)$ 到点 $B(\\pi,0)$ 的任一曲线时, $I=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-09",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $D\\subset R^{2}$ 是单连通有界闭区域, $I(D)=\\iint_{D}(1-x^{2}-y^{2})\\,\\mathrm{d}x\\,\\mathrm{d}y$ 取得最大值的积分域记为 $D_{1}$ .\n(1) 求 $I(D_{1})$ 的值;\n(2) 计算 $\\oint_{\\partial D_{1}}\\dfrac{(xe^{x^{2}+2y^{2}}+y)\\mathrm{d}x+(2ye^{x^{2}+2y^{2}}-x)\\mathrm{d}y}{x^{2}+2y^{2}}$ ，其中 $\\partial D_{1}$ 是 $D_{1}$ 的正向边界.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-10",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $\\Omega=\\{(x,y,z)\\mid y^2+z^2\\leqslant1,0\\leqslant x\\leqslant1\\}$ , $\\Sigma$ 为 $\\Omega$ 的边界面且取外侧, 则 $\\oiint_{\\Sigma}(y^3+z\\sin x)\\,\\mathrm{d}z\\,\\mathrm{d}x+z\\,\\mathrm{d}x\\,\\mathrm{d}y=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-11",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $\\Sigma$ 为上半球体 $0\\leqslant z\\leqslant\\sqrt{a^2-x^2-y^2}(a>0)$ 的表面外侧, 则曲面积分 $\\iint_{\\Sigma}xz^2\\,\\mathrm{d}y\\,\\mathrm{d}z+(x^2y-z^3)\\,\\mathrm{d}z\\,\\mathrm{d}x+(2xy+y^2z)\\,\\mathrm{d}x\\,\\mathrm{d}y=\\underline{\\hspace{2cm}}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-12",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $\\sum=\\{(x,y,z)\\mid x^2+y^2+z^2=1,x\\geqslant0,y\\geqslant0\\}$ , 指向右侧, 则 $\\iint_{\\Sigma}xyz\\,\\mathrm{d}x\\,\\mathrm{d}y=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-13",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "填空题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $\\Sigma$ 是曲线 $x=\\mathrm{e}^{y}(0\\leqslant y\\leqslant a)$ 绕 $x$ 轴旋转而成的旋转曲面, 取后侧, 则 $I=\\iint_{\\Sigma}2(1-x^2)\\,\\mathrm{d}y\\,\\mathrm{d}z+8xy\\,\\mathrm{d}z\\,\\mathrm{d}x-4xz\\,\\mathrm{d}x\\,\\mathrm{d}y=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-14",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $\\Sigma$ 为曲面 $x=y^{2}+z^{2}(x\\leqslant1)$ 的后侧, 计算曲面积分\n$$\nI=\\iint_{\\Sigma}(x-1)\\mathrm{d}y\\mathrm{d}z+(y-1)^{3}\\mathrm{d}z\\mathrm{d}x+(z-1)^{3}\\mathrm{d}x\\mathrm{d}y.\n$$\n$$\nI=\\iint_{\\Sigma}[yf(xy)-2x]\\mathrm{d}y\\mathrm{d}z+\\left[y^{2}-xf(xy)\\right]\\mathrm{d}z\\mathrm{d}x+(z-1)^{2}\\mathrm{d}x\\mathrm{d}y.\n$$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-15",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设曲面 $\\sum$ 为 $z^2=x^2+y^2-1$ 介于 $z=0$ 与 $z=1$ 之间的部分, 取外侧, $f(x)$ 为连续函数, 计算",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "高数-基18-16",
+    "book": "张宇1000题",
+    "subject": "数一",
+    "domain": "高数",
+    "pian": "基础篇",
+    "chapter": "第18章 多元函数积分学",
+    "question_type": "解答题",
+    "difficulty": "基础题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设空间曲线 $\\Gamma:\\begin{cases}|x|+|y|=1,\\\\z=\\arctan(x+y),\\end{cases}$ 从 $z$ 轴正向往 $z$ 轴负向看, $\\Gamma$ 的方向为逆时针, 计算 $I=\\oint_{\\Gamma}(x^2-y)\\,\\mathrm{d}x+(2x+y^2)\\,\\mathrm{d}y+z^2\\,\\mathrm{d}z$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  }
+]

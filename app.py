@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import base64
 import binascii
+import hashlib
 import html
 import io
 import os
@@ -420,16 +421,53 @@ with st.sidebar:
     loader = get_bank_loader(current_subject if current_subject != SubjectType.CUSTOM else SubjectType.MATH_1)
     raw_questions = loader.load()
 
-    # 2. 选择参考书籍 (支持多选汇聚题库池)。选项来自题库实际书籍,880 置顶、默认勾选
+    # 2. 选择参考书籍 (勾选，多选汇聚题库池)。选项来自题库实际书籍,880 置顶。
+    # 勾选状态编码进网址 bk1/bk2/bk3(按科目)，下次打开自动恢复上次的选择，不写死默认 880。
     _books_present = {getattr(q, "book", "880") for q in raw_questions}
     available_books = (["880"] if "880" in _books_present else []) + sorted(_books_present - {"880"})
-    selected_books = st.multiselect(
-        "📚 选择参考书籍",
-        options=available_books,
-        default=["880"] if "880" in available_books else available_books,
-        placeholder="请选择参考书籍...",
-        help="勾选纳入组卷题库池的书籍，支持多选。真题2010-2026 可与 880 一起混合抽题。",
+    _BOOK_URL_KEY = {SubjectType.MATH_1: "bk1", SubjectType.MATH_2: "bk2", SubjectType.MATH_3: "bk3"}
+    _book_url_key = _BOOK_URL_KEY.get(
+        current_subject if current_subject != SubjectType.CUSTOM else SubjectType.MATH_1
     )
+    # 书籍↔短码:与位图参数同风格(8=880, z=真题, t=1000题);未知书名回退到名字首字符
+    _BOOK_CODE = {"880": "8", "真题2010-2026": "z", "张宇1000题": "t"}
+
+    def _book_to_code(name: str) -> str:
+        return _BOOK_CODE.get(name) or (name[:1] if name else "?")
+
+    _code_to_book = {_book_to_code(b): b for b in available_books}
+
+    # 首次渲染本科目时,用网址里的勾选状态给各 checkbox 播种(之后由用户勾选主导)
+    _bk_seed_flag = f"_bk_seeded_{current_subject.value}"
+    if _bk_seed_flag not in st.session_state:
+        st.session_state[_bk_seed_flag] = True
+        _incoming_bk = st.query_params.get(_book_url_key) if _book_url_key else None
+        if _incoming_bk is not None:
+            # 网址有记录 → 严格按它恢复(空串 = 上次一本都没勾,也如实恢复)
+            _restored = {_code_to_book[c] for c in _incoming_bk if c in _code_to_book}
+            for b in available_books:
+                st.session_state[f"bk_cb_{current_subject.value}_{b}"] = (b in _restored)
+        else:
+            # 无记录(全新访客)→ 全部勾上,让人一眼看到题库全貌
+            for b in available_books:
+                st.session_state[f"bk_cb_{current_subject.value}_{b}"] = True
+
+    st.markdown("📚 **选择参考书籍**")
+    _bk_cols = st.columns(len(available_books)) if available_books else []
+    selected_books = []
+    for _col, _bk in zip(_bk_cols, available_books):
+        with _col:
+            if st.checkbox(_bk, key=f"bk_cb_{current_subject.value}_{_bk}"):
+                selected_books.append(_bk)
+    if not selected_books:
+        st.caption("⚠️ 未勾选任何书籍，组卷与题库页将无题可用。")
+
+    # 勾选状态写回网址(顺序按 available_books,保证同一组合编码稳定)
+    if _book_url_key:
+        _bk_code = "".join(_book_to_code(b) for b in available_books if b in selected_books)
+        if st.query_params.get(_book_url_key) != _bk_code:
+            st.query_params[_book_url_key] = _bk_code
+
     current_books_str = "、".join(selected_books) if selected_books else "未选择书籍"
 
     all_questions = [q for q in raw_questions if getattr(q, "book", "880") in selected_books]
@@ -476,6 +514,14 @@ with st.sidebar:
     url_zhenti_key = URL_ZHENTI_KEY.get(active_sub)
     url_zhenti_seen_key = URL_ZHENTI_SEEN_KEY.get(active_sub)
     zhenti_canonical = loader.canonical_ids(book=ZHENTI_BOOK)
+    # 张宇1000题(第三本书)独立位图参数 t/tn,锚定自己的 canonical,与 880 的 d/n、真题的 z/zn 全隔离。
+    # 新参数名 → 旧链接没有 t/tn 即空集,880/真题 签名与恢复逻辑完全不受影响。
+    BOOK_1000 = "张宇1000题"
+    URL_1000_KEY = {SubjectType.MATH_1: "t1", SubjectType.MATH_2: "t2", SubjectType.MATH_3: "t3"}
+    URL_1000_SEEN_KEY = {SubjectType.MATH_1: "tn1", SubjectType.MATH_2: "tn2", SubjectType.MATH_3: "tn3"}
+    url_1000_key = URL_1000_KEY.get(active_sub)
+    url_1000_seen_key = URL_1000_SEEN_KEY.get(active_sub)
+    canonical_1000 = loader.canonical_ids(book=BOOK_1000)
 
     # 首次进入本科目且网址带错题码时，从 URL 恢复（无后端跨设备恢复）
     if url_data_key and current_subject != SubjectType.CUSTOM:
@@ -499,6 +545,14 @@ with st.sidebar:
             incoming_zt_seen = st.query_params.get(url_zhenti_seen_key) if url_zhenti_seen_key else None
             if incoming_zt_seen and zhenti_canonical:
                 state_mgr.apply_seen_url_code(incoming_zt_seen, zhenti_canonical)
+            # 1000题错题码:同真题,merge=True 合并(题号与 880/真题 不撞)
+            incoming_1k = st.query_params.get(url_1000_key) if url_1000_key else None
+            if incoming_1k and canonical_1000:
+                state_mgr.apply_url_code(incoming_1k, canonical_1000, merge=True)
+            # 1000题 seen
+            incoming_1k_seen = st.query_params.get(url_1000_seen_key) if url_1000_seen_key else None
+            if incoming_1k_seen and canonical_1000:
+                state_mgr.apply_seen_url_code(incoming_1k_seen, canonical_1000)
 
     # URL 试卷码：记住上次生成的是哪几道题（不含组卷配置），做完后跨设备查阅答案。
     # 每科目一个参数键 q1/q2/q3。当右侧无当前试卷时（首次进入 / 切科目回来）从 URL 恢复。
@@ -1084,44 +1138,61 @@ with tab_paper_hub:
         st.markdown("### 📥 导出与归档试卷 PDF")
 
         q_ids_tuple = tuple(q.id for q in active_paper.questions)
-        tb1, tb2, tb3, tb4 = st.columns(4)
 
-        with tb1:
-            st.download_button(
-                "📥 下载真题版 PDF",
-                data=get_cached_pdf(
-                    active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.REAL_EXAM.value, subject_str=current_subject.value
-                ),
-                file_name=f"{active_paper.paper_id}_真题版试卷.pdf",
-                mime="application/pdf",
-                use_container_width=True,
-                key=f"p1_down_real_{active_paper.paper_id}",
-            )
+        # 首屏性能红线:st.download_button 的 data= 是【急切求值】—— 只要 session 里存着试卷,
+        # 每次冷缓存重跑都会当场渲 3 份 PDF(无头浏览器排版,实测 ≈18s),而 st.tabs 会执行完
+        # 所有标签页,于是「逐题标错」等页面全被堵住。故改为:点「生成」后才渲染下载按钮。
+        _pdf_ready_key = f"p1_pdf_ready_{active_paper.paper_id}"
+        if not st.session_state.get(_pdf_ready_key):
+            gc1, gc2 = st.columns([1.6, 2.4])
+            with gc1:
+                if st.button(
+                    "📦 生成 3 种版式 PDF",
+                    type="primary",
+                    use_container_width=True,
+                    key=f"p1_pdf_gen_{active_paper.paper_id}",
+                ):
+                    st.session_state[_pdf_ready_key] = True
+                    st.rerun()
+            with gc2:
+                st.caption("💡 生成约十几秒")
+        else:
+            tb1, tb2, tb3 = st.columns(3)
+            with tb1:
+                st.download_button(
+                    "📥 下载真题版 PDF",
+                    data=get_cached_pdf(
+                        active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.REAL_EXAM.value, subject_str=current_subject.value
+                    ),
+                    file_name=f"{active_paper.paper_id}_真题版试卷.pdf",
+                    mime="application/pdf",
+                    use_container_width=True,
+                    key=f"p1_down_real_{active_paper.paper_id}",
+                )
+            with tb2:
+                st.download_button(
+                    "📝 下载 A4 做题本 PDF",
+                    data=get_cached_pdf(
+                        active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.WORKBOOK_A4.value, subject_str=current_subject.value
+                    ),
+                    file_name=f"{active_paper.paper_id}_A4做题本.pdf",
+                    mime="application/pdf",
+                    use_container_width=True,
+                    key=f"p1_down_wb_{active_paper.paper_id}",
+                )
+            with tb3:
+                st.download_button(
+                    "📑 下载详细解析版 PDF",
+                    data=get_cached_pdf(
+                        active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.SOLUTION.value, subject_str=current_subject.value
+                    ),
+                    file_name=f"{active_paper.paper_id}_详细解析.pdf",
+                    mime="application/pdf",
+                    use_container_width=True,
+                    key=f"p1_down_sol_{active_paper.paper_id}",
+                )
 
-        with tb2:
-            st.download_button(
-                "📝 下载 A4 做题本 PDF",
-                data=get_cached_pdf(
-                    active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.WORKBOOK_A4.value, subject_str=current_subject.value
-                ),
-                file_name=f"{active_paper.paper_id}_A4做题本.pdf",
-                mime="application/pdf",
-                use_container_width=True,
-                key=f"p1_down_wb_{active_paper.paper_id}",
-            )
-
-        with tb3:
-            st.download_button(
-                "📑 下载详细解析版 PDF",
-                data=get_cached_pdf(
-                    active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.SOLUTION.value, subject_str=current_subject.value
-                ),
-                file_name=f"{active_paper.paper_id}_详细解析.pdf",
-                mime="application/pdf",
-                use_container_width=True,
-                key=f"p1_down_sol_{active_paper.paper_id}",
-            )
-
+        tb4, _tb_pad = st.columns([1.6, 2.4])
         with tb4:
             # 归档写的是"服务器本地磁盘"：云端硬盘临时、多用户共用、用户也拿不到 → 仅本地部署有意义
             if IS_CLOUD:
@@ -1161,6 +1232,29 @@ with tab_marker_hub:
     book_questions = [q for q in raw_questions if getattr(q, "book", "880") == target_book]
     # 分组维度:真题按「年份」,880 等按「章节」。dim_of(q) 取该题的维度值。
     is_zhenti = any(getattr(q, "year", "") for q in book_questions)
+
+    # 篇筛选:1000题分基础篇/强化篇/综合篇,且不同篇/线代概率间章号会重复,
+    # 必须先选篇再选章,否则同名"第1章"会混装。仅当书籍带 pian 时显示。
+    book_pians = []
+    seen_p = set()
+    for q in book_questions:
+        p = getattr(q, "pian", "") or ""
+        if p and p not in seen_p:
+            seen_p.add(p)
+            book_pians.append(p)
+    PIAN_ORDER = {"基础篇": 0, "强化篇": 1, "提高篇": 1, "综合提高篇": 1, "综合篇": 2}
+    book_pians.sort(key=lambda p: PIAN_ORDER.get(p, 9))
+    target_pian = None
+    if book_pians:
+        target_pian = st.selectbox(
+            "选择篇章",
+            options=book_pians,
+            index=0,
+            key=f"p2_pian_select_{current_subject.value}_{target_book}",
+            help="张宇1000题分基础篇/强化篇/综合篇,先选篇再选章节",
+        )
+        book_questions = [q for q in book_questions if (getattr(q, "pian", "") or "") == target_pian]
+
     dim_label = "选择年份" if is_zhenti else "选择章节"
     def dim_of(q):
         return (q.year if is_zhenti else q.chapter) or ""
@@ -1176,17 +1270,23 @@ with tab_marker_hub:
     if not book_dims:
         book_dims = loaded_chapters
 
-    # Filters
-    m_col1, m_col2, m_col3, m_col4 = st.columns([1.8, 1, 1, 1.2])
+    # Filters —— 1000题:篇已表达难度分层,去掉冗余的「难度分层」下拉,只留 章/题型/状态。
+    _has_pian = bool(book_pians)
+    if _has_pian:
+        target_diff = "全部"
+        m_col1, m_col3, m_col4 = st.columns([1.8, 1, 1.2])
+    else:
+        m_col1, m_col2, m_col3, m_col4 = st.columns([1.8, 1, 1, 1.2])
     with m_col1:
         target_ch = st.selectbox(
             dim_label,
             options=book_dims,
             index=0,
-            key=f"p2_ch_select_{current_subject.value}_{target_book}",
+            key=f"p2_ch_select_{current_subject.value}_{target_book}_{target_pian or ''}",
         )
-    with m_col2:
-        target_diff = st.selectbox("难度分层", options=["全部", "基础题", "综合题", "拓展题"], index=0, key=f"p2_diff_select_{current_subject.value}")
+    if not _has_pian:
+        with m_col2:
+            target_diff = st.selectbox("难度分层", options=["全部", "基础题", "综合题", "拓展题"], index=0, key=f"p2_diff_select_{current_subject.value}")
     with m_col3:
         target_type = st.selectbox("题型筛选", options=["全部", "选择题", "填空题", "解答题"], index=0, key=f"p2_type_select_{current_subject.value}")
     with m_col4:
@@ -1247,11 +1347,16 @@ with tab_marker_hub:
     _TYPE_SHORT = {QuestionType.CHOICE: "选", QuestionType.FILL_BLANK: "填", QuestionType.SOLUTION: "解"}
     _TYPE_LABEL = {"选": "选择", "填": "填空", "解": "解答"}
     _SEC_ICON = {"基础": "🟢 基础篇", "综合": "🔵 综合篇", "拓展": "🟣 拓展篇"}
-    # (篇, 题型) 组合 → 题目。真题无篇分层,篇塌缩为空("")→ 每题型只一框、题号题型内全局连续。
+    # 1000题(带篇):章内整体顺序编号,题号不分题型 → 单框;篇已在上方选。
+    is_1000 = bool(book_pians)
+    # (篇, 题型) 组合 → 题目。真题/1000题篇塌缩为空("")→ 每题型只一框、题号题型内连续。
     combos: dict[tuple[str, str], list] = {}
     for q in chapter_all:
-        sec_key = "" if is_zhenti else _SEC_SHORT.get(q.difficulty, "综合")
-        combos.setdefault((sec_key, _TYPE_SHORT.get(q.question_type, "选")), []).append(q)
+        if is_1000:
+            combos.setdefault(("", ""), []).append(q)   # 单桶:章内顺序号,不分题型
+        else:
+            sec_key = "" if is_zhenti else _SEC_SHORT.get(q.difficulty, "综合")
+            combos.setdefault((sec_key, _TYPE_SHORT.get(q.question_type, "选")), []).append(q)
 
     def _resolve_ids(inputs: dict[tuple[str, str], str]) -> list[str]:
         """把各 (篇,题型) 框里的题号解析成精确题目 ID。序号取 ID 末段:
@@ -1267,28 +1372,41 @@ with tab_marker_hub:
 
     # Quick Batch Marker Box & Export
     with st.expander("⚡ 批量标错与数据导出", expanded=True):
-        _batch_hint = ("按 **题型** 分别输入该年真题题号" if is_zhenti
-                       else "刷完一章后，按 **篇 × 题型** 分别输入原书题号") + "（每个题型各自从 1 编号），用逗号或空格隔开："
+        if is_1000:
+            _batch_hint = "刷完一章后，输入该章原书题号（章内整体顺序编号，不分题型），用逗号或空格隔开："
+        elif is_zhenti:
+            _batch_hint = "按 **题型** 分别输入该年真题题号（每个题型各自从 1 编号），用逗号或空格隔开："
+        else:
+            _batch_hint = "刷完一章后，按 **篇 × 题型** 分别输入原书题号（每个题型各自从 1 编号），用逗号或空格隔开："
         st.markdown(_batch_hint)
         batch_inputs: dict[tuple[str, str], str] = {}
-        # 真题:单一空篇桶(每题型一框);880:三篇各一组
-        _secs = [""] if is_zhenti else ["基础", "综合", "拓展"]
-        for sec in _secs:
-            sec_types = [t for t in ("选", "填", "解") if (sec, t) in combos]
-            if not sec_types:
-                continue
-            if not is_zhenti:  # 真题无篇分层,不显示篇标题
-                st.markdown(f"**{_SEC_ICON[sec]}**")
-            cols = st.columns(len(sec_types))
-            for col, typ in zip(cols, sec_types):
-                with col:
-                    n_q = len(combos[(sec, typ)])
-                    batch_inputs[(sec, typ)] = st.text_input(
-                        f"{_TYPE_LABEL[typ]}题（1-{n_q}）",
-                        placeholder="如: 1, 3, 5",
-                        # key 含章节：切章节即换一组全新空框，不残留上一章敲的题号
-                        key=f"p2_in_{sec}_{typ}_{current_subject.value}_{target_ch}",
-                    )
+        if is_1000:
+            # 1000题:单框,章内整体顺序题号
+            n_q = len(combos.get(("", ""), []))
+            batch_inputs[("", "")] = st.text_input(
+                f"题号（1-{n_q}）",
+                placeholder="如: 1, 3, 5",
+                key=f"p2_in_seq_{current_subject.value}_{target_book}_{target_pian or ''}_{target_ch}",
+            )
+        else:
+            # 真题:单一空篇桶(每题型一框);880:三篇各一组
+            _secs = [""] if is_zhenti else ["基础", "综合", "拓展"]
+            for sec in _secs:
+                sec_types = [t for t in ("选", "填", "解") if (sec, t) in combos]
+                if not sec_types:
+                    continue
+                if not is_zhenti:  # 真题无篇分层,不显示篇标题
+                    st.markdown(f"**{_SEC_ICON[sec]}**")
+                cols = st.columns(len(sec_types))
+                for col, typ in zip(cols, sec_types):
+                    with col:
+                        n_q = len(combos[(sec, typ)])
+                        batch_inputs[(sec, typ)] = st.text_input(
+                            f"{_TYPE_LABEL[typ]}题（1-{n_q}）",
+                            placeholder="如: 1, 3, 5",
+                            # key 含章节：切章节即换一组全新空框，不残留上一章敲的题号
+                            key=f"p2_in_{sec}_{typ}_{current_subject.value}_{target_ch}",
+                        )
 
         b_c1, b_c2, b_c3 = st.columns(3)
         with b_c1:
@@ -1371,7 +1489,7 @@ with tab_marker_hub:
     # Question Cards List in Chapter (按 篇 -> 题型 分组展示,题号取 ID 第4段=原书题型内序号)
     st.markdown(f"#### 📖 {target_ch} · 共 {len(ch_questions)} 题")
 
-    _SEC_ORDER = [(DifficultyLevel.BASIC, "🟢 基础篇"), (DifficultyLevel.COMPREHENSIVE, "🔵 综合篇"), (DifficultyLevel.ADVANCED, "🟣 拓展篇")]
+    _SEC_ORDER =[(DifficultyLevel.BASIC, "🟢 基础篇"), (DifficultyLevel.COMPREHENSIVE, "🔵 综合篇"), (DifficultyLevel.ADVANCED, "🟣 拓展篇")]
     _TYPE_ORDER = [(QuestionType.CHOICE, "选择题"), (QuestionType.FILL_BLANK, "填空题"), (QuestionType.SOLUTION, "解答题")]
 
     def _seq_of(qid: str) -> int:
@@ -1574,6 +1692,51 @@ with tab_wrongbook_hub:
         shown = sorted([q for q in wb_all if _wb_pass(q)], key=lambda q: parse_qid_tuple(q.id))
         st.caption(f"共 {len(shown)} 道（按题号排序）")
 
+        # 错题本导出 PDF：导出【当前筛选结果】(书籍/状态/章节/题型 都跟着生效)。
+        # 与组卷页同理：download_button 的 data= 是急切求值,若直接放会让每次重跑都触发
+        # 无头浏览器排版(十几秒)并堵住整页,故先点「生成」再出下载按钮。
+        if shown:
+            _wb_ids = tuple(q.id for q in shown)
+            _wb_sig = hashlib.md5("|".join(_wb_ids).encode("utf-8")).hexdigest()[:8]
+            _WB_EDITIONS = {
+                "📝 A4 做题本（留白重做）": (PDFEdition.WORKBOOK_A4, "A4做题本"),
+                "📑 详细解析版（带答案解析）": (PDFEdition.SOLUTION, "详细解析"),
+                "📄 真题版（1:1 卡片）": (PDFEdition.REAL_EXAM, "真题版"),
+            }
+            wp1, wp2, wp3 = st.columns([1.8, 1.3, 2.1])
+            with wp1:
+                _wb_ed_label = st.selectbox(
+                    "错题本 PDF 版式", list(_WB_EDITIONS), index=0,
+                    key=f"wb_pdf_ed_{current_subject.value}",
+                )
+            _wb_ed, _wb_ed_short = _WB_EDITIONS[_wb_ed_label]
+            _wb_ready_key = f"wb_pdf_ready_{current_subject.value}_{_wb_sig}_{_wb_ed.value}"
+            with wp2:
+                if not st.session_state.get(_wb_ready_key):
+                    if st.button(
+                        "📦 生成错题本 PDF", type="primary", use_container_width=True,
+                        key=f"wb_pdf_gen_{current_subject.value}_{_wb_sig}_{_wb_ed.value}",
+                    ):
+                        st.session_state[_wb_ready_key] = True
+                        st.rerun()
+                else:
+                    st.download_button(
+                        "📥 下载错题本 PDF",
+                        data=get_cached_pdf(
+                            f"错题本_{current_subject.value}_{_wb_sig}",
+                            f"错题本 · {current_subject.value} · 共 {len(shown)} 题",
+                            _wb_ids,
+                            edition_str=_wb_ed.value,
+                            subject_str=current_subject.value,
+                        ),
+                        file_name=f"错题本_{current_subject.value}_{len(shown)}题_{_wb_ed_short}.pdf",
+                        mime="application/pdf",
+                        use_container_width=True,
+                        key=f"wb_pdf_dl_{current_subject.value}_{_wb_sig}_{_wb_ed.value}",
+                    )
+            with wp3:
+                st.caption("💡 生成约十几秒")
+
         for q in shown:
             stt = _wb_status(q.id)
             w_cnt = state_mgr.get_wrong_count(q.id)
@@ -1737,6 +1900,14 @@ if url_data_key and current_subject != SubjectType.CUSTOM:
         zt_seen_code = state_mgr.seen_to_url_code(zhenti_canonical)
         if st.query_params.get(url_zhenti_seen_key) != zt_seen_code:
             st.query_params[url_zhenti_seen_key] = zt_seen_code
+    if url_1000_key and canonical_1000:
+        k_code = state_mgr.to_url_code(canonical_1000)
+        if st.query_params.get(url_1000_key) != k_code:
+            st.query_params[url_1000_key] = k_code
+    if url_1000_seen_key and canonical_1000:
+        k_seen_code = state_mgr.seen_to_url_code(canonical_1000)
+        if st.query_params.get(url_1000_seen_key) != k_seen_code:
+            st.query_params[url_1000_seen_key] = k_seen_code
 
 # 试卷码同步：把当前生成的试卷题号写回网址（q1/q2/q3），做完后可凭链接查阅答案
 if paper_url_key and current_subject != SubjectType.CUSTOM:

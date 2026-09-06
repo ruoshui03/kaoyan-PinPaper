@@ -133,6 +133,7 @@ class QuestionItem:
     source_file: str = ""
     book: str = "《李林 880 题》"
     year: str = ""  # 真题年份(如 "2015");880 题为空
+    pian: str = ""  # 篇(如 1000题的 基础篇/强化篇/综合篇);880/真题为空
 
     def to_dict(self) -> dict[str, Any]:
         d = asdict(self)

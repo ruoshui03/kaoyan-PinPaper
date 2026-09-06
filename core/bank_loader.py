@@ -253,6 +253,10 @@ class BankLoader:
         # 880 的 questions_by_id / canonical_ids(book="880") 不受影响 → 880 旧 URL 不失效。
         self._append_zhenti()
 
+        # 追加张宇1000题(第三本书):自包含加载,题号 domain-篇章-题型-序号(如 高数-基08-选-01),
+        # 不经 880 重编号 → 与 880/真题天然不撞;book="张宇1000题" 非空 → 880 canonical/旧 URL 不受影响。
+        self._append_1000()
+
         self._is_loaded = True
 
         # 构建章节顺序
@@ -327,6 +331,101 @@ class BankLoader:
                 ))
         # 按题号(年份→题型→序号)稳定排序后追加
         for q in sorted(items, key=lambda q: parse_qid_tuple(q.id)):
+            self.questions_by_id[q.id] = q
+
+    def _append_1000(self) -> None:
+        """加载张宇1000题(第三本书)并追加进 questions_by_id。
+
+        metadata 自包含(含 stem/options/chapter/difficulty/question_type/tags),
+        不走 880 题面对齐与重编号。选项/题干含 ![](images/..) 图引用,按各册自己的
+        problems 目录内联 base64(不能用写死 880 目录的 _embed_images)。
+        book="张宇1000题" 非空 → 不污染 880 canonical、旧 URL 不失效。
+        """
+        folder = {SubjectType.MATH_1: "1000题数学一", SubjectType.MATH_2: "1000题数学二",
+                  SubjectType.MATH_3: "1000题数学三"}.get(self.subject)
+        if not folder:
+            return
+        root = self.metadata_dir.parent.parent  # 题库资料/
+        book_dir = root / folder
+        md_dir = book_dir / "metadata"
+        problems_dir = book_dir / "problems"
+        if not md_dir.exists():
+            return
+        TYPE_MAP = {"选择题": QuestionType.CHOICE, "填空题": QuestionType.FILL_BLANK,
+                    "解答题": QuestionType.SOLUTION}
+
+        def embed(text: str) -> str:
+            """把 ![alt](images/..) 内联成 base64,路径相对本册 problems 目录。"""
+            if not text or "![" not in text:
+                return text
+            def repl(m: re.Match) -> str:
+                alt, ref = m.group(1), m.group(2).strip()
+                if ref.startswith(("http://", "https://", "data:")):
+                    return m.group(0)
+                p = (problems_dir / ref.lstrip("./")).resolve()
+                if not p.exists():
+                    return f"*({alt.strip() or '图'}见原书)*"
+                mime = mimetypes.guess_type(str(p))[0] or "image/jpeg"
+                try:
+                    b64 = base64.b64encode(p.read_bytes()).decode("ascii")
+                except OSError:
+                    return f"*({alt.strip() or '图'}见原书)*"
+                return (f'<img src="data:{mime};base64,{b64}" alt="{alt}" '
+                        f'style="max-width:100%;height:auto;display:block;margin:8px auto;" />')
+            return re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", repl, text)
+
+        items: list[QuestionItem] = []
+        for jf in md_dir.glob("*.json"):
+            if jf.name.startswith("_"):
+                continue
+            try:
+                data = json.loads(jf.read_text(encoding="utf-8-sig"))
+            except Exception:
+                continue
+            for it in (data if isinstance(data, list) else [data]):
+                qid = it.get("id")
+                if not qid or qid in self.questions_by_id:
+                    continue
+                chapter = it.get("chapter") or "未分类章节"
+                _dstr = it.get("difficulty") or ""
+                _diff = DifficultyLevel.BASIC if "基础" in _dstr else (
+                    DifficultyLevel.ADVANCED if "拓展" in _dstr else DifficultyLevel.COMPREHENSIVE)
+                items.append(QuestionItem(
+                    id=qid,
+                    chapter=chapter,
+                    category=classify_category(chapter, parse_chapter_number(chapter, qid)),
+                    difficulty=_diff,
+                    question_type=TYPE_MAP.get(it.get("question_type", ""), QuestionType.CHOICE),
+                    core_knowledge=[],
+                    tags=it.get("tags") or [],
+                    recommend_weight=3,
+                    stem=embed(it.get("stem") or ""),
+                    options=[embed(o) for o in (it.get("options") or [])],
+                    answer=it.get("answer") or "",
+                    solution=it.get("solution") or "",
+                    book=it.get("book") or "张宇1000题",
+                    pian=it.get("pian") or "",
+                ))
+        # 排序:高数 → 线代 → 概率,各自 基础篇 → 强化篇 → 综合篇,再按章号、原书题号。
+        # 不能用 parse_qid_tuple:它按 int(parts[0]) 解章号,而 1000题 首段是 domain 汉字
+        # (如「高数-基08-03」)→ 一律落 99,排序失效,章节下拉会退化成文件 glob 顺序。
+        _DOMAIN_RANK = {"高数": 0, "线代": 1, "概率": 2}
+        _PIAN_RANK = {"基": 0, "强": 1, "综": 2}
+
+        def _sort_key(q: QuestionItem) -> tuple[int, int, int, int]:
+            parts = q.id.split("-")
+            domain = parts[0] if parts else ""
+            unit = parts[1] if len(parts) > 1 else ""
+            seq = parts[-1] if parts else ""
+            ch_digits = re.sub(r"[^0-9]", "", unit)
+            return (
+                _DOMAIN_RANK.get(domain, 9),
+                _PIAN_RANK.get(unit[:1], 9),
+                int(ch_digits) if ch_digits else 99,
+                int(seq) if seq.isdigit() else 99,
+            )
+
+        for q in sorted(items, key=_sort_key):
             self.questions_by_id[q.id] = q
 
     @staticmethod

@@ -232,3 +232,97 @@ def test_old_url_without_seen_still_works():
     n, status = sm2.apply_url_code(old_wrong_code, ordered)
     assert status == "ok" and n == 3  # 错题正常恢复
     assert sm2.historical_seen_ids == set()  # 无 seen 码 → seen 为空,行为同现在
+
+
+# =========================================================================
+# 张宇1000题(第三本书)位图:与 880 / 真题 完全隔离,且旧 URL 不失效
+# =========================================================================
+@pytest.mark.parametrize("subject", [SubjectType.MATH_1, SubjectType.MATH_2, SubjectType.MATH_3])
+def test_1000_canonical_isolated_from_880_and_zhenti(subject):
+    """1000题 canonical 与 880/真题 三者互不相交,且签名两两不同
+    (→ t/tn 参数不可能与 d/n、z/zn 串味)。"""
+    loader = BankLoader(subject=subject)
+    loader.load()
+    c880 = loader.canonical_ids(book="880")
+    czt = loader.canonical_ids(book="真题2010-2026")
+    c1k = loader.canonical_ids(book="张宇1000题")
+    assert len(c1k) > 0
+    assert not (set(c1k) & set(c880))
+    assert not (set(c1k) & set(czt))
+    sigs = {StateManager.bank_signature(x) for x in (c880, czt, c1k)}
+    assert len(sigs) == 3
+
+
+def test_1000_bitmap_roundtrip():
+    """1000题错题码 roundtrip 保真(待练/顽固两档)。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    c1k = loader.canonical_ids(book="张宇1000题")
+
+    src = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    src.batch_mark_wrong(c1k[:3])
+    src.set_wrong_count(c1k[1], 4)          # 顽固档
+    code = src.to_url_code(c1k)
+
+    dst = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n, status = dst.apply_url_code(code, c1k)
+    assert status == "ok" and n == 3
+    assert dst.get_wrong_count(c1k[1]) >= 2  # 顽固档保真
+    assert dst.is_wrong_marked(c1k[0]) and dst.is_wrong_marked(c1k[2])
+
+
+def test_1000_restore_merge_does_not_wipe_880_or_zhenti():
+    """1000题码以 merge 恢复,不得清掉已恢复的 880 与真题错题(三书共存)。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    c880 = loader.canonical_ids(book="880")
+    czt = loader.canonical_ids(book="真题2010-2026")
+    c1k = loader.canonical_ids(book="张宇1000题")
+
+    src = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    src.batch_mark_wrong(c1k[:2])
+    code_1k = src.to_url_code(c1k)
+
+    dst = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    dst.batch_mark_wrong(c880[:2] + czt[:2])       # 先有 880 + 真题错题
+    dst.apply_url_code(code_1k, c1k, merge=True)   # 再合并 1000题
+    for qid in c880[:2] + czt[:2] + list(c1k[:2]):
+        assert dst.is_wrong_marked(qid), f"{qid} 被 1000题 merge 恢复清掉了"
+
+
+def test_old_url_without_1000_params_unaffected():
+    """老 URL(只有 d1/z1、无 t1/tn1)照常恢复,且 880 与真题签名不因加 1000题 而变
+    → 已分享的旧链接不失效。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    c880 = loader.canonical_ids(book="880")
+    czt = loader.canonical_ids(book="真题2010-2026")
+
+    sm = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    sm.batch_mark_wrong(c880[:3])
+    code_880 = sm.to_url_code(c880)
+
+    sm2 = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    n, status = sm2.apply_url_code(code_880, c880)
+    assert status == "ok" and n == 3
+    # 没有 t/tn 参数 → 1000题 错题与 seen 均为空,不影响任何既有状态
+    c1k = loader.canonical_ids(book="张宇1000题")
+    assert not any(sm2.is_wrong_marked(q) for q in c1k)
+    assert sm2.historical_seen_ids == set()
+
+
+def test_1000_seen_isolated():
+    """1000题 seen 码 roundtrip,且不污染 880 的 seen。"""
+    loader = BankLoader(subject=SubjectType.MATH_1)
+    loader.load()
+    c880 = loader.canonical_ids(book="880")
+    c1k = loader.canonical_ids(book="张宇1000题")
+
+    src = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    src.historical_seen_ids = set(c1k[:4])
+    seen_code = src.seen_to_url_code(c1k)
+
+    dst = StateManager(data_file=tempfile.mktemp(suffix=".json"), subject=SubjectType.MATH_1)
+    dst.apply_seen_url_code(seen_code, c1k)
+    assert set(c1k[:4]).issubset(dst.historical_seen_ids)
+    assert not (set(c880) & dst.historical_seen_ids)

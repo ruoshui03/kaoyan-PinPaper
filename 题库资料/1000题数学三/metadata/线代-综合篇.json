@@ -1,0 +1,1742 @@
+[
+  {
+    "id": "线代-综1-01",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "当 $x\\to0^{+}$ 时, 下列无穷小量中, 最高阶的是 ( )",
+    "options": [
+      "A. $\\int_{0}^{x^{2}}\\left(\\mathrm{e}^{t^{2}}+1\\right)dt$",
+      "B. $\\int_{0}^{x}\\ln\\left(1+\\sqrt{t^{3}}\\right)dt$",
+      "C. $\\int_{0}^{\\sin x}\\cos t^{2}dt$",
+      "D. $\\int_{0}^{1-\\cos x}\\sqrt{\\arcsin^{3}t}dt$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-02",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若微分方程 $y''+ay'+by=0$ 的解在 $(-\\infty,+\\infty)$ 上必为周期函数，则（）.",
+    "options": [
+      "A. $a=0,b>0$",
+      "B. $a\\neq0,b>0$",
+      "C. $a\\neq0,b<0$",
+      "D. $a\\neq0,b>0$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-03",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{1/4}^{1/2}dy\\int_{1/2}^{\\sqrt{y}}\\mathrm{e}^{x}\\mathrm{d}x+\\int_{1/2}^{1}dy\\int_{y}^{\\sqrt{y}}\\mathrm{e}^{x}\\mathrm{d}x=(\\quad)$",
+    "options": [
+      "A. $\\dfrac{3\\mathrm{e}}{4}-\\dfrac{\\sqrt{\\mathrm{e}}}{2}$",
+      "B. $\\dfrac{3\\mathrm{e}}{8}-\\dfrac{\\sqrt{\\mathrm{e}}}{2}$",
+      "C. $\\dfrac{3\\mathrm{e}}{4}+\\dfrac{\\sqrt{\\mathrm{e}}}{2}$",
+      "D. $\\dfrac{3\\mathrm{e}}{8}+\\dfrac{\\sqrt{\\mathrm{e}}}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-04",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\arcsin x-\\dfrac{x}{1+ax^2},f'''(0)=2$ ，则 $a=(\\quad)$ .",
+    "options": [
+      "A. $\\dfrac{1}{6}$",
+      "B. $\\dfrac{1}{4}$",
+      "C. $\\dfrac{1}{3}$",
+      "D. $\\dfrac{1}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-05",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设向量 $\\beta$ 可由向量组 $\\alpha_{1},\\alpha_{2},\\alpha_{3},\\alpha_{4}$ 线性表示, 但不可由向量组 $(I):\\alpha_{1},\\alpha_{2},\\alpha_{3}$ 线性表示, 记向量组 $(II):\\alpha_{1},\\alpha_{2},\\alpha_{3},\\beta$ , 则 ( ).",
+    "options": [
+      "A. $\\alpha_{4}$ 不可由向量组 $(I)$ 线性表示, 也不可由向量组 $(II)$ 线性表示",
+      "B. $\\alpha_{4}$ 不可由向量组 $(I)$ 线性表示, 但可由向量组 $(II)$ 线性表示",
+      "C. $\\alpha_{4}$ 可由向量组 $(I)$ 线性表示, 也可由向量组 $(II)$ 线性表示",
+      "D. $\\alpha_{4}$ 可由向量组 $(I)$ 线性表示, 但不可由向量组 $(II)$ 线性表示"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-06",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 $A$ 为 $n$ 阶矩阵, $A^{*}$ 是 $A$ 的伴随矩阵, 齐次线性方程组 $Ax=0$ 有两个线性无关的解, 则 ( ).",
+    "options": [
+      "A. $A^{*}x=0$ 的解均是 $Ax=0$ 的解",
+      "B. $Ax=0$ 的解均是 $A^{*}x=0$ 的解",
+      "C. $Ax=0$ 与 $A^{*}x=0$ 没有非零公共解",
+      "D. $Ax=0$ 与 $A^{*}x=0$ 仅有两个非零公共解"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-07",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "综合压轴",
+      "易错点"
+    ],
+    "stem": "设 $A$ 是 3 阶矩阵, 向量 $\\alpha_{1}=[1,2,0]^{T},\\alpha_{2}=[1,0,1]^{T},\\beta=[-1,2,-2]^{T}$ . 已知 $\\lambda=2$ 是矩阵 $A$ 的特征值, $\\alpha_{1},\\alpha_{2}$ 是矩阵 $A$ 的属于 $\\lambda=2$ 的特征向量, 则 $A[\\alpha_{1},\\alpha_{2},\\beta]=(\\quad)$ .\n$$\n\\left[\\begin{array}{ccc}2&2&-1\\\\4&0&2\\\\0&2&-2\\end{array}\\right]\n$$\nA.\n$$\n\\left[\\begin{array}{ccc}2&2&-1\\\\4&0&-2\\\\0&2&2\\end{array}\\right]\n$$\nB.\nC.\n$$\n\\left[\\begin{array}{ccc}2&2&-2\\\\4&0&4\\\\0&2&-4\\end{array}\\right]\n$$\n$$\n\\left[\\begin{array}{ccc}2&2&2\\\\4&0&-4\\\\0&2&4\\end{array}\\right]\n$$",
+    "options": [
+      "A. $\\begin{bmatrix}2&2&-1\\\\4&0&2\\\\0&2&-2\\end{bmatrix}$",
+      "B. $\\begin{bmatrix}2&2&-1\\\\4&0&-2\\\\0&2&2\\end{bmatrix}$",
+      "C. $\\begin{bmatrix}2&2&-2\\\\4&0&4\\\\0&2&-4\\end{bmatrix}$",
+      "D. $\\begin{bmatrix}2&2&2\\\\4&0&-4\\\\0&2&4\\end{bmatrix}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-08",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 $X$ 的概率分布如下.\n从总体 $X$ 中抽取 $n$ 个简单随机样本, $N_{1}$ 表示 $n$ 个样本中取到 $-1$ 的个数, $N_{2}$ 表示 $n$ 个样本中取到 0 的个数, $N_{3}$ 表示 $n$ 个样本中取到 1 的个数, 则 $N_{1}$ 与 $N_{2}$ 的相关系数为 ( ).",
+    "options": [
+      "A. $-\\dfrac{\\sqrt{3}}{3}$",
+      "B. $\\dfrac{\\sqrt{3}}{3}$",
+      "C. $-1$",
+      "D. 1"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-09",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设总体 $X$ 服从参数为 1 的泊松分布, $X_{1},X_{2},\\cdots,X_{n}$ 为来自总体 $X$ 的简单随机样本. 记 $v_{n}(1)$ 为 $n$ 个观测值中不大于 1 的个数, 则当 $n$ 充分大时, $\\dfrac{v_{n}(1)}{n}$ 依概率收敛于 ( ).",
+    "options": [
+      "A. $1-\\dfrac{1}{\\mathrm{e}}$",
+      "B. $\\dfrac{1}{\\mathrm{e}}$",
+      "C. $1-\\dfrac{2}{\\mathrm{e}}$",
+      "D. $\\dfrac{2}{\\mathrm{e}}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-10",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 $X\\sim U(0,\\alpha),Y\\sim U(\\alpha,2\\alpha),\\alpha>0$ 为未知参数. $X,Y$ 相互独立. 记 $Z_{(a,b)}=aX+bY$ , 则当 $E\\big(Z_{(a,b)}\\big)=\\alpha$ , 且 $D\\big(Z_{(a,b)}\\big)$ 最小时, 有 ( ).",
+    "options": [
+      "A. $a=\\dfrac{1}{3},b=\\dfrac{2}{3}$",
+      "B. $a=\\dfrac{2}{3},b=\\dfrac{1}{3}$",
+      "C. $a=\\dfrac{1}{5},b=\\dfrac{3}{5}$",
+      "D. $a=\\dfrac{1}{2},b=\\dfrac{1}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-11",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to0}\\dfrac{\\ln\\dfrac{\\sin x}{x}}{\\int_0^{x^2}(1+t)^{1/t}dt}=\\_$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-12",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=xe^{\\dfrac{1}{x+1}}$ 的斜渐近线方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-13",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\sum_{n=0}^{\\infty}(-1)^{n}\\dfrac{2n}{(2n+1)!}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-14",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "微分方程 $(x-y-1)\\mathrm{d}x+(x+4y-1)\\mathrm{d}y=0$ 的通解为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-15",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知方程组 $(I)\\begin{cases}x_{2}+ax_{3}=0,\\\\x_{1}+x_{2}+(a+1)x_{3}=0\\end{cases}$ 的解均是方程组 $(II)\\begin{cases}x_{1}+x_{2}+2x_{3}=0,\\\\x_{1}+x_{2}+bx_{3}=0\\end{cases}$ 的解, 但方程组 $(I)$ 与方程组 $(II)$ 不同解. 设矩阵 A 为方程组 $(I)$ 的系数矩阵, 矩阵 B 为方程组 $(II)$ 的系数矩阵, 则 $B^{T}A=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-16",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 $X$ 的概率密度 $f(x)=\\begin{cases}\\mu x,&0\\leqslant x<1,\\\\\\theta x,&1\\leqslant x\\leqslant2,\\mu,\\theta\\text{为未知参数且}\\mu>0,\\theta>0,Y=\\mathrm{e}^X,X\\text{的样本观测}\\\\0,&\\text{其他},\\end{cases}$ 值为 0.1, 0.9, 1.2, 1.2, 则 $P\\{Y<4\\}$ 的最大似然估计值为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-17",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算 $\\int\\dfrac{x^2+2}{(x^2+x+1)^2}\\mathrm{d}x.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-18",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设曲面 $z=f(x,y)$ 过点 $(0,0,2)$ ，且 $\\Delta z$ 关于 x 的偏增量 $\\Delta_{x}z=-2xe^{-y}\\circ\\Delta x+o(\\Delta x)$ ， $\\Delta z$ 关于 y 的偏增量 $\\Delta_{y}z=e^{-y}(x^{2}-y-1)\\Delta y+o(\\Delta y)$ ，求 $z=f(x,y)$ 的表达式及 z 的极值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-19",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "(1) 设 $f(x)$ 在 $[a,b]$ 上具有二阶连续导数, 证明存在 $\\xi\\in(a,b)$ , 使得\n$$\n\\int_{a}^{b}f(x)\\mathrm{d}x=f\\Big(\\dfrac{a+b}{2}\\Big)(b-a)+\\dfrac{f^{\\prime\\prime}(\\xi)}{24}(b-a)^{3};\n$$\n(2) 设 $g(x)$ 在 $[-1,1]$ 上具有三阶连续导数, 且 $g(-1)=g(1),g'(0)=0$ , 证明存在 $\\eta\\in(-1,1)$ , 使得 $g^m(\\eta)=0$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-20",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $D=\\{(x,y)\\mid x^{2}+y^{2}\\leqslant2x+2y\\}$ ，求二重积分 $\\iint_{D}(x^{2}+x+y)d\\sigma.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-21",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点"
+    ],
+    "stem": "已知二次型 $f(x_{1},x_{2},x_{3})=x^{T}\\begin{bmatrix}1&1&1\\\\3&4&5\\\\5&7&9\\end{bmatrix}x,$ 其中 $x=\\left[x_{1},x_{2},x_{3}\\right]^{T}$ .\n(1) 求正交变换 x = Qy，将 $f(x_{1},x_{2},x_{3})$ 化为标准形；\n(2) 求 $f(x_{1},x_{2},x_{3})=0$ 的解.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综1-22",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷一",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设随机变量 $(X,Y)$ 的概率密度为 $f(x,y)=\\begin{cases}a\\left(x^{2}+\\dfrac{xy}{2}\\right),&0<x<1,0<y<2,\\\\0,&\\text{其他}.\\end{cases}$\n(1) 求 a 的值;\n(2)X,Y是否相互独立，说明理由；\n(3) 计算 $P\\{Y>1\\mid X=\\dfrac{1}{2}\\}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-01",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "函数 $f(x)=\\dfrac{\\left(\\mathrm{e}^{\\dfrac{1}{x-1}}-1\\right)|x|}{(x+1)\\ln|x-1|}$ 的第一类间断点的个数为 ( ).",
+    "options": [
+      "A. 0",
+      "B. 1",
+      "C. 2",
+      "D. 3"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-02",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $I_{1}=\\int_{0}^{1}\\dfrac{x}{\\sqrt{1-x^{2}}}\\,\\mathrm{d}x,I_{2}=\\int_{0}^{1}\\dfrac{\\cos x}{\\sqrt{1-x^{2}}}\\,\\mathrm{d}x,I_{3}=\\int_{0}^{1}\\dfrac{\\sin x}{\\sqrt{1-x^{2}}}\\,\\mathrm{d}x,$ 则（）.",
+    "options": [
+      "A. $I_{1}<I_{2}<I_{3}$",
+      "B. $I_{2}<I_{3}<I_{1}$",
+      "C. $I_{3}<I_{1}<I_{2}$",
+      "D. $I_{2}<I_{1}<I_{3}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-03",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $z=z(x,y)$ 是由方程 $\\int_{2x-3y}^{z}f(2x-3y+z-t)dt=\\sin(2x-3y+z)$ 所确定的函数, 其中 $f$ 为大于 1 的连续函数, 则 ( ).",
+    "options": [
+      "A. $3\\dfrac{\\partial z}{\\partial x}+2\\dfrac{\\partial z}{\\partial y}=0$",
+      "B. $3\\dfrac{\\partial z}{\\partial x}-2\\dfrac{\\partial z}{\\partial y}=0$",
+      "C. $2\\dfrac{\\partial z}{\\partial x}+3\\dfrac{\\partial z}{\\partial y}=0$",
+      "D. $2\\dfrac{\\partial z}{\\partial x}-3\\dfrac{\\partial z}{\\partial y}=0$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-04",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $a$ 与 $b$ 都是常数，若反常积分 $\\int_{0}^{+\\infty}\\dfrac{x^{a}(1-\\mathrm{e}^{-x})}{(1+x)^{b}}\\,\\mathrm{d}x$ 收敛，则 $a$ 与 $b$ 的取值范围为（）.",
+    "options": [
+      "A. $a<-2,b>a+1$",
+      "B. $a<-2,b<a+1$",
+      "C. $a>-2,b<a+1$",
+      "D. $a>-2,b>a+1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-05",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $\\alpha_{1}=[1,2]^{T},\\alpha_{2}=[a,1]^{T},x=[x_{1},x_{2}]^{T}$ ，若二次型 $f(x_{1},x_{2})=\\sum_{i=1}^{2}\\left(\\alpha_{i},x\\right)^{2}$ 正定，其中 $(\\alpha_{i},x)$ 表示向量 $\\alpha_{l},x$ 的内积 $(i=1,2)$ ，则 a 的取值范围是（）.",
+    "options": [
+      "A. $\\left(-\\infty,\\dfrac{1}{2}\\right)\\cup\\left(\\dfrac{1}{2},+\\infty\\right)$",
+      "B. $\\left(-\\infty,-\\dfrac{1}{2}\\right)\\cup\\left(-\\dfrac{1}{2},+\\infty\\right)$",
+      "C. $\\left(-\\dfrac{1}{2},\\dfrac{1}{2}\\right)$",
+      "D. $\\left\\{\\dfrac{1}{2}\\right\\}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-06",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "下列矩阵中，可以经过若干次初等行变换得到矩阵 $\\begin{bmatrix}1&1&0&1\\\\0&1&0&0\\\\0&0&0&0\\end{bmatrix}$ 的是 ( ).",
+    "options": [
+      "A. $\\begin{bmatrix}1&1&0&1\\\\1&2&1&3\\\\2&3&1&4\\end{bmatrix}$",
+      "B. $\\begin{bmatrix}1&1&0&1\\\\1&1&2&5\\\\1&1&1&3\\end{bmatrix}$",
+      "C. $\\begin{bmatrix}1&0&0&1\\\\0&1&0&3\\\\0&1&0&0\\end{bmatrix}$",
+      "D. $\\begin{bmatrix}1&1&0&1\\\\1&2&0&1\\\\2&3&0&2\\end{bmatrix}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-07",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 A 为 2 阶方阵, $\\alpha$ 为 2 维非零列向量, 且 $\\alpha$ 不是 A 的特征向量, $P=[\\alpha,A\\alpha]$ , $A^{2}\\alpha+A\\alpha-2\\alpha=0$ , 若矩阵 B 满足 AP = PB, 则 $B=(\\quad)$ .",
+    "options": [
+      "A. $\\begin{bmatrix}-1&0\\\\1&2\\end{bmatrix}$",
+      "B. $\\begin{bmatrix}0&1\\\\1&-1\\end{bmatrix}$",
+      "C. $\\begin{bmatrix}-1&1\\\\0&2\\end{bmatrix}$",
+      "D. $\\begin{bmatrix}0&2\\\\1&-1\\end{bmatrix}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-08",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设随机变量 $X$ 服从参数为 $\\lambda(\\lambda>0)$ 的指数分布, 若 $P\\{X>D(X)\\}=[P\\{X>E(X)\\}]^3$ , 则 $\\lambda=(\\quad)$ .",
+    "options": [
+      "A. 3",
+      "B. $\\dfrac{1}{3}$",
+      "C. $\\dfrac{2}{3}$",
+      "D. $\\dfrac{3}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-09",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大"
+    ],
+    "stem": "设随机变量 X 与 Y 相互独立, $D(X)\\circ D(Y)\\neq0$ , 以下结论:\n① $3X+1$ 与 $4Y-2$ 相关； ② $X+Y$ 与 $X-Y$ 不相关；\n③ $X+Y$ 与 $2Y+1$ 相互独立； ④ $e^{X}$ 与 $2Y+1$ 相互独立.\n正确结论的个数为( ).",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-10",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设随机变量 $X$ 的数学期望和方差分别为 $E(X)=\\dfrac{1}{2},D(X)=\\dfrac{1}{4}$ , 令 $p=P\\{-1<X<2\\}$ , 则由切比雪夫不等式得 ( ).",
+    "options": [
+      "A. $p\\geqslant\\dfrac{1}{9}$",
+      "B. $p\\leqslant\\dfrac{1}{9}$",
+      "C. $p\\geqslant\\dfrac{8}{9}$",
+      "D. $p\\leqslant\\dfrac{8}{9}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-11",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "$\\lim_{x\\to0}\\dfrac{(1+\\sin^{2}x)^{2}-\\cos^{2}x}{\\ln(1+x^{2})}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-12",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "微分方程 $3(x+y-1)\\mathrm{d}x+(x+y)\\mathrm{d}y=0$ 的通解为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-13",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设连续函数 $f(x)$ 满足 $f(x+1)-f(x)=x^2$ ， $\\int_0^1f(x)\\,\\mathrm{d}x=0$ ，则 $\\int_1^2f(x)\\,\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-14",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int\\dfrac{x^3\\arccos x}{\\sqrt{1-x^2}}\\mathrm{d}x=$\n$$\n15.\\left[\\begin{array}{cccc}1&0&0&0\\\\-1&1&0&0\\\\0&-1&1&0\\\\0&0&-1&1\\end{array}\\right]_{1\\mid16}^{3}\\left[\\begin{array}{c}1\\\\4\\\\9\\\\16\\end{array}\\right]=\\underline{{\\quad}}.\n$$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-16",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设三个随机事件 $A,B,C$ 两两独立且 $P(A)=P(B)=P(C)$ , 若 $ABC$ 为不可能事件, 则 $P(\\overline{ABC})$ 的最小值为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-17",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "某工厂计划投资144(单位: 百万元)用于购买A, B两种型号的生产线, A型生产线每条售价为4(单位: 百万元), B型生产线每条售价为3(单位: 百万元). 若购买x条A型生产线和y条B型生产线可使该厂新增产值 $L(x,y)=\\dfrac{2\\sqrt{6}}{3}x^{3/4}y^{1/4}$ (单位: 百万元). 问该厂分别购买两种型号的生产线各多少条, 才能使该厂新增产值最大, 最大值是多少?",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-18",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $a_{n}$ 为 $y=x|\\sin x|$ 在 $(0,n\\pi)$ 上与 x 轴所围成的平面图形的面积, $n=1,2,\\cdots$ .\n(1) 求 $a_{n}$ 的表达式;\n(2) 求 $\\sum_{n=1}^{\\infty}\\dfrac{\\pi\\cdot x^{2n}}{\\left(2+\\dfrac{1}{n}\\right)a_{n}}$ 的收敛域与和函数.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-19",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f(x)$ 是 $[0,1]$ 上的正值连续函数, 证明:\n(1) 存在唯一的 $\\xi\\in(0,1)$ ，使得 $\\int_{0}^{\\xi}f(t)dt=\\int_{\\xi}^{1}\\dfrac{1}{f(t)}dt;$\n(2) 对任意自然数 $n(n\\geqslant2)$ , 存在唯一的 $x_{n}\\in(0,1)$ , 使得 $\\int_{1/n}^{x_{n}}f(t)dt=\\int_{x_{n}}^{1}\\dfrac{1}{f(t)}dt$ , 且 $\\lim_{n\\to\\infty}x_{n}=\\xi$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-20",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设平面区域 $D=\\{(x,y)\\mid x-2\\leqslant y\\leqslant\\sqrt{4-x^2},0\\leqslant x\\leqslant2\\}$ ，计算 $I=\\iint_{D}\\dfrac{|x-y|}{x^2+y^2}\\mathrm{d}x\\mathrm{d}y.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-21",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知线性方程组 $\\left\\{\\begin{aligned}x_{1}+2x_{2}+x_{3}&=3,\\\\2x_{1}+(a+4)x_{2}-5x_{3}&=6,\\\\-x_{1}-2x_{2}+ax_{3}&=-3\\end{aligned}\\right.$ 有无穷多解.若矩阵 A 是 3 阶矩阵, 且 $\\begin{bmatrix}1\\\\2a\\\\-1\\end{bmatrix},\\begin{bmatrix}a\\\\a+3\\\\a+2\\end{bmatrix},$ $\\left[\\begin{aligned}a-2\\\\-1\\\\a+1\\end{aligned}\\right]$ 分别是 A 的属于特征值 1, -1, 0 的三个特征向量, 求 A.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综2-22",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷二",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设随机变量 X 与 Y 相互独立, 且分别服从正态分布 $N(\\mu,\\sigma^{2})$ 与 $N(\\mu,2\\sigma^{2})$ , 其中 $\\sigma$ 是未知参数且 $\\sigma>0$ . 记 Z = X - Y.\n(1) 求 Z 的概率密度 $f(z;\\sigma^{2})$ ;\n(2) 设 $Z_{1}$ ， $Z_{2}$ ，…， $Z_{n}$ 为来自总体 Z 的简单随机样本，求 $\\sigma^{2}$ 的最大似然估计量 $\\hat{\\sigma}^{2}$ ;\n(3) 是否存在实数 $a$ ，使得对任意的 $\\varepsilon>0$ ，都有 $\\lim_{n\\to\\infty}P\\left\\{\\left|\\hat{\\sigma}^2-a\\right|\\geqslant\\varepsilon\\right\\}=0$ ?",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-01",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\int_{0}^{x}(x-2t)\\mathrm{e}^{-t^2}dt(x\\geqslant0)$ , $g(x)=\\int_{0}^{x}(x-2t)\\sin t^2dt$ , 则 ( ).",
+    "options": [
+      "A. $f(x)$ 单调增加, $g(x)$ 是奇函数",
+      "B. $f(x)$ 单调增加, $g(x)$ 是偶函数",
+      "C. $f(x)$ 单调减少, $g(x)$ 是奇函数",
+      "D. $f(x)$ 单调减少, $g(x)$ 是偶函数"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-02",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "对于积分① $\\int_{0}^{2\\pi}x\\sin xdx$ ，② $\\int_{-2}^{2}x^{3}2^{x}dx$ ，正确的说法是（）.",
+    "options": [
+      "A. ①为负值，②为正值",
+      "B. ①为正值，②为负值",
+      "C. ①②均为正值",
+      "D. ①②均为负值"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-03",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 $f'(x)>0,f''(x)<0,x>0$ , 对任意的正整数 $n$ , 记\n$$\nI_{1}=\\dfrac{1}{2}[f(n+1)-f(n)],I_{2}=f(n)-f\\Big(\\dfrac{2n-1}{2}\\Big),I_{3}=f\\Big(\\dfrac{2n+1}{2}\\Big)-f(n),\n$$\n则（）.",
+    "options": [
+      "A. $I_{1}>I_{2}>I_{3}$",
+      "B. $I_{1}>I_{3}>I_{2}$",
+      "C. $I_{2}>I_{1}>I_{3}$",
+      "D. $I_{2}>I_{3}>I_{1}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-04",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知一阶差分方程 $ay_{n+1}-\\dfrac{1}{2}y_n=1$ 的解 $\\{y_n\\}$ 收敛，则（）.",
+    "options": [
+      "A. $a=\\dfrac{1}{2}$",
+      "B. $a=-\\dfrac{1}{2}$",
+      "C. $|a|<\\dfrac{1}{2}$",
+      "D. $|a|>\\dfrac{1}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-05",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设 n 阶矩阵 A, B, C 满足 $r(ABC)+2n=r(A)+r(B)+r(C)$ ，则（）.",
+    "options": [
+      "A. $r(A)+r(B)+r(C)=r(AB)$",
+      "B. $r(AB)+n=r(A)+r(B)$",
+      "C. $r(ABC)>r(A)+r(BC)-n$",
+      "D. $r(AB)=r(BC)=n$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-06",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设矩阵 $\\begin{bmatrix}1&2&0\\\\2&a&1\\\\0&1&b\\end{bmatrix}$ 有 2 个正特征值和 1 个负特征值, 则 ( ).",
+    "options": [
+      "A. a > 4, b > 1",
+      "B. a < 4, b > 1",
+      "C. $(a-4)b>1$",
+      "D. $(a-4)b<1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-07",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设向量组 $B:\\beta_{1},\\beta_{2},\\cdots,\\beta_{r}$ 能由向量组 $A:\\alpha_{1},\\alpha_{2},\\cdots,\\alpha_{s}$ 线性表示为 $\\begin{bmatrix}\\beta_{1}\\\\\\beta_{2}\\\\\\vdots\\\\\\beta_{r}\\end{bmatrix}=P\\begin{bmatrix}\\alpha_{1}\\\\\\alpha_{2}\\\\\\vdots\\\\\\alpha_{s}\\end{bmatrix}$ . 其中 P 为 $r\\times s$ 矩阵，且向量组 A 线性无关，则向量组 B 线性无关是 $r(P)=r$ 的（）.",
+    "options": [
+      "A. 充分非必要条件",
+      "B. 必要非充分条件",
+      "C. 充分必要条件",
+      "D. 既非充分又非必要条件"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-08",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设随机变量 $X$ 的概率密度为 $f(x)=\\dfrac{1}{2}\\mathrm{e}^{-|x|},x\\in(-\\infty,+\\infty)$ , 则 ( ).",
+    "options": [
+      "A. $X$ 与 $|X|$ 不相关, $X$ 与 $|X|$ 不相互独立",
+      "B. $X$ 与 $|X|$ 不相关, $X$ 与 $|X|$ 相互独立",
+      "C. $X$ 与 $|X|$ 相关, $X$ 与 $|X|$ 不相互独立",
+      "D. $X$ 与 $|X|$ 相关, $X$ 与 $|X|$ 相互独立"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-09",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "将 2 个球随机放入 3 个盒子, 每个盒子可放任意个球. 设 $X_{1},X_{2}$ 分别表示第一个和第二个盒子中放入的球的个数, $Y_{1}=X_{1}+X_{2}$ , $Y_{2}=X_{1}-X_{2}$ , 则 $E(Y_{1})$ 与 $E(Y_{2})$ 分别为 ( ).",
+    "options": [
+      "A. $\\dfrac{2}{3},0$",
+      "B. $\\dfrac{4}{3},0$",
+      "C. $\\dfrac{2}{3},\\dfrac{1}{3}$",
+      "D. $\\dfrac{4}{3},\\dfrac{1}{3}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-10",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 X 的概率密度为 $f(x)=\\left\\{\\begin{aligned}&6x(1-x),&0<x<1,\\\\&0,&\\text{其他},\\end{aligned}\\right.$ $X_{1},X_{2},\\cdots,X_{n},\\cdots$ 为来自总体 X 的简单随机样本，且对任意的 $\\varepsilon>0$ ，有 $\\lim_{n\\to\\infty}P\\left\\{\\left|\\sum_{i=1}^{n}\\dfrac{X_{2i}}{nX_{2i-1}}-a\\right|<\\varepsilon\\right\\}=1$ ，则 $a=(\\quad)$ .",
+    "options": [
+      "A. $\\dfrac{1}{2}$",
+      "B. 1",
+      "C. $\\dfrac{3}{2}$",
+      "D. $\\dfrac{5}{2}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-11",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$\\int_{-\\pi}^{\\pi}(x+\\cos x)^{3}\\mathrm{d}x=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-12",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $u=ze^{x/y}\\sin(x^2+y^2)$ , 其中 $z=z(x,y)$ 是由方程 $3x^2+2y^2+2z=7$ 确定的隐函数, 则 $\\left.\\dfrac{\\partial u}{\\partial x}\\right|_{(1,1)}=\\underline{\\quad}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-13",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "当 $|x|<1$ 时， $\\ln\\sqrt{\\dfrac{1+x}{1-x}}$ 的幂级数展开式为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-14",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $y=y(x)$ 由方程 $\\ln(x^2+y)=x^3y+\\sin x$ 确定，则 $\\mathrm{d}y|_{x=0}=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-15",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "已知 $A,B$ 均为 3 阶方阵, 且满足 $ABA+AB^2=-2E,\\lambda_1=1,\\lambda_2=-2,\\lambda_3=-1$ 为 $A$ 的三个特征值, 则 $|AB+B^2|=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-16",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设总体 X 的概率密度为 $f(x;\\sigma^{2})=\\begin{cases}\\dfrac{a}{\\sigma}\\mathrm{e}^{\\dfrac{x^{2}}{2\\sigma^{2}}},&x\\geqslant0,\\\\0,&x<0,\\end{cases}$ 其中 $\\sigma>0$ 为未知参数, a 为常数. $X_{1},X_{2},\\cdots,X_{n}$ 为来自总体 X 的简单随机样本, 则 $\\sigma^{2}$ 的最大似然估计量为 \\_\\_\\_\\_",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-17",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $u=\\dfrac{x}{y},v=x,w=xz-y,z=z(x,y)$ 具有二阶连续偏导数.\n(1) 将函数 $z=z(x,y)$ 的方程 $y\\dfrac{\\partial^2z}{\\partial y^2}+x\\dfrac{\\partial^2z}{\\partial x\\partial y}+2\\dfrac{\\partial z}{\\partial y}=\\dfrac{1}{x}-\\dfrac{x}{y}$ 化为 $w=w(u,v)$ 的方程;\n(2) 若 $w_u'(u,0)=1,w(1,v)=v^2$ ，求 $w=w(u,v)$ 的表达式.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-18",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设 $f(x)$ 在 $[0,1]$ 上可导, $F(x)$ 是 $f(x)$ 的一个原函数, 且 $F(0)=0$ . 若 $\\int_{0}^{1}f(x)\\mathrm{d}x=\\int_{0}^{1}F(x)\\mathrm{d}x=0$ , 证明: (1) $\\int_{0}^{1}xf(x)\\mathrm{d}x=0$\n(2) 存在 $\\xi\\in(0,1)$ ，使得 $f'(\\xi)=0$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-19",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "求函数 $z=\\cos^2x+\\cos^2y$ 在条件 $x-y=\\dfrac{\\pi}{4}$ 下的极值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-20",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $f(x,y)$ 连续, 且 $f(x,y)=\\dfrac{1}{\\sqrt{|x^2+y^2-2|+2}}+\\dfrac{1}{\\pi}\\iint_{D}f(x,y)d\\sigma$ , 其中 $D=\\{(x,y)\\mid0\\leqslant y\\leqslant\\sqrt{2x-x^2}\\}$ , 试求 $\\iint_{D}f(x,y)d\\sigma$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-21",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 $\\alpha=\\begin{bmatrix}1\\\\1\\\\-1\\end{bmatrix}$ 是矩阵 $A=\\begin{bmatrix}2&-1&2\\\\5&a&3\\\\-1&b&-2\\end{bmatrix}$ 的一个特征向量.\n(1) 试确定参数 $a,b$ 及特征向量 $\\alpha$ 所对应的特征值；\n(2) 问 $A$ 能否相似于对角矩阵，并说明理由.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综3-22",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷三",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设随机变量 $(X,Y)$ 服从区域 $D=\\{(x,y)\\mid0\\leqslant x\\leqslant1,1-\\sqrt{2x-x^2}\\leqslant y\\leqslant\\sqrt{1-x^2}\\}$ 上的均匀分布，记 $Z=$ $\\left\\{\\begin{array}{ll}1,&X+Y>1,\\\\0,&X+Y\\leqslant1,\\end{array}\\right.$ $U=XZ$ 的分布函数为 $F_{U}(u)$\n(1) 证明 X 与 Z 不相互独立;\n(2) 计算 $F_U\\left(\\dfrac{1}{2}\\right)$ 的值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-01",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "若函数 $f(x)=\\begin{cases}\\dfrac{1-\\cos\\sqrt{x}}{a\\ln(1+x)},&x>0,\\\\b,&x\\leqslant0\\end{cases}$ 在 $x=0$ 处连续，则（）.",
+    "options": [
+      "A. $ab=\\dfrac{1}{2}$",
+      "B. $ab=-\\dfrac{1}{2}$",
+      "C. $ab=0$",
+      "D. $ab=2$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-02",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x,y)=\\begin{cases}\\sin x\\cos y,&x\\neq0,\\\\1-\\cos y,&x=0,\\end{cases}$ 则 ( ).",
+    "options": [
+      "A. $f_x'(0,0)=0$",
+      "B. $\\lim_{x\\to0}\\lim_{y\\to0'}f(x,y)=0$",
+      "C. $f_{yx}''(0,0)=1$",
+      "D. $f_y'(0,0)=1$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-03",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知 $y_{1}=xe^{x}+\\mathrm{e}^{2x}$ 和 $y_{2}=xe^{x}+\\mathrm{e}^{-x}$ 是二阶常系数非齐次线性微分方程的两个解, 则此方程为 ( ).",
+    "options": [
+      "A. $y''-y'+2y=\\mathrm{e}^{x}+2xe^{x}$",
+      "B. $y''-y'-2y=\\mathrm{e}^{x}-2xe^{x}$",
+      "C. $y''-y'+2y=\\mathrm{e}^{2x}-\\mathrm{e}^{-x}$",
+      "D. $y''-y'-2y=xe^{x}+\\mathrm{e}^{2x}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-04",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 R 为幂级数 $\\sum_{n=1}^{\\infty}a_{n}x^{n}$ 的收敛半径, r 是实数, 则 ( ).",
+    "options": [
+      "A. 当 $\\sum_{n=1}^{\\infty}a_{2n+1}r^{2n+1}$ 发散时, $|r|\\geqslant R$",
+      "B. 当 $\\sum_{n=1}^{\\infty}a_{2n}r^{2n}$ 收敛时, $|r|\\leqslant R$",
+      "C. 当 $|r|\\geqslant R$ 时, $\\sum_{n=1}^{\\infty}a_{2n+1}r^{2n+1}$ 发散",
+      "D. 当 $|r|\\leqslant R$ 时, $\\sum_{n=1}^{\\infty}a_{2n}r^{2n}$ 收敛"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-05",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设 $\\alpha,\\beta$ 是 2 阶实矩阵 $A$ 的两个实特征向量, $||\\alpha+\\beta||=||\\alpha-\\beta||$ , 则矩阵 $A$ 必为 ( ).",
+    "options": [
+      "A. 正定矩阵",
+      "B. 单位矩阵",
+      "C. 正交矩阵",
+      "D. 对称矩阵"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-06",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "二次型 $f(x_{1},x_{2},x_{3})=x_{1}^{2}+2x_{1}x_{2}+2x_{1}x_{3}$ 的符号差 (正惯性指数 - 负惯性指数) 为 ( ).",
+    "options": [
+      "A. 2",
+      "B. 1",
+      "C. 0",
+      "D. -1"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-07",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "若矩阵 $A=\\left[a_{lj}\\right]_{n\\times n}$ ，对 $i=1,2,\\cdots,n$ ，均有 $\\left|a_{ll}\\right|>\\sum_{j\\neq l}\\left|a_{lj}\\right|$ ，其中 $\\left|a_{lj}\\right|$ 表示元素 $a_{lj}$ 的绝对值， $\\beta$ 为任一 n 维列向量，则（）.",
+    "options": [
+      "A. Ax = 0 有非零解",
+      "B. $Ax=\\beta$ 有唯一解",
+      "C. $Ax=\\beta$ 不一定有解",
+      "D. Ax = 0 不一定有非零解"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-08",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大"
+    ],
+    "stem": "设随机变量 $X\\sim\\begin{pmatrix}1&0\\\\p&1-p\\end{pmatrix}$ , $Y\\sim B(2,p)$ , 0 < p < 1, $F_{X}(x)$ , $F_{Y}(y)$ 分别为 X, Y 的分布函数, 则 ( ).",
+    "options": [
+      "A. $P\\{X\\geqslant Y\\}=1$",
+      "B. $P\\{X\\leqslant Y\\}=1$",
+      "C. $F_{X}(z)\\leqslant F_{Y}(z)$",
+      "D. $F_{X}(z)\\geqslant F_{Y}(z)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-09",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "计算量大"
+    ],
+    "stem": "设 $(X,Y)$ 的概率密度为 $f(x,y)=\\left\\{\\begin{aligned}\\dfrac{1}{8}(y^{2}-x^{2})\\mathrm{e}^{-y},&|x|<y,\\\\0,&\\text{其他},\\end{aligned}\\right.$ 则 $P\\{0<X<2\\mid Y=1\\}=(\\quad)$ .",
+    "options": [
+      "A. $\\dfrac{1}{4}$",
+      "B. $\\dfrac{1}{3}$",
+      "C. $\\dfrac{1}{2}$",
+      "D. $\\dfrac{2}{3}$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-10",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "选择题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设 $(X,Y)$ 服从二维正态分布 $N\\left(0,0;1,4;\\dfrac{1}{2}\\right)$ , 则下列随机变量中与 $X$ 相互独立且同分布的是 ( ).",
+    "options": [
+      "A. $\\dfrac{\\sqrt{3}}{3}(X+Y)$",
+      "B. $\\dfrac{\\sqrt{5}}{5}(X+Y)$",
+      "C. $\\dfrac{\\sqrt{3}}{3}(X-Y)$",
+      "D. $\\dfrac{\\sqrt{5}}{5}(X-Y)$"
+    ],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-11",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设函数 $z=z(x,y)$ 由 $\\mathrm{e}^z+yz=2y-x$ 确定，则 $\\left.\\dfrac{\\partial^2z}{\\partial y^2}\\right|_{(1,1)}=\\underline{\\quad}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-12",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "曲线 $y=\\sqrt[3]{x^{3}-2x^{2}+1}$ 的斜渐近线方程为 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-13",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设 $f(x)=\\dfrac{x^2}{\\mathrm{e}^x-1}$ 在 $x=0$ 处的 3 次泰勒多项式为 $ax^3+bx^2+cx$ , 则 $(a,b,c)=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-14",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "设 $D=\\{(x,y)||x|\\leqslant1,0\\leqslant y\\leqslant2\\}$ , 则 $\\iint_{D}\\sqrt{|y-x^2|}d\\sigma=$ \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-15",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "综合压轴"
+    ],
+    "stem": "设 $\\alpha_{1},\\alpha_{2},\\alpha_{3},\\alpha_{4}$ 是四元非齐次线性方程组 $Ax=b$ 的 4 个解向量, 且 $\\alpha_{1}+\\alpha_{2}=[2,4,6,8]^{T},\\alpha_{2}+\\alpha_{3}+\\alpha_{4}=[3,5,7,9]^{T},\\alpha_{1}+2\\alpha_{2}-\\alpha_{3}=[2,0,0,2]^{T}$ , 若秩 $r(A)=2$ , 则方程组 $Ax=b$ 的通解是 \\_\\_\\_\\_.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-16",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "填空题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点"
+    ],
+    "stem": "设事件 A, B, C 相互独立, $P(A)=\\dfrac{1}{2}$ , $P(B)=P(C)=\\dfrac{3}{4}$ , 则 $P(A\\cup C\\mid A\\cup B)=$ \\_\\_\\_\\_ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-17",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "计算 $\\int\\dfrac{x^3+1}{x^4+2x^2+1}\\mathrm{d}x.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-18",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "计算量大"
+    ],
+    "stem": "求函数 $z=\\mathrm{e}^{2x+3y}(8x^{2}-6xy+3y^{2})$ 的极值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-19",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典",
+      "易错点",
+      "综合压轴"
+    ],
+    "stem": "设 $f(x)$ 在 $[0,1]$ 上具有三阶连续导数, $f'(0)=f''(0)=0$ , 证明存在 $\\xi,\\eta,\\infty\\in(0,1)$ , 使得 $\\mathrm{e}^{\\xi}f'''(\\eta)=6\\mathrm{e}^{\\xi}f'(\\xi)$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-20",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "已知平面有界区域 $D=\\{(r,\\theta)\\mid r\\leqslant4\\cos\\theta,r\\leqslant4\\sin\\theta\\}$ ，计算 $\\iint_{D}r^{3}(\\sin\\theta-\\cos\\theta)^{2}drd\\theta.$",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-21",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "$$\n\\text{设}A=\\left[\\begin{array}{ccc}a&1&-1\\\\1&a&-1\\\\-1&-1&a\\end{array}\\right],B^{2}=\\left[\\begin{array}{ccc}3&-1&1\\\\-1&3&1\\\\1&1&3\\end{array}\\right]\n$$\n(1) 求正交矩阵 $P$ ，使 $P^TAP=\\Lambda$ ，并写出 $\\Lambda$ ;\n(2) 若 B 为正定矩阵，求 $B^{3}$ .",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  },
+  {
+    "id": "线代-综4-22",
+    "book": "张宇1000题",
+    "subject": "数三",
+    "domain": "线代",
+    "pian": "综合篇",
+    "chapter": "测试卷四",
+    "question_type": "解答题",
+    "difficulty": "拓展题",
+    "tags": [
+      "高频经典"
+    ],
+    "stem": "设某电池的使用寿命 X 服从参数为 $\\lambda$ 的指数分布, 现有 10 件该种电池同时投入使用, 记 Y 为 10 件电池在使用了 200h 时失效的件数.\n(1) 求 Y 的分布律;\n(2) 已知使用了 200h 时, 有 2 件电池失效, 求电池平均寿命 T 的最大似然估计值.",
+    "options": [],
+    "answer": "",
+    "solution": ""
+  }
+]

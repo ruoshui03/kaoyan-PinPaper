@@ -52,7 +52,9 @@ def test_bank_loader_math1_structure(math1_questions):
 
 def test_bank_loader_math2_structure(math2_questions):
     assert len(math2_questions) >= 900
-    chapters = {q.chapter for q in math2_questions}
+    # 章节结构断言针对 880 子集(接入真题/1000题不改变 880 章节集合)
+    q880 = [q for q in math2_questions if getattr(q, "book", "880") == "880"]
+    chapters = {q.chapter for q in q880}
     assert len(chapters) == 12
     assert "第八章 无穷级数" not in chapters
     assert "第九章 曲线积分与曲面积分" not in chapters
@@ -61,7 +63,8 @@ def test_bank_loader_math2_structure(math2_questions):
 
 def test_bank_loader_math3_structure(math3_questions):
     assert len(math3_questions) >= 1000
-    chapters = {q.chapter for q in math3_questions}
+    q880 = [q for q in math3_questions if getattr(q, "book", "880") == "880"]
+    chapters = {q.chapter for q in q880}
     assert len(chapters) == 21
     assert any("经济" in ch for ch in chapters)
     assert "第四章 空间解析几何" not in chapters
