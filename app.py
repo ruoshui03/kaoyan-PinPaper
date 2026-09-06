@@ -453,12 +453,11 @@ with st.sidebar:
                 st.session_state[f"bk_cb_{current_subject.value}_{b}"] = True
 
     st.markdown("📚 **选择参考书籍**")
-    _bk_cols = st.columns(len(available_books)) if available_books else []
+    # 侧栏宽度有限,竖排一行一本 —— 分列会把书名截断成「张宇1…」
     selected_books = []
-    for _col, _bk in zip(_bk_cols, available_books):
-        with _col:
-            if st.checkbox(_bk, key=f"bk_cb_{current_subject.value}_{_bk}"):
-                selected_books.append(_bk)
+    for _bk in available_books:
+        if st.checkbox(_bk, key=f"bk_cb_{current_subject.value}_{_bk}"):
+            selected_books.append(_bk)
     if not selected_books:
         st.caption("⚠️ 未勾选任何书籍，组卷与题库页将无题可用。")
 
