@@ -25,6 +25,11 @@ from core.models import PaperItem, QuestionItem, QuestionType, SubjectType
 logger = logging.getLogger(__name__)
 
 
+def looks_like_pdf(data: bytes) -> bool:
+    """判断 render_pdf_bytes 的返回值是真 PDF 还是 HTML 兜底（云端无浏览器时会是后者）。"""
+    return data[:5] == b"%PDF-"
+
+
 class PDFEdition(str, Enum):
     REAL_EXAM = "real_exam"      # 真题/模考版：1:1 复刻前端做题卡片
     WORKBOOK_A4 = "workbook_a4"  # A4 做题本版：预留手写草稿与大题演算框
@@ -630,11 +635,17 @@ table th {
             return self._build_solution_html(paper)
 
     def render_pdf_bytes(self, paper: PaperItem, edition: PDFEdition = PDFEdition.REAL_EXAM) -> bytes:
-        """输出标准 A4 PDF 二进制流。
+        """输出 A4 PDF 二进制流；**渲染引擎缺失时退回 HTML 字节**（调用方必须区分）。
 
-        优先用 Headless 浏览器（Edge/Chrome/Chromium，Win 本地或云端 Linux 均支持）——
-        浏览器会执行 KaTeX 的 JS，公式正确渲染。浏览器不可用时退回 WeasyPrint（依赖已在
-        packages.txt），至少产出可打开的 PDF。两者都不可用才退回 HTML 字节。
+        优先用 Headless 浏览器（本地 Windows 的 Edge/Chrome，或系统里装了 chromium 的
+        Linux）——浏览器会执行 KaTeX 的 JS，公式才能正确渲染。
+
+        Streamlit Cloud 上没有浏览器：其镜像的 apt 源已损坏（残留过期的 bullseye-security
+        条目导致 apt 非零退出、部署直接失败），故 packages.txt 已移除，云端装不了 chromium。
+        WeasyPrint 同理装不上（要 pango/cairo 等系统库）。云端因此走 HTML 兜底，由用户在
+        自己浏览器里 Ctrl+P 打印成 PDF —— 字体和公式反而比服务端渲染更好。
+
+        返回值可能是 PDF 也可能是 HTML，用 `looks_like_pdf()` 判断后再定文件名与 MIME。
         """
         html_content = self.generate_html(paper, edition)
 

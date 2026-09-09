@@ -79,8 +79,12 @@ pip install -r requirements.txt
 
 > **PDF 导出无需额外安装**：优先调用系统已有的无头浏览器（Windows 的 Edge / Chrome，
 > Linux 的 Chromium）排版，浏览器会执行 KaTeX，公式渲染正确。
-> WeasyPrint 仅作兜底（不执行 JS，公式可能显示为原始 LaTeX），它依赖 GTK 系统库 ——
-> Linux 参见 [`packages.txt`](packages.txt)（`libpango`、`libcairo` 等），本地缺 GTK 不影响浏览器路径。
+>
+> **找不到浏览器时导出为网页版（.html）**，下载后双击打开、Ctrl+P 选「另存为 PDF」即可，
+> 版式已按 A4 排好（`@page size: A4`），且 KaTeX 已内联进文件、离线可渲染。
+> Streamlit Cloud 走的就是这条路：其构建镜像的 apt 源残留了过期的 `bullseye-security`
+> 条目，只要仓库里有 `packages.txt`，`apt-get` 就会非零退出导致整个部署失败，故已移除该文件、
+> 云端不再安装 chromium。用户自己浏览器打印出的 PDF 字体和公式反而优于服务端渲染。
 
 ### 2. 启动应用
 

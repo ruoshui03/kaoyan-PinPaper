@@ -32,7 +32,7 @@ from core.models import (
     MATH_3_CHAPTERS,
 )
 from core.paper_engine import EngineRequest, PaperEngine
-from core.pdf_service import PDFEdition, PDFService
+from core.pdf_service import PDFEdition, PDFService, looks_like_pdf
 from core.ai_tutor import AITutor
 from core.state_manager import StateManager
 
@@ -144,6 +144,30 @@ def get_cached_pdf(paper_id: str, title: str, q_ids: tuple[str, ...], edition_st
     )
     edition = PDFEdition(edition_str) if edition_str in [e.value for e in PDFEdition] else PDFEdition.REAL_EXAM
     return pdf_service.render_pdf_bytes(paper_item, edition=edition)
+
+
+def pdf_download_kwargs(data: bytes, stem: str, what: str = "") -> dict:
+    """把 get_cached_pdf 的返回值配上正确的按钮文案 / 文件名 / MIME。
+
+    云端拿不到 chromium（Streamlit 镜像 apt 源损坏，见 pdf_service.render_pdf_bytes），
+    返回的是 HTML 兜底 —— 若仍标成 .pdf，用户下载到的就是打不开的坏文件。故按真实字节定型，
+    HTML 交给用户自己浏览器 Ctrl+P 打印（有中文字体、会跑 KaTeX，成品比服务端渲染更好）。
+
+    what: 版式名（如「真题版」），拼进按钮文案；留空则用通用文案。
+    """
+    tail = f"{what} " if what else ""
+    if looks_like_pdf(data):
+        return {"label": f"📥 下载{tail}PDF", "data": data, "file_name": f"{stem}.pdf", "mime": "application/pdf"}
+    return {
+        "label": f"📥 下载{tail}网页版",
+        "data": data,
+        "file_name": f"{stem}.html",
+        "mime": "text/html",
+    }
+
+
+# 云端一次性提示：解释为什么下载的是 HTML 而不是 PDF
+PRINT_HINT = "💡 云端无浏览器渲染引擎，导出为网页版：下载后双击打开，按 **Ctrl+P** 选「另存为 PDF」即可，版式已按 A4 排好。"
 
 
 @st.cache_data(show_spinner="⚡ 正在生成纯净 HTML 试卷流...")
@@ -1156,40 +1180,30 @@ with tab_paper_hub:
             with gc2:
                 st.caption("💡 生成约十几秒")
         else:
-            tb1, tb2, tb3 = st.columns(3)
-            with tb1:
-                st.download_button(
-                    "📥 下载真题版 PDF",
-                    data=get_cached_pdf(
-                        active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.REAL_EXAM.value, subject_str=current_subject.value
-                    ),
-                    file_name=f"{active_paper.paper_id}_真题版试卷.pdf",
-                    mime="application/pdf",
-                    use_container_width=True,
-                    key=f"p1_down_real_{active_paper.paper_id}",
-                )
-            with tb2:
-                st.download_button(
-                    "📝 下载 A4 做题本 PDF",
-                    data=get_cached_pdf(
-                        active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.WORKBOOK_A4.value, subject_str=current_subject.value
-                    ),
-                    file_name=f"{active_paper.paper_id}_A4做题本.pdf",
-                    mime="application/pdf",
-                    use_container_width=True,
-                    key=f"p1_down_wb_{active_paper.paper_id}",
-                )
-            with tb3:
-                st.download_button(
-                    "📑 下载详细解析版 PDF",
-                    data=get_cached_pdf(
-                        active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.SOLUTION.value, subject_str=current_subject.value
-                    ),
-                    file_name=f"{active_paper.paper_id}_详细解析.pdf",
-                    mime="application/pdf",
-                    use_container_width=True,
-                    key=f"p1_down_sol_{active_paper.paper_id}",
-                )
+            _p1_specs = [
+                (PDFEdition.REAL_EXAM, "真题版试卷", "真题版", "real"),
+                (PDFEdition.WORKBOOK_A4, "A4做题本", "A4 做题本", "wb"),
+                (PDFEdition.SOLUTION, "详细解析", "详细解析版", "sol"),
+            ]
+            _p1_is_html = False
+            for _col, (_ed, _stem, _short, _k) in zip(st.columns(3), _p1_specs):
+                with _col:
+                    _data = get_cached_pdf(
+                        active_paper.paper_id, active_paper.title, q_ids_tuple,
+                        edition_str=_ed.value, subject_str=current_subject.value,
+                    )
+                    _kw = pdf_download_kwargs(_data, f"{active_paper.paper_id}_{_stem}", _short)
+                    _p1_is_html = _p1_is_html or not looks_like_pdf(_data)
+                    st.download_button(
+                        _kw["label"],
+                        data=_kw["data"],
+                        file_name=_kw["file_name"],
+                        mime=_kw["mime"],
+                        use_container_width=True,
+                        key=f"p1_down_{_k}_{active_paper.paper_id}",
+                    )
+            if _p1_is_html:
+                st.caption(PRINT_HINT)
 
         tb4, _tb_pad = st.columns([1.6, 2.4])
         with tb4:
@@ -1203,10 +1217,18 @@ with tab_paper_hub:
                     sol_pdf = get_cached_pdf(active_paper.paper_id, active_paper.title, q_ids_tuple, edition_str=PDFEdition.SOLUTION.value, subject_str=current_subject.value)
                     p_dir = Path("试卷库")
                     p_dir.mkdir(exist_ok=True)
-                    (p_dir / f"{active_paper.paper_id}_真题版试卷.pdf").write_bytes(real_pdf)
-                    (p_dir / f"{active_paper.paper_id}_A4做题本.pdf").write_bytes(wb_pdf)
-                    (p_dir / f"{active_paper.paper_id}_详细解析.pdf").write_bytes(sol_pdf)
-                    st.success("✓ 已成功归档 3 种版式 PDF 至 `试卷库/` 文件夹！")
+                    # 本机装了 Edge/Chrome 才是真 PDF；否则是 HTML 兜底，扩展名要跟着变，
+                    # 不然归档出来的是打不开的坏 .pdf
+                    for _data, _stem in (
+                        (real_pdf, "真题版试卷"), (wb_pdf, "A4做题本"), (sol_pdf, "详细解析"),
+                    ):
+                        _ext = "pdf" if looks_like_pdf(_data) else "html"
+                        (p_dir / f"{active_paper.paper_id}_{_stem}.{_ext}").write_bytes(_data)
+                    if looks_like_pdf(real_pdf):
+                        st.success("✓ 已成功归档 3 种版式 PDF 至 `试卷库/` 文件夹！")
+                    else:
+                        st.warning("⚠️ 本机未找到 Edge/Chrome，已归档为 3 份网页版（.html）至 `试卷库/`，"
+                                   "双击打开后 Ctrl+P 可存成 PDF。")
 
 
 # -------------------------------------------------------------------------
@@ -1710,6 +1732,7 @@ with tab_wrongbook_hub:
                 )
             _wb_ed, _wb_ed_short = _WB_EDITIONS[_wb_ed_label]
             _wb_ready_key = f"wb_pdf_ready_{current_subject.value}_{_wb_sig}_{_wb_ed.value}"
+            _wb_is_html = False
             with wp2:
                 if not st.session_state.get(_wb_ready_key):
                     if st.button(
@@ -1719,22 +1742,29 @@ with tab_wrongbook_hub:
                         st.session_state[_wb_ready_key] = True
                         st.rerun()
                 else:
+                    _wb_data = get_cached_pdf(
+                        f"错题本_{current_subject.value}_{_wb_sig}",
+                        f"错题本 · {current_subject.value} · 共 {len(shown)} 题",
+                        _wb_ids,
+                        edition_str=_wb_ed.value,
+                        subject_str=current_subject.value,
+                    )
+                    _wb_kw = pdf_download_kwargs(
+                        _wb_data,
+                        f"错题本_{current_subject.value}_{len(shown)}题_{_wb_ed_short}",
+                        "错题本",
+                    )
+                    _wb_is_html = not looks_like_pdf(_wb_data)
                     st.download_button(
-                        "📥 下载错题本 PDF",
-                        data=get_cached_pdf(
-                            f"错题本_{current_subject.value}_{_wb_sig}",
-                            f"错题本 · {current_subject.value} · 共 {len(shown)} 题",
-                            _wb_ids,
-                            edition_str=_wb_ed.value,
-                            subject_str=current_subject.value,
-                        ),
-                        file_name=f"错题本_{current_subject.value}_{len(shown)}题_{_wb_ed_short}.pdf",
-                        mime="application/pdf",
+                        _wb_kw["label"],
+                        data=_wb_kw["data"],
+                        file_name=_wb_kw["file_name"],
+                        mime=_wb_kw["mime"],
                         use_container_width=True,
                         key=f"wb_pdf_dl_{current_subject.value}_{_wb_sig}_{_wb_ed.value}",
                     )
             with wp3:
-                st.caption("💡 生成约十几秒")
+                st.caption(PRINT_HINT if _wb_is_html else "💡 生成约十几秒")
 
         for q in shown:
             stt = _wb_status(q.id)
