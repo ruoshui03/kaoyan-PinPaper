@@ -207,6 +207,36 @@ class PDFService:
         else:
             return f"<p>{num_prefix}{formatted}</p>"
 
+    @staticmethod
+    def _get_print_button() -> str:
+        """页首的「保存为 PDF」按钮：让用户不必记 Ctrl+P / 翻手机菜单。
+
+        `@media print` 里整块 display:none —— 既保证用户打印出的 PDF 里没有这颗按钮，
+        也保证本地 chromium `--print-to-pdf` 渲出的 PDF 不受影响（它同样走 print 媒体）。
+        文案按 UA 分平台给，因为 iOS 存 PDF 的路径（分享→选项→PDF）和桌面差别很大。
+        """
+        return """
+<div class="print-bar" role="region" aria-label="保存为 PDF">
+    <button type="button" class="print-btn" onclick="window.print()">🖨️ 保存为 PDF / 打印</button>
+    <span class="print-tip" id="printTip"></span>
+</div>
+<script>
+    (function () {
+        var ua = navigator.userAgent;
+        var tip;
+        if (/iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document)) {
+            tip = '点上方按钮 → 预览页点「分享」→「选项」里把格式改成 PDF →「存储到文件」';
+        } else if (/Android/.test(ua)) {
+            tip = '点上方按钮 → 顶部「目标」下拉框选「保存为 PDF」→ 点下载图标';
+        } else {
+            tip = '点上方按钮（或按 Ctrl+P）→ 在「打印机 / 目标」下拉框里选「另存为 PDF」→ 保存';
+        }
+        var el = document.getElementById('printTip');
+        if (el) { el.textContent = tip; }
+    })();
+</script>
+"""
+
     def _get_common_css(self) -> str:
         """标准试卷纯净排版样式（无框线，序号前置）"""
         return """
@@ -234,6 +264,40 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+/* 「保存为 PDF」条：仅屏幕可见，打印时整块移除（见下方 @media print）。
+   刻意不用 position:fixed —— 窄屏上提示文字会换行、条高从 65px 涨到 113px，
+   任何写死的 body padding 都会被它盖住标题。留在正常文档流里则任何宽度都不重叠。 */
+.print-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    margin-bottom: 16px;
+    background: #fffdf8;
+    border: 1px solid #e2d9c8;
+    border-radius: 8px;
+}
+.print-btn {
+    flex: none;
+    min-height: 44px;           /* 手机可点区域不小于 44px */
+    padding: 10px 18px;
+    font-size: 11pt;
+    font-weight: 700;
+    color: #ffffff;
+    background: #a53727;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.print-btn:hover { background: #8e2e20; }
+.print-btn:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+.print-tip {
+    font-size: 9.5pt;
+    line-height: 1.5;
+    color: #5b5347;
 }
 
 /* 顶部标题栏 */
@@ -393,6 +457,12 @@ table th {
 .katex-display {
     margin: 0.4em 0 !important;
 }
+
+/* 打印时移除按钮条，确保 PDF 里不出现这颗按钮。
+   本地 chromium --print-to-pdf 同样走 print 媒体，故服务端渲染的 PDF 也干净。 */
+@media print {
+    .print-bar { display: none !important; }
+}
 """
 
     # =========================================================================
@@ -451,6 +521,7 @@ table th {
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026 年考研数学{sub_cn}全真模拟试卷</title>
 {katex_head}
 <style>
@@ -458,6 +529,7 @@ table th {
 </style>
 </head>
 <body>
+{self._get_print_button()}
 
 <div class="paper-header">
     <div class="paper-title">2026 年全国硕士研究生招生考试数学（{sub_cn}）模拟试卷</div>
@@ -531,6 +603,7 @@ table th {
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026 年考研数学{sub_cn} A4 留白做题本</title>
 {katex_head}
 <style>
@@ -538,6 +611,7 @@ table th {
 </style>
 </head>
 <body>
+{self._get_print_button()}
 
 <div class="paper-header">
     <div class="paper-title">考研数学《880》A4 留白做题本（数学{sub_cn}）</div>
@@ -607,6 +681,7 @@ table th {
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>2026 年考研数学{sub_cn} 详细解析版</title>
 {katex_head}
 <style>
@@ -614,6 +689,7 @@ table th {
 </style>
 </head>
 <body>
+{self._get_print_button()}
 
 <div class="paper-header">
     <div class="paper-title">考研数学《880》参考答案与详细解析（数学{sub_cn}）</div>
@@ -661,8 +737,13 @@ table th {
         return html_content.encode("utf-8")
 
     @staticmethod
-    def _find_browser() -> str | None:
-        """跨平台定位 Headless 浏览器：Windows 的 Edge/Chrome，Linux（云端）的 Chromium。"""
+    def _find_browsers() -> list[str]:
+        """按优先级列出**所有**可用的 Headless 浏览器：Win 的 Edge/Chrome、Linux 的 Chromium。
+
+        返回列表而非单个 —— 装了的浏览器不等于能用的浏览器。实测 Edge 152 会在 0.07s 内
+        以 exit 0 退出且不产出任何文件（--print-to-pdf 静默失效），而同机 Chrome 正常。
+        只取第一个候选会让整条 PDF 路径被一个坏浏览器带死，故逐个试到出货为止。
+        """
         candidates = [
             shutil.which("msedge"),
             shutil.which("chrome"),
@@ -678,11 +759,21 @@ table th {
             "/usr/bin/chromium-browser",
             "/usr/bin/google-chrome",
         ]
-        return next((b for b in candidates if b and os.path.exists(b)), None)
+        found: list[str] = []
+        for b in candidates:
+            if b and os.path.exists(b) and b not in found:
+                found.append(b)
+        return found
+
+    @classmethod
+    def _find_browser(cls) -> str | None:
+        """保留单值接口（测试与旧调用方在用）：返回优先级最高的一个，没有则 None。"""
+        browsers = cls._find_browsers()
+        return browsers[0] if browsers else None
 
     def _render_via_browser(self, html_content: str) -> bytes | None:
-        browser_exe = self._find_browser()
-        if not browser_exe:
+        browsers = self._find_browsers()
+        if not browsers:
             return None
 
         with tempfile.NamedTemporaryFile(suffix=".html", delete=False, mode="w", encoding="utf-8") as f:
@@ -693,19 +784,22 @@ table th {
         # --disable-dev-shm-usage：容器内 /dev/shm 很小，不加 chromium 会崩；云端冷启动慢，超时放宽
         common = ["--disable-gpu", "--no-sandbox", "--disable-dev-shm-usage",
                   "--disable-extensions", "--no-pdf-header-footer"]
-        flag_candidates = [
-            [browser_exe, "--headless=new", *common, f"--print-to-pdf={temp_pdf}", temp_html],
-            [browser_exe, "--headless", *common, f"--print-to-pdf={temp_pdf}", temp_html],
-        ]
         try:
-            for cmd in flag_candidates:
-                try:
-                    subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, timeout=60)
+            for browser_exe in browsers:
+                for headless in ("--headless=new", "--headless"):
+                    cmd = [browser_exe, headless, *common, f"--print-to-pdf={temp_pdf}", temp_html]
+                    try:
+                        subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL,
+                                       stderr=subprocess.DEVNULL, timeout=60)
+                    except Exception as ex:
+                        logger.warning(f"Headless PDF 失败({os.path.basename(browser_exe)} {headless}): {ex}")
+                        continue
+                    # exit 0 也可能什么都没产出（Edge 152 即如此），故必须校验文件本身
                     if os.path.exists(temp_pdf) and os.path.getsize(temp_pdf) > 0:
                         return open(temp_pdf, "rb").read()
-                except Exception as ex:
-                    logger.warning(f"Headless PDF 尝试失败，尝试备用参数: {ex}")
-                    continue
+                    logger.warning(
+                        f"Headless 退出码为 0 但未产出 PDF({os.path.basename(browser_exe)} {headless})，换下一个。"
+                    )
         finally:
             for p in (temp_html, temp_pdf):
                 if os.path.exists(p):
