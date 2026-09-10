@@ -488,47 +488,133 @@ class StateManager:
 
     # =====================================================================
     # URL 试卷编码：记住"上次生成的是哪几道题"，方便做完后跨设备查阅答案。
-    # 规格无关：编码一个"试卷列表"，每份卷是变长的题号索引序列（索引=题号在 880
-    # canonical 列表中的位置），故 5-3-3 / 自定义 / 3 套联考 全部统一支持。
-    # 格式：p1~<sig>~<base64>，body = varint 结构：
-    #   [卷数] 然后每份卷 [题数][idx*题数]，idx 用 2 字节小端（题库 <65536 题足够）。
-    # sig 与位图共用 bank_signature，题库变化即判 stale，拒绝错位恢复。
+    # 规格无关：编码一个"试卷列表"，每份卷是变长题号序列，故 5-3-3 / 自定义 /
+    # 3 套联考 全部统一支持。
+    #
+    # 【p2 格式（当前）】每题记 (书籍编号, 该书 canonical 内的下标)，故跨书试卷完整保真。
+    #   p2~<sig>~<base64>，body = [卷数]，然后每份卷 [题数] + 每题 [book(1B)][idx(2B,小端)]
+    #   sig 只覆盖【本码实际引用到的书】的 canonical（按书籍编号升序拼接哈希）。
+    #   → 加第四本书时，只引用 880/真题 的旧码签名不变，旧链接永不失效。
+    #
+    # 【p1 格式（旧，只读）】索引锚定 880 单本 canonical。它会把 880 以外的题**静默丢弃**，
+    #   曾导致「刷新后卷子只剩 880 那部分（看起来像只剩错题）」。仍保留解码以兼容旧链接。
     # =====================================================================
-    PAPER_CODE_PREFIX = "p1"
+    PAPER_CODE_PREFIX = "p1"        # 旧格式，仅解码
+    PAPER_CODE_PREFIX_V2 = "p2"     # 当前格式
+
+    # 书籍 → 1 字节稳定编号。**只可追加，绝不可改动已有值**（改了等于让旧链接错位）。
+    PAPER_BOOK_CODES: dict[str, int] = {
+        "880": 1,
+        "真题2010-2026": 2,
+        "张宇1000题": 3,
+    }
 
     @staticmethod
-    def encode_papers_code(papers_qids: list[list[str]], ordered_ids: list[str]) -> str:
-        """把若干份试卷的题号列表编码为可放进 URL 的紧凑串。
+    def _paper_books_signature(book_canonicals: dict[str, list[str]], books_used: list[int]) -> str:
+        """对【被引用到的书】的 canonical 做联合签名（按书籍编号升序，互不影响）。"""
+        code_to_book = {v: k for k, v in StateManager.PAPER_BOOK_CODES.items()}
+        parts: list[str] = []
+        for bc in sorted(books_used):
+            book = code_to_book.get(bc)
+            ids = book_canonicals.get(book, []) if book else []
+            parts.append(f"{bc}:{StateManager.bank_signature(ids)}")
+        return hashlib.sha1("|".join(parts).encode("utf-8")).hexdigest()[:8]
+
+    @staticmethod
+    def encode_papers_code(papers_qids: list[list[str]], book_canonicals: dict[str, list[str]]) -> str:
+        """把若干份试卷的题号列表编码为可放进 URL 的紧凑串（p2 格式，跨书保真）。
 
         papers_qids: 每份卷一个题号列表（保持卷内原始顺序）。
-        题号不在 canonical 列表中的会被跳过。
+        book_canonicals: {书名: 该书 canonical 题号列表}，须覆盖试卷用到的所有书。
+        无法定位所属书（或该书未登记编号）的题号会被跳过。
         """
-        index_of = {qid: i for i, qid in enumerate(ordered_ids)}
+        # 题号 → (书籍编号, 书内下标)
+        locate: dict[str, tuple[int, int]] = {}
+        for book, ids in book_canonicals.items():
+            bc = StateManager.PAPER_BOOK_CODES.get(book)
+            if bc is None:
+                continue
+            for i, qid in enumerate(ids):
+                locate.setdefault(qid, (bc, i))
+
         out = bytearray()
         out.append(min(len(papers_qids), 255))
+        books_used: set[int] = set()
         for qids in papers_qids:
-            idxs = [index_of[q] for q in qids if q in index_of]
-            out.append(min(len(idxs), 255))
-            for idx in idxs[:255]:
+            located = [locate[q] for q in qids if q in locate]
+            out.append(min(len(located), 255))
+            for bc, idx in located[:255]:
+                books_used.add(bc)
+                out.append(bc)
                 out += int(idx).to_bytes(2, "little")
         compressed = zlib.compress(bytes(out), 9)
         b64 = base64.urlsafe_b64encode(compressed).decode("ascii").rstrip("=")
-        sig = StateManager.bank_signature(ordered_ids)
-        return f"{StateManager.PAPER_CODE_PREFIX}~{sig}~{b64}"
+        sig = StateManager._paper_books_signature(book_canonicals, sorted(books_used))
+        return f"{StateManager.PAPER_CODE_PREFIX_V2}~{sig}~{b64}"
 
     @staticmethod
-    def decode_papers_code(code: str, ordered_ids: list[str]) -> tuple[list[list[str]], str]:
+    def decode_papers_code(
+        code: str,
+        book_canonicals: dict[str, list[str]],
+        legacy_ordered_ids: list[str] | None = None,
+    ) -> tuple[list[list[str]], str]:
         """从 URL 串还原试卷题号列表。返回 (每份卷的题号列表, 状态说明)。
 
+        同时支持 p2（跨书，当前）与 p1（880 单本，旧链接）。
+        legacy_ordered_ids: 解 p1 用的 880 canonical；不给则退化为 book_canonicals['880']。
+
         - 前缀/格式不符 -> ([], 'invalid')
-        - 题库签名不匹配 -> ([], 'stale')
+        - 引用到的书签名不匹配 -> ([], 'stale')
         - 成功 -> (papers_qids, 'ok')
         """
+        parts = code.split("~")
+        if len(parts) != 3:
+            return ([], "invalid")
+        prefix, sig, b64 = parts
+        if prefix == StateManager.PAPER_CODE_PREFIX:
+            legacy = legacy_ordered_ids if legacy_ordered_ids is not None else book_canonicals.get("880", [])
+            return StateManager._decode_papers_code_v1(sig, b64, legacy)
+        if prefix != StateManager.PAPER_CODE_PREFIX_V2:
+            return ([], "invalid")
+
         try:
-            parts = code.split("~")
-            if len(parts) != 3 or parts[0] != StateManager.PAPER_CODE_PREFIX:
-                return ([], "invalid")
-            _, sig, b64 = parts
+            pad = "=" * (-len(b64) % 4)
+            data = zlib.decompress(base64.urlsafe_b64decode(b64 + pad))
+        except Exception:
+            return ([], "invalid")
+
+        code_to_book = {v: k for k, v in StateManager.PAPER_BOOK_CODES.items()}
+        papers: list[list[str]] = []
+        books_used: set[int] = set()
+        pos = 0
+        if pos >= len(data):
+            return ([], "invalid")
+        n_papers = data[pos]; pos += 1
+        for _ in range(n_papers):
+            if pos >= len(data):
+                break
+            cnt = data[pos]; pos += 1
+            qids: list[str] = []
+            for _ in range(cnt):
+                if pos + 3 > len(data):
+                    break
+                bc = data[pos]; pos += 1
+                idx = int.from_bytes(data[pos:pos + 2], "little"); pos += 2
+                books_used.add(bc)
+                ids = book_canonicals.get(code_to_book.get(bc, ""), [])
+                if 0 <= idx < len(ids):
+                    qids.append(ids[idx])
+            papers.append(qids)
+
+        # 签名后校验：只比对本码引用到的书，未引用的书发生变化不影响本码
+        if sig != StateManager._paper_books_signature(book_canonicals, sorted(books_used)):
+            return ([], "stale")
+        return (papers, "ok")
+
+    @staticmethod
+    def _decode_papers_code_v1(sig: str, b64: str, ordered_ids: list[str]) -> tuple[list[list[str]], str]:
+        """解旧 p1 码：索引锚定 880 单本 canonical（历史格式，只读兼容）。"""
+        try:
             if sig != StateManager.bank_signature(ordered_ids):
                 return ([], "stale")
             pad = "=" * (-len(b64) % 4)

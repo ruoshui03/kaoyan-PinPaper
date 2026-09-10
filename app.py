@@ -545,6 +545,13 @@ with st.sidebar:
     url_1000_key = URL_1000_KEY.get(active_sub)
     url_1000_seen_key = URL_1000_SEEN_KEY.get(active_sub)
     canonical_1000 = loader.canonical_ids(book=BOOK_1000)
+    # 试卷码(q1/q2/q3)按书分别锚定：每题记 (书籍, 书内下标)，故跨书试卷能完整还原。
+    # 签名只覆盖某个码实际引用到的书 → 加第四本书不会让旧试卷链接失效。
+    paper_book_canonicals = {
+        URL_BITMAP_BOOK: canonical_ids,
+        ZHENTI_BOOK: zhenti_canonical,
+        BOOK_1000: canonical_1000,
+    }
 
     # 首次进入本科目且网址带错题码时，从 URL 恢复（无后端跨设备恢复）
     if url_data_key and current_subject != SubjectType.CUSTOM:
@@ -586,12 +593,16 @@ with st.sidebar:
         papers_qids: list[list[str]] = []
         pcode = st.query_params.get(paper_url_key)
         if pcode:
-            decoded, pstatus = StateManager.decode_papers_code(pcode, canonical_ids)
+            decoded, pstatus = StateManager.decode_papers_code(
+                pcode, paper_book_canonicals, legacy_ordered_ids=canonical_ids
+            )
             if pstatus == "ok" and decoded:
                 papers_qids = decoded
         if not papers_qids and state_mgr.last_papers_qids:
-            # 本地存档；过滤当前题库仍存在的题号，避免题库变动后错位
-            valid = set(canonical_ids)
+            # 本地存档；过滤当前题库仍存在的题号，避免题库变动后错位。
+            # 用【全库】校验而非 880 canonical —— 否则真题/1000题的题会被判为"不存在"
+            # 而丢掉，卷子刷新后只剩 880 那部分。
+            valid = set(loader.questions_by_id)
             papers_qids = [[q for q in p if q in valid] for p in state_mgr.last_papers_qids]
             papers_qids = [p for p in papers_qids if p]
         if papers_qids:
@@ -1948,7 +1959,7 @@ if paper_url_key and current_subject != SubjectType.CUSTOM:
     elif _cur_paper:
         _papers_qids = [[q.id for q in _cur_paper.questions]]
     if _papers_qids:
-        _pcode = StateManager.encode_papers_code(_papers_qids, canonical_ids)
+        _pcode = StateManager.encode_papers_code(_papers_qids, paper_book_canonicals)
         if st.query_params.get(paper_url_key) != _pcode:
             st.query_params[paper_url_key] = _pcode
 
