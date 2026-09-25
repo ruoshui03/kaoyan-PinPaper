@@ -22,6 +22,8 @@ from core.models import (
     MATH_2_CHAPTERS,
     MATH_3_CHAPTERS,
 )
+from core.bank_registry import BookSpec, bank_root, load_answer_pack, load_books
+from core.chapter_map import ChapterMapper
 
 logger = logging.getLogger(__name__)
 
@@ -124,6 +126,9 @@ class BankLoader:
         self.subject = subject
         project_root = Path(__file__).resolve().parent.parent
         root = project_root if (project_root / '题库资料').exists() else Path.cwd()
+        # 题库根目录：书目清单 / 答案包 / 章节别名都挂在这里
+        self._root = root if (root / '题库资料').exists() else bank_root()
+        self._books: list[BookSpec] = load_books(self._root)
 
         # 根据科目定位题库目录
         subject_folder_name = "880数学一"
@@ -256,6 +261,16 @@ class BankLoader:
         # 追加张宇1000题(第三本书):自包含加载,题号 domain-篇章-题型-序号(如 高数-基08-选-01),
         # 不经 880 重编号 → 与 880/真题天然不撞;book="张宇1000题" 非空 → 880 canonical/旧 URL 不受影响。
         self._append_1000()
+
+        # 追加书目清单(题库资料/books.json)里声明的第三方新题库。
+        # order 排在内置三本之后 → 只追加,不插队 → 旧 URL 位图不失效。
+        self._append_extra_books()
+
+        # 答案/解析包回填(solutions/<book>/ 或 题库资料/<书>/answers/)
+        self._apply_answer_packs()
+
+        # 章节名归一化(各书自带章节 → 考纲章名),只改 chapter,不动题号
+        self._normalize_chapters()
 
         self._is_loaded = True
 
@@ -427,6 +442,177 @@ class BankLoader:
 
         for q in sorted(items, key=_sort_key):
             self.questions_by_id[q.id] = q
+
+    # ------------------------------------------------------------------
+    # 书目清单驱动的扩展加载（第三方新题库 / 答案包 / 章节归一化）
+    # ------------------------------------------------------------------
+    def _book_specs(self) -> list[BookSpec]:
+        return self._books
+
+    def _append_extra_books(self) -> None:
+        """加载 books.json 里声明、但内置代码没硬编码的第三方题库。
+
+        布局统一按 self_contained 处理：metadata/*.json 自包含（stem/options/chapter 等），
+        problems/ 下的图片按相对路径内联 base64。题号保持原样不重编号。
+        """
+        builtin = {"880", "真题", "张宇1000题"}
+        for spec in self._book_specs():
+            if not spec.enabled or spec.key in builtin or spec.layout == "880":
+                continue
+            self._append_self_contained(spec)
+
+    def _append_self_contained(self, spec: BookSpec) -> None:
+        """通用自包含题库加载（真题 / 1000题 / 任意第三方书共用）。"""
+        if self.subject.value not in spec.subjects:
+            return
+        folder = spec.dir_for(self.subject)
+        if not folder:
+            return
+        book_dir = self._root / "题库资料" / folder
+        md_dir = book_dir / "metadata"
+        problems_dir = book_dir / "problems"
+        if not md_dir.exists():
+            logger.info("题库 %s(%s) 目录缺失: %s", spec.name, self.subject.value, md_dir)
+            return
+
+        TYPE_MAP = {"选择题": QuestionType.CHOICE, "填空题": QuestionType.FILL_BLANK,
+                    "解答题": QuestionType.SOLUTION}
+
+        def embed(text: str) -> str:
+            if not text or "![" not in text:
+                return text
+
+            def repl(m: re.Match) -> str:
+                alt, ref = m.group(1), m.group(2).strip()
+                if ref.startswith(("http://", "https://", "data:")):
+                    return m.group(0)
+                p = (problems_dir / ref.lstrip("./")).resolve()
+                if not p.exists():
+                    return f"*({alt.strip() or '图'}见原书)*"
+                mime = mimetypes.guess_type(str(p))[0] or "image/jpeg"
+                try:
+                    b64 = base64.b64encode(p.read_bytes()).decode("ascii")
+                except OSError:
+                    return f"*({alt.strip() or '图'}见原书)*"
+                return (f'<img src="data:{mime};base64,{b64}" alt="{alt}" '
+                        f'style="max-width:100%;height:auto;display:block;margin:8px auto;" />')
+            return re.sub(r"!\[([^\]]*)\]\(([^)]+)\)", repl, text)
+
+        items: list[QuestionItem] = []
+        for jf in sorted(md_dir.glob("*.json")):
+            if jf.name.startswith("_"):
+                continue
+            try:
+                data = json.loads(jf.read_text(encoding="utf-8-sig"))
+            except Exception as e:
+                logger.warning("读取 %s 失败: %s", jf.name, e)
+                continue
+            for it in (data if isinstance(data, list) else [data]):
+                qid = it.get("id")
+                if not qid or qid in self.questions_by_id:
+                    continue
+                chapter = it.get("chapter") or "未分类章节"
+                _dstr = it.get("difficulty") or ""
+                _diff = DifficultyLevel.BASIC if "基础" in _dstr else (
+                    DifficultyLevel.ADVANCED if "拓展" in _dstr else DifficultyLevel.COMPREHENSIVE)
+                items.append(QuestionItem(
+                    id=qid,
+                    chapter=chapter,
+                    category=classify_category(chapter, parse_chapter_number(chapter, qid)),
+                    difficulty=_diff,
+                    question_type=TYPE_MAP.get(it.get("question_type", ""), QuestionType.CHOICE),
+                    core_knowledge=it.get("core_knowledge") or [],
+                    tags=it.get("tags") or [],
+                    recommend_weight=int(it.get("recommend_weight") or 3),
+                    stem=embed(it.get("stem") or ""),
+                    options=[embed(o) for o in (it.get("options") or [])],
+                    answer=it.get("answer") or "",
+                    solution=it.get("solution") or "",
+                    book=it.get("book") or spec.key,
+                    year=str(it.get("year") or ""),
+                    pian=it.get("pian") or "",
+                ))
+
+        if not items:
+            return
+        # 排序键按题号形态自动探测：年份开头 / 汉字分册开头 / 数字章号开头
+        sort_key = self._make_sort_key([q.id for q in items])
+        for q in sorted(items, key=sort_key):
+            self.questions_by_id[q.id] = q
+        logger.info("题库 %s(%s) 载入 %d 题", spec.name, self.subject.value, len(items))
+
+    @staticmethod
+    def _make_sort_key(ids: list[str]):
+        """按题号形态挑选排序函数：
+
+        - 2010-选-01 这类年份开头 → parse_qid_tuple（年份→题型→序号）
+        - 高数-基08-选-01 这类汉字分册开头 → 分册→篇→章号→序号
+        - 其余数字章号开头 → parse_qid_tuple
+        """
+        if not ids:
+            return lambda q: (0,)
+        first = str(ids[0]).split("-")[0]
+        if re.fullmatch(r"\d+", first) or not re.search(r"[\u4e00-\u9fa5]", first):
+            return lambda q: parse_qid_tuple(q.id)
+
+        _DOMAIN_RANK = {"高数": 0, "线代": 1, "概率": 2, "微积分": 0, "线性代数": 1, "概率论": 2}
+        _PIAN_RANK = {"基": 0, "强": 1, "综": 2}
+
+        def key(q: QuestionItem) -> tuple[int, int, int, int]:
+            parts = q.id.split("-")
+            domain = parts[0] if parts else ""
+            unit = parts[1] if len(parts) > 1 else ""
+            seq = parts[-1] if parts else ""
+            ch_digits = re.sub(r"[^0-9]", "", unit)
+            return (
+                _DOMAIN_RANK.get(domain, 9),
+                _PIAN_RANK.get(unit[:1], 9),
+                int(ch_digits) if ch_digits else 99,
+                int(seq) if seq.isdigit() else 99,
+            )
+        return key
+
+    def _apply_answer_packs(self) -> None:
+        """把 solutions/<book>/ 与 题库资料/<书>/answers/ 下的答案与解析回填进题目。
+
+        显式提交的答案优先级最高（覆盖空值），题干里已解析出的答案也不会被空串冲掉。
+        """
+        total = 0
+        for spec in self._book_specs():
+            if not spec.enabled:
+                continue
+            pack = load_answer_pack(spec, self.subject, self._root)
+            if not pack:
+                continue
+            for qid, payload in pack.items():
+                q = self.questions_by_id.get(qid)
+                if q is None:
+                    continue
+                if payload.get("answer"):
+                    q.answer = payload["answer"]
+                    total += 1
+                if payload.get("solution"):
+                    q.solution = payload["solution"]
+        if total:
+            logger.info("[%s] 答案包回填 %d 题", self.subject.value, total)
+
+    def _normalize_chapters(self) -> None:
+        """章节名归一化：各书自带章节 → 考纲统一章名。
+
+        只改 chapter / category，不改题号与顺序 → canonical 列表不变、URL 不失效。
+        别名表缺失或规则不命中时保留原名（特性静默不启用）。
+        """
+        mapper = ChapterMapper(self.subject, self._root)
+        changed = False
+        for q in self.questions_by_id.values():
+            new_ch = mapper.map(q.chapter, q.id)
+            if new_ch != q.chapter:
+                q.chapter = new_ch
+                q.category = classify_category(new_ch, parse_chapter_number(new_ch, q.id))
+                changed = True
+        self._chapter_mapper = mapper
+        if changed:
+            logger.info("[%s] 章节名已归一化到考纲章名", self.subject.value)
 
     @staticmethod
     def _align_bodies_by_position(
@@ -738,7 +924,62 @@ class BankLoader:
 
         stem = "\n".join(stem_lines).strip()
         solution = "\n".join(solution_lines).strip()
+
+        # 兜底:整段挤在一行/一段里的选项(常见于含 $$ 矩阵公式的题,如
+        # "…的矩阵为（　）. A. $$…$$ B. $$…$$ C. … D. …")。上面的逐行规则要求
+        # 选项独占行或整行以 A 开头,这类题会解析成 0 个选项 → 选择题没得选。
+        # 此处按 A./B./C./D. 分隔点把尾部切成四项(支持跨行与 $$ 公式)。
+        if not options and stem:
+            split = BankLoader._split_inline_options(stem)
+            if split:
+                stem, options = split
         return stem, options, answer, solution
+
+    @staticmethod
+    def _split_inline_options(text: str) -> tuple[str, list[str]] | None:
+        """把挤在同一段里的 A./B./C./D. 选项切出来，返回 (题干, 选项列表)。
+
+        仅在能找到按序出现的 A、B、C(、D) 四个分隔点时才切，避免误伤题干里
+        出现的 "设 A,B 为…" 之类的正常文字。
+        """
+        marks = list(re.finditer(r"(?:(?<=^)|(?<=[\s\)）\.。;；、]))([A-D])\s*[.．、]\s*", text))
+        if len(marks) < 3:
+            return None
+        start = None
+        expect = "A"
+        for i, m in enumerate(marks):
+            if m.group(1) == expect:
+                if expect == "A":
+                    start = i
+                expect = chr(ord(expect) + 1)
+                if expect > "D":
+                    break
+            elif m.group(1) == "A":
+                start, expect = i, "B"
+        if start is None or expect <= "C":  # 至少要有 A/B/C 三项才算选项
+            return None
+
+        picked = [marks[start]]
+        want = "B"
+        for m in marks[start + 1:]:
+            if m.group(1) == want:
+                picked.append(m)
+                want = chr(ord(want) + 1)
+                if want > "D":
+                    break
+        if len(picked) < 3:
+            return None
+
+        stem = text[:picked[0].start()].strip()
+        options: list[str] = []
+        for idx, m in enumerate(picked):
+            end = picked[idx + 1].start() if idx + 1 < len(picked) else len(text)
+            seg = text[m.start():end].strip()
+            if seg:
+                options.append(seg)
+        if not stem or len(options) < 3:
+            return None
+        return stem, options
 
     def get_questions_for_subject(self, subject: SubjectType) -> list[QuestionItem]:
         """按科目获取题库"""

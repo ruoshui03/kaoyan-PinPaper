@@ -12,6 +12,7 @@ import io
 import os
 import random
 import re
+import tempfile
 import uuid
 from pathlib import Path
 
@@ -35,6 +36,7 @@ from core.paper_engine import EngineRequest, PaperEngine
 from core.pdf_service import PDFEdition, PDFService, looks_like_pdf
 from core.ai_tutor import AITutor
 from core.state_manager import StateManager
+from core import contribution as contribution_hub
 
 # 题干里内联的 <img src="data:...base64,..."> 标签(loader 生成)
 _INLINE_IMG_RE = re.compile(
@@ -711,6 +713,66 @@ with st.sidebar:
             "🔗 错题记录**与上次生成的试卷**已自动保存在本机文件，重开本页即在，无需记链接。"
             "该网址也编码了你的错题、试卷与 AI 配置，复制它可在其他设备恢复（API Key 不写入网址）。"
         )
+
+    st.markdown("---")
+    st.markdown("### 🤝 答案 / 解析共享中心")
+    with st.expander("本地答案库 · 授权共享 · 导入导出", expanded=False):
+        _consent = contribution_hub.read_consent()
+        _share = st.checkbox(
+            "授权导出 / 推送我填写的答案与解析",
+            value=bool(_consent.get("share")),
+            help="默认关闭：不会把任何内容写出本机。开启后才会生成可分享的贡献包。",
+        )
+        _author = st.text_input("署名（留空=匿名）", value=str(_consent.get("author") or ""),
+                                key="hub_author")
+        if st.button("保存授权设置", key="save_consent"):
+            contribution_hub.write_consent(share=_share, author=_author)
+            st.success("授权设置已保存")
+
+        _stats = contribution_hub.stats()
+        if _stats:
+            for _k, _v in list(_stats.items())[:6]:
+                st.caption(f"{_k}：{_v['entries']} 条（答案 {_v['with_answer']} · 解析 {_v['with_solution']}）")
+        else:
+            st.caption("本地还没有答案/解析，可先生成待填模板。")
+
+        _hub_book = st.selectbox("目标书籍", options=available_books, key="hub_book")
+
+        if st.button("📝 生成待填模板（前 200 题）", key="gen_tpl"):
+            _tpl = contribution_hub.gen_template(
+                _hub_book, current_subject, raw_questions, limit=200)
+            st.download_button(
+                "⬇️ 下载待填模板 .md", data=_tpl,
+                file_name=f"待填_{_hub_book}_{current_subject.value}.md",
+                mime="text/markdown", key="dl_tpl")
+
+        _up = st.file_uploader("导入他人分享的答案包（.json / .csv / .md）",
+                               type=["json", "csv", "md", "txt"], key="hub_upload")
+        if _up is not None:
+            try:
+                _tmp = Path(tempfile.gettempdir()) / f"kpp_{uuid.uuid4().hex}_{_up.name}"
+                _tmp.write_bytes(_up.getvalue())
+                _known = {q.id for q in raw_questions if getattr(q, "book", "880") == _hub_book}
+                _res = contribution_hub.import_pack(
+                    str(_tmp), valid_ids=_known, strategy="remote",
+                    book_override=_hub_book, subject_override=current_subject.value)
+                st.success(f"导入 {_res['accepted']}/{_res['total']} 条"
+                           f"（未知题号 {_res['unknown_count']}，冲突 {_res['conflicts']}）")
+                if _res["license"]:
+                    st.caption(f"来源声明：{_res['license']}｜贡献者：{_res['author'] or '匿名'}")
+                get_bank_loader.clear()
+                st.rerun()
+            except Exception as _e:  # noqa: BLE001
+                st.error(f"导入失败：{_e}")
+
+        if st.button("📦 导出我的贡献包", key="export_pack"):
+            try:
+                _out = contribution_hub.export_pack(
+                    _hub_book, current_subject, author=_author, share=_share)
+                st.download_button("⬇️ 下载贡献包 .kpp.json", data=_out.read_bytes(),
+                                   file_name=_out.name, mime="application/json", key="dl_pack")
+            except ValueError as _e:
+                st.warning(str(_e))
 
     st.markdown("---")
     st.markdown("### 🤖 AI 名师答疑")

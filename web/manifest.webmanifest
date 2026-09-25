@@ -1,0 +1,20 @@
+{
+  "name": "考研拼好卷 · 智能组卷与错题标练",
+  "short_name": "拼好卷",
+  "description": "考研数学智能组卷、考场模式答题、错题标练与答案共享",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

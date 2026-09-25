@@ -205,17 +205,37 @@ class StateManager:
             return self.wrong_questions[question_id].wrong_count
 
     def mark_solved_correctly(self, question_id: str) -> None:
-        if question_id in self.wrong_questions:
-            self.wrong_questions[question_id].is_active_in_pool = False
+        self.batch_mark_solved_correctly([question_id], create_missing=True)
+
+    def batch_mark_solved_correctly(
+        self, question_ids: list[str] | set[str], create_missing: bool = False
+    ) -> int:
+        """批量把「本次答对」的题移出活跃待练池（记为临时掌握）。
+
+        - 只处理确实已在错题本里的题号；答对的新题不会污染错题本（除非 create_missing）。
+        - 只落盘一次，避免 N 次 save_state 互相覆盖、也避免重复写文件。
+        返回实际发生状态变化的题数。
+        """
+        changed = 0
+        for qid in question_ids:
+            rec = self.wrong_questions.get(qid)
+            if rec is None:
+                if not create_missing:
+                    continue
+                self.wrong_questions[qid] = WrongQuestionRecord(
+                    question_id=qid,
+                    wrong_count=0,
+                    is_active_in_pool=False,
+                    subject=self.subject,
+                )
+                changed += 1
+                continue
+            if rec.is_active_in_pool:
+                rec.is_active_in_pool = False
+                changed += 1
+        if changed:
             self.save_state()
-        else:
-            self.wrong_questions[question_id] = WrongQuestionRecord(
-                question_id=question_id,
-                wrong_count=0,
-                is_active_in_pool=False,
-                subject=self.subject,
-            )
-            self.save_state()
+        return changed
 
     def reactivate_to_pool(self, question_id: str) -> None:
         if question_id in self.wrong_questions:

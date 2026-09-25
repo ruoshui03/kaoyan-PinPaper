@@ -5,21 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>考研数学《880》智能拼好卷 & 错题标练系统</title>
   
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Noto+Serif+SC:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- KaTeX for Lightning-Fast Formula Rendering -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <!-- Typography：不再外链 Google Fonts（国内网络下经常超时、首屏白屏），
+       改用系统字体栈，中文优先 PingFang / 微软雅黑 -->
+  <meta name="color-scheme" content="dark light">
 
-  <!-- Marked.js for Markdown -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+
+  <!-- KaTeX：本地优先（assets/katex 随仓库分发，离线可用），本地缺失才回退 CDN -->
+  <link rel="stylesheet" href="/assets/katex/katex.min.css"
+        onerror="this.onerror=null;this.href='https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css'">
+  <script defer src="/assets/katex/katex.min.js"
+          onerror="var s=document.createElement('script');s.defer=true;s.src='https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js';document.head.appendChild(s)"></script>
+  <script defer src="/assets/katex/auto-render.min.js"
+          onerror="var s=document.createElement('script');s.defer=true;s.src='https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js';document.head.appendChild(s)"></script>
+
+  <!-- Marked.js：本地优先，缺失回退 CDN -->
+  <script src="/assets/vendor/marked.min.js"
+          onerror="document.write('<script src=\"https://cdn.jsdelivr.net/npm/marked/marked.min.js\"><\/script>')"></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <script>
+    // 主题持久化：在渲染前套用，避免深色/浅色闪屏
+    (function () {
+      try {
+        var saved = localStorage.getItem('pinpaper-theme');
+        if (saved === 'light') document.documentElement.classList.add('theme-preload-light');
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body class="theme-dark">
   <div id="app" class="app-layout">
@@ -50,19 +68,81 @@
       </nav>
 
       <div class="nav-actions">
+        <!-- 选项由 /api/init 的真实统计填充，不再写死题数（题库增删会立刻反映） -->
         <select id="globalSubjectSelector" class="subject-select-pill">
-          <option value="数学一">📐 数学一 (23章·1121题)</option>
-          <option value="数学二">📐 数学二 (12章·929题)</option>
-          <option value="数学三">📐 数学三 (21章·1028题)</option>
+          <option value="数学一">📐 数学一</option>
+          <option value="数学二">📐 数学二</option>
+          <option value="数学三">📐 数学三</option>
         </select>
         <div class="wrong-badge-pill" id="globalWrongCounter">
-          <span class="dot"></span> 880 错题本: <strong id="headerWrongCount">0</strong> 题
+          <span class="dot"></span> 错题本: <strong id="headerWrongCount">0</strong> 题
+        </div>
+        <div class="bank-stat-pill" id="bankStatPill" title="题库构成与答案覆盖率">
+          <span id="bankStatText">题库加载中…</span>
         </div>
         <button class="theme-toggle-btn" id="themeToggleBtn" title="切换深色/浅色主题">
           🌙
         </button>
       </div>
     </header>
+
+    <!-- ===================================================================
+         考场模式：全屏答题覆盖层（横向翻页 + 答题卡 + 倒计时 + 交卷判分）
+         默认隐藏，点「进入考场模式」打开；交卷后答错的题会自动进错题本
+         =================================================================== -->
+    <div id="examOverlay" class="exam-overlay" hidden aria-modal="true" role="dialog">
+      <header class="exam-bar">
+        <div class="exam-bar-left">
+          <button class="exam-btn" id="examExitBtn" title="退出考场模式">✕ 退出</button>
+          <span class="exam-title" id="examTitle">考场模式</span>
+        </div>
+        <div class="exam-bar-center">
+          <span class="exam-timer" id="examTimer">--:--</span>
+          <span class="exam-progress" id="examProgress">0 / 0</span>
+        </div>
+        <div class="exam-bar-right">
+          <button class="exam-btn" id="examSheetBtn" title="展开/收起答题卡">🗂 答题卡</button>
+          <button class="exam-btn" id="examFullBtn" title="全屏 / 退出全屏（F）">⛶ 全屏</button>
+          <button class="exam-btn primary" id="examSubmitBtn">✅ 交卷</button>
+        </div>
+      </header>
+
+      <div class="exam-body">
+        <!-- 横向翻页轨道：scroll-snap + 键盘/按钮/滑动都能翻页 -->
+        <div class="exam-track" id="examTrack"></div>
+
+        <aside class="exam-sheet" id="examSheet">
+          <div class="exam-sheet-head">
+            <strong>答题卡</strong>
+            <button class="exam-btn tiny" id="examSheetClose">收起</button>
+          </div>
+          <div class="exam-sheet-grid" id="examSheetGrid"></div>
+          <div class="exam-sheet-legend">
+            <span><i class="dot done"></i>已答</span>
+            <span><i class="dot undo"></i>未答</span>
+            <span><i class="dot flag"></i>标记</span>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="exam-foot">
+        <button class="exam-btn" id="examPrevBtn">← 上一题</button>
+        <button class="exam-btn" id="examFlagBtn">⚑ 标记本题</button>
+        <button class="exam-btn" id="examNextBtn">下一题 →</button>
+        <span class="exam-kbd-hint">键盘：A-D／1-4 选选项 · ← → 翻页 · M 标记 · F 全屏 · Ctrl+Enter 交卷</span>
+      </footer>
+    </div>
+
+    <!-- 交卷结果 -->
+    <div id="examResultOverlay" class="exam-overlay result" hidden aria-modal="true" role="dialog">
+      <header class="exam-bar">
+        <div class="exam-bar-left"><strong>📝 判卷结果</strong></div>
+        <div class="exam-bar-right">
+          <button class="exam-btn" id="examResultClose">关闭</button>
+        </div>
+      </header>
+      <div class="exam-result-body" id="examResultBody"></div>
+    </div>
 
     <!-- Main Content Workspaces -->
     <main class="workspace-container">
@@ -159,6 +239,9 @@
             <div class="paper-meta-info">
               <h3 id="paperDisplayTitle" class="paper-title">考研数学《880》智能拼好卷</h3>
               <span id="paperMetaBadges" class="paper-meta-sub">卷号: -- · 题量: --</span>
+              <button id="enterExamBtn" class="exam-entry-btn" title="全屏答题：横向翻页 + 答题卡 + 倒计时 + 交卷判分">
+                🎓 进入考场模式
+              </button>
             </div>
             <div class="paper-tools-actions">
               <button id="btnDownloadClean" class="btn btn-tool">📥 下载纯享版 (含手写留白)</button>
@@ -334,5 +417,24 @@
 
   <!-- Main Application Script -->
   <script src="app.js"></script>
+
+  <!-- PWA：注册 Service Worker，装到桌面/手机后可离线打开 -->
+  <script>
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+      // 网络状态提示：断网时给一次 toast，恢复时再提示一次
+      let wasOffline = !navigator.onLine;
+      window.addEventListener('offline', () => {
+        wasOffline = true;
+        if (typeof showToast === 'function') showToast('📴 已断网，已缓存的页面仍可继续使用');
+      });
+      window.addEventListener('online', () => {
+        if (wasOffline && typeof showToast === 'function') showToast('🌐 网络已恢复');
+        wasOffline = false;
+      });
+    }
+  </script>
 </body>
 </html>
